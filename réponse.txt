@@ -1,5 +1,3 @@
-Je suis ravi de pouvoir t'aider avec ce projet passionnant ! Voici une approche pour développer ton application de génération d'armoiries héraldiques en utilisant Python avec une interface graphique simple via Tkinter. Cela te permettra de créer une application exécutable localement sans nécessiter de connexion internet ni de nombreux plugins.
-
 ### Étapes pour développer l'application
 
 #### 1. Installer Python et Tkinter
@@ -11,44 +9,7 @@ pip install tk
 #### 2. Créer le formulaire de saisie
 Nous allons créer une interface graphique où l'utilisateur pourra entrer les détails de l'armoirie.
 
-```python
-import tkinter as tk
-from tkinter import ttk
-
-def generate_heraldry():
-    # Fonction pour générer l'armoirie basée sur les entrées utilisateur
-    pass
-
-# Créer la fenêtre principale
-root = tk.Tk()
-root.title("Générateur d'Armoiries Héraldiques")
-
-# Partie pour l'écu
-ttk.Label(root, text="Description de l'écu:").grid(column=0, row=0, padx=10, pady=5)
-ecu_entry = ttk.Entry(root, width=50)
-ecu_entry.grid(column=1, row=0, padx=10, pady=5)
-
-# Partie pour la couronne
-ttk.Label(root, text="Description de la couronne:").grid(column=0, row=1, padx=10, pady=5)
-couronne_entry = ttk.Entry(root, width=50)
-couronne_entry.grid(column=1, row=1, padx=10, pady=5)
-
-# Partie pour les portants
-ttk.Label(root, text="Description des portants:").grid(column=0, row=2, padx=10, pady=5)
-portants_entry = ttk.Entry(root, width=50)
-portants_entry.grid(column=1, row=2, padx=10, pady=5)
-
-# Partie pour la devise
-ttk.Label(root, text="Devise:").grid(column=0, row=3, padx=10, pady=5)
-devise_entry = ttk.Entry(root, width=50)
-devise_entry.grid(column=1, row=3, padx=10, pady=5)
-
-# Bouton pour générer l'armoirie
-generate_button = ttk.Button(root, text="Générer l'armoirie", command=generate_heraldry)
-generate_button.grid(column=0, row=4, columnspan=2, pady=10)
-
-root.mainloop()
-```
+> heraldique.py <
 
 #### 3. Ajouter une bibliothèque d'images
 Tu peux créer un dossier contenant les images des meubles héraldiques, couronnes, etc. Ensuite, tu peux utiliser la bibliothèque `Pillow` pour manipuler ces images dans ton application.
@@ -60,27 +21,7 @@ pip install pillow
 #### 4. Générer l'armoirie
 Dans la fonction `generate_heraldry`, tu vas combiner les images selon les descriptions fournies par l'utilisateur.
 
-```python
-from PIL import Image, ImageDraw, ImageFont
-
-def generate_heraldry():
-    ecu = ecu_entry.get()
-    couronne = couronne_entry.get()
-    portants = portants_entry.get()
-    devise = devise_entry.get()
-
-    # Charger les images de la bibliothèque
-    base_image = Image.open("path/to/base_image.png")
-    draw = ImageDraw.Draw(base_image)
-
-    # Ajouter les éléments héraldiques
-    # Exemple: draw.text((x, y), text, fill="color")
-
-    # Sauvegarder ou afficher l'image générée
-    base_image.show()
-```
+> heald2.py <
 
 ### Conclusion
 Cette structure de base te permettra de développer ton application de génération d'armoiries héraldiques. Tu pourras ajouter des fonctionnalités supplémentaires au fur et à mesure, comme des options de personnalisation plus avancées ou une interface utilisateur plus sophistiquée.
-
-N'hésite pas à me poser des questions si tu as besoin de plus de détails ou d'aide supplémentaire ! 😊
