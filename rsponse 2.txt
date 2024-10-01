@@ -1,5 +1,3 @@
-### Étapes pour développer l'application
-
 #### 1. Installer Python et Tkinter
 Assure-toi d'avoir Python installé sur ton ordinateur. Tkinter est généralement inclus avec Python, mais tu peux vérifier en exécutant :
 ```bash
