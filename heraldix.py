@@ -1,0 +1,3 @@
+# Héraldix
+
+print("Héraldix")
