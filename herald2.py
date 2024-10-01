@@ -1,10 +1,10 @@
 from PIL import Image, ImageDraw, ImageFont
 
-def generate_heraldry():
-    ecu = ecu_entry.get()
-    couronne = couronne_entry.get()
-    portants = portants_entry.get()
-    devise = devise_entry.get()
+def generer_armoirie():
+    ecu = ecu_formulaire.get()
+    couronne = couronne_formulaire.get()
+    portants = portants_formulaire.get()
+    devise = devise_formulaire.get()
 
     # Charger les images de la bibliothèque
     base_image = Image.open("path/to/base_image.png")
