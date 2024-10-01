@@ -1,4 +1,4 @@
-***Héraldix***
+****Héraldix****
 
 Une application de création d'armoiries héraldiques.
 
@@ -22,3 +22,4 @@ Il y aura une bibliothèque d'images contentant tous les meubles, portants et au
 
 **Développement**
 - Python
+- Tkinter
