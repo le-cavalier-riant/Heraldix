@@ -1,5 +1,3 @@
-### Étapes pour développer l'application
-
 #### 1. Installer Python et Tkinter
 Assure-toi d'avoir Python installé sur ton ordinateur. Tkinter est généralement inclus avec Python, mais tu peux vérifier en exécutant :
 ```bash
@@ -22,6 +20,3 @@ pip install pillow
 Dans la fonction `generate_heraldry`, tu vas combiner les images selon les descriptions fournies par l'utilisateur.
 
 > heald2.py <
-
-### Conclusion
-Cette structure de base te permettra de développer ton application de génération d'armoiries héraldiques. Tu pourras ajouter des fonctionnalités supplémentaires au fur et à mesure, comme des options de personnalisation plus avancées ou une interface utilisateur plus sophistiquée.
