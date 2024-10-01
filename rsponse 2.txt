@@ -1,5 +1,3 @@
-Je suis ravi de pouvoir t'aider avec ce projet passionnant ! Voici une approche pour développer ton application de génération d'armoiries héraldiques en utilisant Python avec une interface graphique simple via Tkinter. Cela te permettra de créer une application exécutable localement sans nécessiter de connexion internet ni de nombreux plugins.
-
 ### Étapes pour développer l'application
 
 #### 1. Installer Python et Tkinter
@@ -60,27 +58,7 @@ pip install pillow
 #### 4. Générer l'armoirie
 Dans la fonction `generate_heraldry`, tu vas combiner les images selon les descriptions fournies par l'utilisateur.
 
-```python
-from PIL import Image, ImageDraw, ImageFont
-
-def generate_heraldry():
-    ecu = ecu_entry.get()
-    couronne = couronne_entry.get()
-    portants = portants_entry.get()
-    devise = devise_entry.get()
-
-    # Charger les images de la bibliothèque
-    base_image = Image.open("path/to/base_image.png")
-    draw = ImageDraw.Draw(base_image)
-
-    # Ajouter les éléments héraldiques
-    # Exemple: draw.text((x, y), text, fill="color")
-
-    # Sauvegarder ou afficher l'image générée
-    base_image.show()
-```
+> herald4.py <
 
 ### Conclusion
 Cette structure de base te permettra de développer ton application de génération d'armoiries héraldiques. Tu pourras ajouter des fonctionnalités supplémentaires au fur et à mesure, comme des options de personnalisation plus avancées ou une interface utilisateur plus sophistiquée.
-
-N'hésite pas à me poser des questions si tu as besoin de plus de détails ou d'aide supplémentaire ! 😊
