@@ -1,8 +1,8 @@
-****Héraldix****
+**Héraldix**
 
 Une application de création d'armoiries héraldiques.
 
-**Utilisation**
+*Utilisation*
 
 L'utilisateur devra entrer la description de l'armoirie sous la forme d'un formulaire :
 - une partie pour l'écu (les meubles héraldique tels que les fasces, les bandes et les chevrons)
@@ -10,16 +10,18 @@ L'utilisateur devra entrer la description de l'armoirie sous la forme d'un formu
 - une autre ecore pour les portants (de part et d'autre de l'écu)
 - une dernière pour la devise sous le blason
 
+Je propose une liste de valeurs a sélectionner mais où l'on peut taper du texte quand même.
+
 Il y aura une bibliothèque d'images contentant tous les meubles, portants et autres.
 
 
-**Cahier des charges**
+*Cahier des charges*
 
 - L'application doit être executable localement sans connextion internet
-- L'appication doit être executable sans de nombreux plugins ou logiciels (par exemple codée en VBA, python, HTML...) en tout cas cela doit etre compliable SIMPLEMENT
+- L'appication doit être executable sans de nombreux plugins ou logiciels, en tout cas cela doit etre compliable SIMPLEMENT
 - L'application doit être simple à développer
 
 
-**Développement**
+*Développement*
 - Python
 - Tkinter
