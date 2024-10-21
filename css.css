@@ -1,0 +1,31 @@
+* {
+	text-align: center;
+	font-family: garamond;
+}
+
+span {
+	font-family: Andiamo a bruciargli la casa;
+}
+
+table {
+	margin: auto;
+}
+
+td {
+	
+}
+td:has(span) {
+	padding: 25px;
+	background-image: url("Bannière.png");
+	background-size: 100% 100%;
+}
+
+img {
+	
+}
+.img-logo {
+	width: 100px;
+}
+#img-couronne {
+	width: 250px;
+}
