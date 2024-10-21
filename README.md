@@ -20,8 +20,3 @@ Il y aura une bibliothèque d'images contentant tous les meubles, portants et au
 - L'application doit être executable localement sans connextion internet
 - L'appication doit être executable sans de nombreux plugins ou logiciels, en tout cas cela doit etre compliable SIMPLEMENT
 - L'application doit être simple à développer
-
-
-*Développement*
-- Python
-- Tkinter
