@@ -1,3 +1,0 @@
-# Héraldix
-
-print("Héraldix")
