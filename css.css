@@ -12,20 +12,42 @@ table {
 }
 
 td {
-	
+	border: 1px black solid;
 }
 td:has(span) {
 	padding: 25px;
 	background-image: url("Bannière.png");
 	background-size: 100% 100%;
 }
+#td-devise {
+	margin: -10px;
+}
 
 img {
-	
+	// filter: drop-shadow(3px 3px 1px #000000);
 }
 .img-logo {
 	width: 100px;
 }
+#img-collier {
+	width: 250px;
+	// margin-top: 25px;
+}
 #img-couronne {
 	width: 250px;
+	margin-bottom: -50px;
+}
+#img-écu {
+	// z-index: -1;
+}
+#img-heaume {
+	width: 100px;
+	margin-bottom: -150px;
+	z-index: 99;
+}
+#img-portant-dextre {
+	margin-left: -125px;
+}
+#img-portant-senestre {
+	margin-right: -125px;
 }
