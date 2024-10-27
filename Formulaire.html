@@ -4,20 +4,35 @@
 <!--                                                                                                                -->
 <!-- ============================================================================================================== -->
 
-<link rel = stylesheet href = css.css>
-
-<a href = Héraldix.html>
-	<img src = Héraldix.png class = img-logo>
-</a>
+<!doctype html>
+<head>
+	<title>Formulaire</title>
+	<meta charset = utf-8>
+	<link rel = stylesheet href = Héraldix.css>
+	<script src = Formulaire.js></script>
+</head>
+<a href = Héraldix.html><img src = Héraldix.png class = img-logo></a>
+<body onload = synchroniser()>
 
 <h1>Formulaire</h1>
 
 <form action = Armoiries.html>
+
+	<label>Titre</label>
+	<select id = select-titre>
+		<option>Sans</option>
+		<option>Roi</option>
+		<option>Marquis et pair</option>
+		<option>Marquis</option>
+	</select>
+
+	<br>
 	
 	<label for = écu>Écu</label>
 	<select name = écu>
 		<option value = >Sans</option>
-		<option value = Chavagnac>Chavagnac</option>
+		<option>Chavagnac</option>
+		<option>France</option>
 	</select>
 
 	<br>
@@ -28,9 +43,9 @@
 		<optgroup label = "Royaume de France">
 			<option>Roi</option>
 			<option>Dauphin</option>
-			<option>Fils</option>
 			<option>Petit-fils</option>
-			<option>Prince du sang</option>
+			<option>Prince (du sang royal)</option>
+			<option>Prince</option>
 			<option>Duc et pair</option>
 			<option>Duc</option>
 			<option>Marquis et pair</option>
@@ -42,6 +57,7 @@
 			<option>Baron</option>
 			<option>Banneret</option>
 			<option>Chevalier</option>
+			<option>Fils</option>
 		</optgroup>
 		<optgroup label = "Empire français">
 			<option>Empereur (1804)</option>
@@ -67,7 +83,16 @@
 	<select name = heaume>
 		<option value = >Sans</option>
 		<optgroup label = "Royaume de France">
+			<option>Roi</option>
+			<option>Prince</option>
+			<option>Duc</option>
 			<option>Marquis</option>
+			<option>Comte</option>
+			<option>Baron</option>
+			<option>Gentilhomme d'ancienne race</option>
+			<option>Gentilhomme de trois races</option>
+			<option>Nouvel anobli</option>
+			<option>Bâtard</option>
 		</optgroup>
 	</select>
 
@@ -102,8 +127,10 @@
 	<label for = collier>Collier</label>
 	<select name = collier>
 		<option value = >Sans</option>
-		<option>Ordre de Saint-Michel</option>
-		<option>Ordre du Saint-Esprit</option>
+		<optgroup label = "Royaume de France">
+			<option>Ordre de Saint-Michel</option>
+			<option>Ordre du Saint-Esprit</option>
+		</optgroup>
 	</select>
 
 	<br>

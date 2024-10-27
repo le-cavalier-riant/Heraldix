@@ -4,30 +4,35 @@
 <!--                                                                                                                -->
 <!-- ============================================================================================================== -->
 
-<link rel = stylesheet href = css.css>
-<script src = js.js></script>
-<meta charset = utf-8>
-
+<!doctype html>
+<head>
+	<title>Armoiries</title>
+	<meta charset = utf-8>
+	<link rel = stylesheet href = Héraldix.css>
+	<script src = Liens.js></script>
+	<script src = Armoiries.js></script>
+</head>
 <body onload = "générerArmoirie()">
-
-<a href = Héraldix.html>
-	<img src = Héraldix.png class = img-logo>
-</a>
+<a href = Héraldix.html><img src = Héraldix.png class = img-logo></a>
 
 <h1>Armoiries</h1>
 
 <a href = Formulaire.html>Formulaire</a>
 
-<div id = div-contenu>
-	<div id = div-cri><span id = span-cri></span></div>
-	<div><img id = img-couronne></div>
-	<div id = div-heaume><img id = img-heaume></div>
-	<div class = div-flex>
-		<div id = div-portant-dextre><img id = img-portant-dextre onclick = inverser(this.style)></div>
-		<div class = div-flex><img id = img-collier><img id = img-écu></div>
-		<div id = div-portant-senestre><img id = img-portant-senestre onclick = inverser(this.style)></div>
+<div class = div-flex id = div-contenu>
+	<div id = div-manteau><img id = img-manteau></div>
+	<div id = div-autre>
+		<div id = div-cri><span id = span-cri></span></div>
+		<div id = div-couronne-manteau><img id = img-couronne-manteau></div>
+		<div id = div-couronne><img id = img-couronne></div>
+		<div id = div-heaume><img id = img-heaume></div>
+		<div class = div-flex>
+			<div id = div-portant-dextre><img id = img-portant-dextre onclick = inverser(this.style)></div>
+			<div class = div-flex><img id = img-collier><img id = img-écu></div>
+			<div id = div-portant-senestre><img id = img-portant-senestre onclick = inverser(this.style)></div>
+		</div>
+		<div id = div-devise><span id = span-devise></span></div>
 	</div>
-	<div id = div-devise><span id = span-devise><span></div>
 </div>
 
 <!-- ============================================================================================================== -->
