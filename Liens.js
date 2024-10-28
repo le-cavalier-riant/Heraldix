@@ -79,11 +79,11 @@ portants = {
 	"Lion rampant (couronne britanique)":	"https://upload.wikimedia.org/wikipedia/commons/6/66/Royal_Coat_of_Arms_of_the_United_Kingdom-Lion.svg",
 	"Tigre":	"https://upload.wikimedia.org/wikipedia/commons/5/52/Tiger_Supporter_(Heraldry).svg",
 	"Aigle":	"https://upload.wikimedia.org/wikipedia/commons/1/10/Imperial_Eagle_Supporter_(Heraldry).svg",
-	"Griffon d'or et de sable":	"https://upload.wikimedia.org/wikipedia/commons/1/1e/Sable-Gold_Griffin_Supporter_(Heraldry).svg",
-	"Griffon d'or et d'argent":	"https://upload.wikimedia.org/wikipedia/commons/5/51/Silver-Gold_Griffin_Supporter_(Heraldry).svg",
-	"Griffon d'or":	"https://upload.wikimedia.org/wikipedia/commons/3/3c/Gold_Griffin_Supporter_(Heraldry).svg",
+	"Griffon (or et sable)":	"https://upload.wikimedia.org/wikipedia/commons/1/1e/Sable-Gold_Griffin_Supporter_(Heraldry).svg",
+	"Griffon (or et argent)":	"https://upload.wikimedia.org/wikipedia/commons/5/51/Silver-Gold_Griffin_Supporter_(Heraldry).svg",
+	"Griffon (or)":	"https://upload.wikimedia.org/wikipedia/commons/3/3c/Gold_Griffin_Supporter_(Heraldry).svg",
 	"Lévrier":	"https://upload.wikimedia.org/wikipedia/commons/9/97/Greyhound_Supporter_of_the_English_Heraldry.svg",
-	"Wyverne à la queue nouée":	"https://upload.wikimedia.org/wikipedia/commons/0/0b/Meuble_héraldique_Dragon_(wyvern).svg",
+	"Wyverne (queue nouée)":	"https://upload.wikimedia.org/wikipedia/commons/0/0b/Meuble_héraldique_Dragon_(wyvern).svg",
 	"Licorne":	"https://upload.wikimedia.org/wikipedia/commons/9/96/Unicorn_Supporter_(Heraldry).svg",
 }
 

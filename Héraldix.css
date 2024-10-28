@@ -76,6 +76,7 @@ img {filter: drop-shadow(3px 3px 1px #000000);}
 #img-portant-senestre {
 	z-index: 10;
 	position: sticky;
+	// width: 330px;
 }
 
 input[type = "text"] {
@@ -92,9 +93,11 @@ span {
 	font-size: 30px;
 }
 
-.caché {
-	display: none;
+table {
 }
+
+.caché,
+#table-déplacer {display: none;}
 
 /* ================================================================================================================= */
 /*                                                                                                                   */

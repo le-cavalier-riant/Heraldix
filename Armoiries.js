@@ -8,6 +8,20 @@ function inverser(style) {
 	if (style.transform == "scaleX(-1)") {style.transform = "";} else {style.transform = "scaleX(-1)";}
 }
 
+function déplacer(image, décalage, axe) {
+	if (axe == "↓") {document.getElementById(image).style.marginTop = décalage + "px";}
+	else if (axe == "←") {document.getElementById(image).style.marginRight = décalage + "px";}
+	else if (axe == "→") {document.getElementById(image).style.marginLeft = décalage + "px";}
+}
+
+function paramètres() {
+	if (document.getElementById("table-déplacer").style.display == "block") {
+		document.getElementById("table-déplacer").style.display = "none";
+	} else {
+		document.getElementById("table-déplacer").style.display = "block";
+	}
+}
+
 function générerArmoirie() {
 
 	paramètresURL = new URLSearchParams(window.location.search);

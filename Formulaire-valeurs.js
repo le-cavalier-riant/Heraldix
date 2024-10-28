@@ -153,6 +153,39 @@ valeursParDefaut = {
 			"portant-dextre": "Sans",
 			"portant-senestre": "Sans"
 		},
+		"Banneret": {
+			"collier": "Sans",
+			"couronne": "Banneret",
+			"cri": "",
+			"devise": "",
+			"écu": "Sans",
+			"heaume": "Sans",
+			"manteau": "Sans",
+			"portant-dextre": "Sans",
+			"portant-senestre": "Sans"
+		},
+		"Chevalier": {
+			"collier": "Sans",
+			"couronne": "Chevalier",
+			"cri": "",
+			"devise": "",
+			"écu": "Sans",
+			"heaume": "Sans",
+			"manteau": "Sans",
+			"portant-dextre": "Sans",
+			"portant-senestre": "Sans"
+		},
+		"Anobli": {
+			"collier": "Sans",
+			"couronne": "Sans",
+			"cri": "",
+			"devise": "",
+			"écu": "Sans",
+			"heaume": "Anobli",
+			"manteau": "Sans",
+			"portant-dextre": "Sans",
+			"portant-senestre": "Sans"
+		},
 		"Bâtard": {
 			"collier": "Sans",
 			"couronne": "Sans",
@@ -166,7 +199,7 @@ valeursParDefaut = {
 		},
 		"Sans": {
 			"collier": "Sans",
-			"couronne": "Sans",
+			"couronne": "",
 			"cri": "",
 			"devise": "",
 			"écu": "Sans",

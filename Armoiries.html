@@ -35,6 +35,40 @@
 	</div>
 </div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<button onclick = paramètres()>Paramètres</button>
+
+<table id = table-déplacer>
+	<tr>
+		<th>Portant à dextre</th>
+		<th>Portant à senestre</th>
+		<th>Manteau</th>
+	</tr>
+	<tr>
+		<td>↑<input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-dextre', this.value, '↓')">↓</td>
+		<td>↑<input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-senestre', this.value, '↓')">↓</td>
+		<td>↑<input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-manteau', this.value, '↓')">↓</td>
+	</tr>
+	<tr>
+		<td>←<input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-dextre', this.value, '←')">→</td>
+		<td>←<input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-senestre', this.value, '→')">→</td>
+		<td>←<input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-manteau', this.value, '→')">→</td>
+	</tr>
+</table>
+
 <!-- ============================================================================================================== -->
 <!--                                                                                                                -->
 <!--                                                   Héraldix                                                     -->
