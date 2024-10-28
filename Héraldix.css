@@ -34,6 +34,11 @@ div {justify-content: center;}
 	z-index: 15;
 }
 
+fieldset {
+	width: 400px;
+	margin: auto;
+}
+
 h1 {font-size: 60px;}
 
 img {filter: drop-shadow(3px 3px 1px #000000);}
@@ -78,10 +83,17 @@ input[type = "text"] {
 }
 
 label {font-weight: bold;}
+#label-titre {
+	font-style: italic;
+}
 
 span {
 	font-family: Gabriola;
 	font-size: 30px;
+}
+
+.caché {
+	display: none;
 }
 
 /* ================================================================================================================= */

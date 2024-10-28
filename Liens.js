@@ -4,8 +4,7 @@ couronnes = {
 	"Dauphin":	"https://upload.wikimedia.org/wikipedia/commons/7/7e/Crown_of_the_Dauphin_of_France_(variant).svg",
 	"Fils":	"https://upload.wikimedia.org/wikipedia/commons/6/6d/Crown_of_a_Royal_Prince_of_the_Blood_of_France.svg",
 	"Petit-fils":	"https://upload.wikimedia.org/wikipedia/commons/1/1f/Crown_of_a_Royal_Prince_of_the_Blood_of_France_(variant).svg",
-	"Prince (du sang royal)":	"https://upload.wikimedia.org/wikipedia/commons/b/b7/Crown_of_a_Prince_of_the_Blood_of_France.svg",
-	"Prince":	"",
+	"Prince":	"https://upload.wikimedia.org/wikipedia/commons/b/b7/Crown_of_a_Prince_of_the_Blood_of_France.svg",
 	"Duc et pair":	"https://upload.wikimedia.org/wikipedia/commons/8/8e/Crown_of_a_Duke_of_France.svg",
 	"Duc":	"https://upload.wikimedia.org/wikipedia/commons/d/d4/Crown_of_a_Duke_of_France_(variant).svg",
 	"Marquis et pair":	"https://upload.wikimedia.org/wikipedia/commons/e/e0/Crown_of_a_Marquis_of_France.svg",
@@ -51,12 +50,13 @@ heaumes = {
 	"Baron":	"Heaumes/Baron.png",
 	"Gentilhomme d'ancienne race":	"Heaumes/Gentilhomme d'ancienne race.png",
 	"Gentilhomme de trois races":	"Heaumes/Gentilhomme de trois races.png",
-	"Nouvel anobli":	"Heaumes/Nouvel anobli.png",
+	"Anobli":	"Heaumes/Anobli.png",
 	"Bâtard":	"Heaumes/Bâtard.png",
 }
 
 manteaux = {
 /* Royaume de France */
+	"France":	"Manteaux/France.svg",
 	"Pair":	"https://upload.wikimedia.org/wikipedia/commons/a/a7/Blue_heraldic_mantle.svg",
 	"Rouge":	"https://upload.wikimedia.org/wikipedia/commons/0/06/Generic_mantle.svg",
 /* Royaume d'Espagne */

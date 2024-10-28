@@ -10,23 +10,41 @@
 	<meta charset = utf-8>
 	<link rel = stylesheet href = Héraldix.css>
 	<script src = Formulaire.js></script>
+	<script src = Formulaire-valeurs.js></script>
 </head>
 <a href = Héraldix.html><img src = Héraldix.png class = img-logo></a>
-<body onload = synchroniser()>
+<body onload = accorder()>
 
 <h1>Formulaire</h1>
 
+<fieldset>
+<legend>E</legend>
+
 <form action = Armoiries.html>
 
-	<label>Titre</label>
+	<label id = label-titre>Titre</label>
 	<select id = select-titre>
 		<option>Sans</option>
-		<option>Roi</option>
-		<option>Marquis et pair</option>
-		<option>Marquis</option>
+		<optgroup label = "Royaume de France">
+			<option>Roi</option>
+			<option>Dauphin</option>
+			<option>Fils</option>
+			<option>Petit-fils</option>
+			<option>Prince</option>
+			<option>Duc (souverain)</option>
+			<option>Duc (non souverain)</option>
+			<option>Marquis et pair</option>
+			<option>Marquis</option>
+			<option>Comte et pair</option>
+			<option>Comte</option>
+			<option>Vicomte</option>
+			<option>Vidame</option>
+			<option>Baron</option>
+			<option>Bâtard</option>
+		</optgroup>
 	</select>
 
-	<br>
+	<hr>
 	
 	<label for = écu>Écu</label>
 	<select name = écu>
@@ -44,7 +62,6 @@
 			<option>Roi</option>
 			<option>Dauphin</option>
 			<option>Petit-fils</option>
-			<option>Prince (du sang royal)</option>
 			<option>Prince</option>
 			<option>Duc et pair</option>
 			<option>Duc</option>
@@ -91,7 +108,7 @@
 			<option>Baron</option>
 			<option>Gentilhomme d'ancienne race</option>
 			<option>Gentilhomme de trois races</option>
-			<option>Nouvel anobli</option>
+			<option>Anobli</option>
 			<option>Bâtard</option>
 		</optgroup>
 	</select>
@@ -135,10 +152,22 @@
 
 	<br>
 
+	<!-- <label for = collier-2 class = caché>Collier 2</label>
+	<select name = collier-2 class = caché>
+		<option value = >Sans</option>
+		<optgroup label = "Royaume de France">
+			<option>Ordre de Saint-Michel</option>
+			<option>Ordre du Saint-Esprit</option>
+		</optgroup>
+	</select>
+
+	<br> -->
+
 	<label for = manteau>Manteau</label>
 	<select name = manteau>
 		<option value = >Sans</option>
 		<optgroup label = "Royaume de France">
+			<option>France</option>
 			<option>Pair</option>
 			<option>Rouge</option>
 		</optgroup>
@@ -162,6 +191,8 @@
 	<input type = submit value = Valider>
 
 </from>
+
+</fieldset>
 
 <!-- ============================================================================================================== -->
 <!--                                                                                                                -->
