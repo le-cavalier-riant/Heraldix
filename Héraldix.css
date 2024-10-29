@@ -7,9 +7,21 @@
 * {
 	text-align: center;
 	font-family: garamond;
-	font-size: 15px;
+	font-size: 25px;
+	color: #ffffff;
+	border-radius: 20px;
 	// border: 1px red solid;
 	// margin: 1px;
+}
+
+body {background-color: #303841;}
+
+button,
+input,
+select {
+	background-color: #303841;
+	border: 1px #ffffff solid;
+	padding: 5px;
 }
 
 div {justify-content: center;}
@@ -27,7 +39,6 @@ div {justify-content: center;}
 	background-image: url("Bannière.png");
 	background-size: 100% 100%;
 	display: inline-block;
-	margin-top;
 }
 #div-autre {
 	position: absolute;
@@ -35,13 +46,16 @@ div {justify-content: center;}
 }
 
 fieldset {
-	width: 400px;
+	width: 750px;
 	margin: auto;
 }
 
 h1 {font-size: 60px;}
 
-img {filter: drop-shadow(3px 3px 1px #000000);}
+img {
+	filter: drop-shadow(3px 3px 1px #000000);
+	border-radius: 0;
+}
 .img-logo {width: 100px;}
 #img-collier {
 	width: 300px;
@@ -70,13 +84,12 @@ img {filter: drop-shadow(3px 3px 1px #000000);}
 	position: sticky;
 }
 #img-manteau {width: 700px;}
-#img-portant-dextre {margin-left: -125px;}
-#img-portant-senestre {margin-right: -125px;}
 #img-portant-dextre,
 #img-portant-senestre {
 	z-index: 10;
 	position: sticky;
-	// width: 330px;
+	width: 300px;
+	height: 350px;
 }
 
 input[type = "text"] {
@@ -91,9 +104,11 @@ label {font-weight: bold;}
 span {
 	font-family: Gabriola;
 	font-size: 30px;
+	color: #000000;
 }
 
 table {
+	
 }
 
 .caché,

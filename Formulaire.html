@@ -10,10 +10,11 @@
 	<meta charset = utf-8>
 	<link rel = stylesheet href = Héraldix.css>
 	<script src = Formulaire.js></script>
+	<script src = Formulaire-options.js></script>
 	<script src = Formulaire-valeurs.js></script>
 </head>
 <a href = Héraldix.html><img src = Héraldix.png class = img-logo></a>
-<body onload = accorder()>
+<body onload = "accorder(), collier2(), remplir()">
 
 <h1>Formulaire</h1>
 
@@ -23,202 +24,66 @@
 
 <form action = Armoiries.html>
 
-	<label id = label-titre>Titre</label>
-	<select id = select-titre>
-		<option>Sans</option>
-		<optgroup label = "Royaume de France">
-			<option>Roi</option>
-			<option>Dauphin</option>
-			<option>Fils</option>
-			<option>Petit-fils</option>
-			<option>Prince</option>
-			<option>Duc (souverain)</option>
-			<option>Duc (non souverain)</option>
-			<option>Marquis et pair</option>
-			<option>Marquis</option>
-			<option>Comte et pair</option>
-			<option>Comte</option>
-			<option>Vicomte</option>
-			<option>Vidame</option>
-			<option>Baron</option>
-			<option>Banneret</option>
-			<option>Chevalier</option>
-			<option>Anobli</option>
-			<option>Bâtard</option>
-		</optgroup>
-	</select>
+	<label id = label-titre>Titre</label><br>
+	<select id = select-titre></select>
 
 	<hr>
 
-	<label for = écu>Écu</label>
-	<select name = écu>
-		<option value = >Sans</option>
-		<option>Chavagnac</option>
-		<option>France</option>
-	</select>
+	<label for = écu>Écu</label><br>
+	<select name = écu></select><br>
 
 	<br>
 
-	<label for = couronne>Couronne</label>
-	<select name = couronne>
-		<option value = >Sans</option>
-		<optgroup label = "Royaume de France">
-			<option>Roi</option>
-			<option>Dauphin</option>
-			<option>Petit-fils</option>
-			<option>Prince</option>
-			<option>Duc et pair</option>
-			<option>Duc</option>
-			<option>Marquis et pair</option>
-			<option>Marquis</option>
-			<option>Comte et pair</option>
-			<option>Comte</option>
-			<option>Vicomte</option>
-			<option>Vidame</option>
-			<option>Baron</option>
-			<option>Banneret</option>
-			<option>Chevalier</option>
-			<option>Fils</option>
-		</optgroup>
-		<optgroup label = "Empire français">
-			<option>Empereur (1804)</option>
-			<option>Empereur (1852)</option>
-			<option>Prince souverain impérial</option>
-			<option>Prince impérial</option>
-			<option>Duc impérial</option>
-			<option>Comte impérial</option>
-			<option>Baron impérial</option>
-			<option>Chevalier impérial</option>
-			<option>Grand dignitaire</option>
-		</optgroup>
-		<optgroup label = "Villes françaises">
-			<option>Capitale</option>
-			<option>Chef-lieu</option>
-			<option>Commune</option>
-		</optgroup>
-	</select>
+	<label for = couronne>Couronne</label><br>
+	<select name = couronne></select><br>
 
 	<br>
 
-	<label for = heaume>Heaume</label>
-	<select name = heaume>
-		<option value = >Sans</option>
-		<optgroup label = "Royaume de France">
-			<option>Roi</option>
-			<option>Prince</option>
-			<option>Duc</option>
-			<option>Marquis</option>
-			<option>Comte</option>
-			<option>Baron</option>
-			<option>Gentilhomme d'ancienne race</option>
-			<option>Gentilhomme de trois races</option>
-			<option>Anobli</option>
-			<option>Bâtard</option>
-		</optgroup>
-	</select>
+	<label for = heaume>Heaume</label><br>
+	<select name = heaume></select><br>
 
 	<br>
 
-	<label for = portant-dextre>Portant à dextre</label>
-	<select name = portant-dextre>
-		<option value = >Sans</option>
-		<option>Ange</option>
-		<option>Lion</option>
-		<option>Ange (3/4)</option>
-		<option>Ange (profil)</option>
-		<option>Sauvage</option>
-		<option>Sauvage (pied sur sphère + bras tendu)</option>
-		<option>Guerrier africain</option>
-		<option>Hercules</option>
-		<option>Dauphin</option>
-		<option>Hyppocampe</option>
-		<option>Bélier</option>
-		<option>Lion rampant</option>
-		<option>Lion rampant (couronne britanique)</option>
-		<option>Tigre</option>
-		<option>Aigle</option>
-		<option>Griffon (or et sable)</option>
-		<option>Griffon (or et argent)</option>
-		<option>Griffon (or)</option>
-		<option>Lévrier</option>
-		<option>Wyverne (queue nouée)</option>
-		<option>Licorne</option>
-	</select>
+	<label for = portant-dextre>Portant à dextre</label><br>
+	<select name = portant-dextre></select><br>
 
 	<br>
 
-	<label for = portant-senestre>Portant à senestre</label>
-	<select name = portant-senestre>
-		<option value = >Sans</option>
-		<option>Ange</option>
-		<option>Lion</option>
-		<option>Ange (3/4)</option>
-		<option>Ange (profil)</option>
-		<option>Sauvage</option>
-		<option>Sauvage (pied sur sphère + bras tendu)</option>
-		<option>Guerrier africain</option>
-		<option>Hercules</option>
-		<option>Dauphin</option>
-		<option>Hyppocampe</option>
-		<option>Bélier</option>
-		<option>Lion rampant</option>
-		<option>Lion rampant (couronne britanique)</option>
-		<option>Tigre</option>
-		<option>Aigle</option>
-		<option>Griffon (or et sable)</option>
-		<option>Griffon (or et argent)</option>
-		<option>Griffon (or)</option>
-		<option>Lévrier</option>
-		<option>Wyverne (queue nouée)</option>
-		<option>Licorne</option>
-	</select>
+	<label for = portant-senestre>Portant à senestre</label><br>
+	<select name = portant-senestre></select><br>
 
 	<br>
 
-	<label for = collier>Collier</label>
-	<select name = collier>
-		<option value = >Sans</option>
-		<optgroup label = "Royaume de France">
-			<option>Ordre de Saint-Michel</option>
-			<option>Ordre du Saint-Esprit</option>
-		</optgroup>
-	</select>
+	<label for = collier>Collier</label><br>
+	<select name = collier></select><br>
 
 	<br>
 
-	<!-- <label for = collier-2 class = caché>Collier 2</label>
-	<select name = collier-2 class = caché>
-		<option value = >Sans</option>
-		<optgroup label = "Royaume de France">
-			<option>Ordre de Saint-Michel</option>
-			<option>Ordre du Saint-Esprit</option>
-		</optgroup>
-	</select>
+	<div class = caché id = div-collier-2>
+		<label for = collier-2>Deuxième collier</label><br>
+		<select name = collier-2>
+			<option value = >Sans</option>
+			<option>Corde</option>
+			<option value = >∅</option>
+			<optgroup label = "Royaume de France">
+				<option>Ordre de Saint-Michel</option>
+				<option>Ordre du Saint-Esprit</option>
+			</optgroup>
+		</select><br><br>
+	</div>
 
-	<br> -->
-
-	<label for = manteau>Manteau</label>
-	<select name = manteau>
-		<option value = >Sans</option>
-		<optgroup label = "Royaume de France">
-			<option>France</option>
-			<option>Pair</option>
-			<option>Rouge</option>
-		</optgroup>
-		<optgroup label = "Royaume d'Espagne">
-			<option>Grand</option>
-		</optgroup>
-	</select>
+	<label for = manteau>Manteau</label><br>
+	<select name = manteau></select><br>
 
 	<br>
 
-	<label for = devise>Devise</label>
-	<input type = text name = devise>
+	<label for = devise>Devise</label><br>
+	<input type = text name = devise><br>
 
 	<br>
 
-	<label for = cri>Cri</label>
-	<input type = text name = cri>
+	<label for = cri>Cri</label><br>
+	<input type = text name = cri><br>
 
 	<br>
 

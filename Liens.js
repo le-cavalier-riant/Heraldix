@@ -1,3 +1,19 @@
+/* ================================================================================================================= */
+/*                                                                                                                   */
+/*                                                     Héraldix                                                      */
+/*                                                                                                                   */
+/* ================================================================================================================= */
+
+colliers = {
+/* Autre */
+	"Corde":	"https://upload.wikimedia.org/wikipedia/commons/1/1e/Heraldic_cord.svg",
+/* Royaume de France */
+	"Ordre de Saint-Michel":	"https://upload.wikimedia.org/wikipedia/commons/5/53/Order_of_Saint_Michael_(heraldry).svg",
+	"Ordre du Saint-Esprit":	"https://upload.wikimedia.org/wikipedia/commons/3/34/Order_of_the_Holy_Spirit_(heraldry).svg",
+/* Royaume d'Espagne */
+	"Ordre de la Toison d'or":	"https://upload.wikimedia.org/wikipedia/commons/5/53/Order_of_Saint_Michael_(heraldry).svg",
+}
+
 couronnes = {
 /* Royaume de France */
 	"Roi":	"https://upload.wikimedia.org/wikipedia/commons/1/1c/Royal_Crown_of_France_(accurate_red_bonnet).svg",
@@ -25,19 +41,19 @@ couronnes = {
 	"Comte impérial":	"https://upload.wikimedia.org/wikipedia/commons/6/62/Cap_of_an_Imperial_Count.svg",
 	"Baron impérial":	"https://upload.wikimedia.org/wikipedia/commons/a/ae/Cap_of_an_Imperial_Baron.svg",
 	"Chevalier impérial":	"https://upload.wikimedia.org/wikipedia/commons/4/40/Cap_of_an_Imperial_Knight.svg",
+	"Grand dignitaire impérial":	"https://upload.wikimedia.org/wikipedia/commons/7/7b/Bonnet_d`honneur.png",
 /* Villes françaises */
 	"Capitale":	"https://upload.wikimedia.org/wikipedia/commons/1/11/Mural_Crown_of_a_French_Capital.svg",
 	"Chef-lieu":	"https://upload.wikimedia.org/wikipedia/commons/a/a2/Mural_Crown_of_a_French_City.svg",
 	"Commune":	"https://upload.wikimedia.org/wikipedia/commons/a/aa/Mural_Crown_of_a_French_Commune.svg",
 /* Royaume d'Espagne */
-	"Grand d'Espagne":	"https://upload.wikimedia.org/wikipedia/commons/b/bd/Heraldic_Crown_of_Spanish_Grandee.svg",
+	"Roi d'Espagne":	"https://upload.wikimedia.org/wikipedia/commons/1/1b/Heraldic_Royal_Crown_of_Spain_(Version_of_the_Royal_Arms).svg",
+	"Grand":	"https://upload.wikimedia.org/wikipedia/commons/b/bd/Heraldic_Crown_of_Spanish_Grandee.svg",
 }
 
-colliers = {
-/* Royaume de France */
-	"Ordre de Saint-Michel":	"https://upload.wikimedia.org/wikipedia/commons/5/53/Order_of_Saint_Michael_(heraldry).svg",
-	"Ordre du Saint-Esprit":	"https://upload.wikimedia.org/wikipedia/commons/3/34/Order_of_the_Holy_Spirit_(heraldry).svg",
-	"Corde":	"https://upload.wikimedia.org/wikipedia/commons/1/1e/Heraldic_cord.svg",
+écus = {
+	"Chavagnac": "Écus/Chavagnac.png",
+	"France": "Écus/France.png",
 }
 
 heaumes = {
@@ -60,6 +76,7 @@ manteaux = {
 	"Pair":	"https://upload.wikimedia.org/wikipedia/commons/a/a7/Blue_heraldic_mantle.svg",
 	"Rouge":	"https://upload.wikimedia.org/wikipedia/commons/0/06/Generic_mantle.svg",
 /* Royaume d'Espagne */
+	"Roi d'Espagne": "",
 	"Grand":	"https://upload.wikimedia.org/wikipedia/commons/4/4f/Manto_de_Grande_de_España.svg",
 }
 
@@ -87,7 +104,8 @@ portants = {
 	"Licorne":	"https://upload.wikimedia.org/wikipedia/commons/9/96/Unicorn_Supporter_(Heraldry).svg",
 }
 
-écus = {
-	"Chavagnac": "Écus/Chavagnac.png",
-	"France": "Écus/France.png",
-}
+/* ================================================================================================================= */
+/*                                                                                                                   */
+/*                                                     Héraldix                                                      */
+/*                                                                                                                   */
+/* ================================================================================================================= */
