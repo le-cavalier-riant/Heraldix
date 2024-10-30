@@ -42,6 +42,7 @@ couronnes = {
 	"Royaume de France": [
 		"Roi",
 		"Dauphin",
+		"Fils",
 		"Petit-fils",
 		"Prince",
 		"Duc et pair",
@@ -55,7 +56,6 @@ couronnes = {
 		"Baron",
 		"Banneret",
 		"Chevalier",
-		"Fils",
 	],
 	"Empire français": [
 		"Empereur (1804)",
@@ -66,7 +66,7 @@ couronnes = {
 		"Comte impérial",
 		"Baron impérial",
 		"Chevalier impérial",
-		"Grand dignitaire",
+		"Grand dignitaire impérial",
 	],
 	"Villes françaises": [
 		"Capitale",

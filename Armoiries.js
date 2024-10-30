@@ -8,10 +8,10 @@ function inverser(style) {
 	if (style.transform == "scaleX(-1)") {style.transform = "";} else {style.transform = "scaleX(-1)";}
 }
 
-function déplacer(image, décalage, axe) {
-	if (axe == "↓") {document.getElementById(image).style.marginTop = décalage + "px";}
-	else if (axe == "←") {document.getElementById(image).style.marginRight = décalage + "px";}
-	else if (axe == "→") {document.getElementById(image).style.marginLeft = décalage + "px";}
+function déplacer(image, décalage, direction) {
+	if (direction == "↓") {document.getElementById(image).style.marginTop = décalage + "px";}
+	else if (direction == "←") {document.getElementById(image).style.marginRight = décalage + "px";}
+	else if (direction == "→") {document.getElementById(image).style.marginLeft = décalage + "px";}
 }
 
 function paramètres() {
@@ -20,6 +20,13 @@ function paramètres() {
 	} else {
 		document.getElementById("table-déplacer").style.display = "block";
 	}
+	/* document.querySelectorAll("input[type='range']").forEach(
+		input => {
+			input.min = -100;
+			input.max = 100;
+			input.step = 5;
+		}
+	); */
 }
 
 function générerArmoirie() {
@@ -63,6 +70,8 @@ function générerArmoirie() {
 				document.getElementById("img-couronne-manteau").src = couronnes[couronne];
 			}
 		}
+	} else {
+		document.getElementById("div-couronne").style.marginTop = "0";
 	}
 	if (cri) {document.getElementById("span-cri").innerText = cri;}
 	else {document.getElementById("div-cri").style.display = "none";}

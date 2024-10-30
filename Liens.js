@@ -11,7 +11,7 @@ colliers = {
 	"Ordre de Saint-Michel":	"https://upload.wikimedia.org/wikipedia/commons/5/53/Order_of_Saint_Michael_(heraldry).svg",
 	"Ordre du Saint-Esprit":	"https://upload.wikimedia.org/wikipedia/commons/3/34/Order_of_the_Holy_Spirit_(heraldry).svg",
 /* Royaume d'Espagne */
-	"Ordre de la Toison d'or":	"https://upload.wikimedia.org/wikipedia/commons/5/53/Order_of_Saint_Michael_(heraldry).svg",
+	"Ordre de la Toison d'or":	"Colliers/Ordre de la Toison d'or.svg",
 }
 
 couronnes = {

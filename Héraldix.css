@@ -22,13 +22,33 @@ select {
 	background-color: #303841;
 	border: 1px #ffffff solid;
 	padding: 5px;
+	box-shadow: 3px 3px 1px #000000;
+	transition: ease 0.1s;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 3px;
+	margin-right: 3px;
+}
+
+button:hover,
+input:hover,
+select:hover {
+	cursor: pointer;
+	margin-top: 3px;
+	margin-left: 3px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	box-shadow: 0 0 0 #000000;
 }
 
 div {justify-content: center;}
 .div-flex {display: flex;}
+#div-autre {
+	position: absolute;
+	z-index: 15;
+}
 #div-couronne {margin-top: 175px;}
 #div-contenu {
-	// background-size: 750px 1000px;
 	background-size: 50%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -40,10 +60,7 @@ div {justify-content: center;}
 	background-size: 100% 100%;
 	display: inline-block;
 }
-#div-autre {
-	position: absolute;
-	z-index: 15;
-}
+#div-espace {margin-bottom: 100px;}
 
 fieldset {
 	width: 750px;
@@ -83,7 +100,10 @@ img {
 	z-index: 20;
 	position: sticky;
 }
-#img-manteau {width: 700px;}
+#img-manteau {
+	width: 700px;
+	margin-top: 170px;
+}
 #img-portant-dextre,
 #img-portant-senestre {
 	z-index: 10;
@@ -94,6 +114,14 @@ img {
 
 input[type = "text"] {
 	width: 175px;
+}
+#table-déplacer input,
+#table-déplacer input:hover {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	box-shadow: 0 0 0 #000000;
 }
 
 label {font-weight: bold;}
@@ -109,6 +137,11 @@ span {
 
 table {
 	
+}
+
+td {}
+#table-déplacer td {
+	padding: 5px;
 }
 
 .caché,
