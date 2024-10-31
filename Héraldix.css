@@ -6,7 +6,7 @@
 
 * {
 	text-align: center;
-	font-family: garamond;
+	font-family: Garamond;
 	font-size: 25px;
 	color: #ffffff;
 	border-radius: 20px;
@@ -67,10 +67,14 @@ fieldset {
 	margin: auto;
 }
 
-h1 {font-size: 60px;}
+h1 {
+	font-size: 60px;
+	margin-right: 200px;
+	margin-left: 200px;
+}
 
 img {
-	filter: drop-shadow(3px 3px 1px #000000);
+	// filter: drop-shadow(3px 3px 1px #000000);
 	border-radius: 0;
 }
 .img-logo {width: 100px;}
@@ -113,7 +117,7 @@ img {
 }
 
 input[type = "text"] {
-	width: 175px;
+	width: 250px;
 }
 #table-déplacer input,
 #table-déplacer input:hover {
@@ -134,12 +138,13 @@ span {
 	font-size: 30px;
 	color: #000000;
 }
-
-table {
-	
+.span-déplacer {
+	font-family: consolas;
+	background-color: #ffffff;
 }
 
-td {}
+td,
+th {display: none;}
 #table-déplacer td {
 	padding: 5px;
 }

@@ -9,9 +9,23 @@ function inverser(style) {
 }
 
 function déplacer(image, décalage, direction) {
-	if (direction == "↓") {document.getElementById(image).style.marginTop = décalage + "px";}
-	else if (direction == "←") {document.getElementById(image).style.marginRight = décalage + "px";}
-	else if (direction == "→") {document.getElementById(image).style.marginLeft = décalage + "px";}
+	if (direction == "↓") {document.getElementById(image).style.marginTop = décalage + "px";} else
+	if (direction == "←") {document.getElementById(image).style.marginRight = (- décalage) + "px";} else
+	if (direction == "→") {document.getElementById(image).style.marginLeft = décalage + "px";}
+	
+	if (image == "img-portant-dextre") {
+		if (direction == "↓") {document.getElementsByClassName("span-déplacer")[0].innerText = décalage;} else
+		if (direction == "←") {document.getElementsByClassName("span-déplacer")[0 + 4].innerText = décalage;}
+	} else if (image == "img-portant-senestre") {
+		if (direction == "↓") {document.getElementsByClassName("span-déplacer")[1].innerText = décalage;} else
+		if (direction == "→") {document.getElementsByClassName("span-déplacer")[1 + 4].innerText = décalage;}
+	} else if (image == "img-manteau") {
+		if (direction == "↓") {document.getElementsByClassName("span-déplacer")[2].innerText = décalage;} else
+		if (direction == "→") {document.getElementsByClassName("span-déplacer")[2 + 4].innerText = décalage;}
+	} else if (image == "img-collier") {
+		if (direction == "↓") {document.getElementsByClassName("span-déplacer")[3].innerText = décalage;} else
+		if (direction == "→") {document.getElementsByClassName("span-déplacer")[3 + 4].innerText = décalage;}
+	}
 }
 
 function paramètres() {
@@ -27,6 +41,16 @@ function paramètres() {
 			input.step = 5;
 		}
 	); */
+}
+
+function afficher(nom) {
+	if (nom == "portant-dextre") {colonne = 0;} else
+	if (nom == "portant-senestre") {colonne = 1;} else
+	if (nom == "manteau") {colonne = 2;} else
+	if (nom == "collier") {colonne = 3;}
+	document.querySelectorAll("tr th")[colonne].style.display = "table-cell";
+	document.querySelectorAll("tr td")[colonne].style.display = "table-cell";
+	document.querySelectorAll("tr td")[colonne + 4].style.display = "table-cell";
 }
 
 function générerArmoirie() {
@@ -52,9 +76,16 @@ function générerArmoirie() {
 		}
 	}
 	if (écu) {document.getElementById("img-écu").src = écus[écu];}
-	if (portantDextre) {document.getElementById("img-portant-dextre").src = portants[portantDextre];}
-	if (portantSenestre) {document.getElementById("img-portant-senestre").src = portants[portantSenestre];}
+	if (portantDextre) {
+		afficher("portant-dextre");
+		document.getElementById("img-portant-dextre").src = portants[portantDextre];
+	}
+	if (portantSenestre) {
+		afficher("portant-senestre");
+		document.getElementById("img-portant-senestre").src = portants[portantSenestre];
+	}
 	if (collier) {
+		afficher("collier");
 		document.getElementById("img-collier").src = colliers[collier];
 		document.getElementById("img-portant-dextre").style.marginRight = "-140px";
 		document.getElementById("img-portant-senestre").style.marginLeft = "-140px";
@@ -64,6 +95,7 @@ function générerArmoirie() {
 		document.getElementById("img-portant-senestre").style.marginLeft = "10px";
 	}
 	if (manteau) {
+		afficher("manteau");
 		document.getElementById("img-manteau").src = manteaux[manteau];
 		if (couronne || heaume) {
 			if (manteau != "Grand") {

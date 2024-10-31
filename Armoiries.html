@@ -15,7 +15,7 @@
 <body onload = générerArmoirie()>
 <a href = Héraldix.html><img src = Héraldix.png class = img-logo></a>
 
-<h1>Armoiries</h1>
+<h1><hr>Armoiries<hr></h1>
 
 <a href = Formulaire.html>Formulaire</a>
 
@@ -44,16 +44,43 @@
 		<th>Portant à dextre</th>
 		<th>Portant à senestre</th>
 		<th>Manteau</th>
+		<th>Collier</th>
 	</tr>
 	<tr>
-		<td>↑<input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-dextre', this.value, '↓')">↓</td>
-		<td>↑<input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-senestre', this.value, '↓')">↓</td>
-		<td>↑<input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-manteau', this.value, '↓')">↓</td>
+		<td>
+			↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-dextre', this.value, '↓')"> ↓
+			<span class = span-déplacer>0</span>
+		</td>
+		<td>
+			↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-senestre', this.value, '↓')"> ↓
+			<span class = span-déplacer>0</span>
+		</td>
+		<td>
+			↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-manteau', this.value, '↓')"> ↓
+			<span class = span-déplacer>0</span>
+		</td>
+		<td>
+			↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-collier', this.value, '↓')"> ↓
+			<span class = span-déplacer>0</span>
+		</td>
 	</tr>
 	<tr>
-		<td>←<input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-dextre', this.value, '←')">→</td>
-		<td>←<input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-senestre', this.value, '→')">→</td>
-		<td>←<input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-manteau', this.value, '→')">→</td>
+		<td>
+			← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-dextre', this.value, '←')"> →
+			<span class = span-déplacer>0</span>
+		</td>
+		<td>
+			← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-senestre', this.value, '→')"> →
+			<span class = span-déplacer>0</span>
+		</td>
+		<td>
+			← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-manteau', this.value, '→')"> →
+			<span class = span-déplacer>0</span>
+		</td>
+		<td>
+			← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-collier', this.value, '→')"> →
+			<span class = span-déplacer>0</span>
+		</td>
 	</tr>
 </table>
 
