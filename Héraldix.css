@@ -1,0 +1,78 @@
+/* ================================================================================================================= */
+/*                                                                                                                   */
+/*                                                     Héraldix                                                      */
+/*                                                                                                                   */
+/* ================================================================================================================= */
+
+* {
+	text-align: center;
+	font-family: Garamond;
+	font-size: 25px;
+	color: #ffffff;
+	border-radius: 20px;
+	/* border: 1px red solid;
+	margin: 1px; */
+}
+
+body {background-color: #303841;}
+
+button,
+input,
+select {
+	background-color: #303841;
+	border: 1px #ffffff solid;
+	padding: 5px;
+	box-shadow: 3px 3px 1px #000000;
+	transition: ease 0.1s;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 3px;
+	margin-right: 3px;
+}
+
+button:hover,
+input:hover,
+select:hover {
+	cursor: pointer;
+	box-shadow: 0 0 0 #000000;
+	margin-top: 3px;
+	margin-left: 3px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+}
+
+div {justify-content: center;}
+.div-flex {display: flex;}
+#div-autre {
+	position: absolute;
+	z-index: 15;
+}
+#div-espace {margin-bottom: 100px;}
+
+h1 {
+	font-size: 60px;
+	margin-right: 200px;
+	margin-left: 200px;
+}
+
+img {
+	/* filter: drop-shadow(3px 3px 1px #000000); */
+	border-radius: 0;
+}
+.img-logo {width: 100px;}
+
+span {
+	font-family: Gabriola;
+	font-size: 30px;
+	color: #000000;
+}
+td,
+th {display: none;}
+
+.caché {display: none;}
+
+/* ================================================================================================================= */
+/*                                                                                                                   */
+/*                                                     Héraldix                                                      */
+/*                                                                                                                   */
+/* ================================================================================================================= */

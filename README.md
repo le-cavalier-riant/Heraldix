@@ -14,7 +14,6 @@ Je propose une liste de valeurs a sélectionner mais où l'on peut taper du text
 
 Il y aura une bibliothèque d'images contentant tous les meubles, portants et autres.
 
-
 *Cahier des charges*
 
 - L'application doit être executable localement sans connextion internet
