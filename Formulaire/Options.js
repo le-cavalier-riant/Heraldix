@@ -98,10 +98,7 @@ portants = {
 	"": [
 		"Ange",
 		"Lion",
-		"Ange (3/4)",
-		"Ange (profil)",
 		"Sauvage",
-		"Sauvage (pied sur sphère + bras tendu)",
 		"Guerrier africain",
 		"Hercules","Dauphin",
 		"Hyppocampe",

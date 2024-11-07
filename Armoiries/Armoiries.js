@@ -10,11 +10,14 @@ function inverser(style) {
 
 function basculer(image) {
 	if (image == "Heaume") {
-		comptes[heaume] = (comptes[heaume] + 1) % heaumes[heaume].length;
-		document.getElementById("img-heaume").src = heaumes[heaume][comptes[heaume]];
-	} else if (image == "	") {
-		comptes[heaume] = (comptes[heaume] + 1) % heaumes[heaume].length;
-		document.getElementById("img-heaume").src = heaumes[heaume][comptes[heaume]];
+		comptes[image] = (comptes[image] + 1) % heaumes[heaume].length;
+		document.getElementById("img-heaume").src = heaumes[heaume][comptes[image]];
+	} else if (image == "Portant à dextre") {
+		comptes[image] = (comptes[image] + 1) % portants[portantDextre].length;
+		document.getElementById("img-portant-dextre").src = portants[portantDextre][comptes[image]];
+	} else if (image == "Portant à senestre") {
+		comptes[image] = (comptes[image] + 1) % portants[portantSenestre].length;
+		document.getElementById("img-portant-senestre").src = portants[portantSenestre][comptes[image]];
 	}
 }
 
@@ -72,16 +75,9 @@ function afficher(nom) {
 function générerArmoirie() {
 	
 	comptes = {
-		"Roi":	0,
-		"Prince":	0,
-		"Duc":	0,
-		"Marquis":	0,
-		"Comte":	0,
-		"Baron":	0,
-		"Gentilhomme d'ancienne race":	0,
-		"Gentilhomme de trois races":	0,
-		"Anobli":	0,
-		"Bâtard":	0,
+		"Heaume":	0,
+		"Portant à dextre":	0,
+		"Portant à senestre":	0,
 	}
 	
 	URL = new URLSearchParams(window.location.search);
@@ -108,11 +104,11 @@ function générerArmoirie() {
 	if (écu) {document.getElementById("img-écu").src = écus[écu];}
 	if (portantDextre) {
 		afficher("portant-dextre");
-		document.getElementById("img-portant-dextre").src = portants[portantDextre];
+		document.getElementById("img-portant-dextre").src = portants[portantDextre][0];
 	}
 	if (portantSenestre) {
 		afficher("portant-senestre");
-		document.getElementById("img-portant-senestre").src = portants[portantSenestre];
+		document.getElementById("img-portant-senestre").src = portants[portantSenestre][0];
 	}
 	if (collier) {
 		afficher("collier");
