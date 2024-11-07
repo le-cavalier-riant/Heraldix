@@ -1,1 +1,75 @@
+<!-- ============================================================================================================== -->
+<!--                                                                                                                -->
+<!--                                                   Héraldix                                                     -->
+<!--                                                                                                                -->
+<!-- ============================================================================================================== -->
 
+<!doctype html>
+<html lang = fr>
+<head>
+	<title>Formulaire</title>
+	<meta charset = utf-8>
+	<link rel = stylesheet href = ../Héraldix.css>
+	<link rel = stylesheet href = Formulaire.css>
+	<script src = Formulaire.js></script>
+	<script src = Options.js></script>
+	<script src = Profils.js></script>
+</head>
+<body onload = "accorder(), collier2(), remplir()">
+<a href = ../Héraldix.html><img src = ../Héraldix.png class = img-logo></a>
+
+<h1><hr>Formulaire<hr></h1>
+
+<fieldset>
+	<legend>Description héraldique</legend>
+	<form action = ../Armoiries/Armoiries.html>
+		<label id = label-titre>Titre</label><br>
+		<select id = select-titre></select><hr>
+		<br>
+		<label>Écu</label><br>
+		<select name = écu></select><br>
+		<br>
+		<label>Couronne</label><br>
+		<select name = couronne></select><br>
+		<br>
+		<label>Heaume</label><br>
+		<select name = heaume></select><br>
+		<br>
+		<label>Portant à dextre</label><br>
+		<select name = portant-dextre></select><br>
+		<br>
+		<label>Portant à senestre</label><br>
+		<select name = portant-senestre></select><br>
+		<br>
+		<label>Collier</label><br>
+		<select name = collier></select><br>
+		<br>
+		<div class = caché id = div-collier-2>
+			<label>Deuxième collier</label><br>
+			<select name = collier-2>
+				<option value = >Sans</option>
+				<option>Corde</option>
+				<optgroup label = "Royaume de France">
+					<option>Ordre de Saint-Michel</option>
+					<option>Ordre du Saint-Esprit</option>
+				</optgroup>
+			</select><br><br>
+		</div>
+		<label>Manteau</label><br>
+		<select name = manteau></select><br>
+		<br>
+		<label>Devise</label><br>
+		<input type = text name = devise><br>
+		<br>
+		<label>Cri</label><br>
+		<input type = text name = cri><br>
+		<br>
+		<input type = submit value = Valider>
+	</form>
+</fieldset>
+
+<!-- ============================================================================================================== -->
+<!--                                                                                                                -->
+<!--                                                   Héraldix                                                     -->
+<!--                                                                                                                -->
+<!-- ============================================================================================================== -->
