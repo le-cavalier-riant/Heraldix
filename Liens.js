@@ -1,21 +1,21 @@
-/* ================================================================================================================= */
-/*                                                                                                                   */
-/*                                                     Héraldix                                                      */
-/*                                                                                                                   */
-/* ================================================================================================================= */
+// ================================================================================================================= //
+//                                                                                                                   //
+//                                                     Héraldix                                                      //
+//                                                                                                                   //
+// ================================================================================================================= //
 
 colliers = {
-/* Autre */
+// Autre
 	"Corde":	"https://upload.wikimedia.org/wikipedia/commons/1/1e/Heraldic_cord.svg",
-/* Royaume de France */
+// Royaume de France
 	"Ordre de Saint-Michel":	"https://upload.wikimedia.org/wikipedia/commons/5/53/Order_of_Saint_Michael_(heraldry).svg",
 	"Ordre du Saint-Esprit":	"https://upload.wikimedia.org/wikipedia/commons/3/34/Order_of_the_Holy_Spirit_(heraldry).svg",
-/* Royaume d'Espagne */
+// Royaume d'Espagne
 	"Ordre de la Toison d'or":	"Colliers/Ordre de la Toison d'or.svg",
 }
 
 couronnes = {
-/* Royaume de France */
+// Royaume de France
 	"Roi":	"https://upload.wikimedia.org/wikipedia/commons/1/1c/Royal_Crown_of_France_(accurate_red_bonnet).svg",
 	"Dauphin":	"https://upload.wikimedia.org/wikipedia/commons/7/7e/Crown_of_the_Dauphin_of_France_(variant).svg",
 	"Fils":	"https://upload.wikimedia.org/wikipedia/commons/6/6d/Crown_of_a_Royal_Prince_of_the_Blood_of_France.svg",
@@ -32,7 +32,7 @@ couronnes = {
 	"Baron":	"https://upload.wikimedia.org/wikipedia/commons/b/b7/Crown_of_a_Baron_of_France.svg",
 	"Banneret":	"https://upload.wikimedia.org/wikipedia/commons/3/31/Crown_of_a_Chevalier_of_France.svg",
 	"Chevalier":	"https://upload.wikimedia.org/wikipedia/commons/6/6d/Torse_of_a_Chevalier_of_France.svg",
-/* Empire français */
+// Empire français
 	"Empereur (1804)":	"https://upload.wikimedia.org/wikipedia/commons/4/41/Heraldic_Crown_of_the_First_French_Empire.svg",
 	"Empereur (1852)":	"https://upload.wikimedia.org/wikipedia/commons/6/68/Imperial_Crown_of_Napoleon.svg",
 	"Prince souverain impérial":	"https://upload.wikimedia.org/wikipedia/commons/e/e6/Crown_of_a_Napoleonic_Prince_Souverain.svg",
@@ -42,11 +42,11 @@ couronnes = {
 	"Baron impérial":	"https://upload.wikimedia.org/wikipedia/commons/a/ae/Cap_of_an_Imperial_Baron.svg",
 	"Chevalier impérial":	"https://upload.wikimedia.org/wikipedia/commons/4/40/Cap_of_an_Imperial_Knight.svg",
 	"Grand dignitaire impérial":	"https://upload.wikimedia.org/wikipedia/commons/7/7b/Bonnet_d`honneur.png",
-/* Villes françaises */
+// Villes françaises
 	"Capitale":	"https://upload.wikimedia.org/wikipedia/commons/1/11/Mural_Crown_of_a_French_Capital.svg",
 	"Chef-lieu":	"https://upload.wikimedia.org/wikipedia/commons/a/a2/Mural_Crown_of_a_French_City.svg",
 	"Commune":	"https://upload.wikimedia.org/wikipedia/commons/a/aa/Mural_Crown_of_a_French_Commune.svg",
-/* Royaume d'Espagne */
+// Royaume d'Espagne
 	"Roi d'Espagne":	"https://upload.wikimedia.org/wikipedia/commons/1/1b/Heraldic_Royal_Crown_of_Spain_(Version_of_the_Royal_Arms).svg",
 	"Grand":	"https://upload.wikimedia.org/wikipedia/commons/b/bd/Heraldic_Crown_of_Spanish_Grandee.svg",
 }
@@ -57,11 +57,16 @@ couronnes = {
 }
 
 heaumes = {
-	"Roi":	"Heaumes/Roi.png",
-	"Prince":	"Heaumes/Prince.png",
-	"Duc":	"Heaumes/Duc.png",
-	"Marquis":	"Heaumes/Marquis.png",
-	/* "Comte":	"https://upload.wikimedia.org/wikipedia/commons/0/0d/Meuble_héraldique_Heaume_comte.svg", */
+// Royaume de France
+	// "Roi":	"Heaumes/Roi.png",
+	"Roi":	"Heaumes/Roi.svg",
+	// "Prince":	"Heaumes/Prince.png",
+	"Prince":	"Heaumes/Prince.svg",
+	// "Duc":	"Heaumes/Duc.png",
+	"Duc":	"Heaumes/Duc.svg",
+	// "Marquis":	"Heaumes/Marquis.png",
+	"Marquis":	"Heaumes/Marquis.svg",
+	// "Comte":	"https://upload.wikimedia.org/wikipedia/commons/0/0d/Meuble_héraldique_Heaume_comte.svg",
 	"Comte":	"Heaumes/comte.png",
 	"Baron":	"Heaumes/Baron.png",
 	"Gentilhomme d'ancienne race":	"Heaumes/Gentilhomme d'ancienne race.png",
@@ -71,11 +76,11 @@ heaumes = {
 }
 
 manteaux = {
-/* Royaume de France */
+// Royaume de France
 	"France":	"Manteaux/France.svg",
 	"Pair":	"https://upload.wikimedia.org/wikipedia/commons/a/a7/Blue_heraldic_mantle.svg",
 	"Rouge":	"https://upload.wikimedia.org/wikipedia/commons/0/06/Generic_mantle.svg",
-/* Royaume d'Espagne */
+// Royaume d'Espagne
 	"Roi d'Espagne": "",
 	"Grand":	"https://upload.wikimedia.org/wikipedia/commons/4/4f/Manto_de_Grande_de_España.svg",
 }
@@ -104,8 +109,8 @@ portants = {
 	"Licorne":	"https://upload.wikimedia.org/wikipedia/commons/9/96/Unicorn_Supporter_(Heraldry).svg",
 }
 
-/* ================================================================================================================= */
-/*                                                                                                                   */
-/*                                                     Héraldix                                                      */
-/*                                                                                                                   */
-/* ================================================================================================================= */
+// ================================================================================================================= //
+//                                                                                                                   //
+//                                                     Héraldix                                                      //
+//                                                                                                                   //
+// ================================================================================================================= //

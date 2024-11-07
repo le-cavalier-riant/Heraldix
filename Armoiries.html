@@ -5,6 +5,7 @@
 <!-- ============================================================================================================== -->
 
 <!doctype html>
+<html lang = fr>
 <head>
 	<title>Armoiries</title>
 	<meta charset = utf-8>
@@ -45,6 +46,7 @@
 		<th>Portant à senestre</th>
 		<th>Manteau</th>
 		<th>Collier</th>
+		<th>Heaume</th>
 	</tr>
 	<tr>
 		<td>
@@ -63,6 +65,10 @@
 			↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-collier', this.value, '↓')"> ↓
 			<span class = span-déplacer>0</span>
 		</td>
+		<td>
+			↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-heaume', this.value, '↑')"> ↓
+			<span class = span-déplacer>0</span>
+		</td>
 	</tr>
 	<tr>
 		<td>
@@ -79,6 +85,10 @@
 		</td>
 		<td>
 			← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-collier', this.value, '→')"> →
+			<span class = span-déplacer>0</span>
+		</td>
+		<td>
+			← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-heaume', this.value, '→')"> →
 			<span class = span-déplacer>0</span>
 		</td>
 	</tr>

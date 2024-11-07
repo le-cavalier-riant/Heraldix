@@ -10,21 +10,25 @@ function inverser(style) {
 
 function déplacer(image, décalage, direction) {
 	if (direction == "↓") {document.getElementById(image).style.marginTop = décalage + "px";} else
+	if (direction == "↑") {document.getElementById(image).style.marginBottom = (- décalage) + "px";} else
 	if (direction == "←") {document.getElementById(image).style.marginRight = (- décalage) + "px";} else
 	if (direction == "→") {document.getElementById(image).style.marginLeft = décalage + "px";}
 	
 	if (image == "img-portant-dextre") {
 		if (direction == "↓") {document.getElementsByClassName("span-déplacer")[0].innerText = décalage;} else
-		if (direction == "←") {document.getElementsByClassName("span-déplacer")[0 + 4].innerText = décalage;}
+		if (direction == "←") {document.getElementsByClassName("span-déplacer")[0 + 5].innerText = décalage;}
 	} else if (image == "img-portant-senestre") {
 		if (direction == "↓") {document.getElementsByClassName("span-déplacer")[1].innerText = décalage;} else
-		if (direction == "→") {document.getElementsByClassName("span-déplacer")[1 + 4].innerText = décalage;}
+		if (direction == "→") {document.getElementsByClassName("span-déplacer")[1 + 5].innerText = décalage;}
 	} else if (image == "img-manteau") {
 		if (direction == "↓") {document.getElementsByClassName("span-déplacer")[2].innerText = décalage;} else
-		if (direction == "→") {document.getElementsByClassName("span-déplacer")[2 + 4].innerText = décalage;}
+		if (direction == "→") {document.getElementsByClassName("span-déplacer")[2 + 5].innerText = décalage;}
 	} else if (image == "img-collier") {
 		if (direction == "↓") {document.getElementsByClassName("span-déplacer")[3].innerText = décalage;} else
-		if (direction == "→") {document.getElementsByClassName("span-déplacer")[3 + 4].innerText = décalage;}
+		if (direction == "→") {document.getElementsByClassName("span-déplacer")[3 + 5].innerText = décalage;}
+	} else if (image == "img-heaume") {
+		if (direction == "↑") {document.getElementsByClassName("span-déplacer")[4].innerText = décalage;} else
+		if (direction == "→") {document.getElementsByClassName("span-déplacer")[4 + 5].innerText = décalage;}
 	}
 }
 
@@ -47,10 +51,11 @@ function afficher(nom) {
 	if (nom == "portant-dextre") {colonne = 0;} else
 	if (nom == "portant-senestre") {colonne = 1;} else
 	if (nom == "manteau") {colonne = 2;} else
-	if (nom == "collier") {colonne = 3;}
+	if (nom == "collier") {colonne = 3;} else
+	if (nom == "heaume") {colonne = 4;}
 	document.querySelectorAll("tr th")[colonne].style.display = "table-cell";
 	document.querySelectorAll("tr td")[colonne].style.display = "table-cell";
-	document.querySelectorAll("tr td")[colonne + 4].style.display = "table-cell";
+	document.querySelectorAll("tr td")[colonne + 5].style.display = "table-cell";
 }
 
 function générerArmoirie() {
@@ -69,6 +74,7 @@ function générerArmoirie() {
 
 	if (couronne) {document.getElementById("img-couronne").src = couronnes[couronne];}
 	if (heaume) {
+		afficher("heaume");
 		document.getElementById("img-heaume").src = heaumes[heaume];
 		if (heaume) {
 			document.getElementById("img-couronne").style.width = "80px";
