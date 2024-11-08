@@ -47,10 +47,10 @@ function déplacer(image, décalage, direction) {
 function paramètres() {
 	if (document.getElementById("table-paramètres").style.display == "block") {
 		document.getElementById("table-paramètres").style.display = "none";
-		document.getElementById("button-paramètres").innerText = "Paramètres";
+		document.getElementById("button-paramètres").innerText = "↑ Paramètres ↑";
 	} else {
 		document.getElementById("table-paramètres").style.display = "block";
-		document.getElementById("button-paramètres").innerText = "Masquer";
+		document.getElementById("button-paramètres").innerText = "↓ Masquer ↓";
 	}
 	/* document.querySelectorAll("input[type='range']").forEach(
 		input => {
