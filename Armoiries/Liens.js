@@ -4,101 +4,259 @@
 //                                                                                                                   //
 // ================================================================================================================= //
 
+wikipédia = "https://upload.wikimedia.org/wikipedia/commons/";
+
 colliers = {
 // Autre
-	"Corde":	"https://upload.wikimedia.org/wikipedia/commons/1/1e/Heraldic_cord.svg",
+	"Corde": [
+		wikipédia + "1/1e/Heraldic_cord.svg",
+	],
 // Royaume de France
-	"Ordre de Saint-Michel":	"https://upload.wikimedia.org/wikipedia/commons/5/53/Order_of_Saint_Michael_(heraldry).svg",
-	"Ordre du Saint-Esprit":	"https://upload.wikimedia.org/wikipedia/commons/3/34/Order_of_the_Holy_Spirit_(heraldry).svg",
+	"Ordre de Saint-Michel": [
+		wikipédia + "5/53/Order_of_Saint_Michael_(heraldry).svg",
+	],
+	"Ordre du Saint-Esprit": [
+		wikipédia + "3/34/Order_of_the_Holy_Spirit_(heraldry).svg",
+	],
 // Royaume d'Espagne
-	"Ordre de la Toison d'or":	"Colliers/Ordre de la Toison d'or.svg",
+	"Ordre de la Toison d'or": [
+		"Colliers/Ordre de la Toison d'or.svg",
+	],
 }
 
 couronnes = {
 // Royaume de France
-	"Roi":	"https://upload.wikimedia.org/wikipedia/commons/1/1c/Royal_Crown_of_France_(accurate_red_bonnet).svg",
-	"Dauphin":	"https://upload.wikimedia.org/wikipedia/commons/7/7e/Crown_of_the_Dauphin_of_France_(variant).svg",
-	"Fils":	"https://upload.wikimedia.org/wikipedia/commons/6/6d/Crown_of_a_Royal_Prince_of_the_Blood_of_France.svg",
-	"Petit-fils":	"https://upload.wikimedia.org/wikipedia/commons/1/1f/Crown_of_a_Royal_Prince_of_the_Blood_of_France_(variant).svg",
-	"Prince":	"https://upload.wikimedia.org/wikipedia/commons/b/b7/Crown_of_a_Prince_of_the_Blood_of_France.svg",
-	"Duc et pair":	"https://upload.wikimedia.org/wikipedia/commons/8/8e/Crown_of_a_Duke_of_France.svg",
-	"Duc":	"https://upload.wikimedia.org/wikipedia/commons/d/d4/Crown_of_a_Duke_of_France_(variant).svg",
-	"Marquis et pair":	"https://upload.wikimedia.org/wikipedia/commons/e/e0/Crown_of_a_Marquis_of_France.svg",
-	"Marquis":	"https://upload.wikimedia.org/wikipedia/commons/7/7a/Crown_of_a_Marquis_of_France_(variant).svg",
-	"Comte et pair":	"https://upload.wikimedia.org/wikipedia/commons/b/b9/Crown_of_a_Count_of_France.svg",
-	"Comte":	"https://upload.wikimedia.org/wikipedia/commons/b/b1/Crown_of_a_Count_of_France_(variant).svg",
-	"Vicomte":	"https://upload.wikimedia.org/wikipedia/commons/e/e8/Crown_of_a_Viscount_of_France_(variant).svg",
-	"Vidame":	"https://upload.wikimedia.org/wikipedia/commons/0/03/Crown_of_a_Vidame_of_France.svg",
-	"Baron":	"https://upload.wikimedia.org/wikipedia/commons/b/b7/Crown_of_a_Baron_of_France.svg",
-	"Banneret":	"https://upload.wikimedia.org/wikipedia/commons/3/31/Crown_of_a_Chevalier_of_France.svg",
-	"Chevalier":	"https://upload.wikimedia.org/wikipedia/commons/6/6d/Torse_of_a_Chevalier_of_France.svg",
+	"Roi": [
+		wikipédia + "1/1c/Royal_Crown_of_France_(accurate_red_bonnet).svg",
+	],
+	"Dauphin": [
+		wikipédia + "7/7e/Crown_of_the_Dauphin_of_France_(variant).svg",
+	],
+	"Fils": [
+		wikipédia + "6/6d/Crown_of_a_Royal_Prince_of_the_Blood_of_France.svg",
+	],
+	"Petit-fils": [
+		wikipédia + "1/1f/Crown_of_a_Royal_Prince_of_the_Blood_of_France_(variant).svg",
+	],
+	"Prince": [
+		wikipédia + "b/b7/Crown_of_a_Prince_of_the_Blood_of_France.svg",
+	],
+	"Duc et pair": [
+		wikipédia + "8/8e/Crown_of_a_Duke_of_France.svg",
+	],
+	"Duc": [
+		wikipédia + "d/d4/Crown_of_a_Duke_of_France_(variant).svg",
+	],
+	"Marquis et pair": [
+		wikipédia + "e/e0/Crown_of_a_Marquis_of_France.svg",
+	],
+	"Marquis": [
+		wikipédia + "7/7a/Crown_of_a_Marquis_of_France_(variant).svg",
+	],
+	"Comte et pair": [
+		wikipédia + "b/b9/Crown_of_a_Count_of_France.svg",
+	],
+	"Comte": [
+		wikipédia + "b/b1/Crown_of_a_Count_of_France_(variant).svg",
+	],
+	"Vicomte": [
+		wikipédia + "e/e8/Crown_of_a_Viscount_of_France_(variant).svg",
+	],
+	"Vidame": [
+		wikipédia + "0/03/Crown_of_a_Vidame_of_France.svg",
+	],
+	"Baron": [
+		wikipédia + "b/b7/Crown_of_a_Baron_of_France.svg",
+	],
+	"Banneret": [
+		wikipédia + "3/31/Crown_of_a_Chevalier_of_France.svg",
+	],
+	"Chevalier": [
+		wikipédia + "6/6d/Torse_of_a_Chevalier_of_France.svg",
+	],
 // Empire français
-	"Empereur (1804)":	"https://upload.wikimedia.org/wikipedia/commons/4/41/Heraldic_Crown_of_the_First_French_Empire.svg",
-	"Empereur (1852)":	"https://upload.wikimedia.org/wikipedia/commons/6/68/Imperial_Crown_of_Napoleon.svg",
-	"Prince souverain impérial":	"https://upload.wikimedia.org/wikipedia/commons/e/e6/Crown_of_a_Napoleonic_Prince_Souverain.svg",
-	"Prince impérial":	"https://upload.wikimedia.org/wikipedia/commons/8/81/Cap_of_an_Imperial_Prince_Grand_Dignitary.svg",
-	"Duc impérial":	"https://upload.wikimedia.org/wikipedia/commons/5/5d/Cap_of_an_Imperial_Duke.svg",
-	"Comte impérial":	"https://upload.wikimedia.org/wikipedia/commons/6/62/Cap_of_an_Imperial_Count.svg",
-	"Baron impérial":	"https://upload.wikimedia.org/wikipedia/commons/a/ae/Cap_of_an_Imperial_Baron.svg",
-	"Chevalier impérial":	"https://upload.wikimedia.org/wikipedia/commons/4/40/Cap_of_an_Imperial_Knight.svg",
-	"Grand dignitaire impérial":	"https://upload.wikimedia.org/wikipedia/commons/7/7b/Bonnet_d`honneur.png",
+	"Empereur (1804)": [
+		wikipédia + "4/41/Heraldic_Crown_of_the_First_French_Empire.svg",
+	],
+	"Empereur (1852)": [
+		wikipédia + "6/68/Imperial_Crown_of_Napoleon.svg",
+	],
+	"Prince souverain impérial": [
+		wikipédia + "e/e6/Crown_of_a_Napoleonic_Prince_Souverain.svg",
+	],
+	"Prince impérial": [
+		wikipédia + "8/81/Cap_of_an_Imperial_Prince_Grand_Dignitary.svg",
+	],
+	"Duc impérial": [
+		wikipédia + "5/5d/Cap_of_an_Imperial_Duke.svg",
+	],
+	"Comte impérial": [
+		wikipédia + "6/62/Cap_of_an_Imperial_Count.svg",
+	],
+	"Baron impérial": [
+		wikipédia + "a/ae/Cap_of_an_Imperial_Baron.svg",
+	],
+	"Chevalier impérial": [
+		wikipédia + "4/40/Cap_of_an_Imperial_Knight.svg",
+	],
+	"Grand dignitaire impérial": [
+		wikipédia + "7/7b/Bonnet_d`honneur.png",
+	],
 // Villes françaises
-	"Capitale":	"https://upload.wikimedia.org/wikipedia/commons/1/11/Mural_Crown_of_a_French_Capital.svg",
-	"Chef-lieu":	"https://upload.wikimedia.org/wikipedia/commons/a/a2/Mural_Crown_of_a_French_City.svg",
-	"Commune":	"https://upload.wikimedia.org/wikipedia/commons/a/aa/Mural_Crown_of_a_French_Commune.svg",
+	"Capitale": [
+		wikipédia + "1/11/Mural_Crown_of_a_French_Capital.svg",
+	],
+	"Chef-lieu": [
+		wikipédia + "a/a2/Mural_Crown_of_a_French_City.svg",
+	],
+	"Commune": [
+		wikipédia + "a/aa/Mural_Crown_of_a_French_Commune.svg",
+	],
 // Royaume d'Espagne
-	"Roi d'Espagne":	"https://upload.wikimedia.org/wikipedia/commons/1/1b/Heraldic_Royal_Crown_of_Spain_(Version_of_the_Royal_Arms).svg",
-	"Grand":	"https://upload.wikimedia.org/wikipedia/commons/b/bd/Heraldic_Crown_of_Spanish_Grandee.svg",
+	"Roi d'Espagne": [
+		wikipédia + "1/1b/Heraldic_Royal_Crown_of_Spain_(Version_of_the_Royal_Arms).svg",
+	],
+	"Grand": [
+		wikipédia + "b/bd/Heraldic_Crown_of_Spanish_Grandee.svg",
+	],
 }
 
 écus = {
-	"Chavagnac": "Écus/Chavagnac.png",
-	"France": "Écus/France.png",
+	"Chavagnac": [
+		"Écus/Chavagnac.png",
+	],
+	"France": [
+		"Écus/France.png",
+		"https://upload.wikimedia.org/wikipedia/commons/1/13/Blason_France_moderne.svg",
+		"https://upload.wikimedia.org/wikipedia/commons/7/78/Proposed_Blason_for_%C3%8Ele-de-France.svg",
+		"https://upload.wikimedia.org/wikipedia/commons/9/95/Blason_pays_fr_France_ancien.svg",
+	],
+	"Espagne": [
+		wikipédia + "c/c7/Arms_of_Spain_%281977-1981%29.svg",
+	],
+	"Angleterre" :[
+		wikipédia + "1/1c/England_Arms_1405.svg",
+	],
+	"Bretagne": [
+		wikipédia + "d/d8/Armoiries_Bretagne_-_Arms_of_Brittany.svg",
+	],
 }
 
 heaumes = {
 // Royaume de France
-	"Roi":	["Heaumes/Roi-A.svg", "Heaumes/Roi-B.png", "Heaumes/Roi-C.jpg"],
-	"Prince":	["Heaumes/Prince-A.svg", "Heaumes/Prince-B.png", "Heaumes/Prince-C.jpg"],
-	"Duc":	["Heaumes/Duc-A.svg", "Heaumes/Duc-B.png", "Heaumes/Duc-C.jpg"],
-	"Marquis":	["Heaumes/Marquis-A.svg", "Heaumes/Marquis-B.png"],
-	"Comte":	["https://upload.wikimedia.org/wikipedia/commons/0/0d/Meuble_héraldique_Heaume_comte.svg", "Heaumes/comte.png", "Heaumes/Compte.jpg"],
-	"Baron":	["Heaumes/Baron.png", "Heaumes/Baron.jpg"],
-	"Gentilhomme d'ancienne race":	["Heaumes/Gentilhomme d'ancienne race.png", "Heaumes/Gentilhomme d'ancienne race.jpg"],
-	"Gentilhomme de trois races":	["Heaumes/Gentilhomme de trois races.png", "Heaumes/Gentilhomme de trois races.jpg"],
-	"Anobli":	["Heaumes/Anobli.png"],
-	"Bâtard":	["Heaumes/Bâtard.png", "Heaumes/Bâtard.jpg"],
+	"Roi": [
+		"Heaumes/Roi-A.svg",
+		"Heaumes/Roi-B.png",
+		"Heaumes/Roi-C.jpg",
+	],
+	"Prince": [
+		"Heaumes/Prince-A.svg",
+		"Heaumes/Prince-B.png",
+		"Heaumes/Prince-C.jpg",
+	],
+	"Duc": [
+		"Heaumes/Duc-A.svg",
+		"Heaumes/Duc-B.png",
+		"Heaumes/Duc-C.jpg",
+	],
+	"Marquis": [
+		"Heaumes/Marquis-A.svg",
+		"Heaumes/Marquis-B.png",
+	],
+	"Comte": [
+		wikipédia + "0/0d/Meuble_héraldique_Heaume_comte.svg",
+		"Heaumes/comte.png",
+		"Heaumes/Compte.jpg",
+	],
+	"Baron": [
+		"Heaumes/Baron.png",
+		"Heaumes/Baron.jpg",
+	],
+	"Gentilhomme d'ancienne race": [
+		"Heaumes/Gentilhomme d'ancienne race.png",
+		"Heaumes/Gentilhomme d'ancienne race.jpg",
+	],
+	"Gentilhomme de trois races": [
+		"Heaumes/Gentilhomme de trois races.png",
+		"Heaumes/Gentilhomme de trois races.jpg",
+	],
+	"Anobli": [
+		"Heaumes/Anobli.png",
+	],
+	"Bâtard": [
+		"Heaumes/Bâtard.png",
+		"Heaumes/Bâtard.jpg",
+	],
 }
 
 manteaux = {
 // Royaume de France
-	"France":	"Manteaux/France.svg",
-	"Pair":	"https://upload.wikimedia.org/wikipedia/commons/a/a7/Blue_heraldic_mantle.svg",
-	"Rouge":	"https://upload.wikimedia.org/wikipedia/commons/0/06/Generic_mantle.svg",
+	"France": [
+		"Manteaux/France.svg",
+	],
+	"Pair": [
+		wikipédia + "a/a7/Blue_heraldic_mantle.svg",
+		wikipédia + "b/b6/Meuble_h%C3%A9raldique_manteau_01.svg",
+	],
+	"Rouge": [
+		wikipédia + "0/06/Generic_mantle.svg",
+	],
 // Royaume d'Espagne
-	"Roi d'Espagne": "",
-	"Grand":	"https://upload.wikimedia.org/wikipedia/commons/4/4f/Manto_de_Grande_de_España.svg",
+	"Grand": [
+		wikipédia + "4/4f/Manto_de_Grande_de_España.svg",
+	 ],
 }
 
 portants = {
-	"Ange":	["Portants/Ange.png", "https://upload.wikimedia.org/wikipedia/commons/f/ff/Angelic_Supporter_(Heraldry).svg", "https://upload.wikimedia.org/wikipedia/commons/6/68/Meuble_héraldique_Ange_debout.svg"],
-	"Lion":	["Portants/Lion.png"],
-	"Sauvage":	["https://upload.wikimedia.org/wikipedia/commons/9/91/Wildman_Supporter_(Heraldry).svg", "https://upload.wikimedia.org/wikipedia/commons/7/7b/Wild_man_holding_club_with_one_foot_on_sphere.svg"],
-	"Guerrier affricain":	["https://upload.wikimedia.org/wikipedia/commons/f/f5/Meuble_guerrier_africain.svg"],
-	"Hercules":	["https://upload.wikimedia.org/wikipedia/commons/2/2f/Hercules_Supporter_(Heraldry).svg"],
-	"Dauphin":	["https://upload.wikimedia.org/wikipedia/commons/7/71/Dolphin_Supporter_(Heraldry).svg"],
-	"Hyppocampe":	["https://upload.wikimedia.org/wikipedia/commons/6/66/Ippocampo_Supporto_Sea_Horse_Supporter_(Heraldry).svg"],
-	"Bélier":	["https://upload.wikimedia.org/wikipedia/commons/d/d5/Ram_(Heraldic_Supporter).svg"],
-	"Lion rampant":	["https://upload.wikimedia.org/wikipedia/commons/6/62/Lion_rampant_guardant_as_supporter_(Or).svg"],
-	"Lion rampant (couronne britanique)":	["https://upload.wikimedia.org/wikipedia/commons/6/66/Royal_Coat_of_Arms_of_the_United_Kingdom-Lion.svg"],
-	"Tigre":	["https://upload.wikimedia.org/wikipedia/commons/5/52/Tiger_Supporter_(Heraldry).svg"],
-	"Aigle":	["https://upload.wikimedia.org/wikipedia/commons/1/10/Imperial_Eagle_Supporter_(Heraldry).svg"],
-	"Griffon (or et sable)":	["https://upload.wikimedia.org/wikipedia/commons/1/1e/Sable-Gold_Griffin_Supporter_(Heraldry).svg"],
-	"Griffon (or et argent)":	["https://upload.wikimedia.org/wikipedia/commons/5/51/Silver-Gold_Griffin_Supporter_(Heraldry).svg"],
-	"Griffon (or)":	["https://upload.wikimedia.org/wikipedia/commons/3/3c/Gold_Griffin_Supporter_(Heraldry).svg"],
-	"Lévrier":	["https://upload.wikimedia.org/wikipedia/commons/9/97/Greyhound_Supporter_of_the_English_Heraldry.svg"],
-	"Wyverne (queue nouée)":	["https://upload.wikimedia.org/wikipedia/commons/0/0b/Meuble_héraldique_Dragon_(wyvern).svg"],
-	"Licorne":	["https://upload.wikimedia.org/wikipedia/commons/9/96/Unicorn_Supporter_(Heraldry).svg"],
+	"Ange": [
+		"Portants/Ange.png",
+		wikipédia + "f/ff/Angelic_Supporter_(Heraldry).svg",
+		wikipédia + "6/68/Meuble_héraldique_Ange_debout.svg",
+	],
+	"Lion": [
+		"Portants/Lion.png",
+		wikipédia + "6/62/Lion_rampant_guardant_as_supporter_(Or).svg",
+		wikipédia + "6/66/Royal_Coat_of_Arms_of_the_United_Kingdom-Lion.svg",
+	],
+	"Sauvage": [
+		wikipédia + "9/91/Wildman_Supporter_(Heraldry).svg",
+		wikipédia + "7/7b/Wild_man_holding_club_with_one_foot_on_sphere.svg",
+	],
+	"Guerrier affricain": [
+		wikipédia + "f/f5/Meuble_guerrier_africain.svg",
+	],
+	"Hercules": [
+		wikipédia + "2/2f/Hercules_Supporter_(Heraldry).svg",
+	],
+	"Dauphin": [
+		wikipédia + "7/71/Dolphin_Supporter_(Heraldry).svg",
+	],
+	"Hyppocampe": [
+		wikipédia + "6/66/Ippocampo_Supporto_Sea_Horse_Supporter_(Heraldry).svg",
+	],
+	"Bélier": [
+		wikipédia + "d/d5/Ram_(Heraldic_Supporter).svg",
+	],
+	"Tigre": [
+		wikipédia + "5/52/Tiger_Supporter_(Heraldry).svg",
+	],
+	"Aigle": [
+		wikipédia + "1/10/Imperial_Eagle_Supporter_(Heraldry).svg",
+	],
+	"Griffon": [
+		wikipédia + "3/3c/Gold_Griffin_Supporter_(Heraldry).svg",
+		wikipédia + "5/51/Silver-Gold_Griffin_Supporter_(Heraldry).svg",
+		wikipédia + "1/1e/Sable-Gold_Griffin_Supporter_(Heraldry).svg",
+	],
+	"Lévrier": [
+		wikipédia + "9/97/Greyhound_Supporter_of_the_English_Heraldry.svg",
+	],
+	"Wyverne": [
+		wikipédia + "0/0b/Meuble_héraldique_Dragon_(wyvern).svg",
+	],
+	"Licorne": [
+		wikipédia + "9/96/Unicorn_Supporter_(Heraldry).svg",
+	],
 }
 
 // ================================================================================================================= //

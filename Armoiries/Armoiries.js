@@ -15,6 +15,9 @@ function basculer(image) {
 	} else if (image == "Portant à dextre") {
 		comptes[image] = (comptes[image] + 1) % portants[portantDextre].length;
 		document.getElementById("img-portant-dextre").src = portants[portantDextre][comptes[image]];
+	} else if (image == "Écu") {
+		comptes[image] = (comptes[image] + 1) % écus[écu].length;
+		document.getElementById("img-écu").src = écus[écu][comptes[image]];
 	} else if (image == "Portant à senestre") {
 		comptes[image] = (comptes[image] + 1) % portants[portantSenestre].length;
 		document.getElementById("img-portant-senestre").src = portants[portantSenestre][comptes[image]];
@@ -68,18 +71,20 @@ function afficher(nom) {
 	if (nom == "collier") {colonne = 3;} else
 	if (nom == "heaume") {colonne = 4;}
 	document.querySelectorAll("tr td")[colonne].style.display = "table-cell";
-	document.querySelectorAll("tr td")[colonne + 5].style.display = "table-cell";
-	document.querySelectorAll("tr td")[colonne + 10].style.display = "table-cell";
+	document.querySelectorAll("tr td")[colonne + 6].style.display = "table-cell";
+	document.querySelectorAll("tr td")[colonne + 12].style.display = "table-cell";
 }
 
 function générerArmoirie() {
 	
-	comptes = {
-		"Heaume":	0,
-		"Portant à dextre":	0,
-		"Portant à senestre":	0,
-	}
-	
+	élements = ["Portant à dextre", "Écu", "Portant à senestre", "Manteau", "Collier", "Heaume"];
+	comptes = {};
+		élements.forEach(
+			élement => {
+			comptes[élement] = 0;
+		}
+	);
+
 	URL = new URLSearchParams(window.location.search);
 
 	couronne = URL.get("couronne");
@@ -92,7 +97,7 @@ function générerArmoirie() {
 	cri = URL.get("cri");
 	devise = URL.get("devise");
 
-	if (couronne) {document.getElementById("img-couronne").src = couronnes[couronne];}
+	if (couronne) {document.getElementById("img-couronne").src = couronnes[couronne][0];}
 	if (heaume) {
 		afficher("heaume");
 		document.getElementById("img-heaume").src = heaumes[heaume][0];
@@ -101,7 +106,7 @@ function générerArmoirie() {
 			document.getElementById("img-couronne").style.marginBottom = "-30px";
 		}
 	}
-	if (écu) {document.getElementById("img-écu").src = écus[écu];}
+	if (écu) {document.getElementById("img-écu").src = écus[écu][0];}
 	if (portantDextre) {
 		afficher("portant-dextre");
 		document.getElementById("img-portant-dextre").src = portants[portantDextre][0];
@@ -122,7 +127,7 @@ function générerArmoirie() {
 	}
 	if (manteau) {
 		afficher("manteau");
-		document.getElementById("img-manteau").src = manteaux[manteau];
+		document.getElementById("img-manteau").src = manteaux[manteau][0];
 		if (couronne || heaume) {
 			if (manteau != "Grand") {
 				document.getElementById("img-couronne-manteau").src = couronnes[couronne];

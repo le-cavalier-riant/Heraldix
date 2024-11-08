@@ -216,6 +216,17 @@ profils = {
 		"portant-senestre": "Sans"
 	},
 // Royaume d'Espagne
+	"Roi d'Espagne": {
+		"collier": "Ordre de la Toison d'or",
+		"couronne": "Roi d'Espagne",
+		"cri": "Una grande libre",
+		"devise": "Plus ultra",
+		"écu": "Espagne",
+		"heaume": "Sans",
+		"manteau": "Grand",
+		"portant-dextre": "Sans",
+		"portant-senestre": "Sans"
+	},
 	"Grand": {
 		"collier": "Sans",
 		"couronne": "Grand",

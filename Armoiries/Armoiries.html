@@ -44,6 +44,7 @@
 <table class = caché id = table-paramètres>
 	<tr>
 		<td><button onclick = basculer(this.innerText)>Portant à dextre</button></td>
+		<td><button onclick = basculer(this.innerText)>Écu</button></td>
 		<td><button onclick = basculer(this.innerText)>Portant à senestre</button></td>
 		<td><button onclick = basculer(this.innerText)>Manteau</button></td>
 		<td><button onclick = basculer(this.innerText)>Collier</button></td>
@@ -52,6 +53,10 @@
 	<tr>
 		<td>
 			↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-dextre', this.value, '↓')"> ↓
+			<span class = span-déplacer>0</span>
+		</td>
+		<td>
+			↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-écu', this.value, '↓')"> ↓
 			<span class = span-déplacer>0</span>
 		</td>
 		<td>
@@ -74,6 +79,10 @@
 	<tr>
 		<td>
 			← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-dextre', this.value, '←')"> →
+			<span class = span-déplacer>0</span>
+		</td>
+		<td>
+			← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-écu', this.value, '←')"> →
 			<span class = span-déplacer>0</span>
 		</td>
 		<td>

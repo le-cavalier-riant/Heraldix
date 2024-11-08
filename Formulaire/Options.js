@@ -35,6 +35,9 @@ titres = {
 	"": [
 		"Chavagnac",
 		"France",
+		"Espagne",
+		"Angleterre",
+		"Bretagne",
 	],
 }
 
@@ -103,15 +106,11 @@ portants = {
 		"Hercules","Dauphin",
 		"Hyppocampe",
 		"Bélier",
-		"Lion rampant",
-		"Lion rampant (couronne britanique)",
 		"Tigre",
 		"Aigle",
-		"Griffon (or et sable)",
-		"Griffon (or et argent)",
-		"Griffon (or)",
+		"Griffon",
 		"Lévrier",
-		"Wyverne (queue nouée)",
+		"Wyverne",
 		"Licorne",
 	],
 };
