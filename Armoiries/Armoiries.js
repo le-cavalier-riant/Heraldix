@@ -30,20 +30,35 @@ function déplacer(image, décalage, direction) {
 	if (direction == "←") {document.getElementById(image).style.marginRight = (- décalage) + "px";} else
 	if (direction == "→") {document.getElementById(image).style.marginLeft = décalage + "px";}
 	if (image == "img-portant-dextre") {
-		if (direction == "↓") {document.getElementsByClassName("span-déplacer")[0].innerText = décalage;} else
-		if (direction == "←") {document.getElementsByClassName("span-déplacer")[0 + 5].innerText = décalage;}
+		if (direction == "↓") {document.getElementsByClassName("span-déplacer")[6 + 0].innerText = décalage;} else
+		if (direction == "←") {document.getElementsByClassName("span-déplacer")[6 + 0 + 6].innerText = décalage;}
 	} else if (image == "img-portant-senestre") {
-		if (direction == "↓") {document.getElementsByClassName("span-déplacer")[1].innerText = décalage;} else
-		if (direction == "→") {document.getElementsByClassName("span-déplacer")[1 + 5].innerText = décalage;}
+		if (direction == "↓") {document.getElementsByClassName("span-déplacer")[6 + 1].innerText = décalage;} else
+		if (direction == "→") {document.getElementsByClassName("span-déplacer")[6 + 1 + 6].innerText = décalage;}
 	} else if (image == "img-manteau") {
-		if (direction == "↓") {document.getElementsByClassName("span-déplacer")[2].innerText = décalage;} else
-		if (direction == "→") {document.getElementsByClassName("span-déplacer")[2 + 5].innerText = décalage;}
+		if (direction == "↓") {document.getElementsByClassName("span-déplacer")[6 + 2].innerText = décalage;} else
+		if (direction == "→") {document.getElementsByClassName("span-déplacer")[6 + 2 + 6].innerText = décalage;}
 	} else if (image == "img-collier") {
-		if (direction == "↓") {document.getElementsByClassName("span-déplacer")[3].innerText = décalage;} else
-		if (direction == "→") {document.getElementsByClassName("span-déplacer")[3 + 5].innerText = décalage;}
+		if (direction == "↓") {document.getElementsByClassName("span-déplacer")[6 + 3].innerText = décalage;} else
+		if (direction == "→") {document.getElementsByClassName("span-déplacer")[6 + 3 + 6].innerText = décalage;}
 	} else if (image == "img-heaume") {
-		if (direction == "↑") {document.getElementsByClassName("span-déplacer")[4].innerText = décalage;} else
-		if (direction == "→") {document.getElementsByClassName("span-déplacer")[4 + 5].innerText = décalage;}
+		if (direction == "↑") {document.getElementsByClassName("span-déplacer")[6 + 4].innerText = décalage;} else
+		if (direction == "→") {document.getElementsByClassName("span-déplacer")[6 + 4 + 6].innerText = décalage;}
+	}
+}
+
+function redimensionner(image, décalage) {
+	document.getElementById(image).style.width = décalage + "px";
+	if (image == "img-portant-dextre") {
+		document.getElementsByClassName("span-déplacer")[0].innerText = décalage;
+	} else if (image == "img-portant-senestre") {
+		document.getElementsByClassName("span-déplacer")[1].innerText = décalage;
+	} else if (image == "img-manteau") {
+		document.getElementsByClassName("span-déplacer")[2].innerText = décalage;
+	} else if (image == "img-collier") {
+		document.getElementsByClassName("span-déplacer")[3].innerText = décalage;
+	} else if (image == "img-heaume") {
+		document.getElementsByClassName("span-déplacer")[4].innerText = décalage;
 	}
 }
 
@@ -73,6 +88,7 @@ function afficher(nom) {
 	document.querySelectorAll("tr td")[colonne].style.display = "table-cell";
 	document.querySelectorAll("tr td")[colonne + 6].style.display = "table-cell";
 	document.querySelectorAll("tr td")[colonne + 12].style.display = "table-cell";
+	document.querySelectorAll("tr td")[colonne + 18].style.display = "table-cell";
 }
 
 function générerArmoirie() {
