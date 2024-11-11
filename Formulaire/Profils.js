@@ -72,7 +72,18 @@ profils = {
 		"portant-dextre": "Sans",
 		"portant-senestre": "Sans"
 	},
-	"Duc (souverain)": {
+	"Duc souverain et pair": {
+		"collier": "Sans",
+		"couronne": "Duc",
+		"cri": "",
+		"devise": "",
+		"écu": "Sans",
+		"heaume": "Prince",
+		"manteau": "Pair",
+		"portant-dextre": "Sans",
+		"portant-senestre": "Sans"
+	},
+	"Duc souverain": {
 		"collier": "Sans",
 		"couronne": "Duc",
 		"cri": "",
@@ -83,7 +94,18 @@ profils = {
 		"portant-dextre": "Sans",
 		"portant-senestre": "Sans"
 	},
-	"Duc (non souverain)": {
+	"Duc non souverain et pair": {
+		"collier": "Sans",
+		"couronne": "Duc",
+		"cri": "",
+		"devise": "",
+		"écu": "Sans",
+		"heaume": "Duc",
+		"manteau": "Pair",
+		"portant-dextre": "Sans",
+		"portant-senestre": "Sans"
+	},
+	"Duc non souverain": {
 		"collier": "Sans",
 		"couronne": "Duc",
 		"cri": "",
@@ -211,6 +233,40 @@ profils = {
 		"devise": "",
 		"écu": "Sans",
 		"heaume": "Bâtard",
+		"manteau": "Sans",
+		"portant-dextre": "Sans",
+		"portant-senestre": "Sans"
+	},
+// Villes françaises
+	"Capitale": {
+		"collier": "Sans",
+		"couronne": "Capitale",
+		"cri": "",
+		"devise": "",
+		"écu": "Sans",
+		"heaume": "Sans",
+		"manteau": "Sans",
+		"portant-dextre": "Sans",
+		"portant-senestre": "Sans"
+	},
+	"Chef-lieu": {
+		"collier": "Sans",
+		"couronne": "Chef-lieu",
+		"cri": "",
+		"devise": "",
+		"écu": "Sans",
+		"heaume": "Sans",
+		"manteau": "Sans",
+		"portant-dextre": "Sans",
+		"portant-senestre": "Sans"
+	},
+	"Commune": {
+		"collier": "Sans",
+		"couronne": "Commune",
+		"cri": "",
+		"devise": "",
+		"écu": "Sans",
+		"heaume": "Sans",
 		"manteau": "Sans",
 		"portant-dextre": "Sans",
 		"portant-senestre": "Sans"

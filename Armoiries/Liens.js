@@ -75,10 +75,10 @@ couronnes = {
 		wikipédia + "6/6d/Torse_of_a_Chevalier_of_France.svg",
 	],
 // Empire français
-	"Empereur (1804)": [
+	"Empereur 1804": [
 		wikipédia + "4/41/Heraldic_Crown_of_the_First_French_Empire.svg",
 	],
-	"Empereur (1852)": [
+	"Empereur 1852": [
 		wikipédia + "6/68/Imperial_Crown_of_Napoleon.svg",
 	],
 	"Prince souverain impérial": [
@@ -187,6 +187,10 @@ heaumes = {
 		"Heaumes/Bâtard.png",
 		"Heaumes/Bâtard.jpg",
 	],
+// Royaume-Uni
+	"Braonnet": {
+		wikipédia + "e/e9/H%C3%A9raldique_ornement_Heaume_baronnet.svg",
+	},
 }
 
 manteaux = {
@@ -258,6 +262,26 @@ portants = {
 		wikipédia + "9/96/Unicorn_Supporter_(Heraldry).svg",
 	],
 }
+
+/* cimiers = {
+	"Bassinet" : [
+		wikipédia + "a/aa/Bassinet.SVG",
+	],
+} */
+
+// https://www.w3schools.com/tags/ref_urlencode.ASP
+
+// Code	Caractère
+
+/*
+
+	%C3%B1	ñ
+	%28	(
+	%29	)
+	%C3%A9	é
+	%60	`
+
+*/
 
 // ================================================================================================================= //
 //                                                                                                                   //

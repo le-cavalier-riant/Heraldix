@@ -11,8 +11,10 @@ titres = {
 		"Fils",
 		"Petit-fils",
 		"Prince",
-		"Duc (souverain)",
-		"Duc (non souverain)",
+		"Duc souverain et pair",
+		"Duc souverain",
+		"Duc non souverain et pair",
+		"Duc non souverain",
 		"Marquis et pair",
 		"Marquis",
 		"Comte et pair",
@@ -61,8 +63,8 @@ couronnes = {
 		"Chevalier",
 	],
 	"Empire français": [
-		"Empereur (1804)",
-		"Empereur (1852)",
+		"Empereur 1804",
+		"Empereur 1852",
 		"Prince souverain impérial",
 		"Prince impérial",
 		"Duc impérial",
@@ -95,6 +97,9 @@ heaumes = {
 		"Anobli",
 		"Bâtard",
 	],
+	"Royaume-Uni": {
+		"Baronnet",
+	},
 };
 
 portants = {
