@@ -21,6 +21,7 @@ titres = {
 		"Comte",
 		"Vicomte",
 		"Vidame",
+		"Baron et pair",
 		"Baron",
 		"Banneret",
 		"Chevalier",
@@ -116,7 +117,7 @@ portants = {
 		"Aigle",
 		"Griffon",
 		"Lévrier",
-		"Wyverne",
+		"Dragon",
 		"Licorne",
 	],
 };

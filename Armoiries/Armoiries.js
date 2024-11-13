@@ -12,6 +12,9 @@ function basculer(image) {
 	if (image == "Heaume") {
 		comptes[image] = (comptes[image] + 1) % heaumes[heaume].length;
 		document.getElementById("img-heaume").src = heaumes[heaume][comptes[image]];
+	} else if (image == "Couronne") {
+		comptes[couronne] = (comptes[couronne] + 1) % couronnes[couronne].length;
+		document.getElementById("img-portant-dextre").src = couronnes[couronne][comptes[image]];
 	} else if (image == "Portant à dextre") {
 		comptes[image] = (comptes[image] + 1) % portants[portantDextre].length;
 		document.getElementById("img-portant-dextre").src = portants[portantDextre][comptes[image]];
@@ -86,7 +89,7 @@ function afficher(nom) {
 
 function générerArmoirie() {
 	
-	élements = ["Portant à dextre", "Écu", "Portant à senestre", "Manteau", "Collier", "Heaume"];
+	élements = ["Heaume", "Couronne", "Portant à dextre", "Écu", "Portant à senestre", "Collier", "Manteau"];
 	comptes = {};
 		élements.forEach(
 			élement => {

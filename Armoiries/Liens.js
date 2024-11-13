@@ -28,9 +28,11 @@ couronnes = {
 // Royaume de France
 	"Roi": [
 		wikipédia + "1/1c/Royal_Crown_of_France_(accurate_red_bonnet).svg",
+		wikipédia + "3/3b/French_heraldic_crowns_-_King.svg",
 	],
 	"Dauphin": [
 		wikipédia + "7/7e/Crown_of_the_Dauphin_of_France_(variant).svg",
+		wikipédia + "e/e4/French_heraldic_crowns_-_Dauphin.svg",
 	],
 	"Fils": [
 		wikipédia + "6/6d/Crown_of_a_Royal_Prince_of_the_Blood_of_France.svg",
@@ -40,39 +42,53 @@ couronnes = {
 	],
 	"Prince": [
 		wikipédia + "b/b7/Crown_of_a_Prince_of_the_Blood_of_France.svg",
+		wikipédia + "6/64/French_heraldic_crowns_-_Prince_de_sang_royal.svg",
 	],
 	"Duc et pair": [
 		wikipédia + "8/8e/Crown_of_a_Duke_of_France.svg",
+		wikipédia + "7/72/French_heraldic_crowns_-_duc_et_pair.svg",
 	],
 	"Duc": [
 		wikipédia + "d/d4/Crown_of_a_Duke_of_France_(variant).svg",
+		wikipédia + "c/c6/French_heraldic_crowns_-_duc_v2.svg",
 	],
 	"Marquis et pair": [
 		wikipédia + "e/e0/Crown_of_a_Marquis_of_France.svg",
+		wikipédia + "6/61/French_heraldic_crowns_-_marquis_et_pair.svg",
 	],
 	"Marquis": [
 		wikipédia + "7/7a/Crown_of_a_Marquis_of_France_(variant).svg",
+		wikipédia + "5/53/French_heraldic_crowns_-_marquis_v2.svg",
 	],
 	"Comte et pair": [
 		wikipédia + "b/b9/Crown_of_a_Count_of_France.svg",
+		wikipédia + "3/32/Heraldique_couronne_comte_et_pair.svg",
 	],
 	"Comte": [
 		wikipédia + "b/b1/Crown_of_a_Count_of_France_(variant).svg",
+		wikipédia + "1/1b/Heraldique_couronne_comte_françaisais.svg",
 	],
 	"Vicomte": [
 		wikipédia + "e/e8/Crown_of_a_Viscount_of_France_(variant).svg",
+		wikipédia + "6/63/Heraldique_couronne_vicomte_français.svg",
 	],
 	"Vidame": [
 		wikipédia + "0/03/Crown_of_a_Vidame_of_France.svg",
+		wikipédia + "e/e5/French_heraldic_crowns_-_Vidame.svg",
+	],
+	"Baron et pair": [
+		wikipédia + "7/76/French_heraldic_crowns_-_baron_et_pair.svg",
 	],
 	"Baron": [
 		wikipédia + "b/b7/Crown_of_a_Baron_of_France.svg",
+		wikipédia + "6/66/French_heraldic_crowns_-_Baron.svg",
 	],
 	"Banneret": [
 		wikipédia + "3/31/Crown_of_a_Chevalier_of_France.svg",
 	],
 	"Chevalier": [
 		wikipédia + "6/6d/Torse_of_a_Chevalier_of_France.svg",
+		wikipédia + "2/23/French_heraldic_crowns_-_chevalier.svg",
 	],
 // Empire français
 	"Empereur 1804": [
@@ -127,12 +143,12 @@ couronnes = {
 	],
 	"France": [
 		"Écus/France.png",
-		"https://upload.wikimedia.org/wikipedia/commons/1/13/Blason_France_moderne.svg",
-		"https://upload.wikimedia.org/wikipedia/commons/7/78/Proposed_Blason_for_%C3%8Ele-de-France.svg",
-		"https://upload.wikimedia.org/wikipedia/commons/9/95/Blason_pays_fr_France_ancien.svg",
+		wikipédia + "1/13/Blason_France_moderne.svg",
+		wikipédia + "7/78/Proposed_Blason_for_Île-de-France.svg",
+		wikipédia + "9/95/Blason_pays_fr_France_ancien.svg",
 	],
 	"Espagne": [
-		wikipédia + "c/c7/Arms_of_Spain_%281977-1981%29.svg",
+		wikipédia + "c/c7/Arms_of_Spain_(1977-1981).svg",
 	],
 	"Angleterre" :[
 		wikipédia + "1/1c/England_Arms_1405.svg",
@@ -189,18 +205,18 @@ heaumes = {
 	],
 // Royaume-Uni
 	"Braonnet": [
-		wikipédia + "e/e9/H%C3%A9raldique_ornement_Heaume_baronnet.svg",
+		wikipédia + "e/e9/Héraldique_ornement_Heaume_baronnet.svg",
 	],
 }
 
-manteaux = {
+manteaux3 = {
 // Royaume de France
 	"France": [
 		"Manteaux/France.svg",
 	],
 	"Pair": [
 		wikipédia + "a/a7/Blue_heraldic_mantle.svg",
-		wikipédia + "b/b6/Meuble_h%C3%A9raldique_manteau_01.svg",
+		wikipédia + "b/b6/Meuble_héraldique_manteau_01.svg",
 	],
 	"Rouge": [
 		wikipédia + "0/06/Generic_mantle.svg",
@@ -255,8 +271,10 @@ portants = {
 	"Lévrier": [
 		wikipédia + "9/97/Greyhound_Supporter_of_the_English_Heraldry.svg",
 	],
-	"Wyverne": [
+	"Dragon": [
+		wikipédia + "c/c5/Héraldique_meuble_Dragon_(wyvern).svg",
 		wikipédia + "0/0b/Meuble_héraldique_Dragon_(wyvern).svg",
+	
 	],
 	"Licorne": [
 		wikipédia + "9/96/Unicorn_Supporter_(Heraldry).svg",
@@ -276,10 +294,12 @@ portants = {
 
 /*
 
+	%C3%8E	Î
+	%C3%A7	ç
+	%C3%A9	é
 	%C3%B1	ñ
 	%28	(
 	%29	)
-	%C3%A9	é
 	%60	`
 
 */
