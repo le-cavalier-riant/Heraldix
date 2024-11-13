@@ -101,25 +101,25 @@ couronnes = {
 		"Empereur 1852": [
 			wikipédia + "6/68/Imperial_Crown_of_Napoleon.svg",
 		],
-		"Prince souverain impérial": [
+		"Prince souverain": [
 			wikipédia + "e/e6/Crown_of_a_Napoleonic_Prince_Souverain.svg",
 		],
-		"Prince impérial": [
+		"Prince": [
 			wikipédia + "8/81/Cap_of_an_Imperial_Prince_Grand_Dignitary.svg",
 		],
-		"Duc impérial": [
+		"Duc": [
 			wikipédia + "5/5d/Cap_of_an_Imperial_Duke.svg",
 		],
-		"Comte impérial": [
+		"Comte": [
 			wikipédia + "6/62/Cap_of_an_Imperial_Count.svg",
 		],
-		"Baron impérial": [
+		"Baron": [
 			wikipédia + "a/ae/Cap_of_an_Imperial_Baron.svg",
 		],
-		"Chevalier impérial": [
+		"Chevalier": [
 			wikipédia + "4/40/Cap_of_an_Imperial_Knight.svg",
 		],
-		"Grand dignitaire impérial": [
+		"Grand dignitaire": [
 			wikipédia + "7/7b/Bonnet_d`honneur.png",
 		],
 	},
@@ -135,7 +135,7 @@ couronnes = {
 		],
 	},
 	"Reino de España": {
-		"Rey de España": [
+		"Rey": [
 			wikipédia + "1/1b/Heraldic_Royal_Crown_of_Spain_(Version_of_the_Royal_Arms).svg",
 		],
 		"Grande": [
@@ -301,7 +301,6 @@ cimiers = {
 }
 
 /*
-
 	%C3%8E	Î
 	%C3%A7	ç
 	%C3%A9	é
@@ -309,7 +308,6 @@ cimiers = {
 	%28	(
 	%29	)
 	%60	`
-
 */
 
 // ================================================================================================================= //
