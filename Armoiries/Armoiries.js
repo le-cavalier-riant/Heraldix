@@ -115,12 +115,12 @@ function paramètres() {
 
 function afficher(nom) {
 	if (nom == "couronne") {colonne = 0;} else
-	if (nom == "portant-dextre") {colonne = 1;} else
-	if (nom == "écu") {colonne = 2;} else
-	if (nom == "portant-senestre") {colonne = 3;} else
-	if (nom == "manteau") {colonne = 4;} else
-	if (nom == "collier") {colonne = 5;} else
-	if (nom == "heaume") {colonne = 6;}
+	if (nom == "heaume") {colonne = 1;} else
+	if (nom == "portant-dextre") {colonne = 2;} else
+	if (nom == "écu") {colonne = 3;} else
+	if (nom == "portant-senestre") {colonne = 4;} else
+	if (nom == "manteau") {colonne = 5;} else
+	if (nom == "collier") {colonne = 6;}	
 	document.querySelectorAll("tr td")[colonne].style.display = "table-cell";
 	document.querySelectorAll("tr td")[colonne + 7].style.display = "table-cell";
 	document.querySelectorAll("tr td")[colonne + 14].style.display = "table-cell";
@@ -128,7 +128,7 @@ function afficher(nom) {
 }
 
 function générerArmoirie() {
-	éléments = ["Heaume", "Couronne", "Portant à dextre", "Écu", "Portant à senestre", "Collier", "Manteau"];
+	éléments = ["Couronne", "Heaume", "Portant à dextre", "Écu", "Portant à senestre", "Collier", "Manteau"];
 	comptes = {};
 	for (élément of éléments) {comptes[élément] = 0;}
 	if (couronne) {
