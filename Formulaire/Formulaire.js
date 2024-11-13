@@ -5,11 +5,11 @@
 // ================================================================================================================= //
 
 function accorder() {
-	document.getElementById("select-titre").addEventListener(
+	document.getElementById("select-profil").addEventListener(
 		"change",
 		function() {
-			titre = this.value;
-			valeurs = profils[titre] || profils["Sans"];
+			profil = this.value;
+			valeurs = profils[profil] || profils["Sans"];
 			for ([nom, valeur] of Object.entries(valeurs)) {
 				document.getElementsByName(nom)[0].value = valeur;
 			}
@@ -32,27 +32,44 @@ function collier2() {
 }
 
 function remplir() {
-	listes = [titres, écus, couronnes, heaumes, portants, portants, colliers, manteaux];
-	noms = ["select-titre", "écu", "couronne", "heaume", "portant-dextre", "portant-senestre", "collier", "manteau"];
+	listes = [profils, écus, couronnes, heaumes, portants, portants, colliers, manteaux];
+	noms = ["select-profil", "écu", "couronne", "heaume", "portant-dextre", "portant-senestre", "collier", "manteau"];
 	index = 0;
 	for (liste of listes) {
-		if (liste == titres) {selectTitre = document.getElementById(noms[index]);}
-		else {selectTitre = document.getElementsByName(noms[index])[0];}
+		if (liste == profils) {selectProfil = document.getElementById(noms[index]);}
+		else {selectProfil = document.getElementsByName(noms[index])[0];}
 		optionSans = document.createElement("option");
 		optionSans.textContent = "Sans";
 		optionSans.value = "";
-		selectTitre.appendChild(optionSans);
-		for (champ in liste) {
-			optgroup = document.createElement("optgroup");
-			optgroup.label = champ;
-			liste[champ].forEach(
-				optionText => {
+		selectProfil.appendChild(optionSans);
+		listePays = {
+			"": "",
+			"Royaume de France": "RF ",
+			"Royaume d'Espagne": "RE ",
+			"Royaume-Uni": "RU ",
+		}
+		code = "";
+		if (liste == écus || liste == portants) {
+			for (champ of Object.keys(liste)) {
+				option = document.createElement("option");
+				option.textContent = champ;
+				option.value = code + champ;
+				selectProfil.appendChild(option);
+			}
+		}
+		else {
+			for (pays of Object.keys(liste)) {
+				code = listePays[pays];
+				optgroup = document.createElement("optgroup");
+				optgroup.label = pays;
+				for (champ of Object.keys(liste[pays])) {
 					option = document.createElement("option");
-					option.textContent = optionText;
+					option.textContent = champ;
+					option.value = code + champ;
 					optgroup.appendChild(option);
 				}
-			);
-			selectTitre.appendChild(optgroup);
+				selectProfil.appendChild(optgroup);
+			}
 		}
 		index ++;
 	}

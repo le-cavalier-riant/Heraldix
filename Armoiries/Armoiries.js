@@ -77,10 +77,11 @@ function paramètres() {
 
 function afficher(nom) {
 	if (nom == "portant-dextre") {colonne = 0;} else
-	if (nom == "portant-senestre") {colonne = 1;} else
-	if (nom == "manteau") {colonne = 2;} else
-	if (nom == "collier") {colonne = 3;} else
-	if (nom == "heaume") {colonne = 4;}
+	if (nom == "écu") {colonne = 1;} else
+	if (nom == "portant-senestre") {colonne = 2;} else
+	if (nom == "manteau") {colonne = 3;} else
+	if (nom == "collier") {colonne = 4;} else
+	if (nom == "heaume") {colonne = 5;}
 	document.querySelectorAll("tr td")[colonne].style.display = "table-cell";
 	document.querySelectorAll("tr td")[colonne + 6].style.display = "table-cell";
 	document.querySelectorAll("tr td")[colonne + 12].style.display = "table-cell";
@@ -97,6 +98,12 @@ function générerArmoirie() {
 		}
 	);
 
+	codePays = {
+		"RF": "Royaume de France",
+		"RE": "Royaume d'Espagne",
+		"RU": "Royaume-Uni",
+	}
+	
 	URL = new URLSearchParams(window.location.search);
 
 	couronne = URL.get("couronne");
@@ -109,10 +116,10 @@ function générerArmoirie() {
 	cri = URL.get("cri");
 	devise = URL.get("devise");
 
-	if (couronne) {document.getElementById("img-couronne").src = couronnes[couronne][0];}
+	if (couronne) {document.getElementById("img-couronne").src = couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)][0];}
 	if (heaume) {
 		afficher("heaume");
-		document.getElementById("img-heaume").src = heaumes[heaume][0];
+		document.getElementById("img-heaume").src = heaumes[codePays[heaume.split(" ")[0]]][heaume.slice(3)][0];
 		if (heaume) {
 			document.getElementById("img-couronne").style.width = "80px";
 			document.getElementById("img-couronne").style.marginBottom = "-30px";
@@ -129,7 +136,7 @@ function générerArmoirie() {
 	}
 	if (collier) {
 		afficher("collier");
-		document.getElementById("img-collier").src = colliers[collier];
+		document.getElementById("img-collier").src = colliers[codePays[collier.split(" ")[0]]][collier.slice(3)];
 		document.getElementById("img-portant-dextre").style.marginRight = "-140px";
 		document.getElementById("img-portant-senestre").style.marginLeft = "-140px";
 	} else {
@@ -139,11 +146,9 @@ function générerArmoirie() {
 	}
 	if (manteau) {
 		afficher("manteau");
-		document.getElementById("img-manteau").src = manteaux[manteau][0];
-		if (couronne || heaume) {
-			if (manteau != "Grand") {
-				document.getElementById("img-couronne-manteau").src = couronnes[couronne];
-			}
+		document.getElementById("img-manteau").src = manteaux[codePays[manteau.split(" ")[0]]][manteau.slice(3)][0];
+		if (couronne || heaume || manteau != "Grand") {
+			document.getElementById("img-couronne-manteau").src = couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)][0];
 		}
 	} else {
 		document.getElementById("div-couronne").style.marginTop = "0";
