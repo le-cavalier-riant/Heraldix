@@ -43,10 +43,11 @@ function remplir() {
 		optionSans.value = "";
 		selectProfil.appendChild(optionSans);
 		listePays = {
-			"": "",
 			"Royaume de France": "RF ",
-			"Royaume d'Espagne": "RE ",
-			"Royaume-Uni": "RU ",
+			"Empire français": "EF",
+			"Villes français": "VF",
+			"Reino de España": "RE ",
+			"United Kingdom": "UK ",
 		}
 		code = "";
 		if (liste == écus || liste == portants) {
