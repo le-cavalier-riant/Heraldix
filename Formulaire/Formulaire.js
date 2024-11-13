@@ -9,7 +9,7 @@ function accorder() {
 		"change",
 		function() {
 			profil = this.value;
-			valeurs = profils[profil] || profils["Sans"];
+			valeurs = profils[codePays[profils.split(" ")[0]]][profil.slice(3)] || profils["Sans"];
 			for ([nom, valeur] of Object.entries(valeurs)) {
 				document.getElementsByName(nom)[0].value = valeur;
 			}

@@ -38,17 +38,26 @@
 </div>
 
 <footer>
-	<button onclick = paramètres() id = button-paramètres>↑ Paramètres ↑</button>
+	<button onclick = paramètres() id = button-paramètres>↓ Paramètres ↓</button>
 	<table class = caché id = table-paramètres>
 		<tr>
+			<td><button onclick = basculer(this.innerText)>Couronne</button></td>
+			<td><button onclick = basculer(this.innerText)>Heaume</button></td>
 			<td><button onclick = basculer(this.innerText)>Portant à dextre</button></td>
 			<td><button onclick = basculer(this.innerText)>Écu</button></td>
 			<td><button onclick = basculer(this.innerText)>Portant à senestre</button></td>
 			<td><button onclick = basculer(this.innerText)>Manteau</button></td>
 			<td><button onclick = basculer(this.innerText)>Collier</button></td>
-			<td><button onclick = basculer(this.innerText)>Heaume</button></td>
 		</tr>
 		<tr>
+			<td>
+				- <input type = range min = 0 max = 100 step = 5 onchange = "redimensionner('img-couronne', this.value)"> +
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				- <input type = range min = 0 max = 100 step = 5 onchange = "redimensionner('img-heaume', this.value)"> +
+				<span class = span-transformer>0</span>
+			</td>
 			<td>
 				- <input type = range min = 0 max = 100 step = 5 onchange = "redimensionner('img-portant-dextre', this.value)"> +
 				<span class = span-transformer>0</span>
@@ -69,12 +78,16 @@
 				- <input type = range min = 0 max = 100 step = 5 onchange = "redimensionner('img-collier', this.value)"> +
 				<span class = span-transformer>0</span>
 			</td>
-			<td>
-				- <input type = range min = 0 max = 100 step = 5 onchange = "redimensionner('img-heaume', this.value)"> +
-				<span class = span-transformer>0</span>
-			</td>
 		</tr>
 		<tr>
+			<td>
+				↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-couronne', this.value, '↓')"> ↓
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-heaume', this.value, '↑')"> ↓
+				<span class = span-transformer>0</span>
+			</td>
 			<td>
 				↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-dextre', this.value, '↓')"> ↓
 				<span class = span-transformer>0</span>
@@ -95,12 +108,16 @@
 				↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-collier', this.value, '↓')"> ↓
 				<span class = span-transformer>0</span>
 			</td>
-			<td>
-				↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-heaume', this.value, '↑')"> ↓
-				<span class = span-transformer>0</span>
-			</td>
 		</tr>
 		<tr>
+			<td>
+				← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-couronne', this.value, '←')"> →
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-heaume', this.value, '→')"> →
+				<span class = span-transformer>0</span>
+			</td>
 			<td>
 				← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-dextre', this.value, '←')"> →
 				<span class = span-transformer>0</span>
@@ -119,10 +136,6 @@
 			</td>
 			<td>
 				← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-collier', this.value, '→')"> →
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-heaume', this.value, '→')"> →
 				<span class = span-transformer>0</span>
 			</td>
 		</tr>

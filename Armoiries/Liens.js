@@ -16,13 +16,13 @@ wikipédia = "https://upload.wikimedia.org/wikipedia/commons/";
 		wikipédia + "7/78/Proposed_Blason_for_Île-de-France.svg",
 		wikipédia + "9/95/Blason_pays_fr_France_ancien.svg",
 	],
-	"Espagne": [
+	"España": [
 		wikipédia + "c/c7/Arms_of_Spain_(1977-1981).svg",
 	],
-	"Angleterre" :[
+	"England" :[
 		wikipédia + "1/1c/England_Arms_1405.svg",
 	],
-	"Bretagne": [
+	"Breizh": [
 		wikipédia + "d/d8/Armoiries_Bretagne_-_Arms_of_Brittany.svg",
 	],
 }
@@ -134,11 +134,11 @@ couronnes = {
 			wikipédia + "a/aa/Mural_Crown_of_a_French_Commune.svg",
 		],
 	},
-	"Royaume d'Espagne": {
-		"Roi d'Espagne": [
+	"Reino de España": {
+		"Rey de España": [
 			wikipédia + "1/1b/Heraldic_Royal_Crown_of_Spain_(Version_of_the_Royal_Arms).svg",
 		],
-		"Grand": [
+		"Grande": [
 			wikipédia + "b/bd/Heraldic_Crown_of_Spanish_Grandee.svg",
 		],
 	},
@@ -190,8 +190,8 @@ heaumes = {
 			"Heaumes/Bâtard.jpg",
 		],
 	},
-	"Royaume-Uni": {
-		"Braonnet": [
+	"United Kingdom": {
+		"Baronet": [
 			wikipédia + "e/e9/Héraldique_ornement_Heaume_baronnet.svg",
 		],
 	},
@@ -265,8 +265,8 @@ colliers = {
 			wikipédia + "3/34/Order_of_the_Holy_Spirit_(heraldry).svg",
 		],
 	},
-	"Royaume d'Espagne": {
-		"Ordre de la Toison d'or": [
+	"Reino de España": {
+		"Orden del Toisón de Oro": [
 			"Colliers/Ordre de la Toison d'or.svg",
 		],
 	},
@@ -285,15 +285,15 @@ manteaux = {
 			wikipédia + "0/06/Generic_mantle.svg",
 		],
 	},
-	"Royaume d'Espagne": {
-		"Grand": [
+	"Reino de España": {
+		"Grande": [
 			wikipédia + "4/4f/Manto_de_Grande_de_España.svg",
 		],
 	},
 }
 
 cimiers = {
-	"Royaume-Uni": {
+	"": {
 		"Bassinet" : [
 			wikipédia + "a/aa/Bassinet.SVG",
 		],
