@@ -182,6 +182,17 @@ profils = {
 		"portant-dextre": "Sans",
 		"portant-senestre": "Sans"
 	},
+	"Baron et pair": {
+		"collier": "Sans",
+		"couronne": "Baron et pair",
+		"cri": "",
+		"devise": "",
+		"écu": "Sans",
+		"heaume": "Baron",
+		"manteau": "Pair",
+		"portant-dextre": "Sans",
+		"portant-senestre": "Sans"
+	},
 	"Baron": {
 		"collier": "Sans",
 		"couronne": "Baron",

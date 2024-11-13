@@ -59,6 +59,7 @@ couronnes = {
 		"Comte",
 		"Vicomte",
 		"Vidame",
+		"Baron et pair",
 		"Baron",
 		"Banneret",
 		"Chevalier",
