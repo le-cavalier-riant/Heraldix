@@ -188,9 +188,9 @@ heaumes = {
 		"Heaumes/Bâtard.jpg",
 	],
 // Royaume-Uni
-	"Braonnet": {
+	"Braonnet": [
 		wikipédia + "e/e9/H%C3%A9raldique_ornement_Heaume_baronnet.svg",
-	},
+	],
 }
 
 manteaux = {
@@ -208,7 +208,7 @@ manteaux = {
 // Royaume d'Espagne
 	"Grand": [
 		wikipédia + "4/4f/Manto_de_Grande_de_España.svg",
-	 ],
+	],
 }
 
 portants = {
@@ -264,6 +264,7 @@ portants = {
 }
 
 /* cimiers = {
+// RoyaumeUni
 	"Bassinet" : [
 		wikipédia + "a/aa/Bassinet.SVG",
 	],

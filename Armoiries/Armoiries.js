@@ -70,13 +70,6 @@ function paramètres() {
 		document.getElementById("table-paramètres").style.display = "block";
 		document.getElementById("button-paramètres").innerText = "↓ Masquer ↓";
 	}
-	/* document.querySelectorAll("input[type='range']").forEach(
-		input => {
-			input.min = -100;
-			input.max = 100;
-			input.step = 5;
-		}
-	); */
 }
 
 function afficher(nom) {

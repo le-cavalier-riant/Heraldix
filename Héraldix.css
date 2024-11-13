@@ -63,6 +63,7 @@ img {
 
 span {
 	font-family: Gabriola;
+	/* font-family: Chomsky */
 	font-size: 30px;
 	color: #000000;
 }
@@ -70,6 +71,14 @@ td,
 th {display: none;}
 
 .caché {display: none;}
+
+@media (max-width: 750px) {
+	
+	* {font-size: 50px;}
+	
+	.img-logo {width: 200px;}
+
+}
 
 /* ================================================================================================================= */
 /*                                                                                                                   */

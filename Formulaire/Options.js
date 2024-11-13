@@ -97,9 +97,9 @@ heaumes = {
 		"Anobli",
 		"Bâtard",
 	],
-	"Royaume-Uni": {
+	"Royaume-Uni": [
 		"Baronnet",
-	},
+	],
 };
 
 portants = {
@@ -108,7 +108,8 @@ portants = {
 		"Lion",
 		"Sauvage",
 		"Guerrier africain",
-		"Hercules","Dauphin",
+		"Hercules",
+		"Dauphin",
 		"Hyppocampe",
 		"Bélier",
 		"Tigre",
