@@ -57,9 +57,12 @@ h1 {
 
 img {
 	/* filter: drop-shadow(3px 3px 1px #000000); */
-	border-radius: 0;
+	border-radiux: 0;
 }
-.img-logo {width: 100px;}
+.img-logo {
+	width: 100px;
+	border-radius: 20px;
+}
 
 span {
 	font-family: Gabriola;

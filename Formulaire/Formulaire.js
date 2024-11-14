@@ -4,20 +4,38 @@
 //                                                                                                                   //
 // ================================================================================================================= //
 
+codePays = {
+	"**": "**",
+	"RF": "Royaume de France",
+	"EF": "Empire français",
+	"VF": "Villes françaises",
+	"RE": "Reino de España",
+	"UK": "United Kingdom",
+	"HR": "Heiliges Römisches Reich",
+	"RP": "Reino de Portugal",
+	"GL": "Groussherzogtum Lëtzebuerg",
+	"KS": "Konungariket Sverige",
+	"SC": "Status Civitatis Vaticanӕ",
+}
+
 function accorder() {
 	document.getElementById("select-profil").addEventListener(
 		"change",
 		function() {
 			profil = this.value;
-			valeurs = profils[codePays[profils.split(" ")[0]]][profil.slice(3)] || profils["Sans"];
-			for ([nom, valeur] of Object.entries(valeurs)) {
-				document.getElementsByName(nom)[0].value = valeur;
+			valeurs = profils[codePays[profil.split(" ")[0]]][profil.slice(3)];
+			for (nom of Object.keys(valeurs)) {
+				// if (valeurs[nom][0] == "**") {
+				// 	document.getElementsByName(nom)[0].value = valeurs[nom][1];
+				// } else {
+					document.getElementsByName(nom)[0].value = valeurs[nom][0] + " " + valeurs[nom][1];
+				// }
 			}
 		}
 	);
 }
 
-function collier2() {
+/* function collier2() {
 	document.getElementsByName("collier")[0].addEventListener(
 		"change",
 		function() {
@@ -29,7 +47,7 @@ function collier2() {
 			}
 		}
 	);
-}
+} */
 
 function remplir() {
 	listes = [profils, écus, couronnes, heaumes, portants, portants, colliers, manteaux];
@@ -43,34 +61,28 @@ function remplir() {
 		optionSans.value = "";
 		selectProfil.appendChild(optionSans);
 		listePays = {
-			"Royaume de France": "RF ",
-			"Empire français": "EF",
-			"Villes français": "VF",
-			"Reino de España": "RE ",
-			"United Kingdom": "UK ",
+			"**": "**",
+			"Royaume de France": "RF", 
+			"Empire français": "EF", 
+			"Villes françaises": "VF", 
+			"Reino de España": "RE", 
+			"United Kingdom": "UK", 
+			"Heiliges Römisches Reich": "HR", 
+			"Reino de Portugal": "RP", 
+			"Groussherzogtum Lëtzebuerg": "GL", 
+			"Konungariket Sverige": "KS", 
+			"Status Civitatis Vaticanӕ": "SC", 
 		}
-		code = "";
-		if (liste == écus || liste == portants) {
-			for (champ of Object.keys(liste)) {
+		for (pays of Object.keys(liste)) {
+			optgroup = document.createElement("optgroup");
+			optgroup.label = pays;
+			for (champ of Object.keys(liste[pays])) {
 				option = document.createElement("option");
 				option.textContent = champ;
-				option.value = code + champ;
-				selectProfil.appendChild(option);
+				option.value = listePays[pays] + " " + champ;
+				optgroup.appendChild(option);
 			}
-		}
-		else {
-			for (pays of Object.keys(liste)) {
-				code = listePays[pays];
-				optgroup = document.createElement("optgroup");
-				optgroup.label = pays;
-				for (champ of Object.keys(liste[pays])) {
-					option = document.createElement("option");
-					option.textContent = champ;
-					option.value = code + champ;
-					optgroup.appendChild(option);
-				}
-				selectProfil.appendChild(optgroup);
-			}
+			selectProfil.appendChild(optgroup);
 		}
 		index ++;
 	}

@@ -7,24 +7,75 @@
 wikipédia = "https://upload.wikimedia.org/wikipedia/commons/";
 
 écus = {
-	"Chavagnac": [
-		"Écus/Chavagnac.png",
-	],
-	"France": [
-		"Écus/France.png",
-		wikipédia + "1/13/Blason_France_moderne.svg",
-		wikipédia + "7/78/Proposed_Blason_for_Île-de-France.svg",
-		wikipédia + "9/95/Blason_pays_fr_France_ancien.svg",
-	],
-	"España": [
-		wikipédia + "c/c7/Arms_of_Spain_(1977-1981).svg",
-	],
-	"England" :[
-		wikipédia + "1/1c/England_Arms_1405.svg",
-	],
-	"Breizh": [
-		wikipédia + "d/d8/Armoiries_Bretagne_-_Arms_of_Brittany.svg",
-	],
+	"Royaume de France": {
+		"France": [
+			"Écus/France.png",
+			wikipédia + "1/13/Blason_France_moderne.svg",
+			wikipédia + "7/78/Proposed_Blason_for_Île-de-France.svg",
+			wikipédia + "9/95/Blason_pays_fr_France_ancien.svg",
+		],
+		"Chavagnac": [
+			"Écus/Chavagnac.png",
+			"https://data.man8rove.com/images/arms/full/1jo8ll90a-1.png",
+			"http://dechav.free.fr/png/Chavagnac_de_Champagne.png",
+			wikipédia + "d/d3/Blason_famille_Chavagnac_moderne.svg",
+			wikipédia + "d/d6/Blason_famille_fr_de_Chavagnac.svg",
+			wikipédia + "f/fb/Blason_famille_fr_de_Chavagnac_1.svg",
+			wikipédia + "0/06/Blason_famille_fr_de_Chavagnac_2.svg",
+		
+		],
+		"Breizh": [
+			wikipédia + "d/d8/Armoiries_Bretagne_-_Arms_of_Brittany.svg",
+		],
+	},
+	"Empire français": {
+		"Bonaparte": [
+			wikipédia + "6/6e/Arms_of_the_French_Empire.svg",
+		],
+	},
+	"United Kingdom": {
+		"Kingdom": [
+			wikipédia + "2/2b/Arms_of_the_United_Kingdom.svg",
+		],
+		"England": [
+			wikipédia + "1/1c/England_Arms_1405.svg",
+			wikipédia + "f/f7/Royal_arms_of_England.svg",
+			wikipédia + "2/28/England_COA.svg",
+		],
+		"Alba": [
+			wikipédia + "b/bd/Royal_Arms_of_the_Kingdom_of_Scotland.svg",
+		],
+	},
+	"Reino de España": {
+		"España": [
+			wikipédia + "c/c7/Arms_of_Spain_(1977-1981).svg",
+		],
+	},
+	"Heiliges Römisches Reich": {
+		"Heiliges Römisches Reich" : [
+			wikipédia + "4/43/Arms_of_the_Holy_Roman_Emperor_(c.1433-c.1450).svg",
+		],
+	},
+	"Status Civitatis Vaticanӕ": {
+		"Civitas Vaticana": [
+			wikipédia + "3/3a/Coat_of_arms_of_Vatican_City_(2023–present).svg"
+		],
+	},
+	"Reino de Portugal": {
+		"Portugal": [
+			wikipédia + "6/6a/Royal_Arms_of_Portugal.svg",
+		],
+	},
+	"Groussherzogtum Lëtzebuerg": {
+		"Lëtzebuerg": [
+			wikipédia + "0/05/Arms_of_Luxembourg.svg",
+		],
+	},
+	"Konungariket Sverige": {
+		"Sverige": [
+			wikipédia + "a/a1/Shield_of_arms_of_Sweden.svg",
+		],
+	},
 }
 
 couronnes = {
@@ -80,6 +131,7 @@ couronnes = {
 			wikipédia + "e/e5/French_heraldic_crowns_-_Vidame.svg",
 		],
 		"Baron et pair": [
+			wikipédia + "archive/7/76/20100401071907!French_heraldic_crowns_-_baron_et_pair.svg",
 			wikipédia + "7/76/French_heraldic_crowns_-_baron_et_pair.svg",
 		],
 		"Baron": [
@@ -198,61 +250,63 @@ heaumes = {
 }
 
 portants = {
-	"Ange": [
-		"Portants/Ange.png",
-		wikipédia + "f/ff/Angelic_Supporter_(Heraldry).svg",
-		wikipédia + "6/68/Meuble_héraldique_Ange_debout.svg",
-	],
-	"Lion": [
-		"Portants/Lion.png",
-		wikipédia + "6/62/Lion_rampant_guardant_as_supporter_(Or).svg",
-		wikipédia + "6/66/Royal_Coat_of_Arms_of_the_United_Kingdom-Lion.svg",
-	],
-	"Sauvage": [
-		wikipédia + "9/91/Wildman_Supporter_(Heraldry).svg",
-		wikipédia + "7/7b/Wild_man_holding_club_with_one_foot_on_sphere.svg",
-	],
-	"Guerrier affricain": [
-		wikipédia + "f/f5/Meuble_guerrier_africain.svg",
-	],
-	"Hercules": [
-		wikipédia + "2/2f/Hercules_Supporter_(Heraldry).svg",
-	],
-	"Dauphin": [
-		wikipédia + "7/71/Dolphin_Supporter_(Heraldry).svg",
-	],
-	"Hyppocampe": [
-		wikipédia + "6/66/Ippocampo_Supporto_Sea_Horse_Supporter_(Heraldry).svg",
-	],
-	"Bélier": [
-		wikipédia + "d/d5/Ram_(Heraldic_Supporter).svg",
-	],
-	"Tigre": [
-		wikipédia + "5/52/Tiger_Supporter_(Heraldry).svg",
-	],
-	"Aigle": [
-		wikipédia + "1/10/Imperial_Eagle_Supporter_(Heraldry).svg",
-	],
-	"Griffon": [
-		wikipédia + "3/3c/Gold_Griffin_Supporter_(Heraldry).svg",
-		wikipédia + "5/51/Silver-Gold_Griffin_Supporter_(Heraldry).svg",
-		wikipédia + "1/1e/Sable-Gold_Griffin_Supporter_(Heraldry).svg",
-	],
-	"Lévrier": [
-		wikipédia + "9/97/Greyhound_Supporter_of_the_English_Heraldry.svg",
-	],
-	"Dragon": [
-		wikipédia + "c/c5/Héraldique_meuble_Dragon_(wyvern).svg",
-		wikipédia + "0/0b/Meuble_héraldique_Dragon_(wyvern).svg",
-	
-	],
-	"Licorne": [
-		wikipédia + "9/96/Unicorn_Supporter_(Heraldry).svg",
-	],
+	"**": {
+		"Ange": [
+			"Portants/Ange.png",
+			wikipédia + "f/ff/Angelic_Supporter_(Heraldry).svg",
+			wikipédia + "6/68/Meuble_héraldique_Ange_debout.svg",
+		],
+		"Lion": [
+			"Portants/Lion.png",
+			wikipédia + "6/62/Lion_rampant_guardant_as_supporter_(Or).svg",
+			wikipédia + "6/66/Royal_Coat_of_Arms_of_the_United_Kingdom-Lion.svg",
+		],
+		"Sauvage": [
+			wikipédia + "9/91/Wildman_Supporter_(Heraldry).svg",
+			wikipédia + "7/7b/Wild_man_holding_club_with_one_foot_on_sphere.svg",
+		],
+		"Guerrier affricain": [
+			wikipédia + "f/f5/Meuble_guerrier_africain.svg",
+		],
+		"Hercules": [
+			wikipédia + "2/2f/Hercules_Supporter_(Heraldry).svg",
+		],
+		"Dauphin": [
+			wikipédia + "7/71/Dolphin_Supporter_(Heraldry).svg",
+		],
+		"Hyppocampe": [
+			wikipédia + "6/66/Ippocampo_Supporto_Sea_Horse_Supporter_(Heraldry).svg",
+		],
+		"Bélier": [
+			wikipédia + "d/d5/Ram_(Heraldic_Supporter).svg",
+		],
+		"Tigre": [
+			wikipédia + "5/52/Tiger_Supporter_(Heraldry).svg",
+		],
+		"Aigle": [
+			wikipédia + "1/10/Imperial_Eagle_Supporter_(Heraldry).svg",
+		],
+		"Griffon": [
+			wikipédia + "3/3c/Gold_Griffin_Supporter_(Heraldry).svg",
+			wikipédia + "5/51/Silver-Gold_Griffin_Supporter_(Heraldry).svg",
+			wikipédia + "1/1e/Sable-Gold_Griffin_Supporter_(Heraldry).svg",
+		],
+		"Lévrier": [
+			wikipédia + "9/97/Greyhound_Supporter_of_the_English_Heraldry.svg",
+		],
+		"Dragon": [
+			wikipédia + "c/c5/Héraldique_meuble_Dragon_(wyvern).svg",
+			wikipédia + "0/0b/Meuble_héraldique_Dragon_(wyvern).svg",
+		
+		],
+		"Licorne": [
+			wikipédia + "9/96/Unicorn_Supporter_(Heraldry).svg",
+		],
+	},
 }
 
 colliers = {
-	"Autres": {
+	"**": {
 		"Corde": [
 			wikipédia + "1/1e/Heraldic_cord.svg",
 		],
@@ -293,7 +347,7 @@ manteaux = {
 }
 
 cimiers = {
-	"": {
+	"**": {
 		"Bassinet" : [
 			wikipédia + "a/aa/Bassinet.SVG",
 		],
@@ -301,13 +355,15 @@ cimiers = {
 }
 
 /*
-	%C3%8E	Î
-	%C3%A7	ç
-	%C3%A9	é
-	%C3%B1	ñ
-	%28	(
-	%29	)
-	%60	`
+	%21			!
+	%28			(
+	%29			)
+	%60			`
+	%C3%8E		Î
+	%C3%A7		ç
+	%C3%A9		é
+	%C3%B1		ñ
+	%E2%80%93	–
 */
 
 // ================================================================================================================= //

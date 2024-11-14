@@ -8,8 +8,8 @@ URL = new URLSearchParams(window.location.search);
 
 couronne = URL.get("couronne");
 heaume = URL.get("heaume");
-écu = URL.get("écu");
 portantDextre = URL.get("portant-dextre");
+écu = URL.get("écu");
 portantSenestre = URL.get("portant-senestre");
 collier = URL.get("collier");
 manteau = URL.get("manteau");
@@ -17,11 +17,17 @@ cri = URL.get("cri");
 devise = URL.get("devise");
 
 codePays = {
+	"**": "**",
 	"RF": "Royaume de France",
 	"EF": "Empire français",
 	"VF": "Villes françaises",
 	"RE": "Reino de España",
 	"UK": "United Kingdom",
+	"HR": "Heiliges Römisches Reich",
+	"RP": "Reino de Portugal",
+	"GL": "Groussherzogtum Lëtzebuerg",
+	"KS": "Konungariket Sverige",
+	"SC": "Status Civitatis Vaticanӕ",
 }
 
 function inverser(style) {
@@ -35,31 +41,21 @@ function basculer(image) {
 		"Portant à dextre": [portants, portantDextre, "img-portant-dextre"],
 		"Écu": [écus, écu, "img-écu"],
 		"Portant à senestre": [portants, portantSenestre, "img-portant-senestre"],
+		"Collier": [colliers, collier, "img-collier"],
 		"Manteau": [manteaux, manteau, "img-manteau"],
 	}
+	if (images[image][0][codePays[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length == 1) {alert("Pas d'autres versions pour « " + image + " ».");}
 	if (image == "Couronne") {
 		comptes[image] = (comptes[image] + 1) % couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)].length;
 		document.getElementById("img-couronne").src = couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)][comptes[image]];
 		if (manteau) {
 			document.getElementById("img-couronne-manteau").src = couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)][comptes[image]];
 		}
-	} else if (image == "Heaume") {
+	} else {
 		comptes[image] =
 		(comptes[image] + 1) % images[image][0][codePays[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length;
 		document.getElementById(images[image][2]).src =
 		images[image][0][codePays[images[image][1].split(" ")[0]]][images[image][1].slice(3)][comptes[image]];
-	} else if (image == "Portant à dextre") {
-		comptes[image] = (comptes[image] + 1) % portants[portantDextre].length;
-		document.getElementById("img-portant-dextre").src = portants[portantDextre][comptes[image]];
-	} else if (image == "Écu") {
-		comptes[image] = (comptes[image] + 1) % écus[écu].length;
-		document.getElementById("img-écu").src = écus[écu][comptes[image]];
-	} else if (image == "Portant à senestre") {
-		comptes[image] = (comptes[image] + 1) % portants[portantSenestre].length;
-		document.getElementById("img-portant-senestre").src = portants[portantSenestre][comptes[image]];
-	} else if (image == "Manteau") {
-		comptes[image] = (comptes[image] + 1) % manteaux[codePays[manteau.split(" ")[0]]][manteau.slice(3)].length;
-		document.getElementById("img-manteau").src = manteaux[codePays[manteau.split(" ")[0]]][manteau.slice(3)][comptes[image]];
 	}
 }
 
@@ -145,15 +141,15 @@ function générerArmoirie() {
 	}
 	if (écu) {
 		afficher("écu");
-		document.getElementById("img-écu").src = écus[écu][0];
+		document.getElementById("img-écu").src = écus[codePays[écu.split(" ")[0]]][écu.slice(3)][0];
 	}
 	if (portantDextre) {
 		afficher("portant-dextre");
-		document.getElementById("img-portant-dextre").src = portants[portantDextre][0];
+		document.getElementById("img-portant-dextre").src = portants[codePays[portantDextre.split(" ")[0]]][portantDextre.slice(3)][0];
 	}
 	if (portantSenestre) {
 		afficher("portant-senestre");
-		document.getElementById("img-portant-senestre").src = portants[portantSenestre][0];
+		document.getElementById("img-portant-senestre").src = portants[codePays[portantSenestre.split(" ")[0]]][portantSenestre.slice(3)][0];
 	}
 	if (collier) {
 		afficher("collier");
