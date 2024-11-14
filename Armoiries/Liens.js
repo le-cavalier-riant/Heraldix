@@ -9,7 +9,10 @@ wikipédia = "https://upload.wikimedia.org/wikipedia/commons/";
 écus = {
 	"Royaume de France": {
 		"France": [
-			"Écus/France.png",
+			"Écus/France moderne A.svg",
+			"Écus/France moderne B.svg",
+			"Écus/France ancien.svg",
+			"Écus/France et Navarre.svg",
 			wikipédia + "1/13/Blason_France_moderne.svg",
 			wikipédia + "7/78/Proposed_Blason_for_Île-de-France.svg",
 			wikipédia + "9/95/Blason_pays_fr_France_ancien.svg",
