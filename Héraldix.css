@@ -29,7 +29,6 @@ select {
 	margin-bottom: 2px;
 	margin-right: 2px;
 }
-
 button:hover,
 input:hover,
 select:hover {
@@ -78,9 +77,24 @@ th {display: none;}
 
 @media (max-width: 1000px) {
 
-	* {font-size: 50px;}
+	* {
+		font-size: 50px;
+		border-radius: 50px;
+	}
 
 	.img-logo {width: 200px;}
+
+	button,
+	input,
+	select {
+		padding: 20px;
+		margin: 20px;
+	}
+	button:hover,
+	input:hover,
+	select:hover {
+		margin: 20px;
+	}
 
 }
 
