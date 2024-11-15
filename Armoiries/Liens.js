@@ -29,11 +29,22 @@ wikipédia = "https://upload.wikimedia.org/wikipedia/commons/";
 		],
 		"Breizh": [
 			wikipédia + "d/d8/Armoiries_Bretagne_-_Arms_of_Brittany.svg",
+			"https://fr.geneawiki.com/images/b/bb/Province_-_Blason_-_Bretagne.png",
 		],
 	},
 	"Empire français": {
 		"Bonaparte": [
 			wikipédia + "6/6e/Arms_of_the_French_Empire.svg",
+		],
+	},
+	"Villes françaises": {
+		"Paris": [
+			wikipédia + "c/ca/Blason_paris_75.svg",
+		],
+	},
+	"Reino de España": {
+		"España": [
+			wikipédia + "c/c7/Arms_of_Spain_(1977-1981).svg",
 		],
 	},
 	"United Kingdom": {
@@ -44,22 +55,19 @@ wikipédia = "https://upload.wikimedia.org/wikipedia/commons/";
 			wikipédia + "1/1c/England_Arms_1405.svg",
 			wikipédia + "f/f7/Royal_arms_of_England.svg",
 			wikipédia + "2/28/England_COA.svg",
+			wikipédia + "1/10/Royal_Arms_of_England_(1340-1367).svg",
+			wikipédia + "8/86/Royal_Arms_of_England_(1399-1603).svg",
 		],
 		"Alba": [
 			wikipédia + "b/bd/Royal_Arms_of_the_Kingdom_of_Scotland.svg",
 		],
-	},
-	"Reino de España": {
-		"España": [
-			wikipédia + "c/c7/Arms_of_Spain_(1977-1981).svg",
-		],
-	},
+	},	
 	"Heiliges Römisches Reich": {
 		"Heiliges Römisches Reich" : [
 			wikipédia + "4/43/Arms_of_the_Holy_Roman_Emperor_(c.1433-c.1450).svg",
 		],
 	},
-	"Status Civitatis Vaticanӕ": {
+	"Status Civitatis Vaticanæ": {
 		"Civitas Vaticana": [
 			wikipédia + "3/3a/Coat_of_arms_of_Vatican_City_(2023–present).svg"
 		],
@@ -197,6 +205,20 @@ couronnes = {
 			wikipédia + "b/bd/Heraldic_Crown_of_Spanish_Grandee.svg",
 		],
 	},
+	"United Kingdom": {},
+	"Heiliges Römisches Reich": {},
+	"Status Civitatis Vaticanæ": {},
+	"Reino de Portugal": {
+		"Rei": [
+			wikipédia + "5/53/Heraldic_Crown_of_the_King_of_Portugal.png",
+		],
+	},
+	"Groussherzogtum Lëtzebuerg": {},
+	"Konungariket Sverige": {
+		"Kung": [
+			wikipédia + "9/99/Royal_crown_of_the_King_of_Sweden.svg",
+		],
+	},
 }
 
 heaumes = {
@@ -245,11 +267,22 @@ heaumes = {
 			"Heaumes/Bâtard.jpg",
 		],
 	},
+	"Empire français": {},
+	"Villes françaises": {},
+	"Reino de España": {},
 	"United Kingdom": {
+		"King": [
+			wikipédia + "e/e2/BarredHelmetGermanOrFF.svg",
+		],
 		"Baronet": [
 			wikipédia + "e/e9/Héraldique_ornement_Heaume_baronnet.svg",
 		],
 	},
+	"Heiliges Römisches Reich": {},
+	"Status Civitatis Vaticanæ": {},
+	"Reino de Portugal": {},
+	"Groussherzogtum Lëtzebuerg": {},
+	"Konungariket Sverige": {},
 }
 
 portants = {
@@ -322,11 +355,19 @@ colliers = {
 			wikipédia + "3/34/Order_of_the_Holy_Spirit_(heraldry).svg",
 		],
 	},
+	"Empire français": {},
+	"Villes françaises": {},
 	"Reino de España": {
 		"Orden del Toisón de Oro": [
 			"Colliers/Ordre de la Toison d'or.svg",
 		],
 	},
+	"United Kingdom": {},
+	"Heiliges Römisches Reich": {},
+	"Status Civitatis Vaticanæ": {},
+	"Reino de Portugal": {},
+	"Groussherzogtum Lëtzebuerg": {},
+	"Konungariket Sverige": {},
 }
 
 manteaux = {

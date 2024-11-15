@@ -15,7 +15,7 @@
 	<script src = Profils.js></script>
 	<script src = ../Armoiries/Liens.js></script>
 </head>
-<body onload = "remplir(), accorder()">
+<body onload = "remplir(), filtrer(), accorder()">
 <header>
 	<a href = ../Héraldix.html><img src = ../Héraldix.png class = img-logo></a>
 	<h1><hr>Formulaire<hr></h1>
@@ -24,6 +24,9 @@
 <fieldset>
 	<legend>Description héraldique</legend>
 	<form action = ../Armoiries/Armoiries.html>
+		<label>Pays</label><br>
+		<select id = select-pays></select><br>
+		<br>
 		<label id = label-profil>Profil</label><br>
 		<select id = select-profil></select><hr>
 		<br>

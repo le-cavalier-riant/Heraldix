@@ -83,7 +83,7 @@ profils = {
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},
-		"Duc non souverain et pair": {
+		"Duc et pair": {
 			"collier": ["**", ""],
 			"couronne": ["RF", "Duc"],
 			"cri": ["**", ""],
@@ -94,7 +94,7 @@ profils = {
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},
-		"Duc non souverain": {
+		"Duc": {
 			"collier": ["**", ""],
 			"couronne": ["RF", "Duc"],
 			"cri": ["**", ""],
@@ -238,7 +238,31 @@ profils = {
 			"portant-senestre": ["**", ""],
 		},
 	},
+	"Empire français": {
+		"Empereur 1804": {
+			"collier": ["**", ""],
+			"couronne": ["EF", "Empereur 1804"],
+			"cri": ["**", ""],
+			"devise": ["**", ""],
+			"écu": ["EF", "Bonaparte"],
+			"heaume": ["RF", "Roi"],
+			"manteau": ["**", ""],
+			"portant-dextre": ["**", ""],
+			"portant-senestre": ["**", ""],
+		},
+	},
 	"Villes françaises": {
+		"Paris": {
+			"collier": ["**", ""],
+			"couronne": ["VF", "Capitale"],
+			"cri": ["**", ""],
+			"devise": ["**", "Fluctuat nec mergitur"],
+			"écu": ["VF", "Paris"],
+			"heaume": ["**", ""],
+			"manteau": ["**", ""],
+			"portant-dextre": ["**", ""],
+			"portant-senestre": ["**", ""],
+		},
 		"Capitale": {
 			"collier": ["**", ""],
 			"couronne": ["VF", "Capitale"],
@@ -274,7 +298,7 @@ profils = {
 		},
 	},
 	"Reino de España": {
-		"Rey de España": {
+		"Rey": {
 			"collier": ["RE", "Orden del Toisón de Oro"],
 			"couronne": ["RE", "Rey de España"],
 			"cri": ["**", "Una grande libre"],
@@ -297,10 +321,21 @@ profils = {
 			"portant-senestre": ["**", ""],
 		},
 	},
-	"Empire français": {},
-	"United Kingdom": {},
+	"United Kingdom": {
+		"King": {
+			"collier": ["**", ""],
+			"couronne": ["UK", "King"],
+			"cri": ["**", ""],
+			"devise": ["**", "Dieu et mon droit"],
+			"écu": ["UK", "Kingdom"],
+			"heaume": ["UK", "King"],
+			"manteau": ["**", ""],
+			"portant-dextre": ["**", "Lion"],
+			"portant-senestre": ["**", "Licorne"],
+		}
+	},
 	"Heiliges Römisches Reich": {},
-	"Status Civitatis Vaticanӕ": {},
+	"Status Civitatis Vaticanæ": {},
 	"Reino de Portugal": {},
 	"Groussherzogtum Lëtzebuerg": {},
 	"Konungariket Sverige": {},

@@ -57,7 +57,7 @@ h1 {
 
 img {
 	/* filter: drop-shadow(3px 3px 1px #000000); */
-	border-radiux: 0;
+	border-radius: 0;
 }
 .img-logo {
 	width: 100px;

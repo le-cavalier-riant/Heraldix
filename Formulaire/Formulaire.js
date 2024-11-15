@@ -4,6 +4,19 @@
 //                                                                                                                   //
 // ================================================================================================================= //
 
+pays2 = {
+	"Royaume de France": "RF", 
+	"Empire français": "EF", 
+	"Villes françaises": "VF", 
+	"Reino de España": "RE", 
+	"United Kingdom": "UK", 
+	"Heiliges Römisches Reich": "HR", 
+	"Reino de Portugal": "RP", 
+	"Groussherzogtum Lëtzebuerg": "GL", 
+	"Konungariket Sverige": "KS", 
+	"Status Civitatis Vaticanæ": "SV",
+}
+
 codePays = {
 	"**": "**",
 	"RF": "Royaume de France",
@@ -15,7 +28,28 @@ codePays = {
 	"RP": "Reino de Portugal",
 	"GL": "Groussherzogtum Lëtzebuerg",
 	"KS": "Konungariket Sverige",
-	"SC": "Status Civitatis Vaticanӕ",
+	"SV": "Status Civitatis Vaticanæ",
+}
+
+function filtrer() {
+	document.getElementById("select-pays").addEventListener(
+		"change",
+		function() {
+			document.querySelectorAll("#select-profil optgroup").forEach(
+				function(groupe) {
+					if (document.getElementById("select-pays").value == "") {
+						groupe.style.display = "block";
+						return;
+					}
+					if (document.getElementById("select-pays").value == groupe.label) {
+						groupe.style.display = "block";
+					} else {
+						groupe.style.display = "none";
+					}
+				}
+			);
+		}
+	);
 }
 
 function accorder() {
@@ -24,12 +58,14 @@ function accorder() {
 		function() {
 			profil = this.value;
 			valeurs = profils[codePays[profil.split(" ")[0]]][profil.slice(3)];
+			index = 0;
 			for (nom of Object.keys(valeurs)) {
-				// if (valeurs[nom][0] == "**") {
-				// 	document.getElementsByName(nom)[0].value = valeurs[nom][1];
-				// } else {
+				if (Object.keys(valeurs)[index] == "devise" || Object.keys(valeurs)[index] == "cri") {
+					document.getElementsByName(nom)[0].value = valeurs[nom][1];
+				} else {
 					document.getElementsByName(nom)[0].value = valeurs[nom][0] + " " + valeurs[nom][1];
-				// }
+				}
+				index++;
 			}
 		}
 	);
@@ -50,16 +86,17 @@ function accorder() {
 } */
 
 function remplir() {
-	listes = [profils, écus, couronnes, heaumes, portants, portants, colliers, manteaux];
-	noms = ["select-profil", "écu", "couronne", "heaume", "portant-dextre", "portant-senestre", "collier", "manteau"];
+	listes = [pays2, profils, écus, couronnes, heaumes, portants, portants, colliers, manteaux];
+	noms = ["select-pays", "select-profil", "écu", "couronne", "heaume", "portant-dextre", "portant-senestre", "collier", "manteau"];
 	index = 0;
 	for (liste of listes) {
-		if (liste == profils) {selectProfil = document.getElementById(noms[index]);}
+		if (liste == profils || liste == pays2) {selectProfil = document.getElementById(noms[index]);}
 		else {selectProfil = document.getElementsByName(noms[index])[0];}
-		optionSans = document.createElement("option");
-		optionSans.textContent = "Sans";
-		optionSans.value = "";
-		selectProfil.appendChild(optionSans);
+		option = document.createElement("option");
+		if (liste == pays2) {option.textContent = "Tous";}
+		else {option.textContent = "Sans";}
+		option.value = "";
+		selectProfil.appendChild(option);
 		listePays = {
 			"**": "**",
 			"Royaume de France": "RF", 
@@ -71,18 +108,28 @@ function remplir() {
 			"Reino de Portugal": "RP", 
 			"Groussherzogtum Lëtzebuerg": "GL", 
 			"Konungariket Sverige": "KS", 
-			"Status Civitatis Vaticanӕ": "SC", 
+			"Status Civitatis Vaticanæ": "SV", 
 		}
 		for (pays of Object.keys(liste)) {
-			optgroup = document.createElement("optgroup");
-			optgroup.label = pays;
-			for (champ of Object.keys(liste[pays])) {
-				option = document.createElement("option");
-				option.textContent = champ;
-				option.value = listePays[pays] + " " + champ;
-				optgroup.appendChild(option);
+			if (liste == pays2) {
+				for (champ of Object.keys(pays2)) {
+					option = document.createElement("option");
+					option.textContent = champ;
+					option.value = champ;
+					selectProfil.appendChild(option);
+				}
+				break;
+			} else {
+				optgroup = document.createElement("optgroup");
+				optgroup.label = pays;
+				for (champ of Object.keys(liste[pays])) {
+					option = document.createElement("option");
+					option.textContent = champ;
+					option.value = listePays[pays] + " " + champ;
+					optgroup.appendChild(option);
+				}
+				selectProfil.appendChild(optgroup);
 			}
-			selectProfil.appendChild(optgroup);
 		}
 		index ++;
 	}

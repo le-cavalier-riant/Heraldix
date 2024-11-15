@@ -27,7 +27,7 @@ codePays = {
 	"RP": "Reino de Portugal",
 	"GL": "Groussherzogtum Lëtzebuerg",
 	"KS": "Konungariket Sverige",
-	"SC": "Status Civitatis Vaticanӕ",
+	"SV": "Status Civitatis Vaticanæ",
 }
 
 function inverser(style) {
@@ -44,7 +44,9 @@ function basculer(image) {
 		"Collier": [colliers, collier, "img-collier"],
 		"Manteau": [manteaux, manteau, "img-manteau"],
 	}
-	if (images[image][0][codePays[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length == 1) {alert("Pas d'autres versions pour « " + image + " ».");}
+	if (images[image][0][codePays[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length == 1) {
+		alert("Pas d'autres versions de « " + images[image][1].slice(3) + " » pour « " + image + " ».");
+	}
 	if (image == "Couronne") {
 		comptes[image] = (comptes[image] + 1) % couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)].length;
 		document.getElementById("img-couronne").src = couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)][comptes[image]];
