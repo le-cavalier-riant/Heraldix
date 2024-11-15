@@ -10,6 +10,12 @@ fieldset {
 }
 
 input[type = "text"] {width: 250px;}
+#input-valider {
+	position: sticky;
+	bottom: 10px;
+	padding: 25px;
+	background-color: #005500;
+}
 
 label {font-weight: bold;}
 #label-titre {font-style: italic;}
