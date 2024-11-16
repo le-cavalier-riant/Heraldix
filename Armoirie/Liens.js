@@ -205,7 +205,12 @@ couronnes = {
 			wikipédia + "b/bd/Heraldic_Crown_of_Spanish_Grandee.svg",
 		],
 	},
-	"United Kingdom": {},
+	"United Kingdom": {
+		"King": [
+			wikipédia + "8/89/1901_pattern_Tudor_Crown_(2D).svg",
+			wikipédia + "8/8d/2022_pattern_Tudor_Crown_(2D).svg",
+		],
+	},
 	"Heiliges Römisches Reich": {},
 	"Status Civitatis Vaticanæ": {},
 	"Reino de Portugal": {

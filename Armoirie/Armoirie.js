@@ -45,7 +45,9 @@ function basculer(image) {
 		"Manteau": [manteaux, manteau, "img-manteau"],
 	}
 	if (images[image][0][codePays[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length == 1) {
-		alert("Pas d'autres versions de « " + images[image][1].slice(3) + " » pour « " + image + " ».");
+		alert("Seule version de « " + images[image][1].slice(3) + " » en tant que « " + image + " ».");
+	} else if (comptes[image] + 1 == images[image][0][codePays[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length) {
+		alert("Dernière version de « " + images[image][1].slice(3) + " » en tant que « " + image + " ».");
 	}
 	if (image == "Couronne") {
 		comptes[image] = (comptes[image] + 1) % couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)].length;

@@ -24,20 +24,20 @@ select {
 	padding: 5px;
 	box-shadow: 2px 2px 1px #000000;
 	transition: ease 0.1s;
-	margin-top: 0px;
-	margin-left: 0px;
-	margin-bottom: 2px;
-	margin-right: 2px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-bottom: 7px;
+	margin-right: 7px;
 }
 button:hover,
 input:hover,
 select:hover {
 	cursor: pointer;
 	box-shadow: 0 0 0 #000000;
-	margin-top: 2px;
-	margin-left: 2px;
-	margin-bottom: 0px;
-	margin-right: 0px;
+	margin-top: 7px;
+	margin-left: 7px;
+	margin-bottom: 5px;
+	margin-right: 5px;
 }
 
 div {justify-content: center;}

@@ -252,17 +252,6 @@ profils = {
 		},
 	},
 	"Villes françaises": {
-		"Paris": {
-			"collier": ["**", ""],
-			"couronne": ["VF", "Capitale"],
-			"cri": ["**", ""],
-			"devise": ["**", "Fluctuat nec mergitur"],
-			"écu": ["VF", "Paris"],
-			"heaume": ["**", ""],
-			"manteau": ["**", ""],
-			"portant-dextre": ["**", ""],
-			"portant-senestre": ["**", ""],
-		},
 		"Capitale": {
 			"collier": ["**", ""],
 			"couronne": ["VF", "Capitale"],
