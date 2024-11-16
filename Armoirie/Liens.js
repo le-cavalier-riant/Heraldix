@@ -20,13 +20,15 @@ wikipédia = "https://upload.wikimedia.org/wikipedia/commons/";
 		],
 		"Chavagnac": [
 			"Armoirie/Écus/Chavagnac.png",
-			"Armoirie/https://data.man8rove.com/images/arms/full/1jo8ll90a-1.png",
-			"Armoirie/http://dechav.free.fr/png/Chavagnac_de_Champagne.png",
+			"https://data.man8rove.com/images/arms/full/1jo8ll90a-1.png",
+			"http://dechav.free.fr/png/Chavagnac_de_Champagne.png",
 			wikipédia + "d/d3/Blason_famille_Chavagnac_moderne.svg",
 			wikipédia + "d/d6/Blason_famille_fr_de_Chavagnac.svg",
 			wikipédia + "f/fb/Blason_famille_fr_de_Chavagnac_1.svg",
 			wikipédia + "0/06/Blason_famille_fr_de_Chavagnac_2.svg",
-		
+		],
+		"Dauphin": [
+			wikipédia + "5/5a/Arms_of_the_Dauphin_of_France.svg",
 		],
 		"Breizh": [
 			wikipédia + "d/d8/Armoiries_Bretagne_-_Arms_of_Brittany.svg",

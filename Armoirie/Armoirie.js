@@ -157,8 +157,10 @@ function générerArmoirie() {
 		if (écu) {
 			if (voyelles.includes(écu.slice(3)[0])) {
 				document.title = "Armoirie d'" + écu.slice(3) + " — Héraldix";
+				document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie d'" + écu.slice(3) + "<hr>";
 			} else {
 				document.title = "Armoirie de " + écu.slice(3) + " — Héraldix";
+				document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie de " + écu.slice(3) + "<hr>";
 			}
 		}
 	}

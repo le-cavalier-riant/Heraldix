@@ -22,7 +22,7 @@ profils = {
 			"couronne": ["RF", "Dauphin"],
 			"cri": ["**", "Montjoie ! Saint Denis !"],
 			"devise": ["**", "Lilia non laborant neque nent"],
-			"écu": ["RF", "France"],
+			"écu": ["RF", "Dauphin"],
 			"heaume": ["RF", "Roi"],
 			"manteau": ["RF", "France"],
 			"portant-dextre": ["**", "Ange"],
