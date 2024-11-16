@@ -154,11 +154,12 @@ function générerArmoirie() {
 			"U", "Ù", "Ú", "Û", "Ü",
 			"Y", "Ỳ", "Ý", "Ŷ", "Ÿ",
 		];
-		console.log(écu.slice(3)[0] in voyelles);
-		if (voyelles.includes(écu.slice(3)[0])) {
-			document.title = "Armoirie d'" + écu.slice(3) + " — Héraldix";
-		} else {
-			document.title = "Armoirie de " + écu.slice(3) + " — Héraldix";
+		if (écu) {
+			if (voyelles.includes(écu.slice(3)[0])) {
+				document.title = "Armoirie d'" + écu.slice(3) + " — Héraldix";
+			} else {
+				document.title = "Armoirie de " + écu.slice(3) + " — Héraldix";
+			}
 		}
 	}
 	if (portantDextre) {
