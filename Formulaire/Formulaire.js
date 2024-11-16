@@ -5,16 +5,18 @@
 // ================================================================================================================= //
 
 pays2 = {
-	"Royaume de France": "RF", 
-	"Empire français": "EF", 
-	"Villes françaises": "VF", 
-	"Reino de España": "RE", 
-	"United Kingdom": "UK", 
-	"Heiliges Römisches Reich": "HR", 
-	"Reino de Portugal": "RP", 
-	"Groussherzogtum Lëtzebuerg": "GL", 
-	"Konungariket Sverige": "KS", 
-	"Status Civitatis Vaticanæ": "SV",
+	"**": "**",
+	"Royaume de France": "RF",
+	"Empire français": "EF",
+	"Villes françaises": "VF",
+	"Royaume d'Espagne": "RE",
+	"Royaume-Uni": "RU",
+	"Saint-Empire romain germanique": "ER",
+	"État du Vatican": "EV",
+	"Royaume du Portugal": "RP",
+	"Grand-Duché de Luxembourg": "GL",
+	"Royaume de Suède": "RS",
+	"Royaume de Jérusalem": "RJ",
 }
 
 codePays = {
@@ -22,13 +24,14 @@ codePays = {
 	"RF": "Royaume de France",
 	"EF": "Empire français",
 	"VF": "Villes françaises",
-	"RE": "Reino de España",
-	"UK": "United Kingdom",
-	"HR": "Heiliges Römisches Reich",
-	"RP": "Reino de Portugal",
-	"GL": "Groussherzogtum Lëtzebuerg",
-	"KS": "Konungariket Sverige",
-	"SV": "Status Civitatis Vaticanæ",
+	"RE": "Royaume d'Espagne",
+	"RU": "Royaume-Uni",
+	"ER": "Saint-Empire romain germanique",
+	"EV": "État du Vatican",
+	"RP": "Royaume du Portugal",
+	"GL": "Grand-Duché de Luxembourg",
+	"RS": "Royaume de Suède",
+	"RJ": "Royaume de Jérusalem",
 }
 
 function filtrer() {
@@ -97,19 +100,6 @@ function remplir() {
 		else {option.textContent = "Sans";}
 		option.value = "";
 		selectProfil.appendChild(option);
-		listePays = {
-			"**": "**",
-			"Royaume de France": "RF", 
-			"Empire français": "EF", 
-			"Villes françaises": "VF", 
-			"Reino de España": "RE", 
-			"United Kingdom": "UK", 
-			"Heiliges Römisches Reich": "HR", 
-			"Reino de Portugal": "RP", 
-			"Groussherzogtum Lëtzebuerg": "GL", 
-			"Konungariket Sverige": "KS", 
-			"Status Civitatis Vaticanæ": "SV", 
-		}
 		for (pays of Object.keys(liste)) {
 			if (liste == pays2) {
 				for (champ of Object.keys(pays2)) {
@@ -125,7 +115,7 @@ function remplir() {
 				for (champ of Object.keys(liste[pays])) {
 					option = document.createElement("option");
 					option.textContent = champ;
-					option.value = listePays[pays] + " " + champ;
+					option.value = pays2[pays] + " " + champ;
 					optgroup.appendChild(option);
 				}
 				selectProfil.appendChild(optgroup);

@@ -5,6 +5,7 @@
 // ================================================================================================================= //
 
 profils = {
+	/*"**": {},*/
 	"Royaume de France": {
 		"Roi": {
 			"collier": ["RF", "Ordre de Saint-Michel"],
@@ -53,13 +54,13 @@ profils = {
 		"Prince": {
 			"collier": ["**", ""],
 			"couronne": ["RF", "Prince"],
-			"cri": ["**", ""],
-			"devise": ["**", ""],
+			"cri": ["**", "Montjoie ! Saint Denis !"],
+			"devise": ["**", "Lilia non laborant neque nent"],
 			"écu": ["RF", "France"],
 			"heaume": ["RF", "Prince"],
 			"manteau": ["RF", "France"],
-			"portant-dextre": ["**", ""],
-			"portant-senestre": ["**", ""],
+			"portant-dextre": ["**", "Ange"],
+			"portant-senestre": ["**", "Ange"],
 		},
 		"Duc souverain et pair": {
 			"collier": ["**", ""],
@@ -193,6 +194,7 @@ profils = {
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},
+		/*"Gentilhomme d'ancienne race": {},*/
 		"Banneret": {
 			"collier": ["**", ""],
 			"couronne": ["RF", "Banneret"],
@@ -215,6 +217,7 @@ profils = {
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},
+		/*"Gentilhomme de trois races": {},*/
 		"Anobli": {
 			"collier": ["**", ""],
 			"couronne": ["**", ""],
@@ -250,6 +253,15 @@ profils = {
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},
+		/*"Empereur 1852": {},*/
+		/*"Empereur 1852": {},*/
+		/*"Prince souverain": {},*/
+		/*"Prince": {},*/
+		/*"Duc": {},*/
+		/*"Comte": {},*/
+		/*"Baron": {},*/
+		/*"Chevalier": {},*/
+		/*"Grand dignitaire": {},*/
 	},
 	"Villes françaises": {
 		"Capitale": {
@@ -286,48 +298,72 @@ profils = {
 			"portant-senestre": ["**", ""],
 		},
 	},
-	"Reino de España": {
-		"Rey": {
-			"collier": ["RE", "Orden del Toisón de Oro"],
-			"couronne": ["RE", "Rey de España"],
+	"Royaume d'Espagne": {
+		"Roi": {
+			"collier": ["RE", "Ordre de la Toison d'or"],
+			"couronne": ["RE", "Roi"],
 			"cri": ["**", "Una grande libre"],
 			"devise": ["**", "Plus ultra"],
-			"écu": ["RE", "España"],
+			"écu": ["RE", "Espagne"],
 			"heaume": ["**", ""],
-			"manteau": ["RE", "Grande"],
+			"manteau": ["RE", "Grand"],
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},
-		"Grande": {
+		"Grand": {
 			"collier": ["**", ""],
-			"couronne": ["RE", "Grande"],
+			"couronne": ["RE", "Grand"],
 			"cri": ["**", ""],
 			"devise": ["**", ""],
 			"écu": ["**", ""],
 			"heaume": ["**", ""],
-			"manteau": ["RE", "Grande"],
+			"manteau": ["RE", "Grand"],
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},
 	},
-	"United Kingdom": {
-		"King": {
+	"Royaume-Uni": {
+		"Roi": {
 			"collier": ["**", ""],
-			"couronne": ["UK", "King"],
+			"couronne": ["RU", "Roi"],
 			"cri": ["**", ""],
 			"devise": ["**", "Dieu et mon droit"],
-			"écu": ["UK", "Kingdom"],
-			"heaume": ["UK", "King"],
+			"écu": ["RU", "Royaume"],
+			"heaume": ["RU", "Roi"],
 			"manteau": ["**", ""],
 			"portant-dextre": ["**", "Lion"],
 			"portant-senestre": ["**", "Licorne"],
-		}
+		},
+		/*"Baronnet": {},*/
 	},
-	"Heiliges Römisches Reich": {},
-	"Status Civitatis Vaticanæ": {},
-	"Reino de Portugal": {},
-	"Groussherzogtum Lëtzebuerg": {},
-	"Konungariket Sverige": {},
+	"Saint-Empire romain germanique": {
+		"Empereur": {
+			"collier": ["**", ""],
+			"couronne": ["ER", "Empereur"],
+			"cri": ["**", ""],
+			"devise": ["**", ""],
+			"écu": ["ER", "Empereur"],
+			"heaume": ["**", ""],
+			"manteau": ["**", ""],
+			"portant-dextre": ["**", ""],
+			"portant-senestre": ["**", ""],
+		},
+	},
+	/*"État du Vatican": {
+		"État du Vatican": [],
+	},*/
+	/*"Royaume du Portugal": {
+		"Roi": [],
+	},*/
+	/*"Grand-Duché de Luxembourg": {
+		"Grand-Duc": [],
+	},*/
+	/*"Royaume de Suède": {
+		"Roi": [],
+	},*/
+	/*"Royaume de Jérusalem": {
+		"**": [],
+	},*/
 };
 
 // ================================================================================================================= //

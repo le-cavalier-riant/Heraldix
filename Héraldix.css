@@ -54,6 +54,9 @@ h1 {
 	margin-left: 200px;
 }
 
+fieldset,
+hr {box-shadow: 2px 2px 1px #000000;}
+
 img {
 	filter: drop-shadow(0 0 2px #000000);
 	border-radius: 0;

@@ -7,8 +7,10 @@
 wikipédia = "https://upload.wikimedia.org/wikipedia/commons/";
 
 écus = {
+	/*"**": {},*/
 	"Royaume de France": {
 		"France": [
+			wikipédia + "c/c0/BlasonIledeFranceUnofficiel.svg",
 			"Armoirie/Écus/France moderne A.svg",
 			"Armoirie/Écus/France moderne B.svg",
 			"Armoirie/Écus/France et Navarre.svg",
@@ -17,6 +19,15 @@ wikipédia = "https://upload.wikimedia.org/wikipedia/commons/";
 			wikipédia + "9/95/Blason_pays_fr_France_ancien.svg",
 			wikipédia + "3/33/France_Ancient.svg",
 			wikipédia + "0/0b/Blason_Abbaye_de_Saint-Léonard.svg",
+		],
+		"Dauphin": [
+			wikipédia + "5/5a/Arms_of_the_Dauphin_of_France.svg",
+			wikipédia + "7/7a/Blason_province_fr_Dauphine.svg",
+			wikipédia + "8/8c/Dauphin_Arms.svg",
+		],
+		"Bretagne": [
+			wikipédia + "d/d8/Armoiries_Bretagne_-_Arms_of_Brittany.svg",
+			"https://fr.geneawiki.com/images/b/bb/Province_-_Blason_-_Bretagne.png",
 		],
 		"Chavagnac": [
 			"Armoirie/Écus/Chavagnac.png",
@@ -27,16 +38,17 @@ wikipédia = "https://upload.wikimedia.org/wikipedia/commons/";
 			wikipédia + "f/fb/Blason_famille_fr_de_Chavagnac_1.svg",
 			wikipédia + "0/06/Blason_famille_fr_de_Chavagnac_2.svg",
 		],
-		"Dauphin": [
-			wikipédia + "5/5a/Arms_of_the_Dauphin_of_France.svg",
+		"Navarre": [
+			wikipédia + "1/17/Blason_Royaume_Navarre.svg",
+			wikipédia + "9/97/Blason_Royaume_Navarre_(ecu_francais).svg",
 		],
-		"Breizh": [
-			wikipédia + "d/d8/Armoiries_Bretagne_-_Arms_of_Brittany.svg",
-			"https://fr.geneawiki.com/images/b/bb/Province_-_Blason_-_Bretagne.png",
+		"Normandie": [
+			wikipédia + "8/85/Blason_Duché_de_Normandie.svg",
+			wikipédia + "6/61/Blason_region_fr_Normandie.svg",
 		],
 	},
 	"Empire français": {
-		"Bonaparte": [
+		"Empereur": [
 			wikipédia + "6/6e/Arms_of_the_French_Empire.svg",
 		],
 	},
@@ -45,54 +57,62 @@ wikipédia = "https://upload.wikimedia.org/wikipedia/commons/";
 			wikipédia + "c/ca/Blason_paris_75.svg",
 		],
 	},
-	"Reino de España": {
-		"España": [
+	"Royaume d'Espagne": {
+		"Espagne": [
 			wikipédia + "c/c7/Arms_of_Spain_(1977-1981).svg",
 		],
 	},
-	"United Kingdom": {
-		"Kingdom": [
-			wikipédia + "2/2b/Arms_of_the_United_Kingdom.svg",
-		],
-		"England": [
+	"Royaume-Uni": {
+		"Angleterre": [
 			wikipédia + "1/1c/England_Arms_1405.svg",
 			wikipédia + "f/f7/Royal_arms_of_England.svg",
 			wikipédia + "2/28/England_COA.svg",
 			wikipédia + "1/10/Royal_Arms_of_England_(1340-1367).svg",
 			wikipédia + "8/86/Royal_Arms_of_England_(1399-1603).svg",
 		],
-		"Alba": [
+		"Écosse": [
 			wikipédia + "b/bd/Royal_Arms_of_the_Kingdom_of_Scotland.svg",
 		],
+		"Royaume": [
+			wikipédia + "2/2b/Arms_of_the_United_Kingdom.svg",
+		],
 	},	
-	"Heiliges Römisches Reich": {
-		"Heiliges Römisches Reich" : [
+	"Saint-Empire romain germanique": {
+		"Empire" : [
 			wikipédia + "4/43/Arms_of_the_Holy_Roman_Emperor_(c.1433-c.1450).svg",
+			wikipédia + "a/ae/Armoiries_imaginaires_de_Charlemagne_%281%29.svg",
 		],
 	},
-	"Status Civitatis Vaticanæ": {
+	"État du Vatican": {
 		"Civitas Vaticana": [
 			wikipédia + "3/3a/Coat_of_arms_of_Vatican_City_(2023–present).svg"
 		],
 	},
-	"Reino de Portugal": {
+	"Royaume du Portugal": {
 		"Portugal": [
 			wikipédia + "6/6a/Royal_Arms_of_Portugal.svg",
 		],
 	},
-	"Groussherzogtum Lëtzebuerg": {
-		"Lëtzebuerg": [
+	"Grand-Duché de Luxembourg": {
+		"Luxembourg": [
 			wikipédia + "0/05/Arms_of_Luxembourg.svg",
 		],
 	},
-	"Konungariket Sverige": {
-		"Sverige": [
+	"Royaume de Suède": {
+		"Suède": [
 			wikipédia + "a/a1/Shield_of_arms_of_Sweden.svg",
+		],
+	},
+	"Royaume de Jérusalem": {
+		"Jérusalem": [
+			wikipédia + "0/04/Blason_Royaume_de_Jérusalem.svg",
+			"https://www.blason-armoiries.org/heraldique/armorial/ecus/j/je/blason-jerusalem.gif",
 		],
 	},
 }
 
 couronnes = {
+	"**": {},
 	"Royaume de France": {
 		"Roi": [
 			wikipédia + "1/1c/Royal_Crown_of_France_(accurate_red_bonnet).svg",
@@ -152,6 +172,7 @@ couronnes = {
 			wikipédia + "b/b7/Crown_of_a_Baron_of_France.svg",
 			wikipédia + "6/66/French_heraldic_crowns_-_Baron.svg",
 		],
+		/*"Gentilhomme d'ancienne race": [],*/
 		"Banneret": [
 			wikipédia + "3/31/Crown_of_a_Chevalier_of_France.svg",
 		],
@@ -159,6 +180,8 @@ couronnes = {
 			wikipédia + "6/6d/Torse_of_a_Chevalier_of_France.svg",
 			wikipédia + "2/23/French_heraldic_crowns_-_chevalier.svg",
 		],
+		/*"Gentilhomme de trois races": [],*/
+		/*"Anobli": [],*/
 	},
 	"Empire français": {
 		"Empereur 1804": [
@@ -200,36 +223,55 @@ couronnes = {
 			wikipédia + "a/aa/Mural_Crown_of_a_French_Commune.svg",
 		],
 	},
-	"Reino de España": {
-		"Rey": [
+	"Royaume d'Espagne": {
+		"Roi": [
 			wikipédia + "1/1b/Heraldic_Royal_Crown_of_Spain_(Version_of_the_Royal_Arms).svg",
 		],
-		"Grande": [
+		"Grand": [
 			wikipédia + "b/bd/Heraldic_Crown_of_Spanish_Grandee.svg",
 		],
 	},
-	"United Kingdom": {
-		"King": [
+	"Royaume-Uni": {
+		"Roi": [
+			wikipédia + "a/a1/Crown_of_Saint_Edward_(Heraldry).svg",
 			wikipédia + "8/89/1901_pattern_Tudor_Crown_(2D).svg",
 			wikipédia + "8/8d/2022_pattern_Tudor_Crown_(2D).svg",
 		],
+		/*"Baronnet": [],*/
 	},
-	"Heiliges Römisches Reich": {},
-	"Status Civitatis Vaticanæ": {},
-	"Reino de Portugal": {
-		"Rei": [
+	"Saint-Empire romain germanique": {
+		"Empereur": [
+			wikipédia + "0/0b/Heraldic_Imperial_Crown_(Gules_Mitre).svg",
+			wikipédia + "f/f1/Heraldic_Imperial_Crown_(Common).svg",
+			wikipédia + "a/ac/Heraldic_Imperial_Crown_Gules-Lappets.svg",
+			wikipédia + "c/cf/Heraldic_Imperial_Crown_Or-Lappets.svg",
+		],
+	},
+	"État du Vatican": {
+		"État du Vatican": [
+			wikipédia + "5/5d/Heraldic_Papal_Tiara.svg",
+		],
+	},
+	"Royaume du Portugal": {
+		"Roi": [
 			wikipédia + "5/53/Heraldic_Crown_of_the_King_of_Portugal.png",
 		],
 	},
-	"Groussherzogtum Lëtzebuerg": {},
-	"Konungariket Sverige": {
-		"Kung": [
+	"Grand-Duché de Luxembourg": {
+		"Grand-Duc": [
+			wikipédia + "2/2a/Crown_of_the_Grand_Duke_of_Luxembourg.svg",
+		],
+	},
+	"Royaume de Suède": {
+		"Roi": [
 			wikipédia + "9/99/Royal_crown_of_the_King_of_Sweden.svg",
 		],
 	},
+	/*"Royaume de Jérusalem": {},*/
 }
 
 heaumes = {
+	/*"**": {},*/
 	"Royaume de France": {
 		"Roi": [
 			"Armoirie/Heaumes/Roi-A.svg",
@@ -265,6 +307,8 @@ heaumes = {
 			"Armoirie/Heaumes/Gentilhomme d'ancienne race-A.png",
 			"Armoirie/Heaumes/Gentilhomme d'ancienne race-B.png",
 		],
+		/*"Banneret": [],*/
+		/*"Chevalier": [],*/
 		"Gentilhomme de trois races": [
 			"Armoirie/Heaumes/Gentilhomme de trois races.png",
 			"Armoirie/Heaumes/Gentilhomme de trois races.jpg",
@@ -278,22 +322,45 @@ heaumes = {
 			"Armoirie/Heaumes/Bâtard-B.png",
 		],
 	},
-	"Empire français": {},
-	"Villes françaises": {},
-	"Reino de España": {},
-	"United Kingdom": {
-		"King": [
+	/*"Empire français": {
+		"Prince souverain": [],
+		"Prince": [],
+		"Duc": [],
+		"Comte": [],
+		"Baron": [],
+		"Chevalier": [],
+		"Grand dignitaire": [],
+	},*/
+	/*"Royaume d'Espagne": {
+		"Roi": [],
+		"Grand": [],
+	},*/
+	"Royaume-Uni": {
+		"Roi": [
 			wikipédia + "e/e2/BarredHelmetGermanOrFF.svg",
 		],
-		"Baronet": [
+		"Baronnet": [
 			wikipédia + "e/e9/Héraldique_ornement_Heaume_baronnet.svg",
 		],
 	},
-	"Heiliges Römisches Reich": {},
-	"Status Civitatis Vaticanæ": {},
-	"Reino de Portugal": {},
-	"Groussherzogtum Lëtzebuerg": {},
-	"Konungariket Sverige": {},
+	/*"Saint-Empire romain germanique": {
+		"Empereur": [],
+	},*/
+	/*"État du Vatican": {
+		"État du Vatican": [],
+	},*/
+	/*"Royaume du Portugal": {
+		"Roi": [],
+	},*/
+	/*"Grand-Duché de Luxembourg": {
+		"Grand-Duc": [],
+	},*/
+	/*"Royaume de Suède": {
+		"Roi": [],
+	},*/
+	/*"Royaume de Jérusalem": {
+		"**": [],
+	},*/
 }
 
 portants = {
@@ -366,22 +433,24 @@ colliers = {
 			wikipédia + "3/34/Order_of_the_Holy_Spirit_(heraldry).svg",
 		],
 	},
-	"Empire français": {},
-	"Villes françaises": {},
-	"Reino de España": {
-		"Orden del Toisón de Oro": [
+	/*"Empire français": {},*/
+	/*"Villes françaises": {},*/
+	"Royaume d'Espagne": {
+		"Ordre de la Toison d'or": [
 			wikipédia + "a/a8/Golden_Fleece_Collar_(Knight).svg",
 		],
 	},
-	"United Kingdom": {},
-	"Heiliges Römisches Reich": {},
-	"Status Civitatis Vaticanæ": {},
-	"Reino de Portugal": {},
-	"Groussherzogtum Lëtzebuerg": {},
-	"Konungariket Sverige": {},
+	/*"Royaume-Uni": {},*/
+	/*"Saint-Empire romain germanique": {},*/
+	/*"État du Vatican": {},*/
+	/*"Royaume du Portugal": {},*/
+	/*"Grand-Duché de Luxembourg": {},*/
+	/*"Royaume de Suède": {},*/
+	/*"Royaume de Jérusalem": {},*/
 }
 
 manteaux = {
+	/*"**": {},*/
 	"Royaume de France": {
 		"France": [
 			"Armoirie/Manteaux/France.svg",
@@ -395,20 +464,29 @@ manteaux = {
 			wikipédia + "0/06/Generic_mantle.svg",
 		],
 	},
-	"Reino de España": {
-		"Grande": [
+	/*"Empire français": {},*/
+	/*"Villes françaises": {},*/
+	"Royaume d'Espagne": {
+		"Grand": [
 			wikipédia + "4/4f/Manto_de_Grande_de_España.svg",
 		],
 	},
+	/*"Royaume-Uni": {},*/
+	/*"Saint-Empire romain germanique": {},*/
+	/*"État du Vatican": {},*/
+	/*"Royaume du Portugal": {},*/
+	/*"Grand-Duché de Luxembourg": {},*/
+	/*"Royaume de Suède": {},*/
+	/*"Royaume de Jérusalem": {},*/
 }
 
-cimiers = {
+/*cimiers = {
 	"**": {
 		"Bassinet" : [
 			wikipédia + "a/aa/Bassinet.SVG",
 		],
 	},
-}
+}*/
 
 /*
 	%21			!

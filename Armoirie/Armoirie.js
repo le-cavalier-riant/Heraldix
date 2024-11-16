@@ -21,13 +21,14 @@ codePays = {
 	"RF": "Royaume de France",
 	"EF": "Empire français",
 	"VF": "Villes françaises",
-	"RE": "Reino de España",
-	"UK": "United Kingdom",
-	"HR": "Heiliges Römisches Reich",
-	"RP": "Reino de Portugal",
-	"GL": "Groussherzogtum Lëtzebuerg",
-	"KS": "Konungariket Sverige",
-	"SV": "Status Civitatis Vaticanæ",
+	"RE": "Royaume d'Espagne",
+	"RU": "Royaume-Uni",
+	"ER": "Saint-Empire romain germanique",
+	"EV": "État du Vatican",
+	"RP": "Royaume du Portugal",
+	"GL": "Grand-Duché de Luxembourg",
+	"RS": "Royaume de Suède",
+	"RJ": "Royaume de Jérusalem",
 }
 
 function inverser(style) {
@@ -46,7 +47,7 @@ function basculer(image) {
 	}
 	if (images[image][0][codePays[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length == 1) {
 		alert("Seule version de « " + images[image][1].slice(3) + " » en tant que « " + image + " ».");
-	} else if (comptes[image] + 1 == images[image][0][codePays[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length) {
+	} else if (comptes[image] + 2 == images[image][0][codePays[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length) {
 		alert("Dernière version de « " + images[image][1].slice(3) + " » en tant que « " + image + " ».");
 	}
 	if (image == "Couronne") {
@@ -93,14 +94,16 @@ function déplacer(image, décalage, direction) {
 }
 
 function redimensionner(image, décalage) {
-	document.getElementById(image).style.width = décalage + "%";
-	if (image == "img-couronne") {document.getElementsByClassName("span-transformer")[0].innerText = décalage;} else
-	if (image == "img-heaume") {document.getElementsByClassName("span-transformer")[1].innerText = décalage;} else
-	if (image == "img-portant-dextre") {document.getElementsByClassName("span-transformer")[2].innerText = décalage;} else
-	if (image == "img-écu") {document.getElementsByClassName("span-transformer")[3].innerText = décalage;} else
-	if (image == "img-portant-senestre") {document.getElementsByClassName("span-transformer")[4].innerText = décalage;} else
-	if (image == "img-manteau") {document.getElementsByClassName("span-transformer")[5].innerText = décalage;} else
-	if (image == "img-collier") {document.getElementsByClassName("span-transformer")[6].innerText = décalage;}
+	console.log(document.getElementById(image).style.width);
+	document.getElementById(image).style.width = (parseInt(document.getElementById(image).style.width.split("px")[0]) + (décalage == "+" ? 25 : -25)) + "px";
+	taille = document.getElementById(image).style.width;
+	if (image == "img-couronne") {document.getElementsByClassName("span-transformer")[0].innerText = taille;} else
+	if (image == "img-heaume") {document.getElementsByClassName("span-transformer")[1].innerText = taille;} else
+	if (image == "img-portant-dextre") {document.getElementsByClassName("span-transformer")[2].innerText = taille;} else
+	if (image == "img-écu") {document.getElementsByClassName("span-transformer")[3].innerText = taille;} else
+	if (image == "img-portant-senestre") {document.getElementsByClassName("span-transformer")[4].innerText = taille;} else
+	if (image == "img-manteau") {document.getElementsByClassName("span-transformer")[5].innerText = taille;} else
+	if (image == "img-collier") {document.getElementsByClassName("span-transformer")[6].innerText = taille;}
 }
 
 function paramètres() {
@@ -155,13 +158,20 @@ function générerArmoirie() {
 			"Y", "Ỳ", "Ý", "Ŷ", "Ÿ",
 		];
 		if (écu) {
-			if (voyelles.includes(écu.slice(3)[0])) {
+			if (couronne) {
+				document.title = "Armoirie de " + couronne.slice(3) + " de " + écu.slice(3) + " — Héraldix";
+				document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie de " + couronne.slice(3) + " de " + écu.slice(3) + "<hr>";
+			} else {
+				document.title = "Armoirie de " + écu.slice(3) + " — Héraldix";
+				document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie de " + écu.slice(3) + "<hr>";
+			}
+			/*if (voyelles.includes(écu.slice(3)[0])) {
 				document.title = "Armoirie d'" + écu.slice(3) + " — Héraldix";
 				document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie d'" + écu.slice(3) + "<hr>";
 			} else {
 				document.title = "Armoirie de " + écu.slice(3) + " — Héraldix";
 				document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie de " + écu.slice(3) + "<hr>";
-			}
+			}*/
 		}
 	}
 	if (portantDextre) {
@@ -185,7 +195,7 @@ function générerArmoirie() {
 	if (manteau) {
 		afficher("manteau");
 		document.getElementById("img-manteau").src = manteaux[codePays[manteau.split(" ")[0]]][manteau.slice(3)][0];
-		if (couronne || heaume || manteau != "Grand") {
+		if (couronne && heaume && manteau != "Grand") {
 			document.getElementById("img-couronne-manteau").src = couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)][0];
 		}
 	} else {
