@@ -144,6 +144,19 @@ function générerArmoirie() {
 	if (écu) {
 		afficher("écu");
 		document.getElementById("img-écu").src = écus[codePays[écu.split(" ")[0]]][écu.slice(3)][0];
+		voyelles = [
+			"A", "À", "Á", "Â", "Ä",
+			"E", "È", "É", "Ê", "Ë",
+			"I", "Ì", "Í", "Î", "Ï",
+			"O", "Ò", "Ó", "Ô", "Ö",
+			"U", "Ù", "Ú", "Û", "Ü",
+			"Y", "Ỳ", "Ý", "Ŷ", "Ÿ"
+		];
+		if (écu.slice(3)[0] in voyelles) {
+			document.title = "Armoirie d' " + écu.slice(3) + " — Héraldix";
+		} else {
+			document.title = "Armoirie de " + écu.slice(3) + " — Héraldix";
+		}
 	}
 	if (portantDextre) {
 		afficher("portant-dextre");
