@@ -150,10 +150,11 @@ function générerArmoirie() {
 			"I", "Ì", "Í", "Î", "Ï",
 			"O", "Ò", "Ó", "Ô", "Ö",
 			"U", "Ù", "Ú", "Û", "Ü",
-			"Y", "Ỳ", "Ý", "Ŷ", "Ÿ"
+			"Y", "Ỳ", "Ý", "Ŷ", "Ÿ",
 		];
-		if (écu.slice(3)[0] in voyelles) {
-			document.title = "Armoirie d' " + écu.slice(3) + " — Héraldix";
+		console.log(écu.slice(3)[0] in voyelles);
+		if (voyelles.includes(écu.slice(3)[0])) {
+			document.title = "Armoirie d'" + écu.slice(3) + " — Héraldix";
 		} else {
 			document.title = "Armoirie de " + écu.slice(3) + " — Héraldix";
 		}
