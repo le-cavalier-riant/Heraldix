@@ -11,11 +11,12 @@ wikipédia = "https://upload.wikimedia.org/wikipedia/commons/";
 		"France": [
 			"Armoirie/Écus/France moderne A.svg",
 			"Armoirie/Écus/France moderne B.svg",
-			"Armoirie/Écus/France ancien.svg",
 			"Armoirie/Écus/France et Navarre.svg",
 			wikipédia + "1/13/Blason_France_moderne.svg",
 			wikipédia + "7/78/Proposed_Blason_for_Île-de-France.svg",
 			wikipédia + "9/95/Blason_pays_fr_France_ancien.svg",
+			wikipédia + "3/33/France_Ancient.svg",
+			wikipédia + "0/0b/Blason_Abbaye_de_Saint-Léonard.svg",
 		],
 		"Chavagnac": [
 			"Armoirie/Écus/Chavagnac.png",
@@ -367,7 +368,7 @@ colliers = {
 	"Villes françaises": {},
 	"Reino de España": {
 		"Orden del Toisón de Oro": [
-			"Armoirie/Colliers/Ordre de la Toison d'or.svg",
+			wikipédia + "a/a8/Golden_Fleece_Collar_(Knight).svg",
 		],
 	},
 	"United Kingdom": {},

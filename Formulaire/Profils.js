@@ -9,7 +9,7 @@ profils = {
 		"Roi": {
 			"collier": ["RF", "Ordre de Saint-Michel"],
 			"couronne": ["RF", "Roi"],
-			"cri": ["**", "Montjoie ! Saint Denis !"],
+			"cri": ["**", "Montjoie ! Saint Denis !"],
 			"devise": ["**", "Lilia non laborant neque nent"],
 			"écu": ["RF", "France"],
 			"heaume": ["RF", "Roi"],
@@ -20,7 +20,7 @@ profils = {
 		"Dauphin": {
 			"collier": ["**", ""],
 			"couronne": ["RF", "Dauphin"],
-			"cri": ["**", "Montjoie ! Saint Denis !"],
+			"cri": ["**", "Montjoie ! Saint Denis !"],
 			"devise": ["**", "Lilia non laborant neque nent"],
 			"écu": ["RF", "France"],
 			"heaume": ["RF", "Roi"],
@@ -31,7 +31,7 @@ profils = {
 		"Fils": {
 			"collier": ["**", ""],
 			"couronne": ["RF", "Fils"],
-			"cri": ["**", "Montjoie ! Saint Denis !"],
+			"cri": ["**", "Montjoie ! Saint Denis !"],
 			"devise": ["**", "Lilia non laborant neque nent"],
 			"écu": ["RF", "France"],
 			"heaume": ["RF", "Roi"],
@@ -42,7 +42,7 @@ profils = {
 		"Petit-fils": {
 			"collier": ["**", ""],
 			"couronne": ["RF", "Petit-fils"],
-			"cri": ["**", "Montjoie ! Saint Denis !"],
+			"cri": ["**", "Montjoie ! Saint Denis !"],
 			"devise": ["**", "Lilia non laborant neque nent"],
 			"écu": ["RF", "France"],
 			"heaume": ["RF", "Roi"],
