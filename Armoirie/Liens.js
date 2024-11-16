@@ -383,6 +383,7 @@ manteaux = {
 	"Royaume de France": {
 		"France": [
 			"Armoirie/Manteaux/France.svg",
+			wikipédia + "1/1e/Grand_Manteau_des_armoiries_du_Royaume_de_France.svg",
 		],
 		"Pair": [
 			wikipédia + "a/a7/Blue_heraldic_mantle.svg",
