@@ -1,0 +1,151 @@
+<!-- ============================================================================================================== -->
+<!--                                                                                                                -->
+<!--                                                   Héraldix                                                     -->
+<!--                                                                                                                -->
+<!-- ============================================================================================================== -->
+
+<!doctype html>
+<html lang = fr>
+<head>
+	<title>Armoirie — Héraldix</title>
+	<meta charset = utf-8>
+	<link rel = stylesheet href = Héraldix.css>
+	<link rel = stylesheet href = Armoirie/Armoirie.css>
+	<script src = Armoirie/Armoirie.js></script>
+	<script src = Armoirie/Liens.js></script>
+</head>
+<body onload = générerArmoirie()>
+<header>
+	<a href = Héraldix.html><img src = Héraldix.png class = img-logo></a>
+	<h1><hr>Armoiries<hr></h1>
+	<a href = Formulaire.html><button>Formulaire</button></a>
+</header>
+
+<div class = div-flex id = div-contenu>
+	<div id = div-manteau><img src = Armoirie/Vide.png id = img-manteau></div>
+	<div id = div-autre>
+		<div id = div-cri><span id = span-cri></span></div>
+		<div id = div-couronne-manteau><img id = img-couronne-manteau></div>
+		<div id = div-couronne><img id = img-couronne></div>
+		<div id = div-heaume><img id = img-heaume></div>
+		<div class = div-flex>
+			<div id = div-portant-dextre><img src = Armoirie/Vide.png id = img-portant-dextre onclick = inverser(this.style)></div>
+			<div class = div-flex><img id = img-collier><img id = img-écu></div>
+			<div id = div-portant-senestre><img src = Armoirie/Vide.png id = img-portant-senestre onclick = inverser(this.style)></div>
+		</div>
+		<div id = div-devise><span id = span-devise></span></div>
+	</div>
+</div>
+
+<div class = div-espace></div>
+
+<footer>
+	<button onclick = paramètres() id = button-paramètres>↓ Paramètres ↓</button>
+	<table class = caché id = table-paramètres>
+		<tr>
+			<td><button onclick = basculer(this.innerText)>Couronne</button></td>
+			<td><button onclick = basculer(this.innerText)>Heaume</button></td>
+			<td><button onclick = basculer(this.innerText)>Portant à dextre</button></td>
+			<td><button onclick = basculer(this.innerText)>Écu</button></td>
+			<td><button onclick = basculer(this.innerText)>Portant à senestre</button></td>
+			<td><button onclick = basculer(this.innerText)>Manteau</button></td>
+			<td><button onclick = basculer(this.innerText)>Collier</button></td>
+		</tr>
+		<tr>
+			<td>
+				- <input type = range min = 0 max = 100 step = 5 onchange = "redimensionner('img-couronne', this.value)" value = 100> +
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				- <input type = range min = 0 max = 100 step = 5 onchange = "redimensionner('img-heaume', this.value)" value = 100> +
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				- <input type = range min = 0 max = 100 step = 5 onchange = "redimensionner('img-portant-dextre', this.value)" value = 100> +
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				- <input type = range min = 0 max = 100 step = 5 onchange = "redimensionner('img-écu', this.value)" value = 100> +
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				- <input type = range min = 0 max = 100 step = 5 onchange = "redimensionner('img-portant-senestre', this.value)" value = 100> +
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				- <input type = range min = 0 max = 100 step = 5 onchange = "redimensionner('img-manteau', this.value)" value = 100> +
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				- <input type = range min = 0 max = 100 step = 5 onchange = "redimensionner('img-collier', this.value)" value = 100> +
+				<span class = span-transformer>0</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-couronne', this.value, '↓')"> ↓
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-heaume', this.value, '↑')"> ↓
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-dextre', this.value, '↓')"> ↓
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-écu', this.value, '↓')"> ↓
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-senestre', this.value, '↓')"> ↓
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-manteau', this.value, '↓')"> ↓
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				↑ <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-collier', this.value, '↓')"> ↓
+				<span class = span-transformer>0</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-couronne', this.value, '←')"> →
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-heaume', this.value, '→')"> →
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-dextre', this.value, '←')"> →
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-écu', this.value, '←')"> →
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-portant-senestre', this.value, '→')"> →
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-manteau', this.value, '→')"> →
+				<span class = span-transformer>0</span>
+			</td>
+			<td>
+				← <input type = range min = -100 max = 100 step = 5 onchange = "déplacer('img-collier', this.value, '→')"> →
+				<span class = span-transformer>0</span>
+			</td>
+		</tr>
+	</table>
+</footer>
+
+<!-- ============================================================================================================== -->
+<!--                                                                                                                -->
+<!--                                                   Héraldix                                                     -->
+<!--                                                                                                                -->
+<!-- ============================================================================================================== -->

@@ -1,0 +1,79 @@
+<!-- ============================================================================================================== -->
+<!--                                                                                                                -->
+<!--                                                   Héraldix                                                     -->
+<!--                                                                                                                -->
+<!-- ============================================================================================================== -->
+
+<!doctype html>
+<html lang = fr>
+<head>
+	<title>Formulaire — Héraldix</title>
+	<meta charset = utf-8>
+	<link rel = stylesheet href = Héraldix.css>
+	<link rel = stylesheet href = Formulaire/Formulaire.css>
+	<script src = Formulaire/Formulaire.js></script>
+	<script src = Formulaire/Profils.js></script>
+	<script src = Armoirie/Liens.js></script>
+</head>
+<body onload = "remplir(), filtrer(), accorder()">
+<header>
+	<a href = Héraldix.html><img src = Héraldix.png class = img-logo></a>
+	<h1><hr>Formulaire<hr></h1>
+</header>
+
+<fieldset>
+	<legend>Description héraldique</legend>
+	<form action = Armoirie.html>
+		<label>Pays</label><br>
+		<select id = select-pays></select><br>
+		<br>
+		<label id = label-profil>Profil</label><br>
+		<select id = select-profil></select><hr>
+		<br>
+		<label>Écu</label><br>
+		<select name = écu></select><br>
+		<br>
+		<label>Couronne</label><br>
+		<select name = couronne></select><br>
+		<br>
+		<label>Heaume</label><br>
+		<select name = heaume></select><br>
+		<br>
+		<label>Portant à dextre</label><br>
+		<select name = portant-dextre></select><br>
+		<br>
+		<label>Portant à senestre</label><br>
+		<select name = portant-senestre></select><br>
+		<br>
+		<label>Collier</label><br>
+		<select name = collier></select><br>
+		<br>
+		<div class = caché id = div-collier-2>
+			<label>Deuxième collier</label><br>
+			<select name = collier-2>
+				<option value = >Sans</option>
+				<option>Corde</option>
+				<optgroup label = "Royaume de France">
+					<option>Ordre de Saint-Michel</option>
+					<option>Ordre du Saint-Esprit</option>
+				</optgroup>
+			</select><br><br>
+		</div>
+		<label>Manteau</label><br>
+		<select name = manteau></select><br>
+		<br>
+		<label>Devise</label><br>
+		<input type = text name = devise><br>
+		<br>
+		<label>Cri</label><br>
+		<input type = text name = cri><br>
+		<br>
+		<input type = submit value = Valider id = input-valider>
+	</form>
+</fieldset>
+
+<!-- ============================================================================================================== -->
+<!--                                                                                                                -->
+<!--                                                   Héraldix                                                     -->
+<!--                                                                                                                -->
+<!-- ============================================================================================================== -->
