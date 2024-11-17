@@ -333,7 +333,13 @@ profils = {
 			"portant-dextre": ["**", "Lion"],
 			"portant-senestre": ["**", "Licorne"],
 		},
+		/*"Duc": {},*/
+		/*"Marquis": {},*/
+		/*"Comte": {},*/
+		/*"Vicomte": {},*/
+		/*"Baron": {},*/
 		/*"Baronnet": {},*/
+		/*"Gentilhomme": {},*/
 	},
 	"Saint-Empire romain germanique": {
 		"Empereur": {

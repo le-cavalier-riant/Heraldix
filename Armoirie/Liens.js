@@ -237,7 +237,25 @@ couronnes = {
 			wikipédia + "8/89/1901_pattern_Tudor_Crown_(2D).svg",
 			wikipédia + "8/8d/2022_pattern_Tudor_Crown_(2D).svg",
 		],
+		"Duc": [
+			wikipédia + "2/20/Coronet_of_a_British_Duke.svg",
+		],
+		"Marquis": [
+			wikipédia + "1/12/Coronet_of_a_British_Marquess.svg",
+		],
+		"Comte": [
+			wikipédia + "f/f1/Coronet_of_a_British_Earl.svg",
+		],
+		"Vicomte": [
+			wikipédia + "b/b0/Coronet_of_a_British_Viscount.svg",
+		],
+		"Baron": [
+			wikipédia + "5/57/Coronet_of_a_British_Baron.svg",
+		],
 		/*"Baronnet": [],*/
+		"Gentilhomme": [
+			wikipédia + "b/bf/Torse_of_a_British_Gentleman.svg",
+		],
 	},
 	"Saint-Empire romain germanique": {
 		"Empereur": [

@@ -10,8 +10,6 @@
 	font-size: 25px;
 	color: #ffffff;
 	border-radius: 20px;
-	/* border: 1px red solid;
-	margin: 1px; */
 }
 
 body {background-color: #303841;}
@@ -68,7 +66,6 @@ img {
 
 span {
 	font-family: Gabriola;
-	/* font-family: Chomsky */
 	font-size: 30px;
 	color: #000000;
 }
