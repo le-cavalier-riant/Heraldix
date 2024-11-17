@@ -247,13 +247,12 @@ profils = {
 			"couronne": ["EF", "Empereur 1804"],
 			"cri": ["**", ""],
 			"devise": ["**", ""],
-			"écu": ["EF", "Bonaparte"],
+			"écu": ["EF", "Empire"],
 			"heaume": ["RF", "Roi"],
 			"manteau": ["**", ""],
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},
-		/*"Empereur 1852": {},*/
 		/*"Empereur 1852": {},*/
 		/*"Prince souverain": {},*/
 		/*"Prince": {},*/

@@ -4,36 +4,6 @@
 //                                                                                                                   //
 // ================================================================================================================= //
 
-pays2 = {
-	"**": "**",
-	"Royaume de France": "RF",
-	"Empire français": "EF",
-	"Villes françaises": "VF",
-	"Royaume d'Espagne": "RE",
-	"Royaume-Uni": "RU",
-	"Saint-Empire romain germanique": "ER",
-	"État du Vatican": "EV",
-	"Royaume du Portugal": "RP",
-	"Grand-Duché de Luxembourg": "GL",
-	"Royaume de Suède": "RS",
-	"Royaume de Jérusalem": "RJ",
-}
-
-codePays = {
-	"**": "**",
-	"RF": "Royaume de France",
-	"EF": "Empire français",
-	"VF": "Villes françaises",
-	"RE": "Royaume d'Espagne",
-	"RU": "Royaume-Uni",
-	"ER": "Saint-Empire romain germanique",
-	"EV": "État du Vatican",
-	"RP": "Royaume du Portugal",
-	"GL": "Grand-Duché de Luxembourg",
-	"RS": "Royaume de Suède",
-	"RJ": "Royaume de Jérusalem",
-}
-
 function filtrer() {
 	document.getElementById("select-pays").addEventListener(
 		"change",
@@ -89,20 +59,20 @@ function accorder() {
 } */
 
 function remplir() {
-	listes = [pays2, profils, écus, couronnes, heaumes, portants, portants, colliers, manteaux];
+	listes = [pays, profils, écus, couronnes, heaumes, portants, portants, colliers, manteaux];
 	noms = ["select-pays", "select-profil", "écu", "couronne", "heaume", "portant-dextre", "portant-senestre", "collier", "manteau"];
 	index = 0;
 	for (liste of listes) {
-		if (liste == profils || liste == pays2) {selectProfil = document.getElementById(noms[index]);}
+		if (liste == profils || liste == pays) {selectProfil = document.getElementById(noms[index]);}
 		else {selectProfil = document.getElementsByName(noms[index])[0];}
 		option = document.createElement("option");
-		if (liste == pays2) {option.textContent = "Tous";}
-		else {option.textContent = "Sans";}
+		if (liste == pays) {option.textContent = "Tous";}
+		else {option.textContent = "∅";}
 		option.value = "";
 		selectProfil.appendChild(option);
-		for (pays of Object.keys(liste)) {
-			if (liste == pays2) {
-				for (champ of Object.keys(pays2)) {
+		for (codePays2 of Object.keys(liste)) {
+			if (liste == pays) {
+				for (champ of Object.keys(pays)) {
 					option = document.createElement("option");
 					option.textContent = champ;
 					option.value = champ;
@@ -111,11 +81,11 @@ function remplir() {
 				break;
 			} else {
 				optgroup = document.createElement("optgroup");
-				optgroup.label = pays;
-				for (champ of Object.keys(liste[pays])) {
+				optgroup.label = codePays2;
+				for (champ of Object.keys(liste[codePays2])) {
 					option = document.createElement("option");
 					option.textContent = champ;
-					option.value = pays2[pays] + " " + champ;
+					option.value = pays[codePays2] + " " + champ;
 					optgroup.appendChild(option);
 				}
 				selectProfil.appendChild(optgroup);

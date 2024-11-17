@@ -48,7 +48,7 @@ wikipédia = "https://upload.wikimedia.org/wikipedia/commons/";
 		],
 	},
 	"Empire français": {
-		"Empereur": [
+		"Empire": [
 			wikipédia + "6/6e/Arms_of_the_French_Empire.svg",
 		],
 	},

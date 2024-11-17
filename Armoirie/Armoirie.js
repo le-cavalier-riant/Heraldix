@@ -16,21 +16,6 @@ manteau = URL.get("manteau");
 cri = URL.get("cri");
 devise = URL.get("devise");
 
-codePays = {
-	"**": "**",
-	"RF": "Royaume de France",
-	"EF": "Empire français",
-	"VF": "Villes françaises",
-	"RE": "Royaume d'Espagne",
-	"RU": "Royaume-Uni",
-	"ER": "Saint-Empire romain germanique",
-	"EV": "État du Vatican",
-	"RP": "Royaume du Portugal",
-	"GL": "Grand-Duché de Luxembourg",
-	"RS": "Royaume de Suède",
-	"RJ": "Royaume de Jérusalem",
-}
-
 function inverser(style) {
 	if (style.transform == "scaleX(-1)") {style.transform = "";} else {style.transform = "scaleX(-1)";}
 }
@@ -94,7 +79,6 @@ function déplacer(image, décalage, direction) {
 }
 
 function redimensionner(image, décalage) {
-	console.log(document.getElementById(image).style.width);
 	document.getElementById(image).style.width = (parseInt(document.getElementById(image).style.width.split("px")[0]) + (décalage == "+" ? 25 : -25)) + "px";
 	taille = document.getElementById(image).style.width;
 	if (image == "img-couronne") {document.getElementsByClassName("span-transformer")[0].innerText = taille;} else
@@ -137,6 +121,13 @@ function générerArmoirie() {
 	if (couronne) {
 		afficher("couronne");
 		document.getElementById("img-couronne").src = couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)][0];
+		if (voyelles.includes(couronne.slice(3)[0])) {
+			document.title = "Armoirie d'" + couronne.slice(3) + " — Héraldix";
+			document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie d'" + couronne.slice(3) + "<hr>";
+		} else {
+			document.title = "Armoirie de " + couronne.slice(3) + " — Héraldix";
+			document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie de " + couronne.slice(3) + "<hr>";
+		}
 	}
 	if (heaume) {
 		afficher("heaume");
@@ -149,29 +140,32 @@ function générerArmoirie() {
 	if (écu) {
 		afficher("écu");
 		document.getElementById("img-écu").src = écus[codePays[écu.split(" ")[0]]][écu.slice(3)][0];
-		voyelles = [
-			"A", "À", "Á", "Â", "Ä",
-			"E", "È", "É", "Ê", "Ë",
-			"I", "Ì", "Í", "Î", "Ï",
-			"O", "Ò", "Ó", "Ô", "Ö",
-			"U", "Ù", "Ú", "Û", "Ü",
-			"Y", "Ỳ", "Ý", "Ŷ", "Ÿ",
-		];
-		if (écu) {
-			if (couronne) {
-				document.title = "Armoirie de " + couronne.slice(3) + " de " + écu.slice(3) + " — Héraldix";
-				document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie de " + couronne.slice(3) + " de " + écu.slice(3) + "<hr>";
+		if (couronne) {
+			if (voyelles.includes(écu.slice(3)[0])) {
+				if (voyelles.includes(couronne.slice(3)[0])) {
+					document.title = "Armoirie d'" + couronne.slice(3) + " d'" + écu.slice(3) + " — Héraldix";
+					document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie d'" + couronne.slice(3) + " d'" + écu.slice(3) + "<hr>";
+				} else {
+					document.title = "Armoirie de " + couronne.slice(3) + " d'" + écu.slice(3) + " — Héraldix";
+					document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie de " + couronne.slice(3) + " d'" + écu.slice(3) + "<hr>";
+				}
 			} else {
-				document.title = "Armoirie de " + écu.slice(3) + " — Héraldix";
-				document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie de " + écu.slice(3) + "<hr>";
+				if (voyelles.includes(couronne.slice(3)[0])) {
+					document.title = "Armoirie d'" + couronne.slice(3) + " de " + écu.slice(3) + " — Héraldix";
+					document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie d'" + couronne.slice(3) + " de " + écu.slice(3) + "<hr>";
+				} else {
+					document.title = "Armoirie de " + couronne.slice(3) + " de " + écu.slice(3) + " — Héraldix";
+					document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie de " + couronne.slice(3) + " de " + écu.slice(3) + "<hr>";
+				}
 			}
-			/*if (voyelles.includes(écu.slice(3)[0])) {
+		} else {
+			if (voyelles.includes(écu.slice(3)[0])) {
 				document.title = "Armoirie d'" + écu.slice(3) + " — Héraldix";
 				document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie d'" + écu.slice(3) + "<hr>";
 			} else {
 				document.title = "Armoirie de " + écu.slice(3) + " — Héraldix";
 				document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie de " + écu.slice(3) + "<hr>";
-			}*/
+			}
 		}
 	}
 	if (portantDextre) {
