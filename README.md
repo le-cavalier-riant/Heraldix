@@ -2,6 +2,8 @@
 
 Une application de création d'armoiries héraldiques.
 
+<a href = https://le-cavalier-riant.github.io/Heraldix/Héraldix.html>Héraldix</a>
+
 *Utilisation*
 
 La page d'accueil `Héraldix.html` permet d'acceder aux différentes pages de l'application.
