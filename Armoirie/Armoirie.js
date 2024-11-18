@@ -49,38 +49,41 @@ function basculer(image) {
 	}
 }
 
-function déplacer(image, décalage, direction) {
-	if (direction == "↓") {document.getElementById(image).style.marginTop = décalage + "px";} else
-	if (direction == "↑") {document.getElementById(image).style.marginBottom = (- décalage) + "px";} else
-	if (direction == "←") {document.getElementById(image).style.marginRight = (- décalage) + "px";} else
-	if (direction == "→") {document.getElementById(image).style.marginLeft = décalage + "px";}
+function déplacer(image, sens) {
+	if (sens == "↓" || sens == "↑") {
+		document.getElementById(image).style.marginTop = (parseInt(document.getElementById(image).style.marginTop.split("px")[0]) + (sens == "↓" ? 10 : -10)) + "px";
+		décalage = document.getElementById(image).style.marginTop;
+	} else {
+		document.getElementById(image).style.marginRight = (parseInt(document.getElementById(image).style.marginRight.split("px")[0]) + (sens == "←" ? 10 : -10)) + "px";
+		décalage = document.getElementById(image).style.marginRight;
+	}
 	if (image == "img-couronne") {
-		if (direction == "↓") {document.getElementsByClassName("span-transformer")[7 + 0].innerText = décalage;} else
-		if (direction == "←") {document.getElementsByClassName("span-transformer")[7 + 0 + 7].innerText = décalage;}
+		if (sens == "↓" || sens == "↑") {document.getElementsByClassName("span-transformer")[14 + 0].innerText = décalage;} else
+		if (sens == "←" || sens == "→") {document.getElementsByClassName("span-transformer")[14 + 0 + 7].innerText = décalage;}
 	} else if (image == "img-heaume") {
-		if (direction == "↑") {document.getElementsByClassName("span-transformer")[7 + 1].innerText = décalage;} else
-		if (direction == "→") {document.getElementsByClassName("span-transformer")[7 + 1 + 7].innerText = décalage;}
+		if (sens == "↓" || sens == "↑") {document.getElementsByClassName("span-transformer")[14 + 1].innerText = décalage;} else
+		if (sens == "←" || sens == "→") {document.getElementsByClassName("span-transformer")[14 + 1 + 7].innerText = décalage;}
 	} else if (image == "img-portant-dextre") {
-		if (direction == "↓") {document.getElementsByClassName("span-transformer")[7 + 2].innerText = décalage;} else
-		if (direction == "←") {document.getElementsByClassName("span-transformer")[7 + 2 + 7].innerText = décalage;}
+		if (sens == "↓" || sens == "↑") {document.getElementsByClassName("span-transformer")[14 + 2].innerText = décalage;} else
+		if (sens == "←" || sens == "→") {document.getElementsByClassName("span-transformer")[14 + 2 + 7].innerText = décalage;}
 	} else if (image == "img-écu") {
-		if (direction == "↓") {document.getElementsByClassName("span-transformer")[7 + 3].innerText = décalage;} else
-		if (direction == "←") {document.getElementsByClassName("span-transformer")[7 + 3 + 7].innerText = décalage;}
+		if (sens == "↓" || sens == "↑") {document.getElementsByClassName("span-transformer")[14 + 3].innerText = décalage;} else
+		if (sens == "←" || sens == "→") {document.getElementsByClassName("span-transformer")[14 + 3 + 7].innerText = décalage;}
 	} else if (image == "img-portant-senestre") {
-		if (direction == "↓") {document.getElementsByClassName("span-transformer")[7 + 4].innerText = décalage;} else
-		if (direction == "→") {document.getElementsByClassName("span-transformer")[7 + 4 + 7].innerText = décalage;}
+		if (sens == "↓" || sens == "↑") {document.getElementsByClassName("span-transformer")[14 + 4].innerText = décalage;} else
+		if (sens == "←" || sens == "→") {document.getElementsByClassName("span-transformer")[14 + 4 + 7].innerText = décalage;}
 	} else if (image == "img-manteau") {
-		if (direction == "↓") {document.getElementsByClassName("span-transformer")[7 + 5].innerText = décalage;} else
-		if (direction == "→") {document.getElementsByClassName("span-transformer")[7 + 5 + 7].innerText = décalage;}
+		if (sens == "↓" || sens == "↑") {document.getElementsByClassName("span-transformer")[14 + 5].innerText = décalage;} else
+		if (sens == "←" || sens == "→") {document.getElementsByClassName("span-transformer")[14 + 5 + 7].innerText = décalage;}
 	} else if (image == "img-collier") {
-		if (direction == "↓") {document.getElementsByClassName("span-transformer")[7 + 6].innerText = décalage;} else
-		if (direction == "→") {document.getElementsByClassName("span-transformer")[7 + 6 + 7].innerText = décalage;}
+		if (sens == "↓" || sens == "↑") {document.getElementsByClassName("span-transformer")[14 + 6].innerText = décalage;} else
+		if (sens == "←" || sens == "→") {document.getElementsByClassName("span-transformer")[14 + 6 + 7].innerText = décalage;}
 	}
 }
 
-function redimensionner(image, sens, décalage) {
-	if (sens == "↔") {
-		document.getElementById(image).width += (décalage == "+") ? 10 : -10;
+function redimensionner(image, sens) {
+	if (sens == "←" || sens == "→") {
+		document.getElementById(image).width += (sens == "→" ? 10 : -10);
 		taille = document.getElementById(image).width;
 		if (image == "img-couronne") {document.getElementsByClassName("span-transformer")[0].innerHTML = taille;} else
 		if (image == "img-heaume") {document.getElementsByClassName("span-transformer")[1].innerHTML = taille;} else
@@ -90,7 +93,7 @@ function redimensionner(image, sens, décalage) {
 		if (image == "img-manteau") {document.getElementsByClassName("span-transformer")[5].innerHTML = taille;} else
 		if (image == "img-collier") {document.getElementsByClassName("span-transformer")[6].innerHTML = taille;}
 	} else {
-		document.getElementById(image).height += (décalage == "+") ? 10 : -10;
+		document.getElementById(image).height += (sens == "↑" ? 10 : -10);
 		taille = document.getElementById(image).height;
 		if (image == "img-couronne") {document.getElementsByClassName("span-transformer")[7 + 0].innerHTML = taille;} else
 		if (image == "img-heaume") {document.getElementsByClassName("span-transformer")[7 + 1].innerHTML = taille;} else
@@ -125,37 +128,9 @@ function afficher(nom) {
 	}
 }
 
-function générer() {
-	éléments = ["Couronne", "Heaume", "Portant à dextre", "Écu", "Portant à senestre", "Collier", "Manteau"];
-	comptes = {};
-	for (élément of éléments) {comptes[élément] = 0;}
+function titre() {
 	if (couronne) {
-		afficher("couronne");
-		document.getElementById("img-couronne").src = couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)][0];
-		if (voyelles.includes(couronne.slice(3)[0])) {
-			document.title = "Armoirie d'" + couronne.slice(3) + " — Héraldix";
-			document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie d'" + couronne.slice(3) + "<hr>";
-		} else {
-			document.title = "Armoirie de " + couronne.slice(3) + " — Héraldix";
-			document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie de " + couronne.slice(3) + "<hr>";
-		}
-	}
-	if (heaume) {
-		afficher("heaume");
-		document.getElementById("img-heaume").src = heaumes[codePays[heaume.split(" ")[0]]][heaume.slice(3)][0];
-		document.getElementById("img-heaume").height = 150;
-		document.getElementById("img-heaume").style.marginBottom = "-150px";
-		if (heaume) {
-			document.getElementById("img-couronne").style.width = "80px";
-			document.getElementById("img-couronne").style.marginBottom = "-30px";
-		}
-	}
-	if (écu) {
-		afficher("écu");
-		document.getElementById("img-écu").src = écus[codePays[écu.split(" ")[0]]][écu.slice(3)][0];
-		document.getElementById("img-écu").width = 200;
-		document.getElementById("img-écu").style.marginTop = "100px";
-		if (couronne) {
+		if (écu) {
 			if (voyelles.includes(écu.slice(3)[0])) {
 				if (voyelles.includes(couronne.slice(3)[0])) {
 					document.title = "Armoirie d'" + couronne.slice(3) + " d'" + écu.slice(3) + " — Héraldix";
@@ -174,6 +149,16 @@ function générer() {
 				}
 			}
 		} else {
+			if (voyelles.includes(couronne.slice(3)[0])) {
+				document.title = "Armoirie d'" + couronne.slice(3) + " — Héraldix";
+				document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie d'" + couronne.slice(3) + "<hr>";
+			} else {
+				document.title = "Armoirie de " + couronne.slice(3) + " — Héraldix";
+				document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie de " + couronne.slice(3) + "<hr>";
+			}
+		}
+	} else {
+		if (écu) {
 			if (voyelles.includes(écu.slice(3)[0])) {
 				document.title = "Armoirie d'" + écu.slice(3) + " — Héraldix";
 				document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie d'" + écu.slice(3) + "<hr>";
@@ -182,6 +167,32 @@ function générer() {
 				document.querySelectorAll("h1")[0].innerHTML = "<hr>Armoirie de " + écu.slice(3) + "<hr>";
 			}
 		}
+	}
+}
+
+function générer() {
+	éléments = ["Couronne", "Heaume", "Portant à dextre", "Écu", "Portant à senestre", "Collier", "Manteau"];
+	comptes = {};
+	for (élément of éléments) {comptes[élément] = 0;}
+	if (couronne) {
+		afficher("couronne");
+		document.getElementById("img-couronne").src = couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)][0];
+	}
+	if (heaume) {
+		afficher("heaume");
+		document.getElementById("img-heaume").src = heaumes[codePays[heaume.split(" ")[0]]][heaume.slice(3)][0];
+		document.getElementById("img-heaume").height = 150;
+		document.getElementById("img-heaume").style.marginBottom = "-150px";
+		if (couronne) {
+			document.getElementById("img-couronne").style.width = "80px";
+			document.getElementById("img-couronne").style.marginBottom = "-30px";
+		}
+	}
+	if (écu) {
+		afficher("écu");
+		document.getElementById("img-écu").src = écus[codePays[écu.split(" ")[0]]][écu.slice(3)][0];
+		document.getElementById("img-écu").width = 200;
+		document.getElementById("img-écu").style.marginTop = "100px";
 	}
 	if (portantDextre) {
 		afficher("portant-dextre");
@@ -222,6 +233,7 @@ function générer() {
 	else {document.getElementById("div-cri").style.display = "none";}
 	if (devise) {document.getElementById("span-devise").innerText = devise;}
 	else {document.getElementById("div-devise").style.display = "none";}
+	titre();
 }
 
 // ================================================================================================================= //

@@ -64,7 +64,7 @@ profils = {
 		},
 		"Duc souverain et pair": {
 			"collier": ["**", ""],
-			"couronne": ["RF", "Duc"],
+			"couronne": ["RF", "Duc et pair"],
 			"cri": ["**", ""],
 			"devise": ["**", ""],
 			"écu": ["**", ""],
@@ -86,7 +86,7 @@ profils = {
 		},
 		"Duc et pair": {
 			"collier": ["**", ""],
-			"couronne": ["RF", "Duc"],
+			"couronne": ["RF", "Duc et pair"],
 			"cri": ["**", ""],
 			"devise": ["**", ""],
 			"écu": ["**", ""],
