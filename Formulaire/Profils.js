@@ -347,7 +347,7 @@ profils = {
 			"couronne": ["ER", "Empereur"],
 			"cri": ["**", ""],
 			"devise": ["**", ""],
-			"écu": ["ER", "Empereur"],
+			"écu": ["ER", "Empire"],
 			"heaume": ["**", ""],
 			"manteau": ["**", ""],
 			"portant-dextre": ["**", ""],
@@ -355,7 +355,7 @@ profils = {
 		},
 	},
 	"État du Vatican": {
-		"État du Vatican": {
+		"Pape": {
 			"collier": ["**", ""],
 			"couronne": ["EV", "Pape"],
 			"cri": ["**", ""],
@@ -367,18 +367,58 @@ profils = {
 			"portant-senestre": ["**", ""],
 		},
 	},
-	/*"Royaume du Portugal": {
-		"Roi": {},
-	},*/
-	/*"Grand-Duché de Luxembourg": {
-		"Grand-Duc": {},
-	},*/
-	/*"Royaume de Suède": {
-		"Roi": {},
-	},*/
-	/*"Royaume de Jérusalem": {
-		"**": {},
-	},*/
+	"Royaume du Portugal": {
+		"Roi": {
+			"collier": ["**", ""],
+			"couronne": ["RP", "Roi"],
+			"cri": ["**", ""],
+			"devise": ["**", ""],
+			"écu": ["RP", "Portugal"],
+			"heaume": ["**", ""],
+			"manteau": ["**", ""],
+			"portant-dextre": ["**", "Dragon"],
+			"portant-senestre": ["**", "Dragon"],
+		},
+	},
+	"Grand-Duché de Luxembourg": {
+		"Grand-Duc": {
+			"collier": ["**", ""],
+			"couronne": ["GL", "Grand-Duc"],
+			"cri": ["**", ""],
+			"devise": ["**", ""],
+			"écu": ["GL", "Luxembourg"],
+			"heaume": ["**", ""],
+			"manteau": ["**", ""],
+			"portant-dextre": ["**", "Lion"],
+			"portant-senestre": ["**", "Lion"],
+		},
+	},
+	"Royaume de Suède": {
+		"Roi": {
+			"collier": ["**", ""],
+			"couronne": ["RS", "Roi"],
+			"cri": ["**", ""],
+			"devise": ["**", ""],
+			"écu": ["RS", "Suède"],
+			"heaume": ["**", ""],
+			"manteau": ["**", ""],
+			"portant-dextre": ["**", "Lion"],
+			"portant-senestre": ["**", "Lion"],
+		},
+	},
+	"Royaume de Jérusalem": {
+		"Ordre équestre du Saint-Sépulcre": {
+			"collier": ["**", ""],
+			"couronne": ["**", ""],
+			"cri": ["**", ""],
+			"devise": ["**", "Deus lo vult"],
+			"écu": ["RJ", "Ordre équestre du Saint-Sépulcre"],
+			"heaume": ["RJ", "Roi"],
+			"manteau": ["**", ""],
+			"portant-dextre": ["**", "Ange"],
+			"portant-senestre": ["**", "Ange"],
+		},
+	},
 };
 
 // ================================================================================================================= //

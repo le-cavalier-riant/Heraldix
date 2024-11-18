@@ -108,6 +108,9 @@ wikipédia = "https://upload.wikimedia.org/wikipedia/commons/";
 			wikipédia + "0/04/Blason_Royaume_de_Jérusalem.svg",
 			"https://www.blason-armoiries.org/heraldique/armorial/ecus/j/je/blason-jerusalem.gif",
 		],
+		"Ordre équestre du Saint-Sépulcre": [
+			wikipédia + "3/39/Blason_ordre_croisade_Saint-Sepulcre.svg",
+		],
 	},
 }
 
@@ -269,6 +272,8 @@ couronnes = {
 		"Pape": [
 			wikipédia + "5/5d/Heraldic_Papal_Tiara.svg",
 			wikipédia + "0/0b/Icon_Tiara.svg",
+			wikipédia + "4/40/Icon_Tiara_Modern.svg",
+			wikipédia + "f/fe/Tiara_papal.svg",
 		],
 	},
 	"Royaume du Portugal": {
@@ -355,10 +360,18 @@ heaumes = {
 	},*/
 	"Royaume-Uni": {
 		"Roi": [
+			wikipédia + "5/52/Royal_Coat_of_Arms_of_the_United_Kingdom-Helmet.svg",
 			wikipédia + "e/e2/BarredHelmetGermanOrFF.svg",
 		],
-		"Baronnet": [
+		"Baronnet": [ /* ou chevalier */
 			wikipédia + "e/e9/Héraldique_ornement_Heaume_baronnet.svg",
+			wikipédia + "8/83/Helm_of_a_Baronet_or_Knight_in_British_Heraldry.svg",
+		],
+		"Pair": [
+			wikipédia + "c/c8/Peer_helmet_in_heraldry.svg",
+		],
+		"Gentilhomme": [ /* ou écuyer */
+			wikipédia + "1/1e/Helm_of_an_Esquire_or_Gentleman_in_British_Heraldry.svg",
 		],
 	},
 	/*"Saint-Empire romain germanique": {
@@ -376,9 +389,11 @@ heaumes = {
 	/*"Royaume de Suède": {
 		"Roi": [],
 	},*/
-	/*"Royaume de Jérusalem": {
-		"**": [],
-	},*/
+	"Royaume de Jérusalem": {
+		"Roi": [
+			wikipédia + "5/52/Royal_Coat_of_Arms_of_the_United_Kingdom-Helmet.svg",
+		],
+	},
 }
 
 portants = {
@@ -433,6 +448,7 @@ portants = {
 		],
 		"Licorne": [
 			wikipédia + "9/96/Unicorn_Supporter_(Heraldry).svg",
+			wikipédia + "4/42/Royal_Coat_of_Arms_of_the_United_Kingdom-Unicorn.svg",
 		],
 	},
 }
