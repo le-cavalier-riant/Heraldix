@@ -323,7 +323,7 @@ profils = {
 	},
 	"Royaume-Uni": {
 		"Roi": {
-			"collier": ["**", ""],
+			"collier": ["RU", "Ordre de la Jarretière"],
 			"couronne": ["RU", "Roi"],
 			"cri": ["**", ""],
 			"devise": ["**", "Dieu et mon droit"],
@@ -354,20 +354,30 @@ profils = {
 			"portant-senestre": ["**", ""],
 		},
 	},
-	/*"État du Vatican": {
-		"État du Vatican": [],
-	},*/
+	"État du Vatican": {
+		"État du Vatican": {
+			"collier": ["**", ""],
+			"couronne": ["EV", "Pape"],
+			"cri": ["**", ""],
+			"devise": ["**", ""],
+			"écu": ["EV", "État du Vatican"],
+			"heaume": ["**", ""],
+			"manteau": ["**", ""],
+			"portant-dextre": ["**", ""],
+			"portant-senestre": ["**", ""],
+		},
+	},
 	/*"Royaume du Portugal": {
-		"Roi": [],
+		"Roi": {},
 	},*/
 	/*"Grand-Duché de Luxembourg": {
-		"Grand-Duc": [],
+		"Grand-Duc": {},
 	},*/
 	/*"Royaume de Suède": {
-		"Roi": [],
+		"Roi": {},
 	},*/
 	/*"Royaume de Jérusalem": {
-		"**": [],
+		"**": {},
 	},*/
 };
 

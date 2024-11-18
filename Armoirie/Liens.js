@@ -84,7 +84,7 @@ wikipédia = "https://upload.wikimedia.org/wikipedia/commons/";
 		],
 	},
 	"État du Vatican": {
-		"Civitas Vaticana": [
+		"État du Vatican": [
 			wikipédia + "3/3a/Coat_of_arms_of_Vatican_City_(2023–present).svg"
 		],
 	},
@@ -266,8 +266,9 @@ couronnes = {
 		],
 	},
 	"État du Vatican": {
-		"État du Vatican": [
+		"Pape": [
 			wikipédia + "5/5d/Heraldic_Papal_Tiara.svg",
+			wikipédia + "0/0b/Icon_Tiara.svg",
 		],
 	},
 	"Royaume du Portugal": {
@@ -309,7 +310,6 @@ heaumes = {
 		],
 		"Marquis": [
 			"Armoirie/Heaumes/Marquis-A.svg",
-			"Armoirie/Heaumes/Marquis-B.png",
 		],
 		"Comte": [
 			wikipédia + "0/0d/Meuble_héraldique_Heaume_comte.svg",
@@ -458,7 +458,11 @@ colliers = {
 			wikipédia + "a/a8/Golden_Fleece_Collar_(Knight).svg",
 		],
 	},
-	/*"Royaume-Uni": {},*/
+	"Royaume-Uni": {
+		"Ordre de la Jarretière": [
+			wikipédia + "e/e8/Garter_of_the_Most_Noble_Order_of_the_Garter.png",
+		],
+	},
 	/*"Saint-Empire romain germanique": {},*/
 	/*"État du Vatican": {},*/
 	/*"Royaume du Portugal": {},*/
