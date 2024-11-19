@@ -16,6 +16,9 @@ manteau = URL.get("manteau");
 cri = URL.get("cri");
 devise = URL.get("devise");
 
+function sauvegarder() {
+}
+
 function inverser(style) {
 	if (style.transform == "scaleX(-1)") {style.transform = "";} else {style.transform = "scaleX(-1)";}
 }

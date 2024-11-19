@@ -243,7 +243,7 @@ profils = {
 	},
 	"Empire français": {
 		"Empereur 1804": {
-			"collier": ["**", ""],
+			"collier": ["EF", "Ordre de la Légion d'honneur"],
 			"couronne": ["EF", "Empereur 1804"],
 			"cri": ["**", ""],
 			"devise": ["**", ""],
