@@ -24,6 +24,181 @@
 </header>
 
 <button onclick = sauvegarder() id = important>Sauvegarder</button><br>
+<button onclick = paramètres() id = button-paramètres>↓ Paramètres ↓</button>
+
+<table class = caché id = table-paramètres>
+	<tr>
+		<td><button onclick = basculer(this.innerText)>Couronne</button></td>
+		<td><button onclick = basculer(this.innerText)>Heaume</button></td>
+		<td><button onclick = basculer(this.innerText)>Portant à dextre</button></td>
+		<td><button onclick = basculer(this.innerText)>Écu</button></td>
+		<td><button onclick = basculer(this.innerText)>Portant à senestre</button></td>
+		<td><button onclick = basculer(this.innerText)>Manteau</button></td>
+		<td><button onclick = basculer(this.innerText)>Collier</button></td>
+	</tr>
+	<tr>
+		<td>
+			<button onclick = "redimensionner('img-couronne', '←')">-</button>
+			↔
+			<button onclick = "redimensionner('img-couronne', '→')">+</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "redimensionner('img-heaume', '←')">-</button>
+			↔
+			<button onclick = "redimensionner('img-heaume', '→')">+</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "redimensionner('img-portant-dextre', '←')">-</button>
+			↔
+			<button onclick = "redimensionner('img-portant-dextre', '→')">+</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "redimensionner('img-écu', '←')">-</button>
+			↔
+			<button onclick = "redimensionner('img-écu', '→')">+</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "redimensionner('img-portant-senestre', '←')">-</button>
+			↔
+			<button onclick = "redimensionner('img-portant-senestre', '→')">+</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "redimensionner('img-manteau', '←')">-</button>
+			↔
+			<button onclick = "redimensionner('img-manteau', '→')">+</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "redimensionner('img-collier', '←')">-</button>
+			↔
+			<button onclick = "redimensionner('img-collier', '→')">+</button>
+			<span class = span-transformer>0</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<button onclick = "redimensionner('img-couronne', '↓')">-</button>
+			↕
+			<button onclick = "redimensionner('img-couronne', '↑')">+</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "redimensionner('img-heaume', '↓')">-</button>
+			↕
+			<button onclick = "redimensionner('img-heaume', '↑')">+</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "redimensionner('img-portant-dextre', '↓')">-</button>
+			↕
+			<button onclick = "redimensionner('img-portant-dextre', '↑')">+</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "redimensionner('img-écu', '↓')">-</button>
+			↕
+			<button onclick = "redimensionner('img-écu', '↑')">+</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "redimensionner('img-portant-senestre', '↓')">-</button>
+			↕
+			<button onclick = "redimensionner('img-portant-senestre', '↑')">+</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "redimensionner('img-manteau', '↓')">-</button>
+			↕
+			<button onclick = "redimensionner('img-manteau', '↑')">+</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "redimensionner('img-collier', '↓')">-</button>
+			↕
+			<button onclick = "redimensionner('img-collier', '↑')">+</button>
+			<span class = span-transformer>0</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<button onclick = "déplacer('img-couronne', '↑')">↑</button>
+			<button onclick = "déplacer('img-couronne', '↓')">↓</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "déplacer('img-heaume', '↑')">↑</button>
+			<button onclick = "déplacer('img-heaume', '↓')">↓</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "déplacer('img-portant-dextre', '↑')">↑</button>
+			<button onclick = "déplacer('img-portant-dextre', '↓')">↓</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "déplacer('img-écu', '↑')">↑</button>
+			<button onclick = "déplacer('img-écu', '↓')">↓</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "déplacer('img-portant-senestre', '↑')">↑</button>
+			<button onclick = "déplacer('img-portant-senestre', '↓')">↓</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "déplacer('img-manteau', '↑')">↑</button>
+			<button onclick = "déplacer('img-manteau', '↓')">↓</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "déplacer('img-collier', '↑')">↑</button>
+			<button onclick = "déplacer('img-collier', '↓')">↓</button>
+			<span class = span-transformer>0</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<button onclick = "déplacer('img-couronne', '←')">←</button>
+			<button onclick = "déplacer('img-couronne', '→')">→</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "déplacer('img-heaume', '←')">←</button>
+			<button onclick = "déplacer('img-heaume', '→')">→</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "déplacer('img-portant-dextre', '←')">←</button>
+			<button onclick = "déplacer('img-portant-dextre', '→')">→</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "déplacer('img-écu', '←')">←</button>
+			<button onclick = "déplacer('img-écu', '→')">→</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "déplacer('img-portant-senestre', '←')">←</button>
+			<button onclick = "déplacer('img-portant-senestre', '→')">→</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "déplacer('img-manteau', '←')">←</button>
+			<button onclick = "déplacer('img-manteau', '→')">→</button>
+			<span class = span-transformer>0</span>
+		</td>
+		<td>
+			<button onclick = "déplacer('img-collier', '←')">←</button>
+			<button onclick = "déplacer('img-collier', '→')">→</button>
+			<span class = span-transformer>0</span>
+		</td>
+	</tr>
+</table>
 
 <div class = div-flex id = div-contenu>
 	<div id = div-manteau><img src = Armoirie/Vide.png id = img-manteau></div>
@@ -41,184 +216,7 @@
 	</div>
 </div>
 
-<div class = div-espace></div>
-
-<footer>
-	<button onclick = paramètres() id = button-paramètres>↓ Paramètres ↓</button>
-	<table class = caché id = table-paramètres>
-		<tr>
-			<td><button onclick = basculer(this.innerText)>Couronne</button></td>
-			<td><button onclick = basculer(this.innerText)>Heaume</button></td>
-			<td><button onclick = basculer(this.innerText)>Portant à dextre</button></td>
-			<td><button onclick = basculer(this.innerText)>Écu</button></td>
-			<td><button onclick = basculer(this.innerText)>Portant à senestre</button></td>
-			<td><button onclick = basculer(this.innerText)>Manteau</button></td>
-			<td><button onclick = basculer(this.innerText)>Collier</button></td>
-		</tr>
-		<tr>
-			<td>
-				<button onclick = "redimensionner('img-couronne', '←')">-</button>
-				↔
-				<button onclick = "redimensionner('img-couronne', '→')">+</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "redimensionner('img-heaume', '←')">-</button>
-				↔
-				<button onclick = "redimensionner('img-heaume', '→')">+</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "redimensionner('img-portant-dextre', '←')">-</button>
-				↔
-				<button onclick = "redimensionner('img-portant-dextre', '→')">+</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "redimensionner('img-écu', '←')">-</button>
-				↔
-				<button onclick = "redimensionner('img-écu', '→')">+</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "redimensionner('img-portant-senestre', '←')">-</button>
-				↔
-				<button onclick = "redimensionner('img-portant-senestre', '→')">+</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "redimensionner('img-manteau', '←')">-</button>
-				↔
-				<button onclick = "redimensionner('img-manteau', '→')">+</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "redimensionner('img-collier', '←')">-</button>
-				↔
-				<button onclick = "redimensionner('img-collier', '→')">+</button>
-				<span class = span-transformer>0</span>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<button onclick = "redimensionner('img-couronne', '↓')">-</button>
-				↕
-				<button onclick = "redimensionner('img-couronne', '↑')">+</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "redimensionner('img-heaume', '↓')">-</button>
-				↕
-				<button onclick = "redimensionner('img-heaume', '↑')">+</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "redimensionner('img-portant-dextre', '↓')">-</button>
-				↕
-				<button onclick = "redimensionner('img-portant-dextre', '↑')">+</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "redimensionner('img-écu', '↓')">-</button>
-				↕
-				<button onclick = "redimensionner('img-écu', '↑')">+</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "redimensionner('img-portant-senestre', '↓')">-</button>
-				↕
-				<button onclick = "redimensionner('img-portant-senestre', '↑')">+</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "redimensionner('img-manteau', '↓')">-</button>
-				↕
-				<button onclick = "redimensionner('img-manteau', '↑')">+</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "redimensionner('img-collier', '↓')">-</button>
-				↕
-				<button onclick = "redimensionner('img-collier', '↑')">+</button>
-				<span class = span-transformer>0</span>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<button onclick = "déplacer('img-couronne', '↑')">↑</button>
-				<button onclick = "déplacer('img-couronne', '↓')">↓</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "déplacer('img-heaume', '↑')">↑</button>
-				<button onclick = "déplacer('img-heaume', '↓')">↓</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "déplacer('img-portant-dextre', '↑')">↑</button>
-				<button onclick = "déplacer('img-portant-dextre', '↓')">↓</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "déplacer('img-écu', '↑')">↑</button>
-				<button onclick = "déplacer('img-écu', '↓')">↓</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "déplacer('img-portant-senestre', '↑')">↑</button>
-				<button onclick = "déplacer('img-portant-senestre', '↓')">↓</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "déplacer('img-manteau', '↑')">↑</button>
-				<button onclick = "déplacer('img-manteau', '↓')">↓</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "déplacer('img-collier', '↑')">↑</button>
-				<button onclick = "déplacer('img-collier', '↓')">↓</button>
-				<span class = span-transformer>0</span>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<button onclick = "déplacer('img-couronne', '←')">←</button>
-				<button onclick = "déplacer('img-couronne', '→')">→</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "déplacer('img-heaume', '←')">←</button>
-				<button onclick = "déplacer('img-heaume', '→')">→</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "déplacer('img-portant-dextre', '←')">←</button>
-				<button onclick = "déplacer('img-portant-dextre', '→')">→</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "déplacer('img-écu', '←')">←</button>
-				<button onclick = "déplacer('img-écu', '→')">→</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "déplacer('img-portant-senestre', '←')">←</button>
-				<button onclick = "déplacer('img-portant-senestre', '→')">→</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "déplacer('img-manteau', '←')">←</button>
-				<button onclick = "déplacer('img-manteau', '→')">→</button>
-				<span class = span-transformer>0</span>
-			</td>
-			<td>
-				<button onclick = "déplacer('img-collier', '←')">←</button>
-				<button onclick = "déplacer('img-collier', '→')">→</button>
-				<span class = span-transformer>0</span>
-			</td>
-		</tr>
-	</table>
-</footer>
+<footer></footer>
 
 <!-- ============================================================================================================== -->
 <!--                                                                                                                -->

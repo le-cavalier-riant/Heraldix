@@ -520,7 +520,7 @@ colliers = {
 	},
 	"Empire français": {
 		"Ordre de la Légion d'honneur": [
-			"Colliers/Ordre de la Légion d'honneur.svg",
+			"Armoirie/Colliers/Ordre de la Légion d'honneur.svg",
 		]
 	},
 	/*"Villes françaises": {},*/
