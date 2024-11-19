@@ -420,7 +420,7 @@ profils = {
 	"Royaume de Jérusalem": {
 		"Ordre équestre du Saint-Sépulcre": {
 			"collier": ["**", ""],
-			"couronne": ["**", ""],
+			"couronne": ["RJ", "Couronne d'épines"],
 			"cri": ["**", ""],
 			"devise": ["**", "Deus lo vult"],
 			"écu": ["RJ", "Ordre équestre du Saint-Sépulcre"],

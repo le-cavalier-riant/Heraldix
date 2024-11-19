@@ -81,7 +81,7 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 	"Saint-Empire romain germanique": {
 		"Empire" : [
 			Wikipédia + "4/43/Arms_of_the_Holy_Roman_Emperor_(c.1433-c.1450).svg",
-			Wikipédia + "a/ae/Armoiries_imaginaires_de_Charlemagne_%281%29.svg",
+			Wikipédia + "a/ae/Armoiries_imaginaires_de_Charlemagne_(1).svg",
 		],
 	},
 	"État du Vatican": {
@@ -348,58 +348,62 @@ couronnes = {
 			Wikipédia + "9/99/Royal_crown_of_the_King_of_Sweden.svg",
 		],
 	},
-	/*"Royaume de Jérusalem": {},*/
+	"Royaume de Jérusalem": {
+		"Couronne d'épines": [
+			"Armoirie/Couronnes/RJ Couronne d'épines.svg",
+		],
+	},
 }
 
 heaumes = {
 	/*"**": {},*/
 	"Royaume de France": {
 		"Roi": [
-			"Armoirie/Heaumes/Roi-A.svg",
-			"Armoirie/Heaumes/Roi-B.png",
-			"Armoirie/Heaumes/Roi-C.png",
-			"Armoirie/Heaumes/Roi-D.png",
+			"Armoirie/Heaumes/RF Roi-A.svg",
+			"Armoirie/Heaumes/RF Roi-B.png",
+			"Armoirie/Heaumes/RF Roi-C.png",
+			"Armoirie/Heaumes/RF Roi-D.png",
 		],
 		"Prince": [
-			"Armoirie/Heaumes/Prince-A.svg",
-			"Armoirie/Heaumes/Prince-B.png",
-			"Armoirie/Heaumes/Prince-C.png",
+			"Armoirie/Heaumes/RF Prince-A.svg",
+			"Armoirie/Heaumes/RF Prince-B.png",
+			"Armoirie/Heaumes/RF Prince-C.png",
 		],
 		"Duc": [
-			"Armoirie/Heaumes/Duc-A.svg",
-			"Armoirie/Heaumes/Duc-B.png",
-			"Armoirie/Heaumes/Duc-C.png",
+			"Armoirie/Heaumes/RF Duc-A.svg",
+			"Armoirie/Heaumes/RF Duc-B.png",
+			"Armoirie/Heaumes/RF Duc-C.png",
 		],
 		"Marquis": [
-			"Armoirie/Heaumes/Marquis-A.svg",
+			"Armoirie/Heaumes/RF Marquis-A.svg",
 		],
 		"Comte": [
 			Wikipédia + "0/0d/Meuble_héraldique_Heaume_comte.svg",
-			"Armoirie/Heaumes/Comte-A.png",
-			"Armoirie/Heaumes/Comte-B.png",
-			"Armoirie/Heaumes/Comte-C.png",
+			"Armoirie/Heaumes/RF Comte-A.png",
+			"Armoirie/Heaumes/RF Comte-B.png",
+			"Armoirie/Heaumes/RF Comte-C.png",
 		],
 		"Baron": [
-			"Armoirie/Heaumes/Baron-A.png",
-			"Armoirie/Heaumes/Baron-B.png",
+			"Armoirie/Heaumes/RF Baron-A.png",
+			"Armoirie/Heaumes/RF Baron-B.png",
 		],
 		"Gentilhomme d'ancienne race": [
-			"Armoirie/Heaumes/Gentilhomme d'ancienne race-A.png",
-			"Armoirie/Heaumes/Gentilhomme d'ancienne race-B.png",
+			"Armoirie/Heaumes/RF Gentilhomme d'ancienne race-A.png",
+			"Armoirie/Heaumes/RF Gentilhomme d'ancienne race-B.png",
 		],
 		/*"Banneret": [],*/
 		/*"Chevalier": [],*/
 		"Gentilhomme de trois races": [
-			"Armoirie/Heaumes/Gentilhomme de trois races.png",
-			"Armoirie/Heaumes/Gentilhomme de trois races.jpg",
+			"Armoirie/Heaumes/RF Gentilhomme de trois races.png",
+			"Armoirie/Heaumes/RF Gentilhomme de trois races.jpg",
 		],
 		"Anobli": [
-			"Armoirie/Heaumes/Anobli-A.png",
-			"Armoirie/Heaumes/Anobli-B.png",
+			"Armoirie/Heaumes/RF Anobli-A.png",
+			"Armoirie/Heaumes/RF Anobli-B.png",
 		],
 		"Bâtard": [
-			"Armoirie/Heaumes/Bâtard-A.png",
-			"Armoirie/Heaumes/Bâtard-B.png",
+			"Armoirie/Heaumes/RF Bâtard-A.png",
+			"Armoirie/Heaumes/RF Bâtard-B.png",
 		],
 	},
 	/*"Empire français": {
@@ -527,7 +531,7 @@ colliers = {
 	"Empire français": {
 		"Ordre de la Légion d'honneur": [
 			Wikipédia + "f/f0/Grand_collier_de_la_Légion_d'honneur.svg",
-			"Armoirie/Colliers/Ordre de la Légion d'honneur.svg",
+			"Armoirie/Colliers/EF Ordre de la Légion d'honneur.svg",
 		]
 	},
 	/*"Villes françaises": {},*/
@@ -553,7 +557,7 @@ manteaux = {
 	/*"**": {},*/
 	"Royaume de France": {
 		"France": [
-			"Armoirie/Manteaux/France.svg",
+			"Armoirie/Manteaux/RF France.svg",
 			Wikipédia + "1/1e/Grand_Manteau_des_armoiries_du_Royaume_de_France.svg",
 		],
 		"Pair": [
