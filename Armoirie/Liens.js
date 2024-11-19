@@ -129,14 +129,14 @@ couronnes = {
 		],
 		"Fils": [
 			Wikipédia + "6/6d/Crown_of_a_Royal_Prince_of_the_Blood_of_France.svg",
-			Creazilla + "7830863/french-crown-clipart-xl.png",
 		],
 		"Petit-fils": [
 			Wikipédia + "1/1f/Crown_of_a_Royal_Prince_of_the_Blood_of_France_(variant).svg",
+			Wikipédia + "6/64/French_heraldic_crowns_-_Prince_de_sang_royal.svg",
+			Creazilla + "7830863/french-crown-clipart-xl.png",
 		],
 		"Prince": [
 			Wikipédia + "b/b7/Crown_of_a_Prince_of_the_Blood_of_France.svg",
-			Wikipédia + "6/64/French_heraldic_crowns_-_Prince_de_sang_royal.svg",
 			Creazilla + "7830870/french-crown-clipart-xl.png",
 		],
 		"Duc et pair": [
@@ -166,7 +166,7 @@ couronnes = {
 		],
 		"Comte": [
 			Wikipédia + "b/b1/Crown_of_a_Count_of_France_(variant).svg",
-			Wikipédia + "1/1b/Heraldique_couronne_comte_françaisais.svg",
+			Wikipédia + "1/1b/Heraldique_couronne_comte_français.svg",
 			Creazilla + "7830868/french-crown-clipart-xl.png",
 		],
 		"Vicomte": [
@@ -191,10 +191,10 @@ couronnes = {
 		"Banneret": [
 			Wikipédia + "3/31/Crown_of_a_Chevalier_of_France.svg",
 			Creazilla + "7830867/french-crown-clipart-xl.png",
+			Wikipédia + "2/23/French_heraldic_crowns_-_chevalier.svg",
 		],
 		"Chevalier": [
 			Wikipédia + "6/6d/Torse_of_a_Chevalier_of_France.svg",
-			Wikipédia + "2/23/French_heraldic_crowns_-_chevalier.svg",
 		],
 		/*"Gentilhomme de trois races": [],*/
 		/*"Anobli": [],*/
