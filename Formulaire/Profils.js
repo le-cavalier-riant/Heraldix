@@ -150,6 +150,17 @@ profils = {
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},
+		"Vicomte et pair": {
+			"collier": ["**", ""],
+			"couronne": ["RF", "Vicomte"],
+			"cri": ["**", ""],
+			"devise": ["**", ""],
+			"écu": ["**", ""],
+			"heaume": ["RF", "Comte"],
+			"manteau": ["RF", "Pair"],
+			"portant-dextre": ["**", ""],
+			"portant-senestre": ["**", ""],
+		},
 		"Vicomte": {
 			"collier": ["**", ""],
 			"couronne": ["RF", "Vicomte"],

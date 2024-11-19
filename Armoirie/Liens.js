@@ -120,10 +120,13 @@ couronnes = {
 	"Royaume de France": {
 		"Roi": [
 			Wikipédia + "1/1c/Royal_Crown_of_France_(accurate_red_bonnet).svg",
+			Wikipédia + "6/65/Royal_Crown_of_France.svg",
+			Wikipédia + "c/c8/Royal_Crown_of_France_(red_lozenge).svg",
 			Wikipédia + "3/3b/French_heraldic_crowns_-_King.svg",
 		],
 		"Dauphin": [
 			Wikipédia + "7/7e/Crown_of_the_Dauphin_of_France_(variant).svg",
+			Wikipédia + "f/ff/Crown_of_the_Dauphin_of_France.svg",
 			Wikipédia + "e/e4/French_heraldic_crowns_-_Dauphin.svg",
 			Creazilla + "7830871/french-crown-clipart-lg.png",
 		],
@@ -168,6 +171,9 @@ couronnes = {
 			Wikipédia + "b/b1/Crown_of_a_Count_of_France_(variant).svg",
 			Wikipédia + "1/1b/Heraldique_couronne_comte_français.svg",
 			Creazilla + "7830868/french-crown-clipart-xl.png",
+		],
+		"Vicomte et pair": [
+			Wikipédia + "f/f1/Crown_of_a_Viscount_of_France.svg",
 		],
 		"Vicomte": [
 			Wikipédia + "e/e8/Crown_of_a_Viscount_of_France_(variant).svg",
@@ -520,6 +526,7 @@ colliers = {
 	},
 	"Empire français": {
 		"Ordre de la Légion d'honneur": [
+			Wikipédia + "f/f0/Grand_collier_de_la_Légion_d'honneur.svg",
 			"Armoirie/Colliers/Ordre de la Légion d'honneur.svg",
 		]
 	},

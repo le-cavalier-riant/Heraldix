@@ -17,6 +17,7 @@ cri = URL.get("cri");
 devise = URL.get("devise");
 
 function sauvegarder() {
+	window.print();	
 }
 
 function inverser(style) {

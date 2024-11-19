@@ -8,9 +8,11 @@ function filtrer() {
 	document.getElementById("select-pays").addEventListener(
 		"change",
 		function() {
-			document.querySelectorAll("#select-profil optgroup").forEach(
+			document.querySelectorAll("optgroup").forEach(
 				function(groupe) {
-					if (document.getElementById("select-pays").value == "") {
+					if (groupe.label == "**") {
+						return;
+					} else if (document.getElementById("select-pays").value == "") {
 						groupe.style.display = "block";
 						return;
 					}
