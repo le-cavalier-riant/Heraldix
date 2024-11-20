@@ -13,7 +13,7 @@ input[type = "text"] {width: 250px;}
 .input-texte:hover {cursor: text;}
 
 label {font-weight: bold;}
-#label-titre {font-style: italic;}
+.label-filtre {font-style: italic;}
 
 /* ================================================================================================================= */
 /*                                                                                                                   */

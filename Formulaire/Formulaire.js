@@ -46,23 +46,19 @@ function accorder() {
 	);
 }
 
-/* function collier2() {
-	document.getElementsByName("collier")[0].addEventListener(
-		"change",
-		function() {
-			collier = this.value;
-			if (collier != "") {document.getElementsByClassName("caché")[0].style.display = "block";}
-			else {
-				document.getElementsByClassName("caché")[0].style.display = "none";
-				document.getElementsByName("collier-2")[0].value = "";
-			}
-		}
-	);
-} */
-
 function remplir() {
 	listes = [pays, profils, écus, couronnes, heaumes, portants, portants, colliers, manteaux];
-	noms = ["select-pays", "select-profil", "écu", "couronne", "heaume", "portant-dextre", "portant-senestre", "collier", "manteau"];
+	noms = [
+		"select-pays",
+		"select-profil",
+		"écu",
+		"couronne",
+		"heaume",
+		"portant-dextre",
+		"portant-senestre",
+		"collier",
+		"manteau",
+	];
 	index = 0;
 	for (liste of listes) {
 		if (liste == profils || liste == pays) {selectProfil = document.getElementById(noms[index]);}

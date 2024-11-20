@@ -24,7 +24,7 @@
 	<button onclick = sauvegarder() id = important>Sauvegarder</button><br>
 	<button onclick = paramètres() id = button-paramètres>↓ Paramètres ↓</button>
 	<table class = caché id = table-paramètres>
-		<tr>
+		<tr id = tr-basculer>
 			<td><button onclick = basculer(this.innerText)>Couronne</button></td>
 			<td><button onclick = basculer(this.innerText)>Heaume</button></td>
 			<td><button onclick = basculer(this.innerText)>Portant à dextre</button></td>
@@ -206,9 +206,13 @@
 		<div id = div-couronne><img id = img-couronne></div>
 		<div id = div-heaume><img id = img-heaume></div>
 		<div class = div-flex>
-			<div id = div-portant-dextre><img src = Armoirie/Vide.png id = img-portant-dextre onclick = inverser(this.style)></div>
+			<div id = div-portant-dextre>
+				<img src = Armoirie/Vide.png id = img-portant-dextre onclick = inverser(this.style)>
+			</div>
 			<div class = div-flex><img id = img-collier><img id = img-écu></div>
-			<div id = div-portant-senestre><img src = Armoirie/Vide.png id = img-portant-senestre onclick = inverser(this.style)></div>
+			<div id = div-portant-senestre>
+				<img src = Armoirie/Vide.png id = img-portant-senestre onclick = inverser(this.style)>
+			</div>
 		</div>
 		<div id = div-devise><span id = span-devise>0</span></div>
 	</div>

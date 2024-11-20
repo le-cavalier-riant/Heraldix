@@ -424,12 +424,12 @@ heaumes = {
 			Wikipédia + "5/52/Royal_Coat_of_Arms_of_the_United_Kingdom-Helmet.svg",
 			Wikipédia + "e/e2/BarredHelmetGermanOrFF.svg",
 		],
+		"Pair": [
+			Wikipédia + "c/c8/Peer_helmet_in_heraldry.svg",
+		],
 		"Baronnet": [ /* ou chevalier */
 			Wikipédia + "e/e9/Héraldique_ornement_Heaume_baronnet.svg",
 			Wikipédia + "8/83/Helm_of_a_Baronet_or_Knight_in_British_Heraldry.svg",
-		],
-		"Pair": [
-			Wikipédia + "c/c8/Peer_helmet_in_heraldry.svg",
 		],
 		"Gentilhomme": [ /* ou écuyer */
 			Wikipédia + "1/1e/Helm_of_an_Esquire_or_Gentleman_in_British_Heraldry.svg",
@@ -532,7 +532,7 @@ colliers = {
 		"Ordre de la Légion d'honneur": [
 			Wikipédia + "f/f0/Grand_collier_de_la_Légion_d'honneur.svg",
 			"Armoirie/Colliers/EF Ordre de la Légion d'honneur.svg",
-		]
+		],
 	},
 	/*"Villes françaises": {},*/
 	"Royaume d'Espagne": {
