@@ -28,6 +28,8 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 		],
 		"Bretagne": [
 			Wikipédia + "d/d8/Armoiries_Bretagne_-_Arms_of_Brittany.svg",
+			Wikipédia + "e/e2/Blason_Anne_de_Bretagne_(1476-1514)_Reine_de_France.svg",
+			Wikipédia + "5/5e/Blason_FR_duc_de_Bretagne_(Bourbon).svg",
 			"https://fr.geneawiki.com/images/b/bb/Province_-_Blason_-_Bretagne.png",
 		],
 		"Chavagnac": [
@@ -82,9 +84,18 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 		"Empire" : [
 			Wikipédia + "4/43/Arms_of_the_Holy_Roman_Emperor_(c.1433-c.1450).svg",
 			Wikipédia + "a/ae/Armoiries_imaginaires_de_Charlemagne_(1).svg",
+			Wikipédia + "1/12/Armoiries_imaginaires_de_Charlemagne_selon_les_écus_armoriés_des_Neuf_Preux._ms._Fr._18651,_fol._1r._(BnF,_Paris).svg",
+			Wikipédia + "5/5a/Armoiries_imaginaires_de_Charlemagne_d'après_les_fresques_du_château_de_la_Manta.svg",
+			Wikipédia + "9/92/Shield_and_Coat_of_Arms_of_the_Holy_Roman_Emperor_(c.1200-c.1300).svg",
+			Wikipédia + "2/2d/Shield_and_Coat_of_Arms_of_the_Holy_Roman_Emperor_(c.1300-c.1400).svg",
+			Wikipédia + "a/af/Generic_Arms_of_the_Holy_Roman_Emperor_(after_1433).svg",
+			Wikipédia + "2/2f/Holy_Roman_Empire_Arms-double_head.svg",
+			Wikipédia + "6/6c/Wappen_Deutscher_Bund.svg",
 		],
 		"Broglie": [
 			Wikipédia + "a/af/Blason_de_la_famille_de_Broglie.svg",
+			Wikipédia + "e/eb/Arms_of_the_House_of_Broglie.svg",
+			Wikipédia + "0/0f/Blason_famille_Broglie.svg",
 		],
 	},
 	"État du Vatican": {
@@ -328,6 +339,13 @@ couronnes = {
 			Wikipédia + "a/ac/Heraldic_Imperial_Crown_Gules-Lappets.svg",
 			Wikipédia + "c/cf/Heraldic_Imperial_Crown_Or-Lappets.svg",
 		],
+		"Prince": [
+			Wikipédia + "f/fd/Princely_Hat.svg",
+			Wikipédia + "6/69/Crown_of_prince_of_the_Holy_Roman_Empire.svg",
+			Wikipédia + "e/e0/Princely_hat_(shaded).svg",
+			Wikipédia + "3/35/Princely_hat_(flat).svg",
+			Wikipédia + "b/b5/Limburg_hertogskroon.svg",
+		],
 	},
 	"État du Vatican": {
 		"Pape": [
@@ -558,7 +576,11 @@ colliers = {
 }
 
 manteaux = {
-	/*"**": {},*/
+	"**": {
+		"Rouge": [
+			Wikipédia + "0/06/Generic_mantle.svg",
+		],
+	},
 	"Royaume de France": {
 		"France": [
 			"Armoirie/Manteaux/RF France.svg",
@@ -567,9 +589,6 @@ manteaux = {
 		"Pair": [
 			Wikipédia + "a/a7/Blue_heraldic_mantle.svg",
 			Wikipédia + "b/b6/Meuble_héraldique_manteau_01.svg",
-		],
-		"Rouge": [
-			Wikipédia + "0/06/Generic_mantle.svg",
 		],
 	},
 	/*"Empire français": {},*/
@@ -601,6 +620,7 @@ manteaux = {
 	%27			'
 	%28			(
 	%29			)
+	%2C			,
 	%60			`
 	%C3%8E		Î
 	%C3%A7		ç
