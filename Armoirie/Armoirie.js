@@ -40,22 +40,22 @@ function basculer(image) {
 		"Collier": [colliers, collier, "img-collier"],
 	}
 	if (image == "Couronne") {
-		comptes[image] = (comptes[image] + 1) % couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)].length;
+		comptes[image] = (comptes[image] + 1) % couronnes[codeCatégories[couronne.split(" ")[0]]][couronne.slice(3)].length;
 		document.getElementById("img-couronne").src =
-			couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)][comptes[image]]
+			couronnes[codeCatégories[couronne.split(" ")[0]]][couronne.slice(3)][comptes[image]]
 		;
 		if (manteau) {
 			document.getElementById("img-couronne-manteau").src =
-				couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)][comptes[image]]
+				couronnes[codeCatégories[couronne.split(" ")[0]]][couronne.slice(3)][comptes[image]]
 			;
 		}
 	} else {
 		comptes[image] =
 			(comptes[image] + 1) %
-			images[image][0][codePays[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length
+			images[image][0][codeCatégories[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length
 		;
 		document.getElementById(images[image][2]).src =
-			images[image][0][codePays[images[image][1].split(" ")[0]]][images[image][1].slice(3)][comptes[image]]
+			images[image][0][codeCatégories[images[image][1].split(" ")[0]]][images[image][1].slice(3)][comptes[image]]
 		;
 	}
 	document.querySelectorAll("#tr-basculer td button")[Object.keys(images).indexOf(image)].innerText =
@@ -63,7 +63,7 @@ function basculer(image) {
 		" (" +
 		(comptes[image] + 1) +
 		" / " +
-		images[image][0][codePays[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length +
+		images[image][0][codeCatégories[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length +
 		")"
 	;
 }
@@ -245,12 +245,12 @@ function générer() {
 	if (couronne) {
 		afficher("couronne");
 		document.getElementById("img-couronne").src =
-			couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)][0]
+			couronnes[codeCatégories[couronne.split(" ")[0]]][couronne.slice(3)][0]
 		;
 	}
 	if (heaume) {
 		afficher("heaume");
-		document.getElementById("img-heaume").src = heaumes[codePays[heaume.split(" ")[0]]][heaume.slice(3)][0];
+		document.getElementById("img-heaume").src = heaumes[codeCatégories[heaume.split(" ")[0]]][heaume.slice(3)][0];
 		document.getElementById("img-heaume").height = 150;
 		document.getElementById("img-heaume").style.marginBottom = "-150px";
 		if (couronne) {
@@ -260,14 +260,14 @@ function générer() {
 	}
 	if (écu) {
 		afficher("écu");
-		document.getElementById("img-écu").src = écus[codePays[écu.split(" ")[0]]][écu.slice(3)][0];
+		document.getElementById("img-écu").src = écus[codeCatégories[écu.split(" ")[0]]][écu.slice(3)][0];
 		document.getElementById("img-écu").width = 200;
 		document.getElementById("img-écu").style.marginTop = "100px";
 	}
 	if (portantDextre) {
 		afficher("portant-dextre");
 		document.getElementById("img-portant-dextre").src =
-			portants[codePays[portantDextre.split(" ")[0]]][portantDextre.slice(3)][0]
+			portants[codeCatégories[portantDextre.split(" ")[0]]][portantDextre.slice(3)][0]
 		;
 		document.getElementById("img-portant-dextre").width = 300;
 		document.getElementById("img-portant-dextre").height = 350;
@@ -275,14 +275,14 @@ function générer() {
 	if (portantSenestre) {
 		afficher("portant-senestre");
 		document.getElementById("img-portant-senestre").src =
-			portants[codePays[portantSenestre.split(" ")[0]]][portantSenestre.slice(3)][0]
+			portants[codeCatégories[portantSenestre.split(" ")[0]]][portantSenestre.slice(3)][0]
 		;
 		document.getElementById("img-portant-senestre").width = 300;
 		document.getElementById("img-portant-senestre").height = 350;
 	}
 	if (collier) {
 		afficher("collier");
-		document.getElementById("img-collier").src = colliers[codePays[collier.split(" ")[0]]][collier.slice(3)];
+		document.getElementById("img-collier").src = colliers[codeCatégories[collier.split(" ")[0]]][collier.slice(3)];
 		document.getElementById("img-collier").width = 300;
 		document.getElementById("img-collier").style.marginTop = "75px";
 		document.getElementById("img-portant-dextre").style.marginRight = "-140px";
@@ -294,12 +294,12 @@ function générer() {
 	}
 	if (manteau) {
 		afficher("manteau");
-		document.getElementById("img-manteau").src = manteaux[codePays[manteau.split(" ")[0]]][manteau.slice(3)][0];
+		document.getElementById("img-manteau").src = manteaux[codeCatégories[manteau.split(" ")[0]]][manteau.slice(3)][0];
 		document.getElementById("img-manteau").width = 700;
 		document.getElementById("img-manteau").style.marginTop = "170px";
 		if (couronne && heaume && manteau != "Grand") {
 			document.getElementById("img-couronne-manteau").src =
-				couronnes[codePays[couronne.split(" ")[0]]][couronne.slice(3)][0]
+				couronnes[codeCatégories[couronne.split(" ")[0]]][couronne.slice(3)][0]
 			;
 		}
 	} else {

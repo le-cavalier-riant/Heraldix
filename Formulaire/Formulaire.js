@@ -5,18 +5,18 @@
 // ================================================================================================================= //
 
 function filtrer() {
-	document.getElementById("select-pays").addEventListener(
+	document.getElementById("select-catégorie").addEventListener(
 		"change",
 		function() {
 			document.querySelectorAll("optgroup").forEach(
 				function(groupe) {
 					if (groupe.label == "**") {
 						return;
-					} else if (document.getElementById("select-pays").value == "") {
+					} else if (document.getElementById("select-catégorie").value == "") {
 						groupe.style.display = "block";
 						return;
 					}
-					if (document.getElementById("select-pays").value == groupe.label) {
+					if (document.getElementById("select-catégorie").value == groupe.label) {
 						groupe.style.display = "block";
 					} else {
 						groupe.style.display = "none";
@@ -32,7 +32,7 @@ function accorder() {
 		"change",
 		function() {
 			profil = this.value;
-			valeurs = profils[codePays[profil.split(" ")[0]]][profil.slice(3)];
+			valeurs = profils[codeCatégories[profil.split(" ")[0]]][profil.slice(3)];
 			index = 0;
 			for (nom of Object.keys(valeurs)) {
 				if (Object.keys(valeurs)[index] == "devise" || Object.keys(valeurs)[index] == "cri") {
@@ -47,9 +47,9 @@ function accorder() {
 }
 
 function remplir() {
-	listes = [pays, profils, écus, couronnes, heaumes, portants, portants, colliers, manteaux];
+	listes = [catégories, profils, écus, couronnes, heaumes, portants, portants, colliers, manteaux];
 	noms = [
-		"select-pays",
+		"select-catégorie",
 		"select-profil",
 		"écu",
 		"couronne",
@@ -61,16 +61,16 @@ function remplir() {
 	];
 	index = 0;
 	for (liste of listes) {
-		if (liste == profils || liste == pays) {selectProfil = document.getElementById(noms[index]);}
+		if (liste == profils || liste == catégories) {selectProfil = document.getElementById(noms[index]);}
 		else {selectProfil = document.getElementsByName(noms[index])[0];}
 		option = document.createElement("option");
-		if (liste == pays) {option.textContent = "Tous";}
+		if (liste == catégories) {option.textContent = "Tous";}
 		else {option.textContent = "∅";}
 		option.value = "";
 		selectProfil.appendChild(option);
-		for (codePays2 of Object.keys(liste)) {
-			if (liste == pays) {
-				for (champ of Object.keys(pays)) {
+		for (codeCatégorie of Object.keys(liste)) {
+			if (liste == catégories) {
+				for (champ of Object.keys(catégories)) {
 					option = document.createElement("option");
 					option.textContent = champ;
 					option.value = champ;
@@ -79,11 +79,11 @@ function remplir() {
 				break;
 			} else {
 				optgroup = document.createElement("optgroup");
-				optgroup.label = codePays2;
-				for (champ of Object.keys(liste[codePays2])) {
+				optgroup.label = codeCatégorie;
+				for (champ of Object.keys(liste[codeCatégorie])) {
 					option = document.createElement("option");
 					option.textContent = champ;
-					option.value = pays[codePays2] + " " + champ;
+					option.value = catégories[codeCatégorie] + " " + champ;
 					optgroup.appendChild(option);
 				}
 				selectProfil.appendChild(optgroup);

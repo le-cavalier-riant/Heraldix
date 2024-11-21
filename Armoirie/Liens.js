@@ -83,6 +83,9 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 			Wikipédia + "4/43/Arms_of_the_Holy_Roman_Emperor_(c.1433-c.1450).svg",
 			Wikipédia + "a/ae/Armoiries_imaginaires_de_Charlemagne_(1).svg",
 		],
+		"Broglie": [
+			Wikipédia + "a/af/Blason_de_la_famille_de_Broglie.svg",
+		],
 	},
 	"État du Vatican": {
 		"État du Vatican": [
@@ -123,6 +126,7 @@ couronnes = {
 			Wikipédia + "6/65/Royal_Crown_of_France.svg",
 			Wikipédia + "c/c8/Royal_Crown_of_France_(red_lozenge).svg",
 			Wikipédia + "3/3b/French_heraldic_crowns_-_King.svg",
+			Creazilla + "7830862/french-crown-clipart-lg.png",
 		],
 		"Dauphin": [
 			Wikipédia + "7/7e/Crown_of_the_Dauphin_of_France_(variant).svg",

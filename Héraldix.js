@@ -4,7 +4,7 @@
 //                                                                                                                   //
 // ================================================================================================================= //
 
-codePays = {
+codeCatégories = {
 	"**": "**",
 	"RF": "Royaume de France",
 	"EF": "Empire français",
@@ -19,7 +19,7 @@ codePays = {
 	"RJ": "Royaume de Jérusalem",
 }
 
-pays = {
+catégories = {
 	"**": "**",
 	"Royaume de France": "RF",
 	"Empire français": "EF",
