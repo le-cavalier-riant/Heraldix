@@ -4,6 +4,12 @@
 //                                                                                                                   //
 // ================================================================================================================= //
 
+function initialiser() {
+	remplir();
+	filtrer();
+	accorder();
+}
+
 function filtrer() {
 	document.getElementById("select-catégorie").addEventListener(
 		"change",
