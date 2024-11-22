@@ -591,7 +591,11 @@ manteaux = {
 			Wikipédia + "b/b6/Meuble_héraldique_manteau_01.svg",
 		],
 	},
-	/*"Empire français": {},*/
+	"Empire français": {
+		"Empire": [
+			"Armoirie/Manteaux/EF Empire.svg",
+		],
+	},
 	/*"Villes françaises": {},*/
 	"Royaume d'Espagne": {
 		"Grand": [

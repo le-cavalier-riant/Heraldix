@@ -260,7 +260,7 @@ profils = {
 			"devise": ["**", ""],
 			"écu": ["EF", "Empire"],
 			"heaume": ["RF", "Roi"],
-			"manteau": ["**", ""],
+			"manteau": ["EF", "Empire"],
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},
