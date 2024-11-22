@@ -7,7 +7,8 @@
 function initialiser() {
 	remplir();
 	filtrer();
-	accorder();
+	accorderProfil();
+	accorderParticulier();
 }
 
 function filtrer() {
@@ -33,7 +34,7 @@ function filtrer() {
 	);
 }
 
-function accorder() {
+function accorderProfil() {
 	document.getElementById("select-profil").addEventListener(
 		"change",
 		function() {
@@ -52,11 +53,31 @@ function accorder() {
 	);
 }
 
+function accorderParticulier() {
+	document.getElementById("select-particulier").addEventListener(
+		"change",
+		function() {
+			particulier = this.value;
+			valeurs = particuliers[codeCatégories[particulier.split(" ")[0]]][particulier.slice(3)];
+			index = 0;
+			for (nom of Object.keys(valeurs)) {
+				if (Object.keys(valeurs)[index] == "devise" || Object.keys(valeurs)[index] == "cri") {
+					document.getElementsByName(nom)[0].value = valeurs[nom][1];
+				} else {
+					document.getElementsByName(nom)[0].value = valeurs[nom][0] + " " + valeurs[nom][1];
+				}
+				index++;
+			}
+		}
+	);
+}
+
 function remplir() {
-	listes = [catégories, profils, écus, couronnes, heaumes, portants, portants, colliers, manteaux];
+	listes = [catégories, profils, particuliers, écus, couronnes, heaumes, portants, portants, colliers, manteaux];
 	noms = [
 		"select-catégorie",
 		"select-profil",
+		"select-particulier",
 		"écu",
 		"couronne",
 		"heaume",
@@ -67,8 +88,9 @@ function remplir() {
 	];
 	index = 0;
 	for (liste of listes) {
-		if (liste == profils || liste == catégories) {selectProfil = document.getElementById(noms[index]);}
-		else {selectProfil = document.getElementsByName(noms[index])[0];}
+		if (liste == catégories || liste == profils || liste == particuliers) {
+			selectProfil = document.getElementById(noms[index]);
+		} else {selectProfil = document.getElementsByName(noms[index])[0];}
 		option = document.createElement("option");
 		if (liste == catégories) {option.textContent = "Tous";}
 		else {option.textContent = "∅";}
