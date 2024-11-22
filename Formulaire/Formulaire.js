@@ -11,25 +11,21 @@ function initialiser() {
 	accorderParticulier();
 }
 
-function filtrer() {
-	document.getElementById("select-catégorie").addEventListener(
+function accorderParticulier() {
+	document.getElementById("select-particulier").addEventListener(
 		"change",
 		function() {
-			document.querySelectorAll("optgroup").forEach(
-				function(groupe) {
-					if (groupe.label == "**") {
-						return;
-					} else if (document.getElementById("select-catégorie").value == "") {
-						groupe.style.display = "block";
-						return;
-					}
-					if (document.getElementById("select-catégorie").value == groupe.label) {
-						groupe.style.display = "block";
-					} else {
-						groupe.style.display = "none";
-					}
+			particulier = this.value;
+			valeurs = particuliers[codeCatégories[particulier.split(" ")[0]]][particulier.slice(3)];
+			index = 0;
+			for (nom of Object.keys(valeurs)) {
+				if (Object.keys(valeurs)[index] == "devise" || Object.keys(valeurs)[index] == "cri") {
+					document.getElementsByName(nom)[0].value = valeurs[nom][1];
+				} else {
+					document.getElementsByName(nom)[0].value = valeurs[nom][0] + " " + valeurs[nom][1];
 				}
-			);
+				index++;
+			}
 		}
 	);
 }
@@ -53,21 +49,25 @@ function accorderProfil() {
 	);
 }
 
-function accorderParticulier() {
-	document.getElementById("select-particulier").addEventListener(
+function filtrer() {
+	document.getElementById("select-catégorie").addEventListener(
 		"change",
 		function() {
-			particulier = this.value;
-			valeurs = particuliers[codeCatégories[particulier.split(" ")[0]]][particulier.slice(3)];
-			index = 0;
-			for (nom of Object.keys(valeurs)) {
-				if (Object.keys(valeurs)[index] == "devise" || Object.keys(valeurs)[index] == "cri") {
-					document.getElementsByName(nom)[0].value = valeurs[nom][1];
-				} else {
-					document.getElementsByName(nom)[0].value = valeurs[nom][0] + " " + valeurs[nom][1];
+			document.querySelectorAll("optgroup").forEach(
+				function(groupe) {
+					if (groupe.label == "**") {
+						return;
+					} else if (document.getElementById("select-catégorie").value == "") {
+						groupe.style.display = "block";
+						return;
+					}
+					if (document.getElementById("select-catégorie").value == groupe.label) {
+						groupe.style.display = "block";
+					} else {
+						groupe.style.display = "none";
+					}
 				}
-				index++;
-			}
+			);
 		}
 	);
 }
