@@ -75,7 +75,7 @@ th {display: none;}
 
 .caché {display: none;}
 
-#important {
+.important {
 	position: sticky;
 	bottom: 10px;
 	padding: 25px;
@@ -89,8 +89,6 @@ th {display: none;}
 		border-radius: 50px;
 	}
 
-	.img-logo {width: 200px;}
-
 	button,
 	input,
 	select {
@@ -101,6 +99,13 @@ th {display: none;}
 	input:hover,
 	select:hover {
 		margin: 20px;
+	}
+
+	.img-logo {width: 200px;}
+
+	.important {
+		bottom: 50px;
+		padding: 50px;
 	}
 
 }
