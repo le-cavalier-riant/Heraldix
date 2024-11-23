@@ -12,7 +12,10 @@
 	border-radius: 20px;
 }
 
-body {background-color: #303841;}
+body {
+	background-color: #303841;
+	margin: 20px;
+}
 
 button,
 input,
@@ -60,8 +63,9 @@ img {
 	border-radius: 0;
 }
 .img-logo {
-	width: 100px;
-	border-radius: 20px;
+	width: 200px;
+	border: 1px solid #ffffff;
+	border-radius: 40px;
 }
 
 span {
