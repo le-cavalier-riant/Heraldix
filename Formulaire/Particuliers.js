@@ -5,7 +5,7 @@
 // ================================================================================================================= //
 
 particuliers = {
-	/*"**": {},*/
+	// "**": {},
 	"Royaume de France": {
 		"Duc de Bretagne": {
 			"collier": ["**", ""],
@@ -32,10 +32,10 @@ particuliers = {
 			"portant-senestre": ["**", "Lion"],
 		},
 	},
-	/*"Empire français": {},*/
-	/*"Villes françaises": {},*/
-	/*"Royaume d'Espagne": {},*/
-	/*"Royaume-Uni": {},*/
+	// "Empire français": {},
+	// "Villes françaises": {},
+	// "Royaume d'Espagne": {},
+	// "Royaume-Uni": {},
 	"Saint-Empire romain germanique": {
 		"Prince de Broglie": {
 			"collier": ["**", ""],
@@ -50,11 +50,11 @@ particuliers = {
 			"portant-senestre": ["**", ""],
 		},
 	},
-	/*"État du Vatican": {},*/
-	/*"Royaume du Portugal": {},*/
-	/*"Grand-Duché de Luxembourg": {},*/
-	/*"Royaume de Suède": {},*/
-	/*"Royaume de Jérusalem": {},*/
+	// "État du Vatican": {},
+	// "Royaume du Portugal": {},
+	// "Grand-Duché de Luxembourg": {},
+	// "Royaume de Suède": {},
+	// "Royaume de Jérusalem": {},
 };
 
 // ================================================================================================================= //

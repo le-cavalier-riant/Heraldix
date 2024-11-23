@@ -5,7 +5,7 @@
 // ================================================================================================================= //
 
 profils = {
-	/*"**": {},*/
+	// "**": {},
 	"Royaume de France": {
 		"Roi": {
 			"collier": ["RF", "Ordre de Saint-Michel"],
@@ -223,7 +223,7 @@ profils = {
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},
-		/*"Gentilhomme d'ancienne race": {},*/
+		// "Gentilhomme d'ancienne race": {},
 		/*"Banneret": {
 			"collier": ["**", ""],
 			"couronne": ["RF", "Banneret"],
@@ -248,7 +248,7 @@ profils = {
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},*/
-		/*"Gentilhomme de trois races": {},*/
+		// "Gentilhomme de trois races": {},
 		/*"Anobli": {
 			"collier": ["**", ""],
 			"couronne": ["**", ""],
@@ -287,14 +287,14 @@ profils = {
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},
-		/*"Empereur 1852": {},*/
-		/*"Prince souverain": {},*/
-		/*"Prince": {},*/
-		/*"Duc": {},*/
-		/*"Comte": {},*/
-		/*"Baron": {},*/
-		/*"Chevalier": {},*/
-		/*"Grand dignitaire": {},*/
+		// "Empereur 1852": {},
+		// "Prince souverain": {},
+		// "Prince": {},
+		// "Duc": {},
+		// "Comte": {},
+		// "Baron": {},
+		// "Chevalier": {},
+		// "Grand dignitaire": {},
 	},
 	"Villes françaises": {
 		"Capitale": {
@@ -370,13 +370,13 @@ profils = {
 			"portant-dextre": ["**", "Lion"],
 			"portant-senestre": ["**", "Licorne"],
 		},
-		/*"Duc": {},*/
-		/*"Marquis": {},*/
-		/*"Comte": {},*/
-		/*"Vicomte": {},*/
-		/*"Baron": {},*/
-		/*"Baronnet": {},*/
-		/*"Gentilhomme": {},*/
+		// "Duc": {},
+		// "Marquis": {},
+		// "Comte": {},
+		// "Vicomte": {},
+		// "Baron": {},
+		// "Baronnet": {},
+		// "Gentilhomme": {},
 	},
 	"Saint-Empire romain germanique": {
 		"Empereur": {

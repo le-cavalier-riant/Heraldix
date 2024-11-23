@@ -17,6 +17,9 @@ couronneManteau = URL.get("couronne-manteau");
 cri = URL.get("cri");
 devise = URL.get("devise");
 
+colonnes = 8;
+lignes = 5;
+
 images = {
 	"Couronne": [couronnes, couronne, "img-couronne"],
 	"Heaume": [heaumes, heaume, "img-heaume"],
@@ -37,8 +40,8 @@ function afficher(nom) {
 	if (nom == "manteau") {colonne = 5;} else
 	if (nom == "couronne-manteau") {colonne = 6;} else
 	if (nom == "collier") {colonne = 7;}
-	for (ligne = 0; ligne < 5; ligne++) {
-		obtenir("td", "S")[colonne + ligne * 8].style.display = "table-cell";
+	for (ligne = 0; ligne < lignes; ligne++) {
+		obtenir("td", "S")[colonne + ligne * colonnes].style.display = "table-cell";
 	}
 }
 
@@ -89,45 +92,45 @@ function déplacer(image, sens) {
 	}
 	if (image == "img-couronne") {
 		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[14 + 0].innerText = décalage;
+			obtenir("span-transformer", "C")[2 * colonnes + 0].innerText = décalage;
 		} else if (sens == "←" || sens == "→") {
-			obtenir("span-transformer", "C")[14 + 0 + 7].innerText = décalage;
+			obtenir("span-transformer", "C")[3 * colonnes + 0].innerText = décalage;
 		}
 	} else if (image == "img-heaume") {
 		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[14 + 1].innerText = décalage;
+			obtenir("span-transformer", "C")[2 * colonnes + 1].innerText = décalage;
 		} else if (sens == "←" || sens == "→") {
-			obtenir("span-transformer", "C")[14 + 1 + 7].innerText = décalage;
+			obtenir("span-transformer", "C")[3 * colonnes + 1].innerText = décalage;
 		}
 	} else if (image == "img-portant-dextre") {
 		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[14 + 2].innerText = décalage;
+			obtenir("span-transformer", "C")[2 * colonnes + 2].innerText = décalage;
 		} else if (sens == "←" || sens == "→") {
-			obtenir("span-transformer", "C")[14 + 2 + 7].innerText = décalage;
+			obtenir("span-transformer", "C")[3 * colonnes + 2].innerText = décalage;
 		}
 	} else if (image == "img-écu") {
 		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[14 + 3].innerText = décalage;
+			obtenir("span-transformer", "C")[2 * colonnes + 3].innerText = décalage;
 		} else if (sens == "←" || sens == "→") {
-			obtenir("span-transformer", "C")[14 + 3 + 7].innerText = décalage;
+			obtenir("span-transformer", "C")[3 * colonnes + 3].innerText = décalage;
 		}
 	} else if (image == "img-portant-senestre") {
 		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[14 + 4].innerText = décalage;
+			obtenir("span-transformer", "C")[2 * colonnes + 4].innerText = décalage;
 		} else if (sens == "←" || sens == "→") {
-			obtenir("span-transformer", "C")[14 + 4 + 7].innerText = décalage;
+			obtenir("span-transformer", "C")[3 * colonnes + 4].innerText = décalage;
 		}
 	} else if (image == "img-manteau") {
 		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[14 + 5].innerText = décalage;
+			obtenir("span-transformer", "C")[2 * colonnes + 5].innerText = décalage;
 		} else if (sens == "←" || sens == "→") {
-			obtenir("span-transformer", "C")[14 + 5 + 7].innerText = décalage;
+			obtenir("span-transformer", "C")[3 * colonnes + 5].innerText = décalage;
 		}
 	} else if (image == "img-collier") {
 		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[14 + 6].innerText = décalage;
+			obtenir("span-transformer", "C")[2 * colonnes + 6].innerText = décalage;
 		} else if (sens == "←" || sens == "→") {
-			obtenir("span-transformer", "C")[14 + 6 + 7].innerText = décalage;
+			obtenir("span-transformer", "C")[3 * colonnes + 6].innerText = décalage;
 		}
 	}
 }
@@ -241,25 +244,25 @@ function redimensionner(image, sens) {
 	} else {
 		obtenir(image, "I").height += (sens == "↑" ? 10 : -10);
 		taille = obtenir(image, "I").height;
-		if (image == "img-couronne") {obtenir("span-transformer", "C")[7 + 0].innerHTML = taille;} else
-		if (image == "img-heaume") {obtenir("span-transformer", "C")[7 + 1].innerHTML = taille;} else
-		if (image == "img-portant-dextre") {obtenir("span-transformer", "C")[7 + 2].innerHTML = taille;} else
-		if (image == "img-écu") {obtenir("span-transformer", "C")[7 + 3].innerHTML = taille;} else
-		if (image == "img-portant-senestre") {obtenir("span-transformer", "C")[7 + 4].innerHTML = taille;} else
-		if (image == "img-manteau") {obtenir("span-transformer", "C")[7 + 5].innerHTML = taille;} else
-		if (image == "img-collier") {obtenir("span-transformer", "C")[7 + 6].innerHTML = taille;}
+		if (image == "img-couronne") {obtenir("span-transformer", "C")[colonnes + 0].innerHTML = taille;} else
+		if (image == "img-heaume") {obtenir("span-transformer", "C")[colonnes + 1].innerHTML = taille;} else
+		if (image == "img-portant-dextre") {obtenir("span-transformer", "C")[colonnes + 2].innerHTML = taille;} else
+		if (image == "img-écu") {obtenir("span-transformer", "C")[colonnes + 3].innerHTML = taille;} else
+		if (image == "img-portant-senestre") {obtenir("span-transformer", "C")[colonnes + 4].innerHTML = taille;} else
+		if (image == "img-manteau") {obtenir("span-transformer", "C")[colonnes + 5].innerHTML = taille;} else
+		if (image == "img-collier") {obtenir("span-transformer", "C")[colonnes + 6].innerHTML = taille;}
 	}
 }
 
 function remplir() {
 	tableParamètres = obtenir("table-paramètres", "I");	
 	ligne = "";
-	for (i = 0; i < 7; i++) {
+	for (i = 0; i < colonnes; i++) {
 		ligne += "<td><button onclick = basculer(this.innerText)>" + Object.keys(images)[i] + "</button></td>";
 	}
 	tableParamètres.insertRow().insertCell(0).outerHTML = ligne;
 	ligne = "";
-	for (i = 0; i < 7; i++) {
+	for (i = 0; i < colonnes; i++) {
 		ligne +=
 			"<td><button onclick = \"redimensionner('" + images[Object.keys(images)[i]][2] + "', '←')\">-</button>"
 		;
@@ -269,7 +272,7 @@ function remplir() {
 	}
 	tableParamètres.insertRow().insertCell(0).outerHTML = ligne;
 	ligne = "";
-	for (i = 0; i < 7; i++) {
+	for (i = 0; i < colonnes; i++) {
 		ligne +=
 			"<td><button onclick = \"redimensionner('" + images[Object.keys(images)[i]][2] + "', '↓')\">-</button>"
 		;
@@ -279,14 +282,14 @@ function remplir() {
 	}
 	tableParamètres.insertRow().insertCell(0).outerHTML = ligne;
 	ligne = "";
-	for (i = 0; i < 7; i++) {
+	for (i = 0; i < colonnes; i++) {
 		ligne += "<td><button onclick = \"déplacer('" + images[Object.keys(images)[i]][2] + "', '↑')\">↑</button>";
 		ligne += "<button onclick = \"déplacer('" + images[Object.keys(images)[i]][2] + "', '↓')\">↓</button>";
 		ligne += "<span class = span-transformer>∅</span></td>";
 	}
 	tableParamètres.insertRow().insertCell(0).outerHTML = ligne;
 	ligne = "";
-	for (i = 0; i < 7; i++) {
+	for (i = 0; i < colonnes; i++) {
 		ligne += "<td><button onclick = \"déplacer('" + images[Object.keys(images)[i]][2] + "', '←')\">←</button>";
 		ligne += "<button onclick = \"déplacer('" + images[Object.keys(images)[i]][2] + "', '→')\">→</button>";
 		ligne += "<span class = span-transformer>∅</span></td>";
@@ -296,7 +299,7 @@ function remplir() {
 
 function sauvegarder() {
 	window.print();
-	/*navigator.clipboard.writeText("");*/
+	// navigator.clipboard.writeText("");
 }
 
 function titre() {

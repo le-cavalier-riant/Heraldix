@@ -8,7 +8,7 @@ Wikipédia = "https://upload.wikimedia.org/wikipedia/commons/";
 Creazilla = "https://cdn.creazilla.com/cliparts/";
 
 écus = {
-	/*"**": {},*/
+	// "**": {},
 	"Royaume de France": {
 		"France": [
 			Wikipédia + "c/c0/BlasonIledeFranceUnofficiel.svg",
@@ -209,7 +209,7 @@ couronnes = {
 			Wikipédia + "6/66/French_heraldic_crowns_-_Baron.svg",
 			Creazilla + "7830866/french-crown-clipart-xl.png",
 		],
-		/*"Gentilhomme d'ancienne race": [],*/
+		// "Gentilhomme d'ancienne race": [],
 		"Banneret": [
 			Wikipédia + "3/31/Crown_of_a_Chevalier_of_France.svg",
 			Creazilla + "7830867/french-crown-clipart-xl.png",
@@ -218,9 +218,9 @@ couronnes = {
 		"Chevalier": [
 			Wikipédia + "6/6d/Torse_of_a_Chevalier_of_France.svg",
 		],
-		/*"Gentilhomme de trois races": [],*/
-		/*"Anobli": [],*/
-		/*"Bâtard": [],*/
+		// "Gentilhomme de trois races": [],
+		// "Anobli": [],
+		// "Bâtard": [],
 	},
 	"Empire français": {
 		"Empereur 1804": [
@@ -299,8 +299,8 @@ couronnes = {
 			Wikipédia + "9/91/Heraldic_Crown_of_Spanish_Lords.svg",
 			Creazilla + "7830828/crown-clipart-xl.png",
 		],
-			/*Wikipédia + "6/69/Heraldic_Crown_of_Hispanic_Hidalgos.svg",*/
-			/*Wikipédia + "e/ed/Heraldic_Crown_of_a_Spanish_King_of_Arms.svg",*/
+			// Wikipédia + "6/69/Heraldic_Crown_of_Hispanic_Hidalgos.svg",
+			// Wikipédia + "e/ed/Heraldic_Crown_of_a_Spanish_King_of_Arms.svg",
 	},
 	"Villes espagnoles": {
 		"Commune": [
@@ -328,7 +328,7 @@ couronnes = {
 		"Baron": [
 			Wikipédia + "5/57/Coronet_of_a_British_Baron.svg",
 		],
-		/*"Baronnet": [],*/
+		// "Baronnet": [],
 		"Gentilhomme": [
 			Wikipédia + "b/bf/Torse_of_a_British_Gentleman.svg",
 		],
@@ -379,7 +379,7 @@ couronnes = {
 }
 
 heaumes = {
-	/*"**": {},*/
+	// "**": {},
 	"Royaume de France": {
 		"Roi": [
 			"Armoirie/Heaumes/RF Roi-A.svg",
@@ -414,8 +414,8 @@ heaumes = {
 			"Armoirie/Heaumes/RF Gentilhomme d'ancienne race-A.png",
 			"Armoirie/Heaumes/RF Gentilhomme d'ancienne race-B.png",
 		],
-		/*"Banneret": [],*/
-		/*"Chevalier": [],*/
+		// "Banneret": [],
+		// "Chevalier": [],
 		"Gentilhomme de trois races": [
 			"Armoirie/Heaumes/RF Gentilhomme de trois races.png",
 			"Armoirie/Heaumes/RF Gentilhomme de trois races.jpg",
@@ -429,19 +429,8 @@ heaumes = {
 			"Armoirie/Heaumes/RF Bâtard-B.png",
 		],
 	},
-	/*"Empire français": {
-		"Prince souverain": [],
-		"Prince": [],
-		"Duc": [],
-		"Comte": [],
-		"Baron": [],
-		"Chevalier": [],
-		"Grand dignitaire": [],
-	},*/
-	/*"Royaume d'Espagne": {
-		"Roi": [],
-		"Grand": [],
-	},*/
+	// "Empire français": {},
+	// "Royaume d'Espagne": {},
 	"Royaume-Uni": {
 		"Roi": [
 			Wikipédia + "5/52/Royal_Coat_of_Arms_of_the_United_Kingdom-Helmet.svg",
@@ -450,29 +439,19 @@ heaumes = {
 		"Pair": [
 			Wikipédia + "c/c8/Peer_helmet_in_heraldry.svg",
 		],
-		"Baronnet": [ /* ou chevalier */
+		"Baronnet": [ // ou chevalier
 			Wikipédia + "e/e9/Héraldique_ornement_Heaume_baronnet.svg",
 			Wikipédia + "8/83/Helm_of_a_Baronet_or_Knight_in_British_Heraldry.svg",
 		],
-		"Gentilhomme": [ /* ou écuyer */
+		"Gentilhomme": [ // ou écuyer
 			Wikipédia + "1/1e/Helm_of_an_Esquire_or_Gentleman_in_British_Heraldry.svg",
 		],
 	},
-	/*"Saint-Empire romain germanique": {
-		"Empereur": [],
-	},*/
-	/*"État du Vatican": {
-		"État du Vatican": [],
-	},*/
-	/*"Royaume du Portugal": {
-		"Roi": [],
-	},*/
-	/*"Grand-Duché de Luxembourg": {
-		"Grand-Duc": [],
-	},*/
-	/*"Royaume de Suède": {
-		"Roi": [],
-	},*/
+	// "Saint-Empire romain germanique": {},
+	// "État du Vatican": {},
+	// "Royaume du Portugal": {},
+	// "Grand-Duché de Luxembourg": {},
+	// "Royaume de Suède": {},
 	"Royaume de Jérusalem": {
 		"Roi": [
 			Wikipédia + "5/52/Royal_Coat_of_Arms_of_the_United_Kingdom-Helmet.svg",
@@ -557,7 +536,7 @@ colliers = {
 			"Armoirie/Colliers/EF Ordre de la Légion d'honneur.svg",
 		],
 	},
-	/*"Villes françaises": {},*/
+	// "Villes françaises": {},
 	"Royaume d'Espagne": {
 		"Ordre de la Toison d'or": [
 			Wikipédia + "a/a8/Golden_Fleece_Collar_(Knight).svg",
@@ -568,12 +547,12 @@ colliers = {
 			Wikipédia + "e/e8/Garter_of_the_Most_Noble_Order_of_the_Garter.png",
 		],
 	},
-	/*"Saint-Empire romain germanique": {},*/
-	/*"État du Vatican": {},*/
-	/*"Royaume du Portugal": {},*/
-	/*"Grand-Duché de Luxembourg": {},*/
-	/*"Royaume de Suède": {},*/
-	/*"Royaume de Jérusalem": {},*/
+	// "Saint-Empire romain germanique": {},
+	// "État du Vatican": {},
+	// "Royaume du Portugal": {},
+	// "Grand-Duché de Luxembourg": {},
+	// "Royaume de Suède": {},
+	// "Royaume de Jérusalem": {},
 }
 
 manteaux = {
@@ -597,19 +576,19 @@ manteaux = {
 			"Armoirie/Manteaux/EF Empire.svg",
 		],
 	},
-	/*"Villes françaises": {},*/
+	// "Villes françaises": {},
 	"Royaume d'Espagne": {
 		"Grand": [
 			Wikipédia + "4/4f/Manto_de_Grande_de_España.svg",
 		],
 	},
-	/*"Royaume-Uni": {},*/
-	/*"Saint-Empire romain germanique": {},*/
-	/*"État du Vatican": {},*/
-	/*"Royaume du Portugal": {},*/
-	/*"Grand-Duché de Luxembourg": {},*/
-	/*"Royaume de Suède": {},*/
-	/*"Royaume de Jérusalem": {},*/
+	// "Royaume-Uni": {},
+	// "Saint-Empire romain germanique": {},
+	// "État du Vatican": {},
+	// "Royaume du Portugal": {},
+	// "Grand-Duché de Luxembourg": {},
+	// "Royaume de Suède": {},
+	// "Royaume de Jérusalem": {},
 }
 
 /*cimiers = {
@@ -619,7 +598,14 @@ manteaux = {
 		],
 	},
 }*/
-
+/*
+Bonnes villes d'empire
+Wikipédia + "d/df/Ornements_extérieurs_Bonne_ville_du_Premier_Empire.svg",
+Ville de 2de classe
+Wikipédia + "2/2b/Orn_ext_ville_d'empire_2nde_class.svg",
+Villes de 3e classe
+Wikipédia + "0/05/Ornements_extérieurs_ville_de_3e_classe_de_l'Empire_français.svg",
+*/
 /*
 	%21			!
 	%27			'
