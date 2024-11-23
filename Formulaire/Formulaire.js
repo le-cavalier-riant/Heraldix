@@ -91,7 +91,7 @@ function remplir() {
 	for (liste of listes) {
 		if (liste == catégories || liste == profils || liste == particuliers) {
 			selectProfil = obtenir(noms[index], "I");
-		} else {selectProfil = obtenir(noms[index], "C")[0];}
+		} else {selectProfil = obtenir(noms[index], "N")[0];}
 		option = document.createElement("option");
 		if (liste == catégories) {option.textContent = "Tous";}
 		else {option.textContent = "∅";}
