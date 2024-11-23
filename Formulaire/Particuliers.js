@@ -15,6 +15,7 @@ particuliers = {
 			"écu": ["RF", "Bretagne"],
 			"heaume": ["RF", "Prince"],
 			"manteau": ["**", ""],
+			"couronne-manteau": ["**", ""],
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},
@@ -26,35 +27,25 @@ particuliers = {
 			"écu": ["RF", "Chavagnac"],
 			"heaume": ["RF", "Marquis"],
 			"manteau": ["**", ""],
+			"couronne-manteau": ["**", ""],
 			"portant-dextre": ["**", "Ange"],
 			"portant-senestre": ["**", "Lion"],
 		},
 	},
 	/*"Empire français": {},*/
-	"Villes françaises": {
-		"Paris": {
-			"collier": ["**", ""],
-			"couronne": ["VF", "Capitale"],
-			"cri": ["**", ""],
-			"devise": ["**", "Fluctuat nec mergitur"],
-			"écu": ["VF", "Paris"],
-			"heaume": ["**", ""],
-			"manteau": ["**", ""],
-			"portant-dextre": ["**", ""],
-			"portant-senestre": ["**", ""],
-		},
-	},
+	/*"Villes françaises": {},*/
 	/*"Royaume d'Espagne": {},*/
 	/*"Royaume-Uni": {},*/
 	"Saint-Empire romain germanique": {
 		"Prince de Broglie": {
 			"collier": ["**", ""],
-			"couronne": ["ER", "Prince"],
+			"couronne": ["RF", "Duc"],
 			"cri": ["**", ""],
 			"devise": ["**", "Pour l'avenir."],
 			"écu": ["ER", "Broglie"],
 			"heaume": ["RF", "Duc"],
 			"manteau": ["**", "Rouge"],
+			"couronne-manteau": ["ER", "Prince"],
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},

@@ -12,7 +12,7 @@ function initialiser() {
 }
 
 function accorderParticulier() {
-	document.getElementById("select-particulier").addEventListener(
+	obtenir("select-particulier", "I").addEventListener(
 		"change",
 		function() {
 			particulier = this.value;
@@ -20,9 +20,9 @@ function accorderParticulier() {
 			index = 0;
 			for (nom of Object.keys(valeurs)) {
 				if (Object.keys(valeurs)[index] == "devise" || Object.keys(valeurs)[index] == "cri") {
-					document.getElementsByName(nom)[0].value = valeurs[nom][1];
+					obtenir(nom, "N")[0].value = valeurs[nom][1];
 				} else {
-					document.getElementsByName(nom)[0].value = valeurs[nom][0] + " " + valeurs[nom][1];
+					obtenir(nom, "N")[0].value = valeurs[nom][0] + " " + valeurs[nom][1];
 				}
 				index++;
 			}
@@ -31,7 +31,7 @@ function accorderParticulier() {
 }
 
 function accorderProfil() {
-	document.getElementById("select-profil").addEventListener(
+	obtenir("select-profil", "I").addEventListener(
 		"change",
 		function() {
 			profil = this.value;
@@ -39,9 +39,9 @@ function accorderProfil() {
 			index = 0;
 			for (nom of Object.keys(valeurs)) {
 				if (Object.keys(valeurs)[index] == "devise" || Object.keys(valeurs)[index] == "cri") {
-					document.getElementsByName(nom)[0].value = valeurs[nom][1];
+					obtenir(nom, "N")[0].value = valeurs[nom][1];
 				} else {
-					document.getElementsByName(nom)[0].value = valeurs[nom][0] + " " + valeurs[nom][1];
+					obtenir(nom, "N")[0].value = valeurs[nom][0] + " " + valeurs[nom][1];
 				}
 				index++;
 			}
@@ -50,18 +50,18 @@ function accorderProfil() {
 }
 
 function filtrer() {
-	document.getElementById("select-catégorie").addEventListener(
+	obtenir("select-catégorie", "I").addEventListener(
 		"change",
 		function() {
-			document.querySelectorAll("optgroup").forEach(
+			obtenir("optgroup", "S").forEach(
 				function(groupe) {
 					if (groupe.label == "**") {
 						return;
-					} else if (document.getElementById("select-catégorie").value == "") {
+					} else if (obtenir("select-catégorie", "I").value == "") {
 						groupe.style.display = "block";
 						return;
 					}
-					if (document.getElementById("select-catégorie").value == groupe.label) {
+					if (obtenir("select-catégorie", "I").value == groupe.label) {
 						groupe.style.display = "block";
 					} else {
 						groupe.style.display = "none";
@@ -73,7 +73,7 @@ function filtrer() {
 }
 
 function remplir() {
-	listes = [catégories, profils, particuliers, écus, couronnes, heaumes, portants, portants, colliers, manteaux];
+	listes = [catégories, profils, particuliers, écus, couronnes, heaumes, portants, portants, colliers, manteaux, couronnes];
 	noms = [
 		"select-catégorie",
 		"select-profil",
@@ -85,12 +85,13 @@ function remplir() {
 		"portant-senestre",
 		"collier",
 		"manteau",
+		"couronne-manteau",
 	];
 	index = 0;
 	for (liste of listes) {
 		if (liste == catégories || liste == profils || liste == particuliers) {
-			selectProfil = document.getElementById(noms[index]);
-		} else {selectProfil = document.getElementsByName(noms[index])[0];}
+			selectProfil = obtenir(noms[index], "I");
+		} else {selectProfil = obtenir(noms[index], "C")[0];}
 		option = document.createElement("option");
 		if (liste == catégories) {option.textContent = "Tous";}
 		else {option.textContent = "∅";}

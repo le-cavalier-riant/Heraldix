@@ -12,9 +12,10 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 	"Royaume de France": {
 		"France": [
 			Wikipédia + "c/c0/BlasonIledeFranceUnofficiel.svg",
-			"Armoirie/Écus/France moderne A.svg",
-			"Armoirie/Écus/France moderne B.svg",
+			Wikipédia + "b/b6/France_moderne.svg",
+			Wikipédia + "f/fc/Arms_of_the_King_of_France.svg",
 			"Armoirie/Écus/France et Navarre.svg",
+			Wikipédia + "9/97/Armas_de_Borbón_de_Francia.svg",
 			Wikipédia + "1/13/Blason_France_moderne.svg",
 			Wikipédia + "7/78/Proposed_Blason_for_Île-de-France.svg",
 			Wikipédia + "9/95/Blason_pays_fr_France_ancien.svg",
