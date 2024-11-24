@@ -68,7 +68,11 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 	},
 	"Villes françaises": {
 		"Paris": [
+			Wikipédia + "2/2e/Blason_ville_Paris.svg",
+			Wikipédia + "4/4b/Blason_Ville_fr_Paris_2nd_empire.svg",
 			Wikipédia + "c/ca/Blason_paris_75.svg",
+			Wikipédia + "c/cc/Blason_Ville_fr_Paris_Restauration.svg",
+			Wikipédia + "7/7d/Blason_Ville_fr_Paris_Restauration2.svg",
 		],
 	},
 	"Royaume d'Espagne": {
@@ -132,7 +136,10 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 	"Royaume de Jérusalem": {
 		"Jérusalem": [
 			Wikipédia + "0/04/Blason_Royaume_de_Jérusalem.svg",
+			Wikipédia +"2/28/Armoiries_du_Royaume_de_Jérusalem.svg",
+			Wikipédia + "8/85/Arms_of_the_Kingdom_of_Jerusalem.svg",
 			"https://www.blason-armoiries.org/heraldique/armorial/ecus/j/je/blason-jerusalem.gif",
+			Wikipédia + "2/24/Armoiries_d'Hugues_IV_de_Lusignan_(roi_de_Jérusalem).svg",
 		],
 		"Ordre équestre du Saint-Sépulcre": [
 			Wikipédia + "3/39/Blason_ordre_croisade_Saint-Sepulcre.svg",
