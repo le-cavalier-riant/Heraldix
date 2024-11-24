@@ -53,6 +53,7 @@ h1 {
 	font-size: 60px;
 	margin-right: 200px;
 	margin-left: 200px;
+	color: #e8c869
 }
 
 fieldset,
@@ -62,6 +63,11 @@ img {
 	filter: drop-shadow(0 0 2px #000000);
 	border-radius: 0;
 }
+.img-lettrine {
+	height: 50px;
+	margin-bottom: -2px;
+}
+.img-lettrine:hover {cursor: text;}
 .img-logo {
 	width: 200px;
 	border: 1px solid #ffffff;

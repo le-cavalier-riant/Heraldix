@@ -19,14 +19,8 @@
 }
 
 #img-couronne {
-	width: 250px;
-	margin-bottom: -75px;
 	position: sticky;
 	z-index: 25;
-}
-#img-couronne-manteau {
-	width: 250px;
-	margin-bottom: -140px;
 }
 #img-écu {
 	position: absolute;

@@ -27,8 +27,8 @@ images = {
 	"Écu": [écus, écu, "img-écu"],
 	"Portant à senestre": [portants, portantSenestre, "img-portant-senestre"],
 	"Manteau": [manteaux, manteau, "img-manteau"],
-	"Collier": [colliers, collier, "img-collier"],
 	"Couronne du manteau": [couronnes, couronneManteau, "img-couronne-manteau"],
+	"Collier": [colliers, collier, "img-collier"],
 }
 
 function afficher(nom) {
@@ -46,13 +46,14 @@ function afficher(nom) {
 }
 
 function basculer(image) {
-	if (image.split(" ")[0] == "Portant") {
+	if (image.startsWith("Portant")) {
 		image = image.split(" ")[0] + " " + image.split(" ")[1] + " " + image.split(" ")[2];
-	} else if (image == "Couronne du manteau") {
+	} else if (image.startsWith("Couronne du manteau")) {
 		image = image.split(" ")[0] + " " + image.split(" ")[1] + " " + image.split(" ")[2];
 	} else {
 		image = image.split(" ")[0];
 	}
+	console.log(image);
 	comptes[image] =
 		(comptes[image] + 1) %
 		images[image][0][codeCatégories[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length
@@ -92,45 +93,51 @@ function déplacer(image, sens) {
 	}
 	if (image == "img-couronne") {
 		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[2 * colonnes + 0].innerText = décalage;
-		} else if (sens == "←" || sens == "→") {
 			obtenir("span-transformer", "C")[3 * colonnes + 0].innerText = décalage;
+		} else if (sens == "←" || sens == "→") {
+			obtenir("span-transformer", "C")[2 * colonnes + 0].innerText = décalage;
 		}
 	} else if (image == "img-heaume") {
 		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[2 * colonnes + 1].innerText = décalage;
-		} else if (sens == "←" || sens == "→") {
 			obtenir("span-transformer", "C")[3 * colonnes + 1].innerText = décalage;
+		} else if (sens == "←" || sens == "→") {
+			obtenir("span-transformer", "C")[2 * colonnes + 1].innerText = décalage;
 		}
 	} else if (image == "img-portant-dextre") {
 		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[2 * colonnes + 2].innerText = décalage;
-		} else if (sens == "←" || sens == "→") {
 			obtenir("span-transformer", "C")[3 * colonnes + 2].innerText = décalage;
+		} else if (sens == "←" || sens == "→") {
+			obtenir("span-transformer", "C")[2 * colonnes + 2].innerText = décalage;
 		}
 	} else if (image == "img-écu") {
 		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[2 * colonnes + 3].innerText = décalage;
-		} else if (sens == "←" || sens == "→") {
 			obtenir("span-transformer", "C")[3 * colonnes + 3].innerText = décalage;
+		} else if (sens == "←" || sens == "→") {
+			obtenir("span-transformer", "C")[2 * colonnes + 3].innerText = décalage;
 		}
 	} else if (image == "img-portant-senestre") {
 		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[2 * colonnes + 4].innerText = décalage;
-		} else if (sens == "←" || sens == "→") {
 			obtenir("span-transformer", "C")[3 * colonnes + 4].innerText = décalage;
+		} else if (sens == "←" || sens == "→") {
+			obtenir("span-transformer", "C")[2 * colonnes + 4].innerText = décalage;
 		}
 	} else if (image == "img-manteau") {
 		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[2 * colonnes + 5].innerText = décalage;
-		} else if (sens == "←" || sens == "→") {
 			obtenir("span-transformer", "C")[3 * colonnes + 5].innerText = décalage;
+		} else if (sens == "←" || sens == "→") {
+			obtenir("span-transformer", "C")[2 * colonnes + 5].innerText = décalage;
+		}
+	} else if (image == "img-couronne-manteau") {
+		if (sens == "↓" || sens == "↑") {
+			obtenir("span-transformer", "C")[3 * colonnes + 6].innerText = décalage;
+		} else if (sens == "←" || sens == "→") {
+			obtenir("span-transformer", "C")[2 * colonnes + 6].innerText = décalage;
 		}
 	} else if (image == "img-collier") {
 		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[2 * colonnes + 6].innerText = décalage;
+			obtenir("span-transformer", "C")[3 * colonnes + 7].innerText = décalage;
 		} else if (sens == "←" || sens == "→") {
-			obtenir("span-transformer", "C")[3 * colonnes + 6].innerText = décalage;
+			obtenir("span-transformer", "C")[2 * colonnes + 7].innerText = décalage;
 		}
 	}
 }
@@ -144,6 +151,10 @@ function générer() {
 		obtenir("img-couronne", "I").src =
 			couronnes[codeCatégories[couronne.split(" ")[0]]][couronne.slice(3)][0]
 		;
+		if (!heaume) {
+			obtenir("img-couronne", "I").width = 250;
+			obtenir("img-couronne", "I").style.marginBottom = "-30px";
+		}
 	}
 	if (heaume) {
 		afficher("heaume");
@@ -153,8 +164,8 @@ function générer() {
 		obtenir("img-heaume", "I").height = 150;
 		obtenir("img-heaume", "I").style.marginBottom = "-150px";
 		if (couronne) {
-			obtenir("img-couronne", "I").style.width = "80px";
-			obtenir("img-couronne", "I").style.marginBottom = "-30px";
+			obtenir("img-couronne", "I").width = 80;
+			obtenir("img-couronne", "I").style.marginBottom = "-50px";
 		}
 	}
 	if (écu) {
@@ -162,6 +173,16 @@ function générer() {
 		obtenir("img-écu", "I").src = écus[codeCatégories[écu.split(" ")[0]]][écu.slice(3)][0];
 		obtenir("img-écu", "I").width = 200;
 		obtenir("img-écu", "I").style.marginTop = "100px";
+		icône = document.getElementById("favicon");
+		if (icône) {
+			icône.href = écus[codeCatégories[écu.split(" ")[0]]][écu.slice(3)][0];
+		} else {
+			icône = document.createElement("link");
+			icône.id = "favicon";
+			icône.rel = "icon";
+			icône.href = écus[codeCatégories[écu.split(" ")[0]]][écu.slice(3)][0];
+			document.head.appendChild(icône);
+		}
 	}
 	if (portantDextre) {
 		afficher("portant-dextre");
@@ -197,9 +218,12 @@ function générer() {
 		obtenir("img-manteau", "I").width = 700;
 		obtenir("img-manteau", "I").style.marginTop = "170px";
 		if (couronneManteau) {
+			afficher("couronne-manteau");
 			obtenir("img-couronne-manteau", "I").src =
 				couronnes[codeCatégories[couronneManteau.split(" ")[0]]][couronneManteau.slice(3)][0]
 			;
+			obtenir("img-couronne-manteau", "I").width = 250;
+			obtenir("img-couronne-manteau", "I").style.marginBottom = "-150px";
 		}
 	} else {
 		obtenir("div-couronne", "I").style.marginTop = "0";
@@ -255,44 +279,47 @@ function redimensionner(image, sens) {
 }
 
 function remplir() {
-	tableParamètres = obtenir("table-paramètres", "I");	
+	tableParamètres = obtenir("table-paramètres", "I");
+	span = "<span class = span-transformer>∅</span></td>";
+	fonctions = ["\"redimensionner('", "\"déplacer('"];
+	aaa = ["←", "→", "↓", "↑"];
 	ligne = "";
 	for (i = 0; i < colonnes; i++) {
-		ligne += "<td><button onclick = basculer(this.innerText)>" + Object.keys(images)[i] + "</button></td>";
+		ligne += "<td>" + "<button onclick = " + "basculer(this.innerText)" + ">" + Object.keys(images)[i] + "</button>";
 	}
 	tableParamètres.insertRow().insertCell(0).outerHTML = ligne;
 	ligne = "";
 	for (i = 0; i < colonnes; i++) {
 		ligne +=
-			"<td><button onclick = \"redimensionner('" + images[Object.keys(images)[i]][2] + "', '←')\">-</button>"
+			"<td>" + "<button onclick = " + fonctions[0] + images[Object.keys(images)[i]][2] + "', '" + aaa[0] + "')\">" + "-" + "</button>"
 		;
 		ligne += "↔";
-		ligne += "<button onclick = \"redimensionner('" + images[Object.keys(images)[i]][2] + "', '→')\">+</button>";
-		ligne += "<span class = span-transformer>∅</span></td>";
+		ligne += "<button onclick = " + fonctions[0] + images[Object.keys(images)[i]][2] + "', '" + aaa[1] + "')\">" + "+" + "</button>";
+		ligne += span;
 	}
 	tableParamètres.insertRow().insertCell(0).outerHTML = ligne;
 	ligne = "";
 	for (i = 0; i < colonnes; i++) {
 		ligne +=
-			"<td><button onclick = \"redimensionner('" + images[Object.keys(images)[i]][2] + "', '↓')\">-</button>"
+			"<td>" + "<button onclick = " + fonctions[0] + images[Object.keys(images)[i]][2] + "', '" + aaa[2] + "')\">" + "-" + "</button>"
 		;
 		ligne += "↕";
-		ligne += "<button onclick = \"redimensionner('" + images[Object.keys(images)[i]][2] + "', '↑')\">+</button>";
-		ligne += "<span class = span-transformer>∅</span></td>";
+		ligne += "<button onclick = " + fonctions[0] + images[Object.keys(images)[i]][2] + "', '" + aaa[3] + "')\">" + "+" + "</button>";
+		ligne += span;
 	}
 	tableParamètres.insertRow().insertCell(0).outerHTML = ligne;
 	ligne = "";
 	for (i = 0; i < colonnes; i++) {
-		ligne += "<td><button onclick = \"déplacer('" + images[Object.keys(images)[i]][2] + "', '↑')\">↑</button>";
-		ligne += "<button onclick = \"déplacer('" + images[Object.keys(images)[i]][2] + "', '↓')\">↓</button>";
-		ligne += "<span class = span-transformer>∅</span></td>";
+		ligne += "<td>" + "<button onclick = " + fonctions[1] + images[Object.keys(images)[i]][2] + "', '" + aaa[0] + "')\">" + "←" + "</button>";
+		ligne += "<button onclick = " + fonctions[1] + images[Object.keys(images)[i]][2] + "', '" + aaa[1] + "')\">" + "→" + "</button>";
+		ligne += span;
 	}
 	tableParamètres.insertRow().insertCell(0).outerHTML = ligne;
 	ligne = "";
 	for (i = 0; i < colonnes; i++) {
-		ligne += "<td><button onclick = \"déplacer('" + images[Object.keys(images)[i]][2] + "', '←')\">←</button>";
-		ligne += "<button onclick = \"déplacer('" + images[Object.keys(images)[i]][2] + "', '→')\">→</button>";
-		ligne += "<span class = span-transformer>∅</span></td>";
+		ligne += "<td>" + "<button onclick = " + fonctions[1] + images[Object.keys(images)[i]][2] + "', '" + aaa[2] + "')\">" + "↓" + "</button>";
+		ligne += "<button onclick = " + fonctions[1] + images[Object.keys(images)[i]][2] + "', '" + aaa[3] + "')\">" + "↑" + "</button>";
+		ligne += span;
 	}
 	tableParamètres.insertRow().insertCell(0).outerHTML = ligne;
 }
@@ -309,44 +336,68 @@ function titre() {
 				if (voyelles.includes(couronne.slice(3)[0])) {
 					document.title = "Armoirie d'" + couronne.slice(3) + " d'" + écu.slice(3) + " — Héraldix";
 					obtenir("h1", "S")[0].innerHTML =
-						"<hr>Armoirie d'" + couronne.slice(3) + " d'" + écu.slice(3) + "<hr>"
+						"<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie d'" +
+						couronne.slice(3) +
+						" d'" +
+						écu.slice(3) +
+						"<hr>"
 					;
 				} else {
 					document.title = "Armoirie de " + couronne.slice(3) + " d'" + écu.slice(3) + " — Héraldix";
 					obtenir("h1", "S")[0].innerHTML =
-						"<hr>Armoirie de " + couronne.slice(3) + " d'" + écu.slice(3) + "<hr>"
+						"<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie de " +
+						couronne.slice(3) +
+						" d'" +
+						écu.slice(3) +
+						"<hr>"
 					;
 				}
 			} else {
 				if (voyelles.includes(couronne.slice(3)[0])) {
 					document.title = "Armoirie d'" + couronne.slice(3) + " de " + écu.slice(3) + " — Héraldix";
 					obtenir("h1", "S")[0].innerHTML =
-						"<hr>Armoirie d'" + couronne.slice(3) + " de " + écu.slice(3) + "<hr>"
+						"<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie d'" +
+						couronne.slice(3) +
+						" de " +
+						écu.slice(3) +
+						"<hr>"
 					;
 				} else {
 					document.title = "Armoirie de " + couronne.slice(3) + " de " + écu.slice(3) + " — Héraldix";
 					obtenir("h1", "S")[0].innerHTML =
-						"<hr>Armoirie de " + couronne.slice(3) + " de " + écu.slice(3) + "<hr>"
+						"<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie de " +
+						couronne.slice(3) +
+						" de " +
+						écu.slice(3) +
+						"<hr>"
 					;
 				}
 			}
 		} else {
 			if (voyelles.includes(couronne.slice(3)[0])) {
 				document.title = "Armoirie d'" + couronne.slice(3) + " — Héraldix";
-				obtenir("h1", "S")[0].innerHTML = "<hr>Armoirie d'" + couronne.slice(3) + "<hr>";
+				obtenir("h1", "S")[0].innerHTML =
+					"<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie d'" + couronne.slice(3) + "<hr>"
+				;
 			} else {
 				document.title = "Armoirie de " + couronne.slice(3) + " — Héraldix";
-				obtenir("h1", "S")[0].innerHTML = "<hr>Armoirie de " + couronne.slice(3) + "<hr>";
+				obtenir("h1", "S")[0].innerHTML =
+					"<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie de " + couronne.slice(3) + "<hr>"
+				;
 			}
 		}
 	} else {
 		if (écu) {
 			if (voyelles.includes(écu.slice(3)[0])) {
 				document.title = "Armoirie d'" + écu.slice(3) + " — Héraldix";
-				obtenir("h1", "S")[0].innerHTML = "<hr>Armoirie d'" + écu.slice(3) + "<hr>";
+				obtenir("h1", "S")[0].innerHTML =
+					"<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie d'" + écu.slice(3) + "<hr>"
+				;
 			} else {
 				document.title = "Armoirie de " + écu.slice(3) + " — Héraldix";
-				obtenir("h1", "S")[0].innerHTML = "<hr>Armoirie de " + écu.slice(3) + "<hr>";
+				obtenir("h1", "S")[0].innerHTML =
+					"<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie de " + écu.slice(3) + "<hr>"
+				;
 			}
 		}
 	}

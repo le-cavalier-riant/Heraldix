@@ -56,13 +56,16 @@ function filtrer() {
 			obtenir("optgroup", "S").forEach(
 				function(groupe) {
 					if (groupe.label == "**") {
+						obtenir("img-catégorie", "I").src = drapeaux["**"][0];
 						return;
 					} else if (obtenir("select-catégorie", "I").value == "") {
 						groupe.style.display = "block";
+						obtenir("img-catégorie", "I").src = drapeaux["**"][0];
 						return;
 					}
 					if (obtenir("select-catégorie", "I").value == groupe.label) {
 						groupe.style.display = "block";
+						obtenir("img-catégorie", "I").src = drapeaux[groupe.label][0];
 					} else {
 						groupe.style.display = "none";
 					}
@@ -87,6 +90,7 @@ function remplir() {
 		"manteau",
 		"couronne-manteau",
 	];
+	obtenir("img-catégorie", "I").src = drapeaux["**"][0];
 	index = 0;
 	for (liste of listes) {
 		if (liste == catégories || liste == profils || liste == particuliers) {

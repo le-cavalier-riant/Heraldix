@@ -9,6 +9,8 @@ fieldset {
 	margin: auto;
 }
 
+#img-catégorie {width: 75px;}
+
 input[type = "text"] {width: 250px;}
 .input-texte:hover {cursor: text;}
 
