@@ -223,8 +223,19 @@ profils = {
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},
-		// "Gentilhomme d'ancienne race": {},
-		/*"Banneret": {
+		/* "Gentilhomme d'ancienne race": {
+			"collier": ["**", ""],
+			"couronne": ["**", ""],
+			"cri": ["**", ""],
+			"devise": ["**", ""],
+			"écu": ["**", ""],
+			"heaume": ["RF", "Gentilhomme d'ancienne race"],
+			"manteau": ["**", ""],
+			"couronne-manteau": ["**", ""],
+			"portant-dextre": ["**", ""],
+			"portant-senestre": ["**", ""],
+		}, */
+		/* "Banneret": {
 			"collier": ["**", ""],
 			"couronne": ["RF", "Banneret"],
 			"cri": ["**", ""],
@@ -235,8 +246,8 @@ profils = {
 			"couronne-manteau": ["**", ""],
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
-		},*/
-		/*"Chevalier": {
+		}, */
+		/* "Chevalier": {
 			"collier": ["**", ""],
 			"couronne": ["RF", "Chevalier"],
 			"cri": ["**", ""],
@@ -248,7 +259,18 @@ profils = {
 			"portant-dextre": ["**", ""],
 			"portant-senestre": ["**", ""],
 		},*/
-		// "Gentilhomme de trois races": {},
+		/* "Gentilhomme de trois races": {
+			"collier": ["**", ""],
+			"couronne": ["**", ""],
+			"cri": ["**", ""],
+			"devise": ["**", ""],
+			"écu": ["**", ""],
+			"heaume": ["RF", "Gentilhomme d'ancienne race"],
+			"manteau": ["**", ""],
+			"couronne-manteau": ["**", ""],
+			"portant-dextre": ["**", ""],
+			"portant-senestre": ["**", ""],
+		}, */
 		/*"Anobli": {
 			"collier": ["**", ""],
 			"couronne": ["**", ""],

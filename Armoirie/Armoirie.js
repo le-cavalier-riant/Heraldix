@@ -56,39 +56,39 @@ function basculer(image) {
 	console.log(image);
 	comptes[image] =
 		(comptes[image] + 1) %
-		images[image][0][codeCatégories[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length
+		images[image][0][codes[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length
 	;
 	obtenir(images[image][2], "I").src =
-		images[image][0][codeCatégories[images[image][1].split(" ")[0]]][images[image][1].slice(3)][comptes[image]]
+		images[image][0][codes[images[image][1].split(" ")[0]]][images[image][1].slice(3)][comptes[image]]
 	;
 	obtenir("#table-paramètres tr td button", "S")[Object.keys(images).indexOf(image)].innerText =
 		image +
 		" (" +
 		(comptes[image] + 1) +
 		" / " +
-		images[image][0][codeCatégories[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length +
+		images[image][0][codes[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length +
 		")"
 	;
 }
 
 function déplacer(image, sens) {
 	if (sens == "↓" || sens == "↑") {
-		obtenir(image, "I").style.marginTop =
-			(
-				parseInt(obtenir(image, "I").style.marginTop.split("px")[0]) +
-				(sens == "↓" ? 10 : -10)
-			) +
-			"px"
-		;
+		if (obtenir(image, "I").style.marginTop) {
+			obtenir(image, "I").style.marginTop =
+				(parseInt(obtenir(image, "I").style.marginTop.split("px")[0]) + (sens == "↓" ? 10 : -10)) + "px"
+			;
+		} else {
+			obtenir(image, "I").style.marginTop = "0px";
+		}
 		décalage = obtenir(image, "I").style.marginTop;
 	} else {
-		obtenir(image, "I").style.marginRight =
-			(
-				parseInt(obtenir(image, "I").style.marginRight.split("px")[0]) +
-				(sens == "←" ? 10 : -10)
-			) +
-			"px"
-		;
+		if (obtenir(image, "I").style.marginRight) {
+			obtenir(image, "I").style.marginRight =
+				(parseInt(obtenir(image, "I").style.marginRight.split("px")[0]) + (sens == "←" ? 10 : -10)) + "px"
+			;
+		} else {
+			obtenir(image, "I").style.marginRight = "0px";
+		}
 		décalage = obtenir(image, "I").style.marginRight;
 	}
 	if (image == "img-couronne") {
@@ -149,7 +149,7 @@ function générer() {
 	if (couronne) {
 		afficher("couronne");
 		obtenir("img-couronne", "I").src =
-			couronnes[codeCatégories[couronne.split(" ")[0]]][couronne.slice(3)][0]
+			couronnes[codes[couronne.split(" ")[0]]][couronne.slice(3)][0]
 		;
 		if (!heaume) {
 			obtenir("img-couronne", "I").width = 250;
@@ -159,7 +159,7 @@ function générer() {
 	if (heaume) {
 		afficher("heaume");
 		obtenir("img-heaume", "I").src =
-			heaumes[codeCatégories[heaume.split(" ")[0]]][heaume.slice(3)][0]
+			heaumes[codes[heaume.split(" ")[0]]][heaume.slice(3)][0]
 		;
 		obtenir("img-heaume", "I").height = 150;
 		obtenir("img-heaume", "I").style.marginBottom = "-150px";
@@ -170,24 +170,24 @@ function générer() {
 	}
 	if (écu) {
 		afficher("écu");
-		obtenir("img-écu", "I").src = écus[codeCatégories[écu.split(" ")[0]]][écu.slice(3)][0];
+		obtenir("img-écu", "I").src = écus[codes[écu.split(" ")[0]]][écu.slice(3)][0];
 		obtenir("img-écu", "I").width = 200;
 		obtenir("img-écu", "I").style.marginTop = "100px";
 		icône = document.getElementById("favicon");
 		if (icône) {
-			icône.href = écus[codeCatégories[écu.split(" ")[0]]][écu.slice(3)][0];
+			icône.href = écus[codes[écu.split(" ")[0]]][écu.slice(3)][0];
 		} else {
 			icône = document.createElement("link");
 			icône.id = "favicon";
 			icône.rel = "icon";
-			icône.href = écus[codeCatégories[écu.split(" ")[0]]][écu.slice(3)][0];
+			icône.href = écus[codes[écu.split(" ")[0]]][écu.slice(3)][0];
 			document.head.appendChild(icône);
 		}
 	}
 	if (portantDextre) {
 		afficher("portant-dextre");
 		obtenir("img-portant-dextre", "I").src =
-			portants[codeCatégories[portantDextre.split(" ")[0]]][portantDextre.slice(3)][0]
+			portants[codes[portantDextre.split(" ")[0]]][portantDextre.slice(3)][0]
 		;
 		obtenir("img-portant-dextre", "I").width = 300;
 		obtenir("img-portant-dextre", "I").height = 350;
@@ -195,14 +195,14 @@ function générer() {
 	if (portantSenestre) {
 		afficher("portant-senestre");
 		obtenir("img-portant-senestre", "I").src =
-			portants[codeCatégories[portantSenestre.split(" ")[0]]][portantSenestre.slice(3)][0]
+			portants[codes[portantSenestre.split(" ")[0]]][portantSenestre.slice(3)][0]
 		;
 		obtenir("img-portant-senestre", "I").width = 300;
 		obtenir("img-portant-senestre", "I").height = 350;
 	}
 	if (collier) {
 		afficher("collier");
-		obtenir("img-collier", "I").src = colliers[codeCatégories[collier.split(" ")[0]]][collier.slice(3)];
+		obtenir("img-collier", "I").src = colliers[codes[collier.split(" ")[0]]][collier.slice(3)];
 		obtenir("img-collier", "I").width = 300;
 		obtenir("img-collier", "I").style.marginTop = "75px";
 		obtenir("img-portant-dextre", "I").style.marginRight = "-140px";
@@ -214,13 +214,13 @@ function générer() {
 	}
 	if (manteau) {
 		afficher("manteau");
-		obtenir("img-manteau", "I").src = manteaux[codeCatégories[manteau.split(" ")[0]]][manteau.slice(3)][0];
+		obtenir("img-manteau", "I").src = manteaux[codes[manteau.split(" ")[0]]][manteau.slice(3)][0];
 		obtenir("img-manteau", "I").width = 700;
 		obtenir("img-manteau", "I").style.marginTop = "170px";
 		if (couronneManteau) {
 			afficher("couronne-manteau");
 			obtenir("img-couronne-manteau", "I").src =
-				couronnes[codeCatégories[couronneManteau.split(" ")[0]]][couronneManteau.slice(3)][0]
+				couronnes[codes[couronneManteau.split(" ")[0]]][couronneManteau.slice(3)][0]
 			;
 			obtenir("img-couronne-manteau", "I").width = 250;
 			obtenir("img-couronne-manteau", "I").style.marginBottom = "-150px";
@@ -264,7 +264,8 @@ function redimensionner(image, sens) {
 		if (image == "img-écu") {obtenir("span-transformer", "C")[3].innerHTML = taille;} else
 		if (image == "img-portant-senestre") {obtenir("span-transformer", "C")[4].innerHTML = taille;} else
 		if (image == "img-manteau") {obtenir("span-transformer", "C")[5].innerHTML = taille;} else
-		if (image == "img-collier") {obtenir("span-transformer", "C")[6].innerHTML = taille;}
+		if (image == "img-couronne-manteau") {obtenir("span-transformer", "C")[6].innerHTML = taille;} else
+		if (image == "img-collier") {obtenir("span-transformer", "C")[7].innerHTML = taille;}
 	} else {
 		obtenir(image, "I").height += (sens == "↑" ? 10 : -10);
 		taille = obtenir(image, "I").height;
@@ -274,7 +275,8 @@ function redimensionner(image, sens) {
 		if (image == "img-écu") {obtenir("span-transformer", "C")[colonnes + 3].innerHTML = taille;} else
 		if (image == "img-portant-senestre") {obtenir("span-transformer", "C")[colonnes + 4].innerHTML = taille;} else
 		if (image == "img-manteau") {obtenir("span-transformer", "C")[colonnes + 5].innerHTML = taille;} else
-		if (image == "img-collier") {obtenir("span-transformer", "C")[colonnes + 6].innerHTML = taille;}
+		if (image == "img-couronne-manteau") {obtenir("span-transformer", "C")[colonnes + 6].innerHTML = taille;} else
+		if (image == "img-collier") {obtenir("span-transformer", "C")[colonnes + 7].innerHTML = taille;}
 	}
 }
 
@@ -330,77 +332,40 @@ function sauvegarder() {
 }
 
 function titre() {
+	intérieur = "";
 	if (couronne) {
 		if (écu) {
 			if (voyelles.includes(écu.slice(3)[0])) {
 				if (voyelles.includes(couronne.slice(3)[0])) {
-					document.title = "Armoirie d'" + couronne.slice(3) + " d'" + écu.slice(3) + " — Héraldix";
-					obtenir("h1", "S")[0].innerHTML =
-						"<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie d'" +
-						couronne.slice(3) +
-						" d'" +
-						écu.slice(3) +
-						"<hr>"
-					;
+					intérieur = "d'" + couronne.slice(3) + " d'" + écu.slice(3);
 				} else {
-					document.title = "Armoirie de " + couronne.slice(3) + " d'" + écu.slice(3) + " — Héraldix";
-					obtenir("h1", "S")[0].innerHTML =
-						"<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie de " +
-						couronne.slice(3) +
-						" d'" +
-						écu.slice(3) +
-						"<hr>"
-					;
+					intérieur = "de " + couronne.slice(3) + " d'" + écu.slice(3);
 				}
 			} else {
 				if (voyelles.includes(couronne.slice(3)[0])) {
-					document.title = "Armoirie d'" + couronne.slice(3) + " de " + écu.slice(3) + " — Héraldix";
-					obtenir("h1", "S")[0].innerHTML =
-						"<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie d'" +
-						couronne.slice(3) +
-						" de " +
-						écu.slice(3) +
-						"<hr>"
-					;
+					intérieur = "d'" + couronne.slice(3) + " de " + écu.slice(3);
 				} else {
-					document.title = "Armoirie de " + couronne.slice(3) + " de " + écu.slice(3) + " — Héraldix";
-					obtenir("h1", "S")[0].innerHTML =
-						"<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie de " +
-						couronne.slice(3) +
-						" de " +
-						écu.slice(3) +
-						"<hr>"
-					;
+					intérieur = "de " + couronne.slice(3) + " de " + écu.slice(3);
 				}
 			}
 		} else {
 			if (voyelles.includes(couronne.slice(3)[0])) {
-				document.title = "Armoirie d'" + couronne.slice(3) + " — Héraldix";
-				obtenir("h1", "S")[0].innerHTML =
-					"<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie d'" + couronne.slice(3) + "<hr>"
-				;
+				intérieur = "d'" + couronne.slice(3);
 			} else {
-				document.title = "Armoirie de " + couronne.slice(3) + " — Héraldix";
-				obtenir("h1", "S")[0].innerHTML =
-					"<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie de " + couronne.slice(3) + "<hr>"
-				;
+				intérieur = "de " + couronne.slice(3);
 			}
 		}
 	} else {
 		if (écu) {
 			if (voyelles.includes(écu.slice(3)[0])) {
-				document.title = "Armoirie d'" + écu.slice(3) + " — Héraldix";
-				obtenir("h1", "S")[0].innerHTML =
-					"<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie d'" + écu.slice(3) + "<hr>"
-				;
+				intérieur = "d'" + écu.slice(3);
 			} else {
-				document.title = "Armoirie de " + écu.slice(3) + " — Héraldix";
-				obtenir("h1", "S")[0].innerHTML =
-					"<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie de " + écu.slice(3) + "<hr>"
-				;
+				intérieur = "de " + écu.slice(3);
 			}
 		}
 	}
+	document.title = "Armoirie " + intérieur + " — Héraldix";
+	obtenir("h1", "S")[0].innerHTML = "<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie " + intérieur + "<hr>";
 }
 
 // ================================================================================================================= //

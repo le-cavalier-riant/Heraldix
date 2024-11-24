@@ -4,19 +4,12 @@
 //                                                                                                                   //
 // ================================================================================================================= //
 
-function initialiser() {
-	remplir();
-	filtrer();
-	accorderProfil();
-	accorderParticulier();
-}
-
 function accorderParticulier() {
 	obtenir("select-particulier", "I").addEventListener(
 		"change",
 		function() {
 			particulier = this.value;
-			valeurs = particuliers[codeCatégories[particulier.split(" ")[0]]][particulier.slice(3)];
+			valeurs = particuliers[codes[particulier.split(" ")[0]]][particulier.slice(3)];
 			index = 0;
 			for (nom of Object.keys(valeurs)) {
 				if (Object.keys(valeurs)[index] == "devise" || Object.keys(valeurs)[index] == "cri") {
@@ -35,7 +28,7 @@ function accorderProfil() {
 		"change",
 		function() {
 			profil = this.value;
-			valeurs = profils[codeCatégories[profil.split(" ")[0]]][profil.slice(3)];
+			valeurs = profils[codes[profil.split(" ")[0]]][profil.slice(3)];
 			index = 0;
 			for (nom of Object.keys(valeurs)) {
 				if (Object.keys(valeurs)[index] == "devise" || Object.keys(valeurs)[index] == "cri") {
@@ -73,6 +66,13 @@ function filtrer() {
 			);
 		}
 	);
+}
+
+function initialiser() {
+	remplir();
+	filtrer();
+	accorderProfil();
+	accorderParticulier();
 }
 
 function remplir() {

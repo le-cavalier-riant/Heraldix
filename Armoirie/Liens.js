@@ -52,6 +52,9 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 			Wikipédia + "f/fb/Blason_famille_fr_de_Chavagnac_1.svg",
 			Wikipédia + "0/06/Blason_famille_fr_de_Chavagnac_2.svg",
 		],
+		"Maupeou": [
+			Wikipédia + "9/98/Blason_famille_fr_de_Maupeou.svg",
+		],
 		"Navarre": [
 			Wikipédia + "1/17/Blason_Royaume_Navarre.svg",
 			Wikipédia + "9/97/Blason_Royaume_Navarre_(ecu_francais).svg",

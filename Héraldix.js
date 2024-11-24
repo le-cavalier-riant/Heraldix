@@ -4,7 +4,7 @@
 //                                                                                                                   //
 // ================================================================================================================= //
 
-codeCatégories = {
+codes = {
 	"**": "**",
 	"RF": "Royaume de France",
 	"EF": "Empire français",
@@ -44,6 +44,8 @@ voyelles = [
 	"U", "Ù", "Ú", "Û", "Ü",
 	"Y", "Ỳ", "Ý", "Ŷ", "Ÿ",
 ];
+
+articles = ["Le", "Les"];
 
 function obtenir(identifiant, type) {
 	if (type == "I") {
