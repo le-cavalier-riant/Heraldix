@@ -621,7 +621,9 @@ drapeaux = {
 	"Empire français": [
 		Wikipédia + "c/c3/Flag_of_France.svg",
 	],
-	// "Villes françaises": [],
+	"Villes françaises": [
+		"Drapeaux/VF Villes françaises.png",
+	],
 	"Royaume d'Espagne": [
 		Wikipédia + "f/f5/Flag_of_Cross_of_Burgundy.svg",
 	],
