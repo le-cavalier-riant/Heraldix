@@ -14,13 +14,20 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 			Wikipédia + "c/c0/BlasonIledeFranceUnofficiel.svg",
 			Wikipédia + "b/b6/France_moderne.svg",
 			Wikipédia + "f/fc/Arms_of_the_King_of_France.svg",
-			"Armoirie/Écus/France et Navarre.svg",
-			Wikipédia + "9/97/Armas_de_Borbón_de_Francia.svg",
 			Wikipédia + "1/13/Blason_France_moderne.svg",
 			Wikipédia + "7/78/Proposed_Blason_for_Île-de-France.svg",
-			Wikipédia + "9/95/Blason_pays_fr_France_ancien.svg",
+			Wikipédia + "9/97/Armas_de_Borbón_de_Francia.svg",
 			Wikipédia + "3/33/France_Ancient.svg",
 			Wikipédia + "0/0b/Blason_Abbaye_de_Saint-Léonard.svg",
+			Wikipédia + "d/d6/Arms_of_the_Kings_of_France_(France_Ancien).svg",
+			Wikipédia + "9/95/Blason_pays_fr_France_ancien.svg",
+			Wikipédia + "3/35/Coat_of_arms_of_the_Kingdom_of_France_&_Navarre_(Ancien).svg",
+			Wikipédia + "2/21/Arms_of_Louis_le_Hutin.svg",
+			Wikipédia + "f/fc/Blason_France-ancien--Navarre-ancien.svg",
+			Wikipédia + "b/b4/Blasons_rois_de_France_(1289-1316).svg",
+			Wikipédia + "4/49/Blason_Le_Palais_56.svg",
+			Wikipédia + "a/a0/Coat_of_arms_of_France_and_Navarre_(1589-1789).svg",
+			Wikipédia + "6/60/Arms_of_France_and_Navarre_(1589-1790).svg",
 		],
 		"Dauphin": [
 			Wikipédia + "5/5a/Arms_of_the_Dauphin_of_France.svg",
@@ -29,16 +36,19 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 		],
 		"Bretagne": [
 			Wikipédia + "d/d8/Armoiries_Bretagne_-_Arms_of_Brittany.svg",
-			Wikipédia + "e/e2/Blason_Anne_de_Bretagne_(1476-1514)_Reine_de_France.svg",
-			Wikipédia + "5/5e/Blason_FR_duc_de_Bretagne_(Bourbon).svg",
+			Wikipédia + "8/8c/Arms_of_Jean_III_de_Bretagne.svg",
 			"https://fr.geneawiki.com/images/b/bb/Province_-_Blason_-_Bretagne.png",
+			Wikipédia + "5/5f/CoA_of_Anne_of_Brittany.png",
+			Wikipédia + "e/e2/Blason_Anne_de_Bretagne_(1476-1514)_Reine_de_France.svg",
+			Wikipédia + "e/e8/Arms_of_Claude_de_France.svg",
+			Wikipédia + "5/5e/Blason_FR_duc_de_Bretagne_(Bourbon).svg",
 		],
 		"Chavagnac": [
 			"Armoirie/Écus/Chavagnac.png",
 			"https://data.man8rove.com/images/arms/full/1jo8ll90a-1.png",
-			"http://dechav.free.fr/png/Chavagnac_de_Champagne.png",
 			Wikipédia + "d/d3/Blason_famille_Chavagnac_moderne.svg",
 			Wikipédia + "d/d6/Blason_famille_fr_de_Chavagnac.svg",
+			"http://dechav.free.fr/png/Chavagnac_de_Champagne.png",
 			Wikipédia + "f/fb/Blason_famille_fr_de_Chavagnac_1.svg",
 			Wikipédia + "0/06/Blason_famille_fr_de_Chavagnac_2.svg",
 		],
@@ -68,11 +78,11 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 	},
 	"Royaume-Uni": {
 		"Angleterre": [
-			Wikipédia + "1/1c/England_Arms_1405.svg",
 			Wikipédia + "f/f7/Royal_arms_of_England.svg",
 			Wikipédia + "2/28/England_COA.svg",
-			Wikipédia + "1/10/Royal_Arms_of_England_(1340-1367).svg",
 			Wikipédia + "8/86/Royal_Arms_of_England_(1399-1603).svg",
+			Wikipédia + "1/1c/England_Arms_1405.svg",
+			Wikipédia + "1/10/Royal_Arms_of_England_(1340-1367).svg",
 		],
 		"Écosse": [
 			Wikipédia + "b/bd/Royal_Arms_of_the_Kingdom_of_Scotland.svg",
@@ -84,19 +94,19 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 	"Saint-Empire romain germanique": {
 		"Empire" : [
 			Wikipédia + "4/43/Arms_of_the_Holy_Roman_Emperor_(c.1433-c.1450).svg",
-			Wikipédia + "a/ae/Armoiries_imaginaires_de_Charlemagne_(1).svg",
-			Wikipédia + "1/12/Armoiries_imaginaires_de_Charlemagne_selon_les_écus_armoriés_des_Neuf_Preux._ms._Fr._18651,_fol._1r._(BnF,_Paris).svg",
-			Wikipédia + "5/5a/Armoiries_imaginaires_de_Charlemagne_d'après_les_fresques_du_château_de_la_Manta.svg",
-			Wikipédia + "9/92/Shield_and_Coat_of_Arms_of_the_Holy_Roman_Emperor_(c.1200-c.1300).svg",
-			Wikipédia + "2/2d/Shield_and_Coat_of_Arms_of_the_Holy_Roman_Emperor_(c.1300-c.1400).svg",
 			Wikipédia + "a/af/Generic_Arms_of_the_Holy_Roman_Emperor_(after_1433).svg",
 			Wikipédia + "2/2f/Holy_Roman_Empire_Arms-double_head.svg",
 			Wikipédia + "6/6c/Wappen_Deutscher_Bund.svg",
+			Wikipédia + "9/92/Shield_and_Coat_of_Arms_of_the_Holy_Roman_Emperor_(c.1200-c.1300).svg",
+			Wikipédia + "2/2d/Shield_and_Coat_of_Arms_of_the_Holy_Roman_Emperor_(c.1300-c.1400).svg",
+			Wikipédia + "1/12/Armoiries_imaginaires_de_Charlemagne_selon_les_écus_armoriés_des_Neuf_Preux._ms._Fr._18651,_fol._1r._(BnF,_Paris).svg",
+			Wikipédia + "5/5a/Armoiries_imaginaires_de_Charlemagne_d'après_les_fresques_du_château_de_la_Manta.svg",
+			Wikipédia + "a/ae/Armoiries_imaginaires_de_Charlemagne_(1).svg",
 		],
 		"Broglie": [
 			Wikipédia + "a/af/Blason_de_la_famille_de_Broglie.svg",
-			Wikipédia + "e/eb/Arms_of_the_House_of_Broglie.svg",
 			Wikipédia + "0/0f/Blason_famille_Broglie.svg",
+			Wikipédia + "e/eb/Arms_of_the_House_of_Broglie.svg",
 		],
 	},
 	"État du Vatican": {
@@ -645,6 +655,7 @@ Wikipédia + "0/05/Ornements_extérieurs_ville_de_3e_classe_de_l'Empire_françai
 */
 /*
 	%21			!
+	%26			&
 	%27			'
 	%28			(
 	%29			)
