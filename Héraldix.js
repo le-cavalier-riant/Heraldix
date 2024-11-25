@@ -45,7 +45,10 @@ voyelles = [
 	"Y", "Ỳ", "Ý", "Ŷ", "Ÿ",
 ];
 
-articles = ["Le", "Les"];
+articles = {
+	"Le": "du",
+	"Les": "des",
+};
 
 function obtenir(identifiant, type) {
 	if (type == "I") {

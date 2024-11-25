@@ -172,7 +172,10 @@ function générer() {
 		afficher("écu");
 		obtenir("img-écu", "I").src = écus[codes[écu.split(" ")[0]]][écu.slice(3)][0];
 		obtenir("img-écu", "I").width = 200;
-		obtenir("img-écu", "I").style.marginTop = "100px";
+		obtenir("img-écu", "I").style.marginTop = "0px";
+		if (manteau || collier || heaume) {
+			obtenir("img-écu", "I").style.marginTop = "100px";
+		}
 		icône = document.getElementById("favicon");
 		if (icône) {
 			icône.href = écus[codes[écu.split(" ")[0]]][écu.slice(3)][0];
@@ -208,7 +211,11 @@ function générer() {
 		obtenir("img-portant-dextre", "I").style.marginRight = "-140px";
 		obtenir("img-portant-senestre", "I").style.marginLeft = "-140px";
 	} else {
-		obtenir("img-collier", "I").style.display = "none";
+		if (portantDextre || portantSenestre) {
+			obtenir("img-collier", "I").height = 0;
+		} else {
+			obtenir("img-collier", "I").height = 300;
+		}
 		obtenir("img-portant-dextre", "I").style.marginRight = "10px";
 		obtenir("img-portant-senestre", "I").style.marginLeft = "10px";
 	}
@@ -334,38 +341,33 @@ function sauvegarder() {
 function titre() {
 	intérieur = "";
 	if (couronne) {
-		if (écu) {
-			if (voyelles.includes(écu.slice(3)[0])) {
-				if (voyelles.includes(couronne.slice(3)[0])) {
-					intérieur = "d'" + couronne.slice(3) + " d'" + écu.slice(3);
-				} else {
-					intérieur = "de " + couronne.slice(3) + " d'" + écu.slice(3);
-				}
-			} else {
-				if (voyelles.includes(couronne.slice(3)[0])) {
-					intérieur = "d'" + couronne.slice(3) + " de " + écu.slice(3);
-				} else {
-					intérieur = "de " + couronne.slice(3) + " de " + écu.slice(3);
-				}
-			}
+		if (voyelles.includes(couronne.slice(3)[0])) {
+			intérieur += " d'" + couronne.slice(3);
 		} else {
-			if (voyelles.includes(couronne.slice(3)[0])) {
-				intérieur = "d'" + couronne.slice(3);
+			if (couronne.slice(3).split(" ")[0] == "Le") {
+				intérieur += " du " + couronne.slice(3 + 3);
+			} else if (couronne.slice(3).split(" ")[0] == "Les") {
+				intérieur += " des " + couronne.slice(3 + 4);
 			} else {
-				intérieur = "de " + couronne.slice(3);
-			}
-		}
-	} else {
-		if (écu) {
-			if (voyelles.includes(écu.slice(3)[0])) {
-				intérieur = "d'" + écu.slice(3);
-			} else {
-				intérieur = "de " + écu.slice(3);
+				intérieur += " de " + couronne.slice(3);
 			}
 		}
 	}
-	document.title = "Armoirie " + intérieur + " — Héraldix";
-	obtenir("h1", "S")[0].innerHTML = "<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie " + intérieur + "<hr>";
+	if (écu) {
+		if (voyelles.includes(écu.slice(3)[0])) {
+			intérieur += " d'" + écu.slice(3);
+		} else {
+			if (écu.slice(3).split(" ")[0] == "Le") {
+				intérieur += " du " + écu.slice(3 + 3);
+			} else if (écu.slice(3).split(" ")[0] == "Les") {
+				intérieur += " des " + écu.slice(3 + 4);
+			} else {
+				intérieur += " de " + écu.slice(3);
+			}
+		}
+	}
+	document.title = "Armoirie" + intérieur + " — Héraldix";
+	obtenir("h1", "S")[0].innerHTML = "<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie" + intérieur + "<hr>";
 }
 
 // ================================================================================================================= //
