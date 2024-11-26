@@ -155,7 +155,7 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 }
 
 couronnes = {
-	"**": {},
+	// "**": {},
 	"Royaume de France": {
 		"Roi": [
 			Wikipédia + "1/1c/Royal_Crown_of_France_(accurate_red_bonnet).svg",
@@ -654,13 +654,13 @@ drapeaux = {
 	],
 }
 
-/*cimiers = {
+/* cimiers = {
 	"**": {
 		"Bassinet" : [
 			Wikipédia + "a/aa/Bassinet.SVG",
 		],
 	},
-}*/
+} */
 /*
 Bonnes villes d'empire
 Wikipédia + "d/df/Ornements_extérieurs_Bonne_ville_du_Premier_Empire.svg",

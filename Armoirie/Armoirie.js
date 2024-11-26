@@ -91,53 +91,23 @@ function déplacer(image, sens) {
 		}
 		décalage = obtenir(image, "I").style.marginRight;
 	}
-	if (image == "img-couronne") {
-		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[3 * colonnes + 0].innerText = décalage;
-		} else if (sens == "←" || sens == "→") {
-			obtenir("span-transformer", "C")[2 * colonnes + 0].innerText = décalage;
-		}
-	} else if (image == "img-heaume") {
-		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[3 * colonnes + 1].innerText = décalage;
-		} else if (sens == "←" || sens == "→") {
-			obtenir("span-transformer", "C")[2 * colonnes + 1].innerText = décalage;
-		}
-	} else if (image == "img-portant-dextre") {
-		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[3 * colonnes + 2].innerText = décalage;
-		} else if (sens == "←" || sens == "→") {
-			obtenir("span-transformer", "C")[2 * colonnes + 2].innerText = décalage;
-		}
-	} else if (image == "img-écu") {
-		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[3 * colonnes + 3].innerText = décalage;
-		} else if (sens == "←" || sens == "→") {
-			obtenir("span-transformer", "C")[2 * colonnes + 3].innerText = décalage;
-		}
-	} else if (image == "img-portant-senestre") {
-		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[3 * colonnes + 4].innerText = décalage;
-		} else if (sens == "←" || sens == "→") {
-			obtenir("span-transformer", "C")[2 * colonnes + 4].innerText = décalage;
-		}
-	} else if (image == "img-manteau") {
-		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[3 * colonnes + 5].innerText = décalage;
-		} else if (sens == "←" || sens == "→") {
-			obtenir("span-transformer", "C")[2 * colonnes + 5].innerText = décalage;
-		}
-	} else if (image == "img-couronne-manteau") {
-		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[3 * colonnes + 6].innerText = décalage;
-		} else if (sens == "←" || sens == "→") {
-			obtenir("span-transformer", "C")[2 * colonnes + 6].innerText = décalage;
-		}
-	} else if (image == "img-collier") {
-		if (sens == "↓" || sens == "↑") {
-			obtenir("span-transformer", "C")[3 * colonnes + 7].innerText = décalage;
-		} else if (sens == "←" || sens == "→") {
-			obtenir("span-transformer", "C")[2 * colonnes + 7].innerText = décalage;
+	aaa = {
+		"img-couronne": 0,
+		"img-heaume": 1,
+		"img-portant-dextre": 2,
+		"img-écu": 3,
+		"img-portant-senestre": 4,
+		"img-manteau": 5,
+		"img-couronne-manteau": 6,
+		"img-collier": 7,
+	}
+	for (bbb of Object.keys(aaa)) {
+		if (image == bbb) {
+			if (sens == "↓" || sens == "↑") {
+				obtenir("span-transformer", "C")[3 * colonnes + aaa[bbb]].innerText = décalage;
+			} else {
+				obtenir("span-transformer", "C")[2 * colonnes + aaa[bbb]].innerText = décalage;
+			}
 		}
 	}
 }
