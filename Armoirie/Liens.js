@@ -441,8 +441,8 @@ heaumes = {
 		// "Banneret": [],
 		// "Chevalier": [],
 		"Gentilhomme de trois races": [
-			"Armoirie/Heaumes/RF Gentilhomme de trois races.png",
-			"Armoirie/Heaumes/RF Gentilhomme de trois races.jpg",
+			"Armoirie/Heaumes/RF Gentilhomme de trois races-A.png",
+			"Armoirie/Heaumes/RF Gentilhomme de trois races-B.png",
 		],
 		"Anobli": [
 			"Armoirie/Heaumes/RF Anobli-A.png",

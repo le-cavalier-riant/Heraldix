@@ -7,48 +7,37 @@
 <!doctype html>
 <html lang = fr>
 <head>
-	<title>Armoirie — Héraldix</title>
-	<meta charset = utf-8>
-	<link rel = "shortcut icon" href = Lettres/A.png>
+	<title>Liste — Héraldix</title>
+	<link rel = "shortcut icon" href = Lettres/L.png>
 	<link rel = stylesheet href = Héraldix.css>
-	<link rel = stylesheet href = Armoirie/Armoirie.css>
+	<link rel = stylesheet href = Listes/Listes.css>
 	<script src = Héraldix.js></script>
+	<script src = Listes/Listes.js></script>
+	<script src = Formulaire/Profils.js></script>
+	<script src = Formulaire/Particuliers.js></script>
 	<script src = Armoirie/Liens.js></script>
-	<script src = Armoirie/Armoirie.js></script>
+	<meta charset = utf-8>
 </head>
-<body onload = initialiser()>
 <header>
 	<a href = Héraldix.html><img src = Héraldix.png class = img-logo></a>
-	<h1><hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie<hr></h1>
+	<h1><hr><img src = Lettres/L.png alt = L class = img-lettrine>istes<hr></h1>
 	<a href = Formulaire.html><button class = important>Formulaire</button></a><br>
-	<a href = Listes.html><button class = important>Listes</button></a><br>
-	<button onclick = history.back()>↶ Page précédente</button><br>
-	<button onclick = sauvegarder() class = important>Sauvegarder</button><br>
-	<button onclick = paramètres() id = button-paramètres>↓ Paramètres ↓</button>
-	<table class = caché id = table-paramètres></table>
+	<a href = Listes.html><button class = important>Listes</button></a>
 </header>
+<body onload = initialiser()>
 
-<div class = div-flex id = div-contenu>
-	<div id = div-manteau><img src = Armoirie/Vide.png id = img-manteau></div>
-	<div id = div-autre>
-		<div id = div-cri><span id = span-cri>0</span></div>
-		<div id = div-couronne-manteau><img id = img-couronne-manteau></div>
-		<div id = div-couronne><img id = img-couronne></div>
-		<div id = div-heaume><img id = img-heaume></div>
-		<div class = div-flex>
-			<div id = div-portant-dextre>
-				<img src = Armoirie/Vide.png id = img-portant-dextre onclick = inverser(this.style)>
-			</div>
-			<div class = div-flex><img src = Armoirie/Vide.png id = img-collier><img id = img-écu></div>
-			<div id = div-portant-senestre>
-				<img src = Armoirie/Vide.png id = img-portant-senestre onclick = inverser(this.style)>
-			</div>
-		</div>
-		<div id = div-devise><span id = span-devise>0</span></div>
-	</div>
-</div>
-
-<footer></footer>
+<h2><hr>Profils | Couronnes | Heaumes<hr></h2>
+<table id = table-profils></table>
+<h2><hr>Particuliers<hr></h2>
+<table id = table-particuliers></table>
+<h2><hr>Heaumes<hr></h2>
+<table id = table-profils-heaumes></table>
+<h2><hr>Écus<hr></h2>
+<table id = table-écus></table>
+<h2><hr>Portants<hr></h2>
+<table id = table-portants></table>
+<h2><hr>Manteaux<hr></h2>
+<table id = table-manteaux></table>
 
 <!-- ============================================================================================================== -->
 <!--                                                                                                                -->
