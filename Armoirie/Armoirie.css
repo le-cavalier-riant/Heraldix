@@ -18,6 +18,8 @@
 	padding: 25px;
 }
 
+footer {display: none;}
+
 #img-couronne {
 	position: sticky;
 	z-index: 25;
@@ -42,8 +44,18 @@
 }
 
 @media print {
-	header,
-	footer {display: none;}
+
+	body {width: 1000px;}
+
+	footer {display: block;}
+
+	header {display: none;}
+
+	#img-logo {
+		width: 75px;
+		margin-bottom: -25px;
+	}
+
 }
 
 /* ================================================================================================================= */

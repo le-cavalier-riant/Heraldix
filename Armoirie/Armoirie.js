@@ -203,6 +203,7 @@ function générer() {
 			obtenir("img-couronne-manteau", "I").style.marginBottom = "-150px";
 		}
 	} else {
+		obtenir("img-manteau", "I").width = 700;
 		obtenir("div-couronne", "I").style.marginTop = "0";
 	}
 	if (cri) {obtenir("span-cri", "I").innerText = cri;}
