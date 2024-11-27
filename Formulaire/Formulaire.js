@@ -42,6 +42,24 @@ function accorderProfil() {
 	);
 }
 
+function accorderManteau() {
+	valeur = "";
+	obtenir("select-manteau", "I").addEventListener(
+		"change",
+		function() {
+			if (this.value == "") {
+				obtenir("div-couronne-manteau", "I").style.display = "none";
+				valeur = obtenir("couronne-manteau", "N")[0].value;
+				obtenir("couronne-manteau", "N")[0].value = "";
+			} else {
+				obtenir("div-couronne-manteau", "I").style.display = "block";
+				obtenir("couronne-manteau", "N")[0].value = valeur;
+
+			}
+		}
+	);
+}
+
 function filtrer() {
 	obtenir("select-catégorie", "I").addEventListener(
 		"change",
@@ -73,6 +91,7 @@ function initialiser() {
 	filtrer();
 	accorderProfil();
 	accorderParticulier();
+	accorderManteau();
 }
 
 function remplir() {
