@@ -57,7 +57,7 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 		],
 		"Maupeou": [
 			Wikipédia + "9/98/Blason_famille_fr_de_Maupeou.svg",
-			Wikipédia + "f/f1/Blason_ville_fr_Ableiges_(Val-d'Oise)à.svg",
+			Wikipédia + "f/f1/Blason_ville_fr_Ableiges_(Val-d'Oise).svg",
 		],
 		"Navarre": [
 			Wikipédia + "1/17/Blason_Royaume_Navarre.svg",
