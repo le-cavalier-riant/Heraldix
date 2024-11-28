@@ -8,7 +8,7 @@ profils = {
 	// "**": {},
 	"Royaume de France": {
 		"Roi": {
-			"collier": ["RF", "Ordre de Saint-Michel"],
+			"collier": ["RF", "Ordres de Saint-Michel et du Saint-Esprit"],
 			"couronne": ["RF", "Roi"],
 			"cri": ["**", "Montjoie ! Saint Denis !"],
 			"devise": ["**", "Lilia non laborant neque nent"],

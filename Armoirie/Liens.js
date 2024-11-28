@@ -553,6 +553,9 @@ colliers = {
 		"Ordre du Saint-Esprit": [
 			Wikipédia + "3/34/Order_of_the_Holy_Spirit_(heraldry).svg",
 		],
+		"Ordres de Saint-Michel et du Saint-Esprit": [
+			"Armoirie/Colliers/RF Ordres de Saint-Michel et du Saint-Esprit.svg",
+		],
 	},
 	"Empire français": {
 		"Ordre de la Légion d'honneur": [
