@@ -4,15 +4,17 @@
 //                                                                                                                   //
 // ================================================================================================================= //
 
+colonnes = 5;
+
 function initialiser() {
 	document.getElementById("table-profils").insertRow().insertCell(0).outerHTML =
-		"<td></td>" + "<th colspan = 10>" + "Couronnes" + "</th>" + "<th colspan = 10>" + "Heaumes" + "</th>"
+		"<td></td>" + "<th colspan = " + colonnes + ">" + "Couronnes" + "</th>" + "<th colspan = " + colonnes + ">" + "Heaumes" + "</th>"
 	;
 	for (catégorie of Object.keys(profils)) {
 		document.getElementById("table-profils").insertRow().insertCell(0).outerHTML =
 			"<th>" + catégorie + "</th>" +
-			"<th colspan = 10>" + catégorie +
-			"</th>" + "<th colspan = 10>" + catégorie + "</th>"
+			"<th colspan = " + colonnes + ">" + catégorie +
+			"</th>" + "<th colspan = " + colonnes + ">" + catégorie + "</th>"
 		;
 		for (profil of Object.keys(profils[catégorie])) {
 			c = "";
@@ -27,13 +29,13 @@ function initialiser() {
 							"</td>"
 						;
 					}
-					for (j = couronnes[catégorie][profil].length; j < 10; j++) {
+					for (j = couronnes[catégorie][profil].length; j < colonnes; j++) {
 						c += "<td class = td-vide></td>";
 					}
 					delete couronnes[catégorie][profil];
 				}
 			} else {
-				c += "<td colspan = 10 class = td-vide></td>";
+				c += "<td colspan = " + colonnes + " class = td-vide></td>";
 			}
 			if (Object.keys(heaumes).includes(catégorie)) {
 				if (Object.keys(heaumes[catégorie]).includes(profil)) {
@@ -46,13 +48,13 @@ function initialiser() {
 							"</td>"
 						;
 					}
-					for (j = heaumes[catégorie][profil].length; j < 10; j++) {
+					for (j = heaumes[catégorie][profil].length; j < colonnes; j++) {
 						c += "<td class = td-vide></td>";
 					}
 					delete heaumes[catégorie][profil];
 				}
 			} else {
-				c += "<td colspan = 10 class = td-vide></td>";
+				c += "<td colspan = " + colonnes + " class = td-vide></td>";
 			}
 			document.getElementById("table-profils").insertRow().insertCell(0).outerHTML =
 				"<td>" + profil + "</td>" + c
@@ -63,11 +65,12 @@ function initialiser() {
 		"<th colspan = 21>" + "Sans profil" + "</th>"
 	;
 	document.getElementById("table-profils").insertRow().insertCell(0).outerHTML =
-		"<th></th>" + "<th colspan = 10>" + "Couronnes" + "</th>"
+		"<th></th>" + "<th colspan = " + colonnes + ">" + "Couronnes" + "</th>"
 	;
 	for (catégorie of Object.keys(couronnes)) {
 		document.getElementById("table-profils").insertRow().insertCell(0).outerHTML =
-			"<th>" + catégorie + "</th>" + "<th colspan = 10>" + catégorie + "</th>"
+			"<th>" + catégorie + "</th>" +
+			"<th colspan = " + colonnes + ">" + catégorie + "</th>"
 		;
 		for (profil of Object.keys(couronnes[catégorie])) {
 			c = "";
@@ -80,7 +83,7 @@ function initialiser() {
 					"</td>"
 				;
 			}
-			for (j = couronnes[catégorie][profil].length; j < 10; j++) {
+			for (j = couronnes[catégorie][profil].length; j < colonnes; j++) {
 				c += "<td class = td-vide></td>";
 			}
 			document.getElementById("table-profils").insertRow().insertCell(0).outerHTML =
@@ -92,11 +95,11 @@ function initialiser() {
 		"<th colspan = 11>" + "Sans profil" + "</th>"
 	;
 	document.getElementById("table-profils-heaumes").insertRow().insertCell(0).outerHTML =
-		"<th></th>" + "<th colspan = 10>" + "heaumes" + "</th>"
+		"<th></th>" + "<th colspan = " + colonnes + ">" + "heaumes" + "</th>"
 	;
 	for (catégorie of Object.keys(heaumes)) {
 		document.getElementById("table-profils-heaumes").insertRow().insertCell(0).outerHTML =
-			"<th>" + catégorie + "</th>" + "<th colspan = 10>" + catégorie + "</th>"
+			"<th>" + catégorie + "</th>" + "<th colspan = " + colonnes + ">" + catégorie + "</th>"
 		;
 		for (profil of Object.keys(heaumes[catégorie])) {
 			c = "";
@@ -109,7 +112,7 @@ function initialiser() {
 					"</td>"
 				;
 			}
-			for (j = heaumes[catégorie][profil].length; j < 10; j++) {
+			for (j = heaumes[catégorie][profil].length; j < colonnes; j++) {
 				c += "<td class = td-vide></td>";
 			}
 			document.getElementById("table-profils-heaumes").insertRow().insertCell(0).outerHTML =
