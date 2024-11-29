@@ -95,7 +95,9 @@ function initialiser() {
 }
 
 function remplir() {
-	listes = [catégories, profils, particuliers, écus, couronnes, heaumes, portants, portants, colliers, manteaux, couronnes];
+	listes = [
+		catégories, profils, particuliers, écus, couronnes, heaumes, portants, portants, colliers, manteaux, couronnes
+	];
 	noms = [
 		"select-catégorie",
 		"select-profil",

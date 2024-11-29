@@ -91,7 +91,7 @@ function remplirProfils() {
 
 function remplir() {
 	listes = [couronnes, heaumes, écus, portants, manteaux];
-	colonnes = [3, 2, 17, 3, 2];
+	colonnes = [3, 2, 10, 3, 2];
 	tableaux = ["table-couronnes", "table-heaumes", "table-écus", "table-portants", "table-manteaux"];
 	for (k = 0; k < 5; k++) {
 		for (catégorie of Object.keys(listes[k])) {

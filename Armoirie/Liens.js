@@ -21,23 +21,13 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 			Wikipédia + "0/0b/Blason_Abbaye_de_Saint-Léonard.svg",
 			Wikipédia + "d/d6/Arms_of_the_Kings_of_France_(France_Ancien).svg",
 			Wikipédia + "9/95/Blason_pays_fr_France_ancien.svg",
-			Wikipédia + "3/35/Coat_of_arms_of_the_Kingdom_of_France_&_Navarre_(Ancien).svg",
-			Wikipédia + "2/21/Arms_of_Louis_le_Hutin.svg",
-			Wikipédia + "f/fc/Blason_France-ancien--Navarre-ancien.svg",
-			Wikipédia + "b/b4/Blasons_rois_de_France_(1289-1316).svg",
-			Wikipédia + "4/49/Blason_Le_Palais_56.svg",
-			Wikipédia + "a/a0/Coat_of_arms_of_France_and_Navarre_(1589-1789).svg",
-			Wikipédia + "6/60/Arms_of_France_and_Navarre_(1589-1790).svg",
-		],
-		"Dauphin": [
-			Wikipédia + "5/5a/Arms_of_the_Dauphin_of_France.svg",
-			Wikipédia + "7/7a/Blason_province_fr_Dauphine.svg",
-			Wikipédia + "8/8c/Dauphin_Arms.svg",
 		],
 		"Bretagne": [
 			Wikipédia + "d/d8/Armoiries_Bretagne_-_Arms_of_Brittany.svg",
 			Wikipédia + "8/8c/Arms_of_Jean_III_de_Bretagne.svg",
 			"https://fr.geneawiki.com/images/b/bb/Province_-_Blason_-_Bretagne.png",
+		],
+		"France & Bretagne": [
 			Wikipédia + "5/5f/CoA_of_Anne_of_Brittany.png",
 			Wikipédia + "e/e2/Blason_Anne_de_Bretagne_(1476-1514)_Reine_de_France.svg",
 			Wikipédia + "e/e8/Arms_of_Claude_de_France.svg",
@@ -52,9 +42,20 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 			Wikipédia + "f/fb/Blason_famille_fr_de_Chavagnac_1.svg",
 			Wikipédia + "0/06/Blason_famille_fr_de_Chavagnac_2.svg",
 		],
+		"Dauphiné": [
+			Wikipédia + "5/5a/Arms_of_the_Dauphin_of_France.svg",
+			Wikipédia + "7/7a/Blason_province_fr_Dauphine.svg",
+			Wikipédia + "8/8c/Dauphin_Arms.svg",
+		],
 		"Le Gonidec": [
 			Wikipédia + "3/31/Blason_fam_fr_Le_Gonidec.svg",
 		],
+		"Lusignan": [
+			Wikipédia + "2/21/Armoiries_de_la_Maison_de_Lusignan.svg",
+			Wikipédia + "2/24/Arms_of_the_Counts_of_Luxembourg.svg",
+			Wikipédia + "a/a0/Armoiries_Lusignan_Chypre.svg",
+			Wikipédia + "4/4d/Blason_maison_fr_de_Lusignan.svg",
+		],		
 		"Maupeou": [
 			Wikipédia + "9/98/Blason_famille_fr_de_Maupeou.svg",
 			Wikipédia + "f/f1/Blason_ville_fr_Ableiges_(Val-d'Oise).svg",
@@ -62,6 +63,15 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 		"Navarre": [
 			Wikipédia + "1/17/Blason_Royaume_Navarre.svg",
 			Wikipédia + "9/97/Blason_Royaume_Navarre_(ecu_francais).svg",
+		],
+		"France & Navarre": [
+			Wikipédia + "3/35/Coat_of_arms_of_the_Kingdom_of_France_&_Navarre_(Ancien).svg",
+			Wikipédia + "2/21/Arms_of_Louis_le_Hutin.svg",
+			Wikipédia + "f/fc/Blason_France-ancien--Navarre-ancien.svg",
+			Wikipédia + "b/b4/Blasons_rois_de_France_(1289-1316).svg",
+			Wikipédia + "4/49/Blason_Le_Palais_56.svg",
+			Wikipédia + "a/a0/Coat_of_arms_of_France_and_Navarre_(1589-1789).svg",
+			Wikipédia + "6/60/Arms_of_France_and_Navarre_(1589-1790).svg",
 		],
 		"Normandie": [
 			Wikipédia + "8/85/Blason_Duché_de_Normandie.svg",
@@ -71,6 +81,8 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 	"Empire français": {
 		"Empire": [
 			Wikipédia + "6/6e/Arms_of_the_French_Empire.svg",
+			Wikipédia + "6/6d/Blason_Empire_français.svg",
+			Wikipédia + "a/a7/Blason_FR_Empire_français.svg"
 		],
 	},
 	"Villes françaises": {
@@ -110,14 +122,16 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 			Wikipédia + "6/6c/Wappen_Deutscher_Bund.svg",
 			Wikipédia + "9/92/Shield_and_Coat_of_Arms_of_the_Holy_Roman_Emperor_(c.1200-c.1300).svg",
 			Wikipédia + "2/2d/Shield_and_Coat_of_Arms_of_the_Holy_Roman_Emperor_(c.1300-c.1400).svg",
-			Wikipédia + "1/12/Armoiries_imaginaires_de_Charlemagne_selon_les_écus_armoriés_des_Neuf_Preux._ms._Fr._18651,_fol._1r._(BnF,_Paris).svg",
-			Wikipédia + "5/5a/Armoiries_imaginaires_de_Charlemagne_d'après_les_fresques_du_château_de_la_Manta.svg",
-			Wikipédia + "a/ae/Armoiries_imaginaires_de_Charlemagne_(1).svg",
 		],
 		"Broglie": [
 			Wikipédia + "a/af/Blason_de_la_famille_de_Broglie.svg",
 			Wikipédia + "0/0f/Blason_famille_Broglie.svg",
 			Wikipédia + "e/eb/Arms_of_the_House_of_Broglie.svg",
+		],
+		"Empire & France": [
+			Wikipédia + "1/12/Armoiries_imaginaires_de_Charlemagne_selon_les_écus_armoriés_des_Neuf_Preux._ms._Fr._18651,_fol._1r._(BnF,_Paris).svg",
+			Wikipédia + "5/5a/Armoiries_imaginaires_de_Charlemagne_d'après_les_fresques_du_château_de_la_Manta.svg",
+			Wikipédia + "a/ae/Armoiries_imaginaires_de_Charlemagne_(1).svg",
 		],
 	},
 	"État du Vatican": {
@@ -147,6 +161,10 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 			Wikipédia + "8/85/Arms_of_the_Kingdom_of_Jerusalem.svg",
 			"https://www.blason-armoiries.org/heraldique/armorial/ecus/j/je/blason-jerusalem.gif",
 			Wikipédia + "2/24/Armoiries_d'Hugues_IV_de_Lusignan_(roi_de_Jérusalem).svg",
+		],
+		"Jérusalem & Lusignan": [
+			Wikipédia + "7/7a/Coat_of_Arms_of_the_House_of_Lusignan_(Kings_of_Cyprus_and_Jerusalem).svg",
+			Wikipédia + "f/fb/Armoiries_Chypre_Jérusalem.svg",
 		],
 		"Ordre équestre du Saint-Sépulcre": [
 			Wikipédia + "3/39/Blason_ordre_croisade_Saint-Sepulcre.svg",
