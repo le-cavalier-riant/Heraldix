@@ -334,10 +334,10 @@ profils = {
 			"devise": ["**", ""],
 			"écu": ["ER", "Empire"],
 			"heaume": ["**", ""],
-			"manteau": ["**", ""],
+			"manteau": ["ER", "Aigle"],
 			"couronne-manteau": ["**", ""],
-			"portant-dextre": ["**", ""],
-			"portant-senestre": ["**", ""],
+			"portant-dextre": ["**", "Sauvage"],
+			"portant-senestre": ["**", "Sauvage"],
 		},
 		"Prince": {
 			"collier": ["**", ""],
