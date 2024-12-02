@@ -13,6 +13,7 @@ tableaux = {
 	"Portants": ["table-portants", portants, 3],
 	"Manteaux": ["table-manteaux", manteaux, 4],
 	"Colliers": ["table-colliers", colliers, 2],
+	"Bâtons": ["table-bâtons", bâtons, 2],
 };
 
 function afficher(titre) {
