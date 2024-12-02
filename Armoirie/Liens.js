@@ -88,9 +88,9 @@ Creazilla = "https://cdn.creazilla.com/cliparts/";
 	"Villes françaises": {
 		"Paris": [
 			Wikipédia + "2/2e/Blason_ville_Paris.svg",
-			Wikipédia + "4/4b/Blason_Ville_fr_Paris_2nd_empire.svg",
 			Wikipédia + "c/ca/Blason_paris_75.svg",
 			Wikipédia + "c/cc/Blason_Ville_fr_Paris_Restauration.svg",
+			Wikipédia + "4/4b/Blason_Ville_fr_Paris_2nd_empire.svg",
 			Wikipédia + "7/7d/Blason_Ville_fr_Paris_Restauration2.svg",
 		],
 	},
@@ -243,7 +243,7 @@ couronnes = {
 			Wikipédia + "e/e5/French_heraldic_crowns_-_Vidame.svg",
 		],
 		"Baron et pair": [
-			Wikipédia + "archive/7/76/20100401071907!French_heraldic_crowns_-_baron_et_pair.svg",
+			Wikipédia + "0/07/Crown_of_a_Baron_of_France_(variant).svg",
 			Wikipédia + "7/76/French_heraldic_crowns_-_baron_et_pair.svg",
 		],
 		"Baron": [
@@ -421,7 +421,11 @@ couronnes = {
 }
 
 heaumes = {
-	// "**": {},
+	"**": {
+		"Bassinet" : [
+			Wikipédia + "a/aa/Bassinet.SVG",
+		],
+	},
 	"Royaume de France": {
 		"Roi": [
 			"Armoirie/Heaumes/RF Roi-A.svg",
@@ -675,21 +679,35 @@ drapeaux = {
 	],
 }
 
-/* cimiers = {
-	"**": {
-		"Bassinet" : [
-			Wikipédia + "a/aa/Bassinet.SVG",
+exemple = {
+	"**": {},
+	"Royaume de France": {},
+	"Empire français": {},
+	"Villes françaises": {},
+	"Royaume d'Espagne": {},
+	"Royaume-Uni": {},
+	"Saint-Empire romain germanique": {},
+	"État du Vatican": {},
+	"Royaume du Portugal": {},
+	"Grand-Duché de Luxembourg": {},
+	"Royaume de Suède": {},
+	"Royaume de Jérusalem": {},
+}
+
+/* ** = {
+	"Empire français": {
+		"Bonne ville": [
+			Wikipédia + "d/df/Ornements_extérieurs_Bonne_ville_du_Premier_Empire.svg",
+		],
+		"Ville de 2de classe": [
+			Wikipédia + "2/2b/Orn_ext_ville_d'empire_2nde_class.svg",
+		],
+		"Ville de 3e classe": [
+			Wikipédia + "0/05/Ornements_extérieurs_ville_de_3e_classe_de_l'Empire_français.svg",
 		],
 	},
 } */
-/*
-Bonnes villes d'empire
-Wikipédia + "d/df/Ornements_extérieurs_Bonne_ville_du_Premier_Empire.svg",
-Ville de 2de classe
-Wikipédia + "2/2b/Orn_ext_ville_d'empire_2nde_class.svg",
-Villes de 3e classe
-Wikipédia + "0/05/Ornements_extérieurs_ville_de_3e_classe_de_l'Empire_français.svg",
-*/
+
 /*
 	%21			!
 	%26			&
@@ -699,6 +717,7 @@ Wikipédia + "0/05/Ornements_extérieurs_ville_de_3e_classe_de_l'Empire_françai
 	%2C			,
 	%60			`
 	%C3%8E		Î
+	%C3%A2		â
 	%C3%A7		ç
 	%C3%A9		é
 	%C3%B1		ñ
