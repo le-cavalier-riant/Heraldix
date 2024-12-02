@@ -4,12 +4,12 @@
 /*                                                                                                                   */
 /* ================================================================================================================= */
 
-h2:hover {cursor: pointer;}
+h2:hover {cursor: url("../Curseurs/Main.png"), pointer;}
 
 table {margin: auto;}
 
 table,
-th {border: 1px #ffffff solid;}
+th {border: 2px #ffffff solid;}
 
 .img-icône {width: 25px;}
 

@@ -13,7 +13,7 @@ fieldset {
 #img-catégorie {width: 75px;}
 
 input[type = "text"] {width: 250px;}
-.input-texte:hover {cursor: text;}
+input[type = "text"]:hover {cursor: url("../Curseurs/Plume.png"), text;}
 
 label {font-weight: bold;}
 .label-filtre {font-style: italic;}

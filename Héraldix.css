@@ -10,37 +10,40 @@
 	font-size: 25px;
 	color: #ffffff;
 	border-radius: 20px;
+	text-shadow: 0 0 2px #000000;
 }
 
-a {text-decoration: none;}
+a {
+	text-decoration: none;
+	font-style: italic;
+}
+a:hover,
+button:hover,
+input:hover,
+select:hover {cursor: url("Curseurs/Main.png"), pointer;}
 
 body {
 	background-color: #303841;
 	margin: 20px;
+	cursor: url("Curseurs/Flèche.png"), auto;
 }
 
 button,
 input,
 select {
 	background-color: #303841;
-	border: 1px #ffffff solid;
+	border: 2px #ffffff solid;
 	padding: 5px;
-	box-shadow: 2px 2px 1px #000000;
-	transition: ease 0.1s;
-	margin-top: 5px;
-	margin-left: 5px;
-	margin-bottom: 7px;
-	margin-right: 7px;
+	box-shadow: 0 0 2px #000000;
+	transition: ease 0.05s;
+	margin: 2px;
 }
 button:hover,
 input:hover,
 select:hover {
-	cursor: pointer;
-	box-shadow: 0 0 0 #000000;
-	margin-top: 7px;
-	margin-left: 7px;
-	margin-bottom: 5px;
-	margin-right: 5px;
+	box-shadow: 0 0 0;
+	margin: 2px;
+	border: 2px #e8c869 solid;
 }
 
 div {justify-content: center;}
@@ -51,12 +54,19 @@ div {justify-content: center;}
 	z-index: 15;
 }
 
+fieldset {border: 2px solid #e8c869;}
+
 h1 {
 	font-size: 60px;
 	margin-right: 200px;
 	margin-left: 200px;
 	color: #e8c869
 }
+
+h1:hover,
+h2:hover,
+span:hover,
+.img-lettrine:hover {cursor: url("Curseurs/Plume.png"), text;}
 
 h2 {
 	font-size: 40px;
@@ -65,8 +75,12 @@ h2 {
 	color: #e8c869
 }
 
-fieldset,
-hr {box-shadow: 2px 2px 1px #000000;}
+hr {
+	box-shadow: 0 0 2px #000000;
+	height: 2px;
+	background-color: #e8c869;
+	border: 0;
+}
 
 img {
 	filter: drop-shadow(0 0 2px #000000);
@@ -76,10 +90,9 @@ img {
 	height: 50px;
 	margin-bottom: -2px;
 }
-.img-lettrine:hover {cursor: text;}
 .img-logo {
 	width: 200px;
-	border: 1px solid #ffffff;
+	border: 2px solid #ffffff;
 	border-radius: 40px;
 }
 
@@ -106,6 +119,7 @@ th {display: none;}
 	* {
 		font-size: 50px;
 		border-radius: 50px;
+		box-shadow: 0 0 0;
 	}
 
 	button,

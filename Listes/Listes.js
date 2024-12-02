@@ -11,7 +11,7 @@ tableaux = {
 	"Particuliers": ["table-particuliers", particuliers],
 	"Écus": ["table-écus", écus, 10],
 	"Portants": ["table-portants", portants, 3],
-	"Manteaux": ["table-manteaux", manteaux, 2],
+	"Manteaux": ["table-manteaux", manteaux, 4],
 	"Colliers": ["table-colliers", colliers, 2],
 };
 
