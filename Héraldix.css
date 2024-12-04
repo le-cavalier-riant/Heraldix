@@ -66,7 +66,8 @@ h1 {
 h1:hover,
 h2:hover,
 span:hover,
-.img-lettrine:hover {cursor: url("Curseurs/Plume.png"), text;}
+.img-lettrine-h1:hover,
+.img-lettrine-h2:hover {cursor: url("Curseurs/Plume.png"), text;}
 
 h2 {
 	font-size: 40px;
@@ -86,9 +87,13 @@ img {
 	filter: drop-shadow(0 0 2px #000000);
 	border-radius: 0;
 }
-.img-lettrine {
-	height: 50px;
+.img-lettrine-h1 {
+	width: 50px;
 	margin-bottom: -2px;
+}
+.img-lettrine-h2 {
+	width: 30px;
+	margin-bottom: -1px;
 }
 .img-logo {
 	width: 200px;
@@ -126,18 +131,35 @@ th {display: none;}
 	button,
 	input,
 	select {
-		padding: 20px;
+		border: 4px #ffffff solid;
 		margin: 20px;
+		padding: 20px;
 	}
 	button:hover,
 	input:hover,
 	select:hover {
 		margin: 20px;
+		border: 4px #e8c869 solid;
 	}
 
-	h1 {font-size: 120px;}
+	fieldset {border: 4px solid #e8c869;}
 
-	.img-logo {width: 200px;}
+	h1 {
+		font-size: 120px;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	h2 {
+		margin-right: 100px;
+		margin-left: 100px;
+	}
+
+	hr {height: 4px;}
+
+	.img-lettrine-h1 {width: 90px;}
+	.img-lettrine-h1 {width: 50px;}
+	.img-logo {width: 300px;}
 
 	.important {
 		bottom: 50px;

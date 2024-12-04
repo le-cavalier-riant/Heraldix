@@ -338,7 +338,7 @@ function titre() {
 		}
 	}
 	document.title = "Armoirie" + intérieur + " — Héraldix";
-	obtenir("h1", "S")[0].innerHTML = "<hr><img src = Lettres/A.png alt = A class = img-lettrine>rmoirie" + intérieur + "<hr>";
+	obtenir("h1", "S")[0].innerHTML = "<hr><img src = Lettres/A.png alt = A class = img-lettrine-h1>rmoirie" + intérieur + "<hr>";
 }
 
 // ================================================================================================================= //
