@@ -17,10 +17,22 @@ tableaux = {
 };
 
 function afficher(titre) {
-	if (obtenir(tableaux[titre.innerText][0], "I").style.display == "table") {
-		obtenir(tableaux[titre.innerText][0], "I").style.display = "none";
+	complets = {
+		"rofils": "Profils",
+		"ouronnes": "Couronnes",
+		"eaumes": "Heaumes",
+		"articuliers": "Particuliers",
+		"cus": "Écus",
+		"ortants": "Portants",
+		"anteaux": "Manteaux",
+		"olliers": "Colliers",
+		"âtons": "Bâtons",
+	};
+	titre = complets[titre.innerText];
+	if (obtenir(tableaux[titre][0], "I").style.display == "table") {
+		obtenir(tableaux[titre][0], "I").style.display = "none";
 	} else {
-		obtenir(tableaux[titre.innerText][0], "I").style.display = "table";
+		obtenir(tableaux[titre][0], "I").style.display = "table";
 	}
 }
 
