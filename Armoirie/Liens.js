@@ -685,6 +685,8 @@ portants = {
 		],
 		"Dauphin": [
 			Wikipédia + "7/71/Dolphin_Supporter_(Heraldry).svg",
+			Wikipédia + "f/fb/Dauphin_pâmé_-_Meuble_héraldique.svg",
+			Wikipédia + "7/7b/Meuble_héraldique_Dauphin_pâmé.svg",
 		],
 		"Hyppocampe": [
 			Wikipédia + "6/66/Ippocampo_Supporto_Sea_Horse_Supporter_(Heraldry).svg",
