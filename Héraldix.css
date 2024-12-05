@@ -65,9 +65,7 @@ h1 {
 
 h1:hover,
 h2:hover,
-span:hover,
-.img-lettrine-h1:hover,
-.img-lettrine-h2:hover {cursor: url("Curseurs/Plume.png"), text;}
+span:hover {cursor: url("Curseurs/Plume.png"), text;}
 
 h2 {
 	font-size: 40px;
