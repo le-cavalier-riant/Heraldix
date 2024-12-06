@@ -86,9 +86,11 @@ img {
 	border-radius: 0;
 }
 .img-lettrine-h1 {
+	margin-top: 15px;
 	width: 50px;
-	margin-bottom: -2px;
 }
+.img-lettrine-h1[alt = "É"] {margin-top: 0;}
+.img-lettrine-h1[alt = "Ç"] {margin-bottom: -12.5px;}
 .img-lettrine-h2 {
 	width: 30px;
 	margin-bottom: -1px;
