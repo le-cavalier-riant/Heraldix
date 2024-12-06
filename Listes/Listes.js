@@ -51,9 +51,7 @@ function remplirProfils() {
 	;
 	for (catégorie of Object.keys(profils)) {
 		obtenir("table-profils", "I").insertRow().insertCell(0).outerHTML =
-			"<th>" + catégorie + "</th>" +
-			"<th colspan = " + tableaux[tableau][2][0] + ">" + catégorie +
-			"</th>" + "<th colspan = " + tableaux[tableau][2][1] + ">" + catégorie + "</th>"
+			"<th colspan = " + (tableaux[tableau][2][0] + tableaux[tableau][2][1] + 1) + ">" + catégorie + "</th>"
 		;
 		for (profil of Object.keys(profils[catégorie])) {
 			c = "";
@@ -114,8 +112,7 @@ function remplir() {
 		} else {
 			for (catégorie of Object.keys(tableaux[tableau][1])) {
 				obtenir(tableaux[tableau][0], "I").insertRow().insertCell(0).outerHTML =
-					"<th>" + catégorie + "</th>" +
-					"<th colspan = " + tableaux[tableau][2] + ">" + catégorie + "</th>"
+					"<th colspan = " + (tableaux[tableau][2] + 1) + ">" + catégorie + "</th>"
 				;
 				for (profil of Object.keys(tableaux[tableau][1][catégorie])) {
 					ligne = "";
@@ -123,7 +120,9 @@ function remplir() {
 						ligne +=
 							"<td>" +
 								"<a href = \"" + tableaux[tableau][1][catégorie][profil][i] + "\">" +
-									"<img src = \"" + tableaux[tableau][1][catégorie][profil][i] + "\" class = img-icône>" +
+									"<img src = \"" +
+									tableaux[tableau][1][catégorie][profil][i] +
+									"\" class = img-icône>" +
 								"</a>" +
 							"</td>"
 						;

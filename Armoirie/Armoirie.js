@@ -53,7 +53,6 @@ function basculer(image) {
 	} else {
 		image = image.split(" ")[0];
 	}
-	console.log(image);
 	comptes[image] =
 		(comptes[image] + 1) %
 		images[image][0][codes[images[image][1].split(" ")[0]]][images[image][1].slice(3)].length

@@ -44,14 +44,14 @@ colliers = {
 		],
 	},
 	"Royaume de France": {
-		"Ordre de Saint-Michel": [
-			Wikipédia + "5/53/Order_of_Saint_Michael_(heraldry).svg",
-		],
 		"Ordre du Saint-Esprit": [
 			Wikipédia + "3/34/Order_of_the_Holy_Spirit_(heraldry).svg",
 		],
 		"Ordres de Saint-Michel et du Saint-Esprit": [
 			"Armoirie/Colliers/RF Ordres de Saint-Michel et du Saint-Esprit.svg",
+		"Ordre de Saint-Michel": [
+			Wikipédia + "5/53/Order_of_Saint_Michael_(heraldry).svg",
+		],
 		],
 	},
 	"Empire français": {
@@ -397,11 +397,16 @@ drapeaux = {
 			"https://data.man8rove.com/images/arms/full/1jo8ll90a-1.png",
 			Wikipédia + "d/d3/Blason_famille_Chavagnac_moderne.svg",
 			Wikipédia + "d/d6/Blason_famille_fr_de_Chavagnac.svg",
-			"http://dechav.free.fr/png/Chavagnac_de_Champagne.png",
 			Wikipédia + "f/fb/Blason_famille_fr_de_Chavagnac_1.svg",
+			"http://dechav.free.fr/png/Chavagnac_de_Champagne.png",
 			Wikipédia + "0/06/Blason_famille_fr_de_Chavagnac_2.svg",
+			"http://dechav.free.fr/png/Chavagnac_Bertrand_II.png",
+			"http://dechav.free.fr/png/Chavagnac_ancien.png",
 		],
 		"Dauphiné": [
+			Wikipédia + "1/13/Dauphin_of_Viennois_Arms.svg",
+		],
+		"France & Dauphiné": [
 			Wikipédia + "5/5a/Arms_of_the_Dauphin_of_France.svg",
 			Wikipédia + "7/7a/Blason_province_fr_Dauphine.svg",
 			Wikipédia + "8/8c/Dauphin_Arms.svg",
@@ -419,18 +424,25 @@ drapeaux = {
 			Wikipédia + "9/98/Blason_famille_fr_de_Maupeou.svg",
 			Wikipédia + "f/f1/Blason_ville_fr_Ableiges_(Val-d'Oise).svg",
 		],
+		"Montmorency": [
+			Wikipédia + "5/5a/Blason_Gui_VII_de_Laval.svg",
+			Wikipédia + "5/5b/Blason_maison_fr_de_Montmorency-Laval.svg",
+			Wikipédia + "b/b1/Blason_maison_fr_de_Montmorency_(ancien).svg",
+			Wikipédia + "c/cc/Blason_Thibaut_de_Montmorency.svg",
+			// Dieu aide au premier baron chrétien.
+		],
 		"Navarre": [
 			Wikipédia + "1/17/Blason_Royaume_Navarre.svg",
 			Wikipédia + "9/97/Blason_Royaume_Navarre_(ecu_francais).svg",
 		],
 		"France & Navarre": [
+			Wikipédia + "a/a0/Coat_of_arms_of_France_and_Navarre_(1589-1789).svg",
+			Wikipédia + "6/60/Arms_of_France_and_Navarre_(1589-1790).svg",
 			Wikipédia + "3/35/Coat_of_arms_of_the_Kingdom_of_France_&_Navarre_(Ancien).svg",
 			Wikipédia + "2/21/Arms_of_Louis_le_Hutin.svg",
 			Wikipédia + "f/fc/Blason_France-ancien--Navarre-ancien.svg",
 			Wikipédia + "b/b4/Blasons_rois_de_France_(1289-1316).svg",
 			Wikipédia + "4/49/Blason_Le_Palais_56.svg",
-			Wikipédia + "a/a0/Coat_of_arms_of_France_and_Navarre_(1589-1789).svg",
-			Wikipédia + "6/60/Arms_of_France_and_Navarre_(1589-1790).svg",
 		],
 		"Normandie": [
 			Wikipédia + "8/85/Blason_Duché_de_Normandie.svg",
@@ -445,6 +457,9 @@ drapeaux = {
 		],
 	},
 	"Villes françaises": {
+		"Laval": [
+			Wikipédia + "8/81/Blason_ville_fr_Laval_(Mayenne).svg",
+		],
 		"Paris": [
 			Wikipédia + "2/2e/Blason_ville_Paris.svg",
 			Wikipédia + "c/ca/Blason_paris_75.svg",
@@ -459,9 +474,14 @@ drapeaux = {
 		],
 	},
 	"Royaume-Uni": {
+		"Royaume": [
+			Wikipédia + "2/2b/Arms_of_the_United_Kingdom.svg",
+		],
 		"Angleterre": [
 			Wikipédia + "f/f7/Royal_arms_of_England.svg",
 			Wikipédia + "2/28/England_COA.svg",
+		],
+		"France & Angleterre": [
 			Wikipédia + "8/86/Royal_Arms_of_England_(1399-1603).svg",
 			Wikipédia + "1/1c/England_Arms_1405.svg",
 			Wikipédia + "1/10/Royal_Arms_of_England_(1340-1367).svg",
@@ -469,8 +489,10 @@ drapeaux = {
 		"Écosse": [
 			Wikipédia + "b/bd/Royal_Arms_of_the_Kingdom_of_Scotland.svg",
 		],
-		"Royaume": [
-			Wikipédia + "2/2b/Arms_of_the_United_Kingdom.svg",
+		"Irelande": [
+			Wikipédia + "f/fe/Coat_of_arms_of_Ireland.svg",
+			Wikipédia + "b/bd/Arms_of_the_Republic_of_Ireland.svg",
+			Wikipédia + "d/dd/Arms_of_Ireland_(Oval_variant).svg",
 		],
 	},	
 	"Saint-Empire romain germanique": {
