@@ -186,6 +186,7 @@ couronnes = {
 		],
 		"Prince souverain": [
 			Wikipédia + "e/e6/Crown_of_a_Napoleonic_Prince_Souverain.svg",
+			Wikipédia + "c/c5/French_heraldic_crowns_-_Napoleonic_Prince_Souverain.png"
 		],
 		"Prince": [
 			Wikipédia + "8/81/Cap_of_an_Imperial_Prince_Grand_Dignitary.svg",
