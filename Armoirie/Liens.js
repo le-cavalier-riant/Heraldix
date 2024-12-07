@@ -524,7 +524,7 @@ drapeaux = {
 		],
 	},
 	"État du Vatican": {
-		"État du Vatican": [
+		"Vatican": [
 			Wikipédia + "3/3a/Coat_of_arms_of_Vatican_City_(2023–present).svg"
 		],
 	},
@@ -664,7 +664,8 @@ manteaux = {
 	},
 	"Empire français": {
 		"Empire": [
-			"Armoirie/Manteaux/EF Empire.svg",
+			"Armoirie/Manteaux/EF Empire A.svg",
+			"Armoirie/Manteaux/EF Empire B.svg",
 		],
 	},
 	// "Villes françaises": {},
