@@ -42,6 +42,42 @@ function initialiser() {
 	remplirParticuliers();
 }
 
+function remplir() {
+	k = 0;
+	for (tableau of Object.keys(tableaux)) {
+		if (tableau == "Profils" || tableau == "Particuliers") {
+			// 
+		} else {
+			for (catégorie of Object.keys(tableaux[tableau][1])) {
+				obtenir(tableaux[tableau][0], "I").insertRow().insertCell(0).outerHTML =
+					"<th colspan = " + (tableaux[tableau][2] + 1) + ">" + catégorie + "</th>"
+				;
+				for (profil of Object.keys(tableaux[tableau][1][catégorie])) {
+					ligne = "";
+					for (i = 0; i < tableaux[tableau][1][catégorie][profil].length; i++) {
+						ligne +=
+							"<td>" +
+								"<a href = \"" + tableaux[tableau][1][catégorie][profil][i] + "\">" +
+									"<img src = \"" +
+									tableaux[tableau][1][catégorie][profil][i] +
+									"\" class = img-icône>" +
+								"</a>" +
+							"</td>"
+						;
+					}
+					for (j = tableaux[tableau][1][catégorie][profil].length; j < tableaux[tableau][2]; j++) {
+						ligne += "<td class = td-vide></td>";
+					}
+					obtenir(tableaux[tableau][0], "I").insertRow().insertCell(0).outerHTML =
+						"<td>" + profil + "</td>" + ligne
+					;
+				}
+			}
+			k++;
+		}
+	}
+}
+
 function remplirProfils() {
 	tableau = "Profils";
 	obtenir("table-profils", "I").insertRow().insertCell(0).outerHTML =
@@ -100,42 +136,6 @@ function remplirProfils() {
 			obtenir("table-profils", "I").insertRow().insertCell(0).outerHTML =
 				"<td>" + profil + "</td>" + c
 			;
-		}
-	}
-}
-
-function remplir() {
-	k = 0;
-	for (tableau of Object.keys(tableaux)) {
-		if (tableau == "Profils" || tableau == "Particuliers") {
-			// 
-		} else {
-			for (catégorie of Object.keys(tableaux[tableau][1])) {
-				obtenir(tableaux[tableau][0], "I").insertRow().insertCell(0).outerHTML =
-					"<th colspan = " + (tableaux[tableau][2] + 1) + ">" + catégorie + "</th>"
-				;
-				for (profil of Object.keys(tableaux[tableau][1][catégorie])) {
-					ligne = "";
-					for (i = 0; i < tableaux[tableau][1][catégorie][profil].length; i++) {
-						ligne +=
-							"<td>" +
-								"<a href = \"" + tableaux[tableau][1][catégorie][profil][i] + "\">" +
-									"<img src = \"" +
-									tableaux[tableau][1][catégorie][profil][i] +
-									"\" class = img-icône>" +
-								"</a>" +
-							"</td>"
-						;
-					}
-					for (j = tableaux[tableau][1][catégorie][profil].length; j < tableaux[tableau][2]; j++) {
-						ligne += "<td class = td-vide></td>";
-					}
-					obtenir(tableaux[tableau][0], "I").insertRow().insertCell(0).outerHTML =
-						"<td>" + profil + "</td>" + ligne
-					;
-				}
-			}
-			k++;
 		}
 	}
 }
