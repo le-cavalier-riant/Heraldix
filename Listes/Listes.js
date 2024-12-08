@@ -5,8 +5,8 @@
 // ================================================================================================================= //
 
 tableaux = {
-	"Profils": ["table-profils", profils, [5, 4]],
-	"Couronnes": ["table-couronnes", couronnes, 3],
+	"Profils": ["table-profils", profils, [6, 4]],
+	"Couronnes": ["table-couronnes", couronnes, 4],
 	"Heaumes": ["table-heaumes", heaumes, 2],
 	"Particuliers": ["table-particuliers", particuliers],
 	"Écus": ["table-écus", écus, 10],
