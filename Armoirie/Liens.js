@@ -497,6 +497,12 @@ drapeaux = {
 		"Espagne": [
 			Wikipédia + "c/c7/Arms_of_Spain_(1977-1981).svg",
 		],
+		"Aragon": [
+			Wikipédia + "6/66/Arms_Aragon-Sicily_(Template).svg",
+		],
+		"Castille": [
+			Wikipédia + "5/5f/Arms_of_the_Crown_of_Castile_(15th_Century).svg",
+		],
 	},
 	"Royaume-Uni": {
 		"Royaume": [
