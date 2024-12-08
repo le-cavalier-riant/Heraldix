@@ -688,11 +688,7 @@ manteaux = {
 		],
 	},
 	// "Villes françaises": {},
-	"Royaume d'Espagne": {
-		"Grand": [
-			Wikipédia + "4/4f/Manto_de_Grande_de_España.svg",
-		],
-	},
+	// "Royaume d'Espagne": {},
 	// "Royaume-Uni": {},
 	"Saint-Empire romain germanique": {
 		"Aigle": [
