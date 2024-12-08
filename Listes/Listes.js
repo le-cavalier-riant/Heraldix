@@ -78,6 +78,20 @@ function remplir() {
 	}
 }
 
+function remplirParticuliers() {
+	tableau = "Particuliers";
+	for (catégorie of Object.keys(tableaux[tableau][1])) {
+		obtenir(tableaux[tableau][0], "I").insertRow().insertCell(0).outerHTML =
+			"<th>" + catégorie + "</th>"
+		;
+		for (profil of Object.keys(tableaux[tableau][1][catégorie])) {
+			obtenir(tableaux[tableau][0], "I").insertRow().insertCell(0).outerHTML =
+				"<td>" + profil + "</td>"
+			;
+		}
+	}
+}
+
 function remplirProfils() {
 	tableau = "Profils";
 	obtenir("table-profils", "I").insertRow().insertCell(0).outerHTML =
@@ -135,20 +149,6 @@ function remplirProfils() {
 			}
 			obtenir("table-profils", "I").insertRow().insertCell(0).outerHTML =
 				"<td>" + profil + "</td>" + c
-			;
-		}
-	}
-}
-
-function remplirParticuliers() {
-	tableau = "Particuliers";
-	for (catégorie of Object.keys(tableaux[tableau][1])) {
-		obtenir(tableaux[tableau][0], "I").insertRow().insertCell(0).outerHTML =
-			"<th>" + catégorie + "</th>"
-		;
-		for (profil of Object.keys(tableaux[tableau][1][catégorie])) {
-			obtenir(tableaux[tableau][0], "I").insertRow().insertCell(0).outerHTML =
-				"<td>" + profil + "</td>"
 			;
 		}
 	}
