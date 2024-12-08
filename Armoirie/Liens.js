@@ -525,6 +525,9 @@ drapeaux = {
 			Wikipédia + "b/bd/Arms_of_the_Republic_of_Ireland.svg",
 			Wikipédia + "d/dd/Arms_of_Ireland_(Oval_variant).svg",
 		],
+		"Wallace": [
+			Wikipédia + "6/69/Wallace_of_that_Ilk.svg",
+		],
 	},	
 	"Saint-Empire romain germanique": {
 		"Empire" : [
