@@ -8,12 +8,14 @@ tableaux = {
 	"Profils": ["table-profils", profils, [6, 4]],
 	"Couronnes": ["table-couronnes", couronnes, 4],
 	"Heaumes": ["table-heaumes", heaumes, 2],
-	"Particuliers": ["table-particuliers", particuliers],
+	"Particuliers": ["table-particuliers", particuliers, 10],
 	"Écus": ["table-écus", écus, 10],
 	"Portants": ["table-portants", portants, 3],
 	"Manteaux": ["table-manteaux", manteaux, 4],
 	"Colliers": ["table-colliers", colliers, 2],
 	"Bâtons": ["table-bâtons", bâtons, 2],
+	"Devises": ["table-devises", /*devises,*/ 1],
+	"Cris": ["table-cris", /*cri,*/ 1],
 };
 
 function afficher(titre) {
@@ -80,16 +82,98 @@ function remplir() {
 
 function remplirParticuliers() {
 	tableau = "Particuliers";
+	listeOrdre = [
+		"Écu",
+		"Couronne",
+		"Heaume",
+		"Portant à dextre",
+		"Portant à senestre",
+		"Collier",
+		"Manteau",
+		"Couronne du manteau",
+		"Devise",
+		"Cri",
+	];
+	obtenir("table-particuliers", "I").insertRow().insertCell(0).outerHTML =
+		"<td></td>" +
+		"<th>" + "Écu" + "</th>" +
+		"<th>" + "Couronne" + "</th>" +
+		"<th>" + "Heaume" + "</th>" +
+		"<th>" + "Portant à dextre" + "</th>" +
+		"<th>" + "Portant à senestre" + "</th>" +
+		"<th>" + "Collier" + "</th>" +
+		"<th>" + "Manteau" + "</th>" +
+		"<th>" + "Couronne du manteau" + "</th>" +
+		"<th>" + "Devise" + "</th>" +
+		"<th>" + "Cri" + "</th>"
+	;
 	for (catégorie of Object.keys(tableaux[tableau][1])) {
 		obtenir(tableaux[tableau][0], "I").insertRow().insertCell(0).outerHTML =
-			"<th>" + catégorie + "</th>"
+			"<th colspan = " + (tableaux[tableau][2] + 1) + ">" + catégorie + "</th>"
 		;
-		for (profil of Object.keys(tableaux[tableau][1][catégorie])) {
-			obtenir(tableaux[tableau][0], "I").insertRow().insertCell(0).outerHTML =
-				"<td>" + profil + "</td>"
-			;
+		for (particulier of Object.keys(tableaux[tableau][1][catégorie])) {
+			ligne = "<td>" + particulier + "</td>";
+			for (listeaaa of Object.keys(particuliers[catégorie][particulier])) {
+				ligne += "<td>" + particuliers[catégorie][particulier][listeaaa] + "</td>";
+			}
+			obtenir(tableaux[tableau][0], "I").insertRow().insertCell(0).outerHTML = ligne;
 		}
 	}
+	/*
+
+		obtenir("table-profils", "I").insertRow().insertCell(0).outerHTML =
+			"<th colspan = " + (tableaux[tableau][2][0] + tableaux[tableau][2][1] + 1) + ">" + catégorie + "</th>"
+		;
+		for (profil of Object.keys(profils[catégorie])) {
+			c = "";
+			if (Object.keys(couronnes).includes(catégorie)) {
+				if (Object.keys(couronnes[catégorie]).includes(profil)) {
+					for (i = 0; i < couronnes[catégorie][profil].length; i++) {
+						c +=
+							"<td>" +
+								"<a href = \"" + couronnes[catégorie][profil][i] + "\">" +
+									"<img src = \"" + couronnes[catégorie][profil][i] + "\" class = img-icône>" +
+								"</a>" +
+							"</td>"
+						;
+					}
+					for (j = couronnes[catégorie][profil].length; j < tableaux[tableau][2][0]; j++) {
+						c += "<td class = td-vide></td>";
+					}
+					delete couronnes[catégorie][profil];
+				} else {
+					c += "<td colspan = " + tableaux[tableau][2][0] + " class = td-vide></td>";
+				}
+			} else {
+				c += "<td colspan = " + tableaux[tableau][2][0] + " class = td-vide></td>";
+			}
+			if (Object.keys(heaumes).includes(catégorie)) {
+				if (Object.keys(heaumes[catégorie]).includes(profil)) {
+					for (i = 0; i < heaumes[catégorie][profil].length; i++) {
+						c +=
+							"<td>" +
+								"<a href = " + heaumes[catégorie][profil][i] + ">" +
+									"<img src = \"" + heaumes[catégorie][profil][i] + "\" class = img-icône>" +
+								"</a>" +
+							"</td>"
+						;
+					}
+					for (j = heaumes[catégorie][profil].length; j < tableaux[tableau][2][1]; j++) {
+						c += "<td class = td-vide></td>";
+					}
+					delete heaumes[catégorie][profil];
+				} else {
+					c += "<td colspan = " + tableaux[tableau][2][0] + " class = td-vide></td>";
+				}
+			} else {
+				c += "<td colspan = " + tableaux[tableau][2][1] + " class = td-vide></td>";
+			}
+			obtenir("table-profils", "I").insertRow().insertCell(0).outerHTML =
+				"<td>" + profil + "</td>" + c
+			;
+		}
+
+	*/
 }
 
 function remplirProfils() {
