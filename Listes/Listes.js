@@ -119,61 +119,6 @@ function remplirParticuliers() {
 			obtenir(tableaux[tableau][0], "I").insertRow().insertCell(0).outerHTML = ligne;
 		}
 	}
-	/*
-
-		obtenir("table-profils", "I").insertRow().insertCell(0).outerHTML =
-			"<th colspan = " + (tableaux[tableau][2][0] + tableaux[tableau][2][1] + 1) + ">" + catégorie + "</th>"
-		;
-		for (profil of Object.keys(profils[catégorie])) {
-			c = "";
-			if (Object.keys(couronnes).includes(catégorie)) {
-				if (Object.keys(couronnes[catégorie]).includes(profil)) {
-					for (i = 0; i < couronnes[catégorie][profil].length; i++) {
-						c +=
-							"<td>" +
-								"<a href = \"" + couronnes[catégorie][profil][i] + "\">" +
-									"<img src = \"" + couronnes[catégorie][profil][i] + "\" class = img-icône>" +
-								"</a>" +
-							"</td>"
-						;
-					}
-					for (j = couronnes[catégorie][profil].length; j < tableaux[tableau][2][0]; j++) {
-						c += "<td class = td-vide></td>";
-					}
-					delete couronnes[catégorie][profil];
-				} else {
-					c += "<td colspan = " + tableaux[tableau][2][0] + " class = td-vide></td>";
-				}
-			} else {
-				c += "<td colspan = " + tableaux[tableau][2][0] + " class = td-vide></td>";
-			}
-			if (Object.keys(heaumes).includes(catégorie)) {
-				if (Object.keys(heaumes[catégorie]).includes(profil)) {
-					for (i = 0; i < heaumes[catégorie][profil].length; i++) {
-						c +=
-							"<td>" +
-								"<a href = " + heaumes[catégorie][profil][i] + ">" +
-									"<img src = \"" + heaumes[catégorie][profil][i] + "\" class = img-icône>" +
-								"</a>" +
-							"</td>"
-						;
-					}
-					for (j = heaumes[catégorie][profil].length; j < tableaux[tableau][2][1]; j++) {
-						c += "<td class = td-vide></td>";
-					}
-					delete heaumes[catégorie][profil];
-				} else {
-					c += "<td colspan = " + tableaux[tableau][2][0] + " class = td-vide></td>";
-				}
-			} else {
-				c += "<td colspan = " + tableaux[tableau][2][1] + " class = td-vide></td>";
-			}
-			obtenir("table-profils", "I").insertRow().insertCell(0).outerHTML =
-				"<td>" + profil + "</td>" + c
-			;
-		}
-
-	*/
 }
 
 function remplirProfils() {
