@@ -44,9 +44,9 @@ colliers = {
 		],
 	},
 	"Royaume de France": {
-		// "Ordres du Saint-Esprit et de Saint-Michel": [
-		// 	"Armoirie/Colliers/RF Ordres de Saint-Michel et du Saint-Esprit.svg",
-		// ],
+		"Ordres de Saint-Michel et du Saint-Esprit": [
+			"Armoirie/Colliers/RF Ordres de Saint-Michel et du Saint-Esprit.svg",
+		],
 		"Ordre du Saint-Esprit": [
 			Wikipédia + "3/34/Order_of_the_Holy_Spirit_(heraldry).svg",
 		],
@@ -406,6 +406,12 @@ drapeaux = {
 			Wikipédia + "d/d6/Arms_of_the_Kings_of_France_(France_Ancien).svg",
 			Wikipédia + "9/95/Blason_pays_fr_France_ancien.svg",
 		],
+		"Auvergne": [
+			Wikipédia + "c/c8/Blason_de_l'Auvergne.svg",
+		],
+		"Auvergne & Boulogne": [
+			Wikipédia + "5/55/Auvergne_Boulogne.svg",
+		],
 		"Bretagne": [
 			Wikipédia + "d/d8/Armoiries_Bretagne_-_Arms_of_Brittany.svg",
 			Wikipédia + "8/8c/Arms_of_Jean_III_de_Bretagne.svg",
@@ -438,6 +444,9 @@ drapeaux = {
 		],
 		"Le Gonidec": [
 			Wikipédia + "3/31/Blason_fam_fr_Le_Gonidec.svg",
+		],
+		"Languedoc": [
+			Wikipédia + "d/da/Blason_Languedoc.svg",
 		],
 		"Lusignan": [
 			Wikipédia + "2/21/Armoiries_de_la_Maison_de_Lusignan.svg",
@@ -484,6 +493,9 @@ drapeaux = {
 	"Villes françaises": {
 		"Laval": [
 			Wikipédia + "8/81/Blason_ville_fr_Laval_(Mayenne).svg",
+		],
+		"Le Mans": [
+			Wikipédia + "6/63/Blason_de_la_ville_de_Le_Mans_(Sarthe).svg",
 		],
 		"Paris": [
 			Wikipédia + "2/2e/Blason_ville_Paris.svg",
