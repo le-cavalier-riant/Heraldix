@@ -309,7 +309,6 @@ function sauvegarder() {
 
 function titre() {
 	/*
-	[ ] Le titre doit dépendre des deux couronnes
 	[ ] Le titre peut être X, (titre) de Y ---> BRANCHES
 		de Maupeou(, comte) d'Ableiges
 		Le Gonidec(, seigneur) de Traissan
@@ -320,7 +319,7 @@ function titre() {
 			if (couronne == couronneManteau) {
 				intérieur += concordance(couronne.slice(3));
 			} else {
-				console.log("2 titres");
+				intérieur += concordance(couronne.slice(3)) + " & " + concordance(couronneManteau.slice(3));
 			}
 		} else {
 			intérieur += concordance(couronne.slice(3));
@@ -339,7 +338,7 @@ function titre() {
 
 function concordance(mot) {
 	if (voyelles.includes(mot[0])) {
-		return " d'" + mot;
+		return " d'" + mot; // H muets...
 	} else {
 		if (mot.split(" ")[0] == "Le") {
 			return " du " + mot.slice(3);
