@@ -409,6 +409,18 @@ profils = {
 		},
 	},
 	"Royaume de Jérusalem": {
+		"Roi": {
+			"écu": ["RJ", "Jérusalem"],
+			"couronne": ["**", ""],
+			"heaume": ["RJ", "Roi"],
+			"portant-dextre": ["**", "Ange"],
+			"portant-senestre": ["**", "Ange"],
+			"collier": ["**", ""],
+			"manteau": ["**", ""],
+			"couronne-manteau": ["**", ""],
+			"cri": ["**", ""],
+			"devise": ["**", ""],
+		},
 		"Ordre équestre du Saint-Sépulcre": {
 			"écu": ["RJ", "Ordre équestre du Saint-Sépulcre"],
 			"couronne": ["RJ", "Couronne d'épines"],

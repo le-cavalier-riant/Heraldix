@@ -305,51 +305,50 @@ function remplir() {
 
 function sauvegarder() {
 	window.print();
-	// navigator.clipboard.writeText("");
 }
 
 function titre() {
+	/*
+	[ ] Le titre doit dépendre des deux couronnes
+	[ ] Le titre peut être X, (titre) de Y ---> BRANCHES
+		de Maupeou(, comte) d'Ableiges
+		Le Gonidec(, seigneur) de Traissan
+	*/
 	intérieur = "";
 	if (couronne) {
-		if (voyelles.includes(couronne.slice(3)[0])) {
-			intérieur += " d'" + couronne.slice(3);
-		} else {
-			if (couronne.slice(3).split(" ")[0] == "Le") {
-				intérieur += " du " + couronne.slice(3 + 3);
-			} else if (couronne.slice(3).split(" ")[0] == "Les") {
-				intérieur += " des " + couronne.slice(3 + 4);
+		if (couronneManteau) {
+			if (couronne == couronneManteau) {
+				intérieur += concordance(couronne.slice(3));
 			} else {
-				intérieur += " de " + couronne.slice(3);
+				console.log("2 titres");
 			}
+		} else {
+			intérieur += concordance(couronne.slice(3));
 		}
 	}
-	if (écu) {
-		if (voyelles.includes(écu.slice(3)[0])) {
-			intérieur += " d'" + écu.slice(3);
-		} else {
-			if (écu.slice(3).split(" ")[0] == "Le") {
-				intérieur += " du " + écu.slice(3 + 3);
-			} else if (écu.slice(3).split(" ")[0] == "Les") {
-				intérieur += " des " + écu.slice(3 + 4);
-			} else {
-				intérieur += " de " + écu.slice(3);
-			}
-		}
-	}
+	if (écu) {intérieur += concordance(écu.slice(3));}
 	document.title = "Armoirie" + intérieur + " — Héraldix";
-	obtenir("h1", "S")[0].innerHTML =
-		"<hr>" +
-		"<img src = Lettres/A.png alt = A class = img-lettrine-h1>" +
-		"<img src = Lettres/R.png alt = R class = img-lettrine-h1>" +
-		"<img src = Lettres/M.png alt = M class = img-lettrine-h1>" +
-		"<img src = Lettres/O.png alt = O class = img-lettrine-h1>" +
-		"<img src = Lettres/I.png alt = I class = img-lettrine-h1>" +
-		"<img src = Lettres/R.png alt = R class = img-lettrine-h1>" +
-		"<img src = Lettres/I.png alt = I class = img-lettrine-h1>" +
-		"<img src = Lettres/E.png alt = E class = img-lettrine-h1>" +
-		intérieur +
-		"<hr>"
-	;
+	obtenir("h1", "S")[0].innerHTML = "<hr>";
+	for (lettre of "ARMOIRIE") {
+		obtenir("h1", "S")[0].innerHTML +=
+			"<img src = Lettres/" + lettre + ".png alt = " + lettre + " class = img-lettrine-h1>"
+		;
+	}
+	obtenir("h1", "S")[0].innerHTML += intérieur + "<hr>";
+}
+
+function concordance(mot) {
+	if (voyelles.includes(mot[0])) {
+		return " d'" + mot;
+	} else {
+		if (mot.split(" ")[0] == "Le") {
+			return " du " + mot.slice(3);
+		} else if (mot.split(" ")[0] == "Les") {
+			return " des " + mot.slice(4);
+		} else {
+			return " de " + mot;
+		}
+	}
 }
 
 // ================================================================================================================= //
