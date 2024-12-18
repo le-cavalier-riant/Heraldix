@@ -3,7 +3,7 @@
 
 Une application de création d'armoiries héraldiques.
 
-Lien : https://le-cavalier-riant.github.io/Heraldix
+Lien : https://lecavalierriant.github.io/Heraldix
 
 *Utilisation*
 
