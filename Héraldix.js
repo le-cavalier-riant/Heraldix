@@ -64,6 +64,30 @@ function obtenir(identifiant, type) {
 	}
 }
 
+function lettres() {
+	for (titre of obtenir("h1", "S")) {
+		texte = titre.innerText;
+		titre.innerHTML = "<hr>";
+		compte = 0;
+		for (caractère of texte.toUpperCase()) {
+			compte++;
+			if (caractère == " ") {
+				if (compte > 14) {
+					titre.innerHTML += "<br>";
+					compte = 0;
+				} else {
+					titre.innerHTML += " ";
+				}
+			} else {
+				titre.innerHTML += "<img src = Lettres/" + caractère + ".png alt = " + caractère + " class = img-lettrine-h1>";
+			}
+		}
+		titre.innerHTML += "<hr>";
+	}
+}
+
+window.addEventListener("load", lettres);
+
 // ================================================================================================================= //
 //                                                                                                                   //
 //                                                     Héraldix                                                      //

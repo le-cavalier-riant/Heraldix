@@ -209,7 +209,7 @@ function générer() {
 	else {obtenir("div-cri", "I").style.display = "none";}
 	if (devise) {obtenir("span-devise", "I").innerText = devise;}
 	else {obtenir("div-devise", "I").style.display = "none";}
-	titre();
+	titrer();
 }
 
 function initialiser() {
@@ -307,7 +307,7 @@ function sauvegarder() {
 	window.print();
 }
 
-function titre() {
+function titrer() {
 	/*
 	[ ] Le titre peut être X, (titre) de Y ---> BRANCHES
 		de Maupeou(, comte) d'Ableiges
@@ -328,12 +328,10 @@ function titre() {
 	if (écu) {intérieur += concordance(écu.slice(3));}
 	document.title = "Armoirie" + intérieur + " — Héraldix";
 	obtenir("h1", "S")[0].innerHTML = "<hr>";
-	for (lettre of "ARMOIRIE") {
-		obtenir("h1", "S")[0].innerHTML +=
-			"<img src = Lettres/" + lettre + ".png alt = " + lettre + " class = img-lettrine-h1>"
-		;
-	}
-	obtenir("h1", "S")[0].innerHTML += intérieur + "<hr>";
+	obtenir("h1", "S")[0].innerHTML += "ARMOIRIE";
+	obtenir("h1", "S")[0].innerHTML += intérieur;
+	obtenir("h1", "S")[0].innerHTML += "<hr>";
+	lettres();
 }
 
 function concordance(mot) {

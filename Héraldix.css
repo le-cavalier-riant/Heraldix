@@ -89,6 +89,9 @@ img {
 	margin-top: 15px;
 	width: 50px;
 }
+.img-lettrine-h1[alt = "&"],
+.img-lettrine-h1[alt = "Æ"],
+.img-lettrine-h1[alt = "Œ"] {width: 76.4px;}
 .img-lettrine-h1[alt = "É"] {margin-top: 0;}
 .img-lettrine-h1[alt = "Ç"],
 .img-lettrine-h1[alt = "Q"] {margin-bottom: -12.5px;}
