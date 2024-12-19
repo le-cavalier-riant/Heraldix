@@ -20,12 +20,9 @@ colliers = {
 		"Ordre de Saint-Michel": [
 			Wikipédia + "5/53/Order_of_Saint_Michael_(heraldry).svg",
 		],
-		// "Ordre de Saint-Louis": [
-		// 	"Armoirie/Colliers/RF Ordre de Saint-Louis.png",
-		// ],
-		// "Institution du Mérite militaire": [
-		// 	"Armoirie/Colliers/RF Institution du Mérite militaire.png",
-		// ],
+		"Ordre de Saint-Louis": [
+			"Armoirie/Colliers/RF Ordre de Saint-Louis.png",
+		],
 	},
 	"Empire français": {
 		"Ordre de la Légion d'honneur": [
